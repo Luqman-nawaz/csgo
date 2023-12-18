@@ -1059,12 +1059,15 @@ body {
 
 .csgo-Home-InnerFooter-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 100px;
-    width: 68%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    width: 85%;
     margin: auto;
     margin-top: 50px;
+    /* border: 1px solid red; */
 }
+
+.csgo-Home-InnerFooter-section {}
 
 .csgo-Home-InnerFooter-section h5 {
     color: #EFF3FB;
@@ -1082,7 +1085,7 @@ body {
 }
 
 .csgo-footer-list-container {
-    margin-top: 40px;
+    margin-top: 00px;
 }
 
 .csgo-footer-list-container li {
@@ -1530,6 +1533,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid red; */
+}
+
+.csgo-boost-section-1 {
+    height: 50dvh;
+
 }
 
 .boost-hero-text-container {
@@ -1541,6 +1550,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid red; */
 }
 
 .trns-boost-text {
@@ -1724,13 +1734,24 @@ body {
     margin-bottom: -5px;
 }
 
-.csgo-boost-howtobuy-tabs-esea {
+.csgo-boost-howtobuy-tabs-esea:first-child{
+    display: flex !important;
+    justify-content: center !important;
     width: 90%;
+}
+.csgo-boost-howtobuy-tabs-esea:last-child{
+    display: flex !important;
+    justify-content: center !important;
+}
+.csgo-boost-howtobuy-tab-esea{
+    display: flex;
+    justify-content: center;
+    width: fit-content !important;
 }
 
 .csgo-boost-howtobuy-tab-esea svg {
-    width: 70% !important;
-    height: 70% !important;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .csgo-boost-faceit-tabs {
@@ -2027,6 +2048,27 @@ body {
     font-weight: 500;
 }
 
+.addLocationProduct-boost-rank-toggle-new {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 5px 5px 15px;
+    width: 250px;
+    height: 57px;
+    color: #EFF3FB;
+    background-color: transparent;
+    border: 1px solid var(--primary-text-clr);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.addLocationProduct-boost-rank-toggle-new:focus {
+    outline: none;
+}
+
 .addLocationProduct-boost-rank-toggle img {
     margin-right: 10px;
 }
@@ -2068,6 +2110,18 @@ body {
     transition: max-height 0.3s ease-in-out;
 }
 
+
+.addLocationProduct-boost-rank-option-new {
+    background: var(--primary, #1A1A2C);
+    color: var(--primary-text-clr);
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+
+
+
 .addLocationProduct-boost-rank-toggle.open+.addLocationProduct-boost-rank-dropdown-menu {
     max-height: 230px;
     overflow-y: scroll;
@@ -2076,6 +2130,14 @@ body {
 }
 
 .addLocationProduct-boost-rank-dropdown-menu::-webkit-scrollbar {
+    display: none;
+}
+
+#firstDropdownValue {
+    display: none;
+}
+
+#secondDropdownValue {
     display: none;
 }
 
@@ -2090,6 +2152,19 @@ body {
 .addLocationProduct-boost-rank-option:hover {
     background-color: #282834;
 }
+
+.addLocationProduct-boost-rank-option1 {
+    display: block;
+    padding: 10px;
+    color: var(--primary-text-clr);
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.addLocationProduct-boost-rank-option1:hover {
+    background-color: #282834;
+}
+
 
 .csgo-boost-rank-boost-category-conatiner {
     display: flex;
@@ -2169,7 +2244,6 @@ body {
 
 .switch input:checked+.slider {
     background-image: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
-
 }
 
 .switch input:checked+.slider:before {
@@ -3056,6 +3130,18 @@ body {
         margin: 0 !important;
     }
 
+    .csgo-boost-faceit-tab {
+        /* border: 1px solid red; */
+    }
+
+    .csgo-boost-faceit-tab:first-child {
+        margin-left: 30px !important;
+    }
+
+    .csgo-boost-faceit-tab:last-child {
+        margin-left: -30px !important;
+    }
+
     .csgo-boost-faceit-tab span {
         font-size: 1rem !important;
     }
@@ -3297,7 +3383,6 @@ body {
     }
 
     .csgo-subscribe-email-container {
-
         padding: 0px 25px;
         flex-direction: column;
     }
@@ -3341,7 +3426,7 @@ body {
     }
 
     .csgo-boost-para h5 {
-        font-size: 1vw;
+        font-size: 1rem !important;
     }
 
     .csgo-boost-para .csgo-btn {
@@ -3484,6 +3569,10 @@ body {
     .csgo-boost-coaching-p {
         margin-top: 50px;
         text-align: justify;
+    }
+
+    .csgo-boost-para h5 {
+        font-size: 0.8rem !important;
     }
 }
 
@@ -3668,8 +3757,8 @@ body {
     }
 
     .csgo-boost-rank-select-container img {
-        width: 100% !important;
-        height: 100% !important;
+        /* width: 100% !important; */
+        /* height: 100% !important; */
     }
 
     .addLocationProduct-boost-rank-dropdown {
@@ -3708,6 +3797,8 @@ body {
         width: 100% !important;
         height: 100% !important;
     }
+
+
 }
 
 @media only screen and (max-width: 440px) {
@@ -3742,6 +3833,7 @@ body {
     }
 
     .csgo-boost-para h2 {
+        font-size: 1rem !important;
         margin: 0 !important;
         padding: 0 !important;
     }
@@ -3753,8 +3845,10 @@ body {
 
     .csgo-boost-para .csgo-btn {
         padding: 5px 5px;
-        font-size: 1vw !important;
+        margin-top: 10px;
+        font-size: .8rem !important;
     }
+
 
 }
 

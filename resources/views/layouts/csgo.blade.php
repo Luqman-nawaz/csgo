@@ -14,11 +14,7 @@
         @yield('content')
         
         
-        <!-- Script -->
-        <script src="/vendor/js/app.js"></script>
-        <script src="/vendor/js/carousel.js"></script>
-        <script src="/vendor/js/dropdowns.js"></script>
-        <script src="/vendor/js/boosttabs.js"></script>
+        @stack('js')
     </body>
 
 </html>

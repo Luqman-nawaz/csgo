@@ -11,11 +11,8 @@
         <!-- csgo-HeroSection Start -->
         <div class="csgo-heroSection-main-conatiner">
             <div class="csgo-heroSection-text-container">
-                <h1>Raise your rank up to <span>Global Elite</span> with our help.</h1>
-                <p>Get a rank you deserve with our professional CSGO Boosting team. Our members can boost you to any
-                    rank in any CS:GO Competition. So far We've boosted more than 30000+ players in +8 years. If you
-                    are bored of playing with trolls and unskilled players - purchase boost now and our professional
-                    players will help you with winning matches.</p>
+                <h1><span>Counter Strike 2</span> Boosting Service!</h1>
+                <p>MyBoost.gg is a fast, affordable and safe CS2 boosting service to help you reach Counter-Strike 2 leaderboards through vetted Radiant players across all regions. We work with the most skilled CS2 boosters to acheive your desired rank effortlessly. Here, you will find a range of services handled by our skilled players such as Rank boost, Wins, ESEA Boosting, FACEIT Boosting, CS2 Placement Matches, ESPORTAL Boosting & so much more. Our team consists of elite players that have delivered thousands of orders, so the safety of your account is guarenteed.</p>
             </div>
             <div class="csgo-heroSection-img-container">
                 <img src="/assets/img/hero.png" alt="">
@@ -30,127 +27,65 @@
             <!--  -->
             <div class="csgo-HomeBoost-tabs-conatiner">
                 <div class="csgo-boost-tabs">
-                    <div class="svg-shape csgo-boost-tab active" onclick="openTab(0)"><span>Faceit Level
+                    <div class="svg-shape csgo-boost-tab active" onclick="openTab(0)"><span>CS2
                             Boost</span>
                     </div>
                     <div class="svg-shape csgo-boost-tab" onclick="openTab(1)"><span>Esportal Win Boost</span></div>
                     <div class="svg-shape csgo-boost-tab" onclick="openTab(2)"><span>Faceit Win Boost</span></div>
-                    <div class="svg-shape csgo-boost-tab" onclick="openTab(3)"><span>Esportal Boost</span></div>
+                    <div class="svg-shape csgo-boost-tab" onclick="openTab(3)"><span>ESEA Boost</span></div>
                 </div>
 
                 <div class="csgo-boost-content">
                     <div class="csgo-boost-tab-content active" id="csgo-boost-tab1">
                         <div class="csgo-boost-para">
-                            <h2>Rank Boost</h2>
-                            <h5>This is the most convenient way to raise your Rank to Global Elite. The services are
-                                available in both matchmaking and wingman, and only the prime status clients
-                                accepted
-                                for execution. Also, the calculation can be made by wins.</h5>
+                            <h2>CS2 Boosting</h2>
+                            <h5>We specialize in enhancing your CS2 rating through our Boosters. 
+                                CS2 Rank Boost or CS2 Premier Rating Boost are the same boosting service.
+                                Our team has CS2 boost professionals who are committed to ensuring 
+                                your success. 
+                                
+                                CS2 Rating Boost is designed to help you achieve a higher rating 
+                                in Counter Strike 2 with the assistance of an experienced player. 
+                                This service is commonly offered in Solo Boost mode, where a 
+                                professional player logs into your account to participate in 
+                                competitive matches, or in Duo/Lobby Boost mode, allowing you to 
+                                team up with boosters in the same lobby.
+                            </h5>
                             <a href="/csgoboost"><button class="csgo-btn">Get Started Now</button></a>
                         </div>
-                        <img src="/assets/img/Daco_4399154.png" class="homeboost-hero" alt="">
+                        <img src="https://totalcsgo.com/agent.png" class="homeboost-hero" alt="">
                     </div>
                     <div class="csgo-boost-tab-content" id="csgo-boost-tab2">
                         <div class="csgo-boost-para">
                             <h2>Esportal Boosting</h2>
-                            <h5>This is the most convenient way to raise your Rank to Global Elite. The services are
-                                available in both matchmaking and wingman, and only the prime status clients
-                                accepted
-                                for execution. Also, the calculation can be made by wins.</h5>
+                            <h5>Esportal Boosting is an elite account boosting service provided by MyBoost.gg without using any cheats and with a 100% accurate & safe method. Boost your Esportal account now and enjoy the best experience we have to offer.</h5>
                                 <a href="/esportal"><button class="csgo-btn">Get Started Now</button></a>
                         </div>
-                        <img src="/assets/img/Daco_4713964.png" alt="">
+                        <img src="https://cdn.esportfire-services.com/items/Agent.png" alt="">
 
                     </div>
                     <div class="csgo-boost-tab-content" id="csgo-boost-tab3">
                         <div class="csgo-boost-para">
                             <h2>Faceit Boosting</h2>
-                            <h5>This is the most convenient way to raise your Rank to Global Elite. The services are
-                                available in both matchmaking and wingman, and only the prime status clients
-                                accepted
-                                for execution. Also, the calculation can be made by wins.</h5>
+                            <h5>FaceIt boosting is a service to increase your FaceIT level. We provide you boosting through some of the most elite boosters in the FaceIt arena. Your account is 100% safe & secure and is in capable hands. Place your order now & enjoy the account with the actual rank that you deserve.</h5>
                                 <a href="/faceit"><button class="csgo-btn">Get Started Now</button></a>
                         </div>
-                        <img src="/assets/img/Daco_4402547.png" alt="">
+                        <img src="https://cdn.esportfire-services.com/e658b19f50b81af5bafe1cd5923e6b841a1ea3d90bdcbb8ac395a8bba76e97c0" alt="">
 
                     </div>
                     <div class="csgo-boost-tab-content" id="csgo-boost-tab4">
                         <div class="csgo-boost-para">
                             <h2>ESEA Boosting</h2>
-                            <h5>This is the most convenient way to raise your Rank to Global Elite. The services are
-                                available in both matchmaking and wingman, and only the prime status clients
-                                accepted
-                                for execution. Also, the calculation can be made by wins.</h5>
-                                <a href="/esea"><button class="csgo-btn">Get Started Now</button></a>
+                            <h5>Check out our service to boost your ESEA account. The service is provided through the most elite Counter Strike players. Place the order now, have your account boosted & play with skilled players that actually match your rank & skill.</h5>
+                            <a href="/esea"><button class="csgo-btn">Get Started Now</button></a>
                         </div>
-                        <img src="/assets/img/Daco_6120627.png" alt="">
+                        <img src="https://cdn.esportfire-services.com/c7d5462a7b818703efc78504be7a0cdaa01f85e17e91f9241235826acadce489" alt="">
 
                     </div>
                 </div>
             </div>
             <!--  -->
         </div>
-        <!-- csgo-HomeBoost End -->
-        <!-- <div class="csgo-HomeBoost-conatianer">
-            <img src="/assets/img/homeBoost-bg.jpg" alt="">
-            
-            <div class="csgo-HomeBoost-tabs-conatiner">
-                <div class="csgo-boost-tabs">
-                    <div class="svg-shape csgo-boost-tab active" onclick="openTab(0)"><span>Faceit Level Boost</span>
-                    </div>
-                    <div class="svg-shape csgo-boost-tab" onclick="openTab(1)"><span>Esportal Win Boost</span></div>
-                    <div class="svg-shape csgo-boost-tab" onclick="openTab(2)"><span>Faceit Win Boost</span></div>
-                    <div class="svg-shape csgo-boost-tab" onclick="openTab(3)"><span>Esportal Boost</span></div>
-                </div>
-
-                <div class="csgo-boost-content">
-                    <div class="csgo-boost-tab-content active" id="csgo-boost-tab1">
-                        <div class="csgo-boost-para">
-                            <h2>Rank Boost</h2>
-                            <h5>This is the most convenient way to raise your Rank to Global Elite. The services are
-                                available in both matchmaking and wingman, and only the prime status clients accepted
-                                for execution. Also, the calculation can be made by wins.</h5>
-                            <button class="csgo-btn">Get Started Now</button>
-                        </div>
-                        <img src="/assets/img/pngkey 1.svg" class="homeboost-hero" alt="">
-                    </div>
-                    <div class="csgo-boost-tab-content" id="csgo-boost-tab2">
-                        <div class="csgo-boost-para">
-                            <h2>Esport Boosting</h2>
-                            <h5>This is the most convenient way to raise your Rank to Global Elite. The services are
-                                available in both matchmaking and wingman, and only the prime status clients accepted
-                                for execution. Also, the calculation can be made by wins.</h5>
-                            <button class="csgo-btn">Get Started Now</button>
-                        </div>
-                        <img src="/assets/img/pngkey 1.svg" alt="">
-
-                    </div>
-                    <div class="csgo-boost-tab-content" id="csgo-boost-tab3">
-                        <div class="csgo-boost-para">
-                            <h2>Faceit Boosting</h2>
-                            <h5>This is the most convenient way to raise your Rank to Global Elite. The services are
-                                available in both matchmaking and wingman, and only the prime status clients accepted
-                                for execution. Also, the calculation can be made by wins.</h5>
-                            <button class="csgo-btn">Get Started Now</button>
-                        </div>
-                        <img src="/assets/img/pngkey 1.svg" alt="">
-
-                    </div>
-                    <div class="csgo-boost-tab-content" id="csgo-boost-tab4">
-                        <div class="csgo-boost-para">
-                            <h2>Esport Boosting</h2>
-                            <h5>This is the most convenient way to raise your Rank to Global Elite. The services are
-                                available in both matchmaking and wingman, and only the prime status clients accepted
-                                for execution. Also, the calculation can be made by wins.</h5>
-                            <button class="csgo-btn">Get Started Now</button>
-                        </div>
-                        <img src="/assets/img/pngkey 1.svg" alt="">
-
-                    </div>
-                </div>
-            </div>
-           
-        </div> -->
         <!-- csgo-HomeBoost End -->
         <!-- csgo-HomeBoost Start -->
         <div class="csgo-HomeFeatures-container">
@@ -163,25 +98,25 @@
                     <div class="csgo-HomeFeatures-deatil-container">
                         <span><img src="/assets/icons/diamend.svg" alt=""></span>
                         <h4>Guaranteed Rank</h4>
-                        <p>In boostcsgo.net we sell only guaranteed services, which means our boosters will quickly
-                            advance to your dream rank or you will get money back.</p>
+                        <p>MyBoost.gg offers a Premium CS2 account boosting service, 
+                            ensuring quick and safe boost to your desired rank with our team of skilled professionals.</p>
                     </div>
                 </div>
                 <div class="csgo-HomeFeatures-box">
                     <img src="/assets/img/features-card.png" alt="">
                     <div class="csgo-HomeFeatures-deatil-container">
                         <span><img src="/assets/icons/security.svg" alt=""></span>
-                        <h4>Totally Secure</h4>
-                        <p>In boostcsgo.net we sell only guaranteed services, which means our boosters will quickly
-                            advance to your dream rank or you will get money back.</p>
+                        <h4>No Cheats</h4>
+                        <p>At MyBoost.gg, all the boosting services uphold the highest standards,
+                            ensuring your progress is achieved through expertise without any use of cheats.</p>
                     </div>
                 </div>
                 <div class="csgo-HomeFeatures-box">
                     <img src="/assets/img/features-card.png" alt="">
                     <div class="csgo-HomeFeatures-deatil-container">
-                        <span><img src="/assets/icons/privacy-eye.svg" alt=""></span>
-                        <h4>Complete Privacy</h4>
-                        <p>In boostcsgo.net we sell only guaranteed services, which means our boosters will quickly
+                        <span><img src="/assets/icons/diamend.svg" alt=""></span>
+                        <h4>Quick Delivery</h4>
+                        <p>In MyBoost.gg we sell only guaranteed services, which means our boosters will quickly
                             advance to your dream rank or you will get money back.</p>
                     </div>
                 </div>
@@ -193,19 +128,21 @@
                 <div class="csgo-HomeFeatures-box">
                     <img src="/assets/img/features-card.png" alt="">
                     <div class="csgo-HomeFeatures-deatil-container">
-                        <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                        <h4>Guaranteed Rank</h4>
-                        <p>In boostcsgo.net we sell only guaranteed services, which means our boosters will quickly
-                            advance to your dream rank or you will get money back.</p>
+                        <span><img src="/assets/icons/security.svg" alt=""></span>
+                        <h4>Account Safety</h4>
+                        <p>At MyBoost.gg we have the most safe boosting procedures & the most elite players, with our
+                            protocols in place, your account safety is guaranteed.
+                        </p>
                     </div>
                 </div>
                 <div class="csgo-HomeFeatures-box">
                     <img src="/assets/img/features-card.png" alt="">
                     <div class="csgo-HomeFeatures-deatil-container">
-                        <span><img src="/assets/icons/security.svg" alt=""></span>
-                        <h4>Totally Secure</h4>
-                        <p>In boostcsgo.net we sell only guaranteed services, which means our boosters will quickly
-                            advance to your dream rank or you will get money back.</p>
+                        <span><img src="/assets/icons/diamend.svg" alt=""></span>
+                        <h4>Professional Boosters</h4>
+                        <p>All our boosters are semi-professional veterans of Counter-Strike, they are all highly trained
+                             and experienced in their craft.
+                        </p>
                     </div>
                 </div>
                 <div class="csgo-HomeFeatures-box">
@@ -213,8 +150,9 @@
                     <div class="csgo-HomeFeatures-deatil-container">
                         <span><img src="/assets/icons/privacy-eye.svg" alt=""></span>
                         <h4>Complete Privacy</h4>
-                        <p>In boostcsgo.net we sell only guaranteed services, which means our boosters will quickly
-                            advance to your dream rank or you will get money back.</p>
+                        <p>All your data is safe with us. Boost your Counter Strike 2 accounts without having to worry about
+                            anything.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -224,27 +162,22 @@
         <!-- csgo-HomeBoosting Services Start -->
         <div class="csgo-HomeBoosting-services-container">
             <div class="csgo-HomeBoosting-services-innerSection">
-                <h1>Top Notch Quality Rank<br> Boosting Services</h1>
+                <h1>How to Buy <br> Boosting Services?</h1>
                 <div class="csgo-HomeBoosting-services-line-container">
 
                     <div class="csgo-HomeBoosting-services-section-conatiner-one">
                         <div class="csgo-HomeBoosting-services-section">
                             <div class="csgo-HomeBoosting-services-box">
-                                <h3>FAST CSGO BOOST IS PRIORITY</h3>
-                                <p>We usually start every boosting order within 1h after receiving the money. In most
-                                    cases
-                                    our boosters need only few hours to rank up. They play at least 5-15 matches per
-                                    day.
+                                <h3>Select Boosting & Place Order</h3>
+                                <p>Select details of your boost. 
+                                    (Current Rank, Desired Rank, Your Level/Elo, Number of wins) then click the Buy button.
                                 </p>
                             </div>
                         </div>
                         <div class="csgo-HomeBoosting-services-section">
                             <div class="csgo-HomeBoosting-services-box">
-                                <h3>ONLY LEGIT CS:GO BOOSTERS</h3>
-                                <p>We usually start every boosting order within 1h after receiving the money. In most
-                                    cases
-                                    our boosters need only few hours to rank up. They play at least 5-15 matches per
-                                    day.
+                                <h3>Receive Boost</h3>
+                                <p>Receive your boosted account, that is boosted by professionals in a safe & elite environment, and enjoy the game!
                                 </p>
                             </div>
                         </div>
@@ -265,9 +198,8 @@
 
                     <div class="csgo-HomeBoosting-services-section">
                         <div class="csgo-HomeBoosting-services-box">
-                            <h3>ONLY LEGIT CS:GO BOOSTERS</h3>
-                            <p>We usually start every boosting order within 1h after receiving the money. In most cases
-                                our boosters need only few hours to rank up. They play at least 5-15 matches per day.
+                            <h3>Complete Payment</h3>
+                            <p>Complete the payment for the order via your preffered methods. Once paid, watch the boosting magic happen!
                             </p>
                         </div>
                     </div>
@@ -285,13 +217,13 @@
                 <img src="/assets/img/Daco_4402547.png" alt="">
             </div>
             <div class="csgo-HomeWhyChoose-services-detail-section">
-                <h3>Why choose our CS:GO Boosting Services?</h3>
-                <p>We are the go-to brand for trusted CS:GO services. Boostcsgo.net is a worldwide, boosting service
-                    with many years of experience in boosting people in Counter Strike: Global Offensive. We have
-                    boosted more than 30000 accounts, there is no boost that will make a problem for our professionals,
-                    and they will finish every order as fast as possible - from official valve matchmaking: CS:GO Rank
-                    boost and CS:GO Wingman Boost to orders in most popular csgo leagues like: Faceit Boost, Esea Boost
-                    or Esportal Boost.</p>
+                <h3>Why choose our CS2 Boosting Services?</h3>
+                <p>Our boosters are experts who never resort to cheats or any other unfair advantages. 
+                     All our orders are handled by exceptional players who were semi-professional
+                     gamers before joining our boosting team. 
+                     Our service is 100% safe, and there's no risk of getting banned. 
+                     Each of our players works under a contract and undergoes rigorous testing to earn our trust. 
+                     Rest assured that your Steam account and inventory are in safe hands.</p>
                 <div class="csgo-HomeWhyChoose-happyCustomers-section">
                     <div class="csgo-HomeWhyChoose-happyCustomers-box">
                         <img src="/assets/img/Rectangle 10.png" alt="">
@@ -323,7 +255,7 @@
         <!-- csgo-whychoose Services Start -->
         <div class="csgo-HomeReview-container">
             <h3>Real Customer Reviews</h3>
-            <p>All the reviews about our boosting services can be found on our Trustpilot profile. Check some of them,
+            <p>All the reviews about our boosting services are from our buyers. Check some of them,
                 they speak for themselves!</p>
 
             <div class="csgo-HomeReview-carousel-container">
@@ -415,44 +347,35 @@
             <h1>Frequently Asked Questions</h1>
             <div class="accordion-item">
                 <div class="accordion-item-header">
-                    What is BuyBoosting.com?
+                    How does MyBoost.gg work?
                 </div>
                 <div class="accordion-item-body">
                     <div class="accordion-item-body-content">
-                        We are a company that operates a safe and a top tier boosting platform for online games. Our
-                        boosting services are accessible worldwide. We achieve this by recruiting the best performing
-                        boosters from each region for the games we boost. We guarantee the highest standards of online
-                        game boosting available with the help on our professional boosting team, customer-centric
-                        approach and easy to use interface.
+                        MyBoost.gg offers you all types of CS2 account boosting services, for CS2 matchmaking, FaceIt, ESEA and Esportal. We level up your account to where you believe it should be.
+
+                        For boosting your CS2 account, we use our professional players. We do NOT use cheats or bots. Your accounts are completely safe.
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <div class="accordion-item-header">
-                    What is BuyBoosting.com?
+                    Is it safe for me to boost my account?
                 </div>
                 <div class="accordion-item-body">
                     <div class="accordion-item-body-content">
-                        We are a company that operates a safe and a top tier boosting platform for online games. Our
-                        boosting services are accessible worldwide. We achieve this by recruiting the best performing
-                        boosters from each region for the games we boost. We guarantee the highest standards of online
-                        game boosting available with the help on our professional boosting team, customer-centric
-                        approach and easy to use interface.
+                        Yes, your account is in safe hands. Our professional players make sure to rank your account
+                        by playing. NO cheats/bots are used.
                     </div>
                 </div>
             </div>
 
             <div class="accordion-item">
                 <div class="accordion-item-header">
-                    What is BuyBoosting.com?
+                    What payment methods does MyBoost.gg support?
                 </div>
                 <div class="accordion-item-body">
                     <div class="accordion-item-body-content">
-                        We are a company that operates a safe and a top tier boosting platform for online games. Our
-                        boosting services are accessible worldwide. We achieve this by recruiting the best performing
-                        boosters from each region for the games we boost. We guarantee the highest standards of online
-                        game boosting available with the help on our professional boosting team, customer-centric
-                        approach and easy to use interface.
+                        MyBoost currently accepts Mastercard/Visa/Crypto payments.
                     </div>
                 </div>
             </div>
@@ -493,3 +416,9 @@
 
     </div>    
     @endsection
+
+    @push('js')
+        <!-- Script -->
+        <script src="/vendor/js/app.js"></script>
+        <script src="/vendor/js/carousel.js"></script>
+    @endpush

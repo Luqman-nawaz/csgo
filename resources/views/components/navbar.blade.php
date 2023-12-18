@@ -8,10 +8,10 @@
         <div class="addLocationProduct-dropdown">
             <div class="addLocationProduct-toggle" onclick="addLocationProducttoggleDropdown()">
                 <img src="/assets/img/CSGO.png" alt="">
-                CS:GO <span class="addLocationProduct-arrow"></span>
+                CS2 <span class="addLocationProduct-arrow"></span>
             </div>
             <div class="addLocationProduct-dropdown-menu">
-                <p class="addLocationProduct-option" href="#">CS:GO</p>
+                <p class="addLocationProduct-option" href="#">CS2</p>
                 <p class="addLocationProduct-option" href="#">Valorant</p>
                 <p class="addLocationProduct-option" href="#">Call Of Duty</p>
             </div>
@@ -20,7 +20,7 @@
 
         <div class="csgo-menu-conatiner">
             <ul>
-                <li><a href="/csgoboost">CS:GO Boost</a></li>
+                <li><a href="/csgoboost">CS2 Boost</a></li>
                 <li><a href="/faceit">Faceit Boost</a></li>
                 <li><a href="/esea">Esea Boost</a></li>
                 <li><a href="/esportal">Esportal Boost</a></li>
