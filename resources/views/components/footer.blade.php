@@ -15,28 +15,27 @@
             <h5>SERVICES</h5>
             <div class="footer-line-span"></div>
             <ul class="csgo-footer-list-container">
-                <li><a href="#">CS2 Boosting</a></li>
-                <li><a href="#">Faceit Boosting</a></li>
-                <li><a href="#">Esea Boosting</a></li>
-                <li><a href="#">Esportal Boosting</a></li>
+                <li><a href="/csgoboost">CS2 Boosting</a></li>
+                <li><a href="/faceit">Faceit Boosting</a></li>
+                <li><a href="/esea">Esea Boosting</a></li>
+                <li><a href="/esportal">Esportal Boosting</a></li>
             </ul>
         </div>
         <div class="csgo-Home-InnerFooter-section">
             <h5>HELP</h5>
             <div class="footer-line-span"></div>
             <ul class="csgo-footer-list-container">
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/jobs">Jobs</a></li>
             </ul>
         </div>
         <div class="csgo-Home-InnerFooter-section">
-            <h5>HELP</h5>
+            <h5>Important Links</h5>
             <div class="footer-line-span"></div>
             <ul class="csgo-footer-list-container">
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="/faqs">FAQs</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/terms">Terms & Conditions</a></li>
             </ul>
         </div>
     </div>

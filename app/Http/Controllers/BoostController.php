@@ -13,6 +13,10 @@ class BoostController extends Controller
         return view('boost.csgo');
     }
 
+    public function faqs(){
+        return view('faqs');
+    }
+
     public function faceit(){
         return view('boost.faceit');
     }

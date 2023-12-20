@@ -101,16 +101,7 @@ const updatePrice = () => {
         SilverII: 15.00,
         SilverIII: 20.00,
         SilverIV: 25.00,
-        "Silver Elite": 30.00,
-        "Silver Elite Master": 15.00,
-        "Golden Nova I": 20.00,
-        "Golden Nova II": 25.00,
-        "Golden Nova III": 30.00,
-        "Golden Nova Master": 30.00,
-        "Distinguished Master Guardian": 15.00,
-        "Legendary Eagle": 20.00,
-        "Legendary Eagle Master": 25.00,
-        "Supreme Master First Class": 30.00,
+        SilverV: 30.00
     };
 
     var additionalAmount = 0;

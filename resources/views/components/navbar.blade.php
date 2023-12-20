@@ -26,7 +26,13 @@
                 <li><a href="/esportal">Esportal Boost</a></li>
                 <li><a href="/about">About</a></li>
 
-                <a href="/"><button class="csgo-login-btn responsive-login-btn mt-10px">Track Order</button></a>
+                @guest
+                    <a href="/login"><button class="csgo-login-btn responsive-login-btn mt-10px">Login</button></a>
+                @endguest
+                
+                @auth
+                    <a href="/dashboard"><button class="csgo-login-btn responsive-login-btn mt-10px">Dashboard</button></a>
+                @endauth
             </ul>
         </div>
         @guest

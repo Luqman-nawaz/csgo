@@ -22,6 +22,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/privacy', function () {
+    return view('privacy');
+});
+
+Route::get('/faqs', [BoostController::class, 'faqs']);
+
 Route::get('/csgoboost', [BoostController::class, 'csgoboost']);
 Route::get('/faceit', [BoostController::class, 'faceit']);
 Route::get('/esea', [BoostController::class, 'esea']);
