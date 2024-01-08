@@ -3,8 +3,8 @@
 @section('content')
     <x-navbar></x-navbar>
     
-    <div class="csgo-boost-container">
-        <!-- <img src="./assets/img/Group 3.svg" alt=""> -->
+    <div class="csgo-boost-container" style="display: none;">
+        <!-- <img src="/assets/img/Group 3.svg" alt=""> -->
         <div class="csgo-boost-section csgo-boost-section-1">
             <div class="boost-hero-text-container">
                 <h2 class="trns-boost-text">ESEA Account Boost<br>MyBoost.gg</h2>
@@ -12,7 +12,7 @@
         </div>
     </div>
 
-    <div class="csgo-howtobuy-conatianer csgo-howtobuy-conatianer-esea">
+    <div class="csgo-howtobuy-conatianer csgo-howtobuy-conatianer-esea" style="margin-top: 30px;">
         <div class="csgo-howtobuy-tabs-conatiner">
 
             <div class="csgo-boost-howtobuy-tabs csgo-boost-howtobuy-tabs-esea">
@@ -86,7 +86,7 @@
                                         <h3>ESEA Current Rank</h3>
 
                                         <div class="csgo-boost-rank-select-container">
-                                            <img src="./assets/img/rank.png" alt="" class="rank-img" id="rankImage">
+                                            <img src="/assets/img/rank.png" alt="" class="rank-img" id="rankImage">
 
                                             <select class="addLocationProduct-boost-rank-toggle-new" id="rankSelect"
                                                 onchange="updatePrice()" name="">
@@ -157,12 +157,12 @@
                                         </div>
                                     </div>
                                     <!-- <div class="rank-arrow-container"> -->
-                                    <!-- <img src="./assets/img/Arrow1.png" alt="" class="rank-arrow"> -->
+                                    <!-- <img src="/assets/img/Arrow1.png" alt="" class="rank-arrow"> -->
                                     <!-- </div> -->
                                     <div class="csgo-boost-rank-title-box">
                                         <h3>ESEA Required Rank</h3>
                                         <div class="csgo-boost-rank-select-container">
-                                            <img src="./assets/img/rank.png" alt="" class="rank-img">
+                                            <img src="/assets/img/rank.png" alt="" class="rank-img">
 
                                             <select class="addLocationProduct-boost-rank-toggle-new" id="rankSelect"
                                                 onchange="updatePrice()" name="">
@@ -239,7 +239,7 @@
                                     <div class="csgo-boost-rank-boost-category-section">
                                         <div class="csgo-boost-rank-boost-category-box">
                                             <h5>Solo Play</h5>
-                                            <img src="./assets/icons/info-gray.svg" alt="">
+                                            <img src="/assets/icons/info-gray.svg" alt="">
                                             <label class="switch">
                                                 <!-- <input type="checkbox"> -->
                                                 <input type="checkbox" id="checkbox1" onchange="updatePrice()">
@@ -251,7 +251,7 @@
                                     <div class="csgo-boost-rank-boost-category-section">
                                         <div class="csgo-boost-rank-boost-category-box">
                                             <h5>Priority Order</h5>
-                                            <img src="./assets/icons/info-gray.svg" alt="">
+                                            <img src="/assets/icons/info-gray.svg" alt="">
                                             <label class="switch">
                                                 <!-- <input type="checkbox"> -->
                                                 <input type="checkbox" id="checkbox2" onchange="updatePrice()">
@@ -263,7 +263,7 @@
                                     <div class="csgo-boost-rank-boost-category-section">
                                         <div class="csgo-boost-rank-boost-category-box">
                                             <h5>Play with booster</h5>
-                                            <img src="./assets/icons/info-gray.svg" alt="">
+                                            <img src="/assets/icons/info-gray.svg" alt="">
                                             <label class="switch">
                                                 <!-- <input type="checkbox"> -->
                                                 <input type="checkbox" id="checkbox3" onchange="updatePrice()">
@@ -320,7 +320,7 @@
                                     <h3>Select in game role</h3>
 
                                     <div class="csgo-boost-rank-select-container">
-                                        <img src="./assets/img/image 2.png" alt="" class="rank-img">
+                                        <img src="/assets/img/image 2.png" alt="" class="rank-img">
 
                                         <div class="addLocationProduct-boost-rank-dropdown">
                                             <div class="addLocationProduct-boost-rank-toggle"
@@ -394,7 +394,7 @@
                                 <div class="csgo-boost-rank-boost-category-section">
                                     <div class="csgo-boost-rank-boost-category-box">
                                         <h5>Solo Play</h5>
-                                        <img src="./assets/icons/info-gray.svg" alt="">
+                                        <img src="/assets/icons/info-gray.svg" alt="">
                                         <label class="switch">
                                             <input type="checkbox">
                                             <span class="slider"></span>
@@ -405,7 +405,7 @@
                                 <div class="csgo-boost-rank-boost-category-section">
                                     <div class="csgo-boost-rank-boost-category-box">
                                         <h5>Priority Order</h5>
-                                        <img src="./assets/icons/info-gray.svg" alt="">
+                                        <img src="/assets/icons/info-gray.svg" alt="">
                                         <label class="switch">
                                             <input type="checkbox">
                                             <span class="slider"></span>
@@ -416,7 +416,7 @@
                                 <div class="csgo-boost-rank-boost-category-section">
                                     <div class="csgo-boost-rank-boost-category-box">
                                         <h5>Play with booster</h5>
-                                        <img src="./assets/icons/info-gray.svg" alt="">
+                                        <img src="/assets/icons/info-gray.svg" alt="">
                                         <label class="switch">
                                             <input type="checkbox">
                                             <span class="slider"></span>

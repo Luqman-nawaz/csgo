@@ -24,6 +24,7 @@
                 <li><a href="/faceit">Faceit Boost</a></li>
                 <li><a href="/esea">Esea Boost</a></li>
                 <li><a href="/esportal">Esportal Boost</a></li>
+                <li><a href="/coaching">Coaching</a></li>
                 <li><a href="/about">About</a></li>
 
                 @guest
@@ -39,8 +40,11 @@
             <a href="/login"><button class="csgo-login-btn">Login</button></a>
         @endguest
         @auth
-        
         <a href="/dashboard"><button class="csgo-login-btn">Dashboard</button></a>
+        <form action="/logout" method="post">
+            @csrf
+            <button type="submit" class="csgo-login-btn">Logout</button>
+        </form>
         @endauth
         <!--  -->
         <div class="sidebar-header">

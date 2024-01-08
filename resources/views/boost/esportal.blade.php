@@ -3,7 +3,7 @@
 @section('content')
     <x-navbar></x-navbar>
     
-    <div class="csgo-boost-container">
+    <div class="csgo-boost-container" style="display: none;">
         <!-- <img src="./assets/img/Group 3.svg" alt=""> -->
         <div class="csgo-boost-section csgo-boost-section-1">
             <div class="boost-hero-text-container">
@@ -12,7 +12,7 @@
         </div>
     </div>
 
-    <div class="csgo-howtobuy-conatianer csgo-howtobuy-conatianer-esea">
+    <div class="csgo-howtobuy-conatianer csgo-howtobuy-conatianer-esea" style="margin-top: 30px;">
         <div class="csgo-howtobuy-tabs-conatiner">
 
             <div class="csgo-boost-howtobuy-tabs csgo-boost-howtobuy-tabs-esea">
@@ -45,7 +45,7 @@
                     </svg>
                 </div>
                 <div class="csgo-boost-howtobuy-tab csgo-boost-howtobuy-tab-esea" onclick="openTab(1)"><span
-                        class="Esportal-tab-span">Esea Win Boost</span>
+                    class="Esportal-tab-span">Esea Win Boost</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 228 48"
                         fill="none">
                         <g filter="url(#filter0_b_645_4079)">
@@ -71,6 +71,7 @@
                         </defs>
                     </svg>
                 </div>
+            
 
             </div>
 

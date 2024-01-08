@@ -37,6 +37,10 @@ class BoostController extends Controller
         return view('terms');
     }
 
+    public function coaching(){
+        return view('boost.coaching');
+    }
+
     public function savecontact(Request $request){
         $array = array(
             'name' => $request->name,

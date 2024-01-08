@@ -28,6 +28,7 @@ return new class extends Migration
             $table->text('account_data');
             $table->string('payment_method');
             $table->string('total_amount');
+            $table->string('status');
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('boost_id')->references('id')->on('boosttypes');
             $table->timestamps();

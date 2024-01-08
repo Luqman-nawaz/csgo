@@ -32,6 +32,7 @@ Route::get('/csgoboost', [BoostController::class, 'csgoboost']);
 Route::get('/faceit', [BoostController::class, 'faceit']);
 Route::get('/esea', [BoostController::class, 'esea']);
 Route::get('/esportal', [BoostController::class, 'esportal']);
+Route::get('/coaching', [BoostController::class, 'coaching']);
 Route::get('/about', [BoostController::class, 'about']);
 Route::get('/contact', [BoostController::class, 'contact']);
 Route::post('/contact', [BoostController::class, 'savecontact']);
