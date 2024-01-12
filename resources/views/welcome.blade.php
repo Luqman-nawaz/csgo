@@ -114,10 +114,11 @@
                 <div class="csgo-HomeFeatures-box">
                     <img src="/assets/img/features-card.png" alt="">
                     <div class="csgo-HomeFeatures-deatil-container">
-                        <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                        <h4>Quick Delivery</h4>
-                        <p>In MyBoost.gg we sell only guaranteed services, which means our boosters will quickly
-                            advance to your dream rank or you will get money back.</p>
+                        <span><img src="/assets/icons/privacy-eye.svg" alt=""></span>
+                        <h4>Complete Privacy</h4>
+                        <p>All your data is safe with us. Boost your Counter Strike 2 accounts without having to worry about
+                            anything.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -145,21 +146,21 @@
                         </p>
                     </div>
                 </div>
+                
                 <div class="csgo-HomeFeatures-box">
                     <img src="/assets/img/features-card.png" alt="">
                     <div class="csgo-HomeFeatures-deatil-container">
-                        <span><img src="/assets/icons/privacy-eye.svg" alt=""></span>
-                        <h4>Complete Privacy</h4>
-                        <p>All your data is safe with us. Boost your Counter Strike 2 accounts without having to worry about
-                            anything.
-                        </p>
+                        <span><img src="/assets/icons/diamend.svg" alt=""></span>
+                        <h4>Quick Delivery</h4>
+                        <p>In MyBoost.gg we sell only guaranteed services, which means our boosters will quickly
+                            advance to your dream rank or you will get money back.</p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- csgo-HomeBoost End -->
-
-        <!-- csgo-HomeBoosting Services Start -->
+        <x-howtobuy></x-howtobuy>
+        {{-- <!-- csgo-HomeBoosting Services Start -->
         <div class="csgo-HomeBoosting-services-container">
             <div class="csgo-HomeBoosting-services-innerSection">
                 <h1>How to Buy <br> Boosting Services?</h1>
@@ -208,9 +209,9 @@
 
             </div>
         </div>
-        <!-- csgo-HomeBoosting Services End -->
+        <!-- csgo-HomeBoosting Services End --> --}}
 
-        <!-- csgo-whychoose Services Start -->
+
         <div class="csgo-HomeWhyChoose-services-container">
             <img src="/assets/img/Rectangle 11.png" alt="" class="HomeWhyChoose-img">
             <div class="csgo-HomeWhyChoose-services-img-section">
@@ -228,21 +229,24 @@
                     <div class="csgo-HomeWhyChoose-happyCustomers-box">
                         <img src="/assets/img/Rectangle 10.png" alt="">
                         <div class="csgo-HomeWhyChoose-happyCustomers-txt-box">
-                            <h5>20k</h5>
+                            <!-- <h5>20k</h5> -->
+                            <h5 id="happyCustomersCount">0</h5>
                             <h6>HAPPY CUSTOMERS</h6>
                         </div>
                     </div>
                     <div class="csgo-HomeWhyChoose-happyCustomers-box">
                         <img src="/assets/img/Rectangle 10.png" alt="">
                         <div class="csgo-HomeWhyChoose-happyCustomers-txt-box">
-                            <h5>8</h5>
+                            <!-- <h5>8</h5> -->
+                            <h5 id="boostingYearsCount">0</h5>
                             <h6>YEAS IN BOOSTING</h6>
                         </div>
                     </div>
                     <div class="csgo-HomeWhyChoose-happyCustomers-box">
                         <img src="/assets/img/Rectangle 10.png" alt="">
                         <div class="csgo-HomeWhyChoose-happyCustomers-txt-box">
-                            <h5>30k</h5>
+                            <!-- <h5>30k</h5> -->
+                            <h5 id="ordersCompletedCount">0<span></h5>
                             <h6>ORDERS COMPLETED</h6>
                         </div>
                     </div>
@@ -250,7 +254,6 @@
 
             </div>
         </div>
-        <!-- csgo-whychoose Services End -->
 
         <!-- csgo-whychoose Services Start -->
         <div class="csgo-HomeReview-container">
@@ -418,6 +421,25 @@
     @endsection
 
     @push('js')
+        <script>
+            function animateCount(elementId, targetValue, suffix = '') {
+                let currentCount = 0;
+                const interval = setInterval(function () {
+                    currentCount += 100;
+                    if (currentCount <= targetValue) {
+                        document.getElementById(elementId).textContent = (currentCount / 100) + suffix;
+                    } else {
+                        document.getElementById(elementId).textContent = targetValue / 100 + suffix;
+                        clearInterval(interval);
+                    }
+                }, 100); // You can adjust the interval duration as needed
+            }
+
+            // Call the animation function for each counter with 'k' suffix for thousands
+            animateCount('happyCustomersCount', 2000, 'k');
+            animateCount('boostingYearsCount', 800, ''); // No suffix for this counter
+            animateCount('ordersCompletedCount', 3000, 'k');
+        </script>
         <!-- Script -->
         <script src="/vendor/js/app.js"></script>
         <script src="/vendor/js/carousel.js"></script>

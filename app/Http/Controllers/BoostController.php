@@ -62,16 +62,16 @@ class BoostController extends Controller
         return view('boost.esportal');
     }
 
-    public function checkout(Request $request){
+    public function cs2checkout(Request $request){
         if(isset($request->solo_play)) { $solo_play = true; }else{ $solo_play = false; }
         if(isset($request->priority_order)) { $priority_order = true; }else{ $priority_order = false; }
         if(isset($request->play_with_booster)) { $play_with_booster = true; }else{ $play_with_booster = false; }
         $array = array(
             'user_id' => Auth::id(),
-            'boost_id' => $request->boost_id,
+            'boost_id' => 1,
             'boost_type' => $request->boost_type,
-            'current_level' => 'Silver I',
-            'desired_level' => 'Global Elite',
+            'current_level' => $request->current_level,
+            'desired_level' => $request->desired_level,
             'solo_play' => $solo_play,
             'priority_order' => $priority_order,
             'play_with_booster' => $play_with_booster,
@@ -82,6 +82,7 @@ class BoostController extends Controller
             'account_data' => 'NA',
             'payment_method' => 'NA',
             'total_amount' => 'NA',
+            'status' => 'Payment Pending',
         );
 
         if($boost = boost::create($array)){

@@ -1,5 +1,5 @@
 <div class="csgo-upperHeader-container">
-    <a href="/"><img src="/assets/logo.svg" alt=""></a>
+    <a href="/"><img src="/assets/logo.svg" alt="" style="height: 100px; width:100px;"></a>
 </div>
 <div class="main-site-inner-section">
     <div class="csgo-header-container">
@@ -26,27 +26,23 @@
                 <li><a href="/esportal">Esportal Boost</a></li>
                 <li><a href="/coaching">Coaching</a></li>
                 <li><a href="/about">About</a></li>
-
-                @guest
-                    <a href="/login"><button class="csgo-login-btn responsive-login-btn mt-10px">Login</button></a>
-                @endguest
-                
-                @auth
-                    <a href="/dashboard"><button class="csgo-login-btn responsive-login-btn mt-10px">Dashboard</button></a>
-                @endauth
             </ul>
         </div>
-        @guest
+        <div>
+            @guest
             <a href="/login"><button class="csgo-login-btn">Login</button></a>
-        @endguest
-        @auth
-        <a href="/dashboard"><button class="csgo-login-btn">Dashboard</button></a>
-        <form action="/logout" method="post">
-            @csrf
-            <button type="submit" class="csgo-login-btn">Logout</button>
-        </form>
-        @endauth
-        <!--  -->
+            <a href="/register"><button class="csgo-login-btn">Register</button></a>
+            @endguest
+            @auth
+            <a href="/dashboard"><button class="csgo-login-btn">Dashboard</button></a>
+            
+                <a onclick="document.getElementById('logout').submit();"><button class="csgo-login-btn">Logout</button></a>
+                <form action="/logout" method="post" id="logout">
+                    @csrf
+                </form>
+            @endauth
+        </div>
+        
         <div class="sidebar-header">
             <div class="burger-line"></div>
             <div class="burger-line"></div>

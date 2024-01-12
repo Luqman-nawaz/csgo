@@ -70,13 +70,13 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
 /* FAQS End */
 
 
-// const slider = document.getElementById("myRange");
-// const sliderValue = document.getElementById("sliderValue");
+const slider = document.getElementById("myRange");
+const sliderValue = document.getElementById("sliderValue");
 
-// // Update the slider value text when the slider is moved
-// slider.addEventListener("input", function() {
-//     sliderValue.textContent = this.value;
-// });
+// Update the slider value text when the slider is moved
+slider.addEventListener("input", function() {
+    sliderValue.textContent = this.value;
+});
 
 // BURGER JS
 const burgerIcon = document.querySelector('.sidebar-header');
@@ -124,7 +124,43 @@ const updatePrice = () => {
 
     // Rank Dropdown Img Change
     var rankImage = document.getElementById("rankImage");
-    rankImage.src = `./assets/img/${selectedOption}.png`;
+    rankImage.src = `/assets/img/${selectedOption}.png`;
+}
+
+const CS2RankBoostupdatePrice = () => {
+
+    //Price
+    var selectedOption = document.getElementById("CS2RankBoostrankSelect").value;
+
+    var prices = {
+        SilverI: 10.00,
+        SilverII: 15.00,
+        SilverIII: 20.00,
+        SilverIV: 25.00,
+        SilverV: 30.00
+    };
+
+    var additionalAmount = 0;
+
+    if (document.getElementById("CS2RankBoostcheckbox1").checked) {
+        additionalAmount += 0.20;
+    }
+
+    if (document.getElementById("CS2RankBoostcheckbox2").checked) {
+        additionalAmount += 0.20;
+    }
+
+    if (document.getElementById("CS2RankBoostcheckbox3").checked) {
+        additionalAmount += 0.20;
+    }
+
+    var totalPrice = prices[selectedOption] * (1 + additionalAmount);
+
+    document.getElementById("CS2RankBoostpriceTag").innerText = "$" + totalPrice.toFixed(2);
+
+    // Rank Dropdown Img Change
+    var rankImage = document.getElementById("CS2RankBoostrankImage");
+    rankImage.src = `/assets/img/${selectedOption}.png`;
 }
 
 

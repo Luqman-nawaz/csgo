@@ -49,6 +49,10 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
     Route::get('/checkout/{order_id}', [BoostController::class, 'checkoutpayment']);
-    Route::post('/checkout', [BoostController::class, 'checkout']);
+    Route::post('/cs2/checkout', [BoostController::class, 'cs2checkout']);
+    Route::post('/faceit/checkout', [BoostController::class, 'checkout']);
+    Route::post('/esea/checkout', [BoostController::class, 'checkout']);
+    Route::post('/esportal/checkout', [BoostController::class, 'checkout']);
+    Route::post('/coaching/checkout', [BoostController::class, 'checkout']);
     Route::post('/payment', [BoostController::class, 'payment']);
 });

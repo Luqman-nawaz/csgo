@@ -288,27 +288,7 @@
                                             </label>
                                             <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
                                         </div>
-                                        <div class="csgo-boost-whychooseus-main-section">
-                                            <h3>Why choose us?</h3>
-                                            <div class="csgo-boost-whychooseus-section">
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                                                    <h5>Quick Order Delivery</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                                                    <h5>Guaranteed Rank</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/security.svg" alt=""></span>
-                                                    <h5>100% Safe Boosting</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/privacy-eye.svg" alt=""></span>
-                                                    <h5>Complete Privacy</h5>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <x-whychooseus></x-whychooseus>
                                     </div>
                                 </div>
     
@@ -457,27 +437,7 @@
                                             </label>
                                             <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
                                         </div>
-                                        <div class="csgo-boost-whychooseus-main-section">
-                                            <h3>Why choose us?</h3>
-                                            <div class="csgo-boost-whychooseus-section">
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                                                    <h5>Quick Order Delivery</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                                                    <h5>Guaranteed Rank</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/security.svg" alt=""></span>
-                                                    <h5>100% Safe Boosting</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/privacy-eye.svg" alt=""></span>
-                                                    <h5>Complete Privacy</h5>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <x-whychooseus></x-whychooseus>
                                     </div>
                                 </div>
     
@@ -658,27 +618,7 @@
                                             </label>
                                             <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
                                         </div>
-                                        <div class="csgo-boost-whychooseus-main-section">
-                                            <h3>Why choose us?</h3>
-                                            <div class="csgo-boost-whychooseus-section">
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                                                    <h5>Quick Order Delivery</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                                                    <h5>Guaranteed Rank</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/security.svg" alt=""></span>
-                                                    <h5>100% Safe Boosting</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/privacy-eye.svg" alt=""></span>
-                                                    <h5>Complete Privacy</h5>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <x-whychooseus></x-whychooseus>
                                     </div>
                                 </div>
     
@@ -822,27 +762,7 @@
                                             </label>
                                             <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
                                         </div>
-                                        <div class="csgo-boost-whychooseus-main-section">
-                                            <h3>Why choose us?</h3>
-                                            <div class="csgo-boost-whychooseus-section">
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                                                    <h5>Quick Order Delivery</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                                                    <h5>Guaranteed Rank</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/security.svg" alt=""></span>
-                                                    <h5>100% Safe Boosting</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/privacy-eye.svg" alt=""></span>
-                                                    <h5>Complete Privacy</h5>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <x-whychooseus></x-whychooseus>
                                     </div>
                                 </div>
     
@@ -1047,27 +967,7 @@
                                             </label>
                                             <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
                                         </div>
-                                        <div class="csgo-boost-whychooseus-main-section">
-                                            <h3>Why choose us?</h3>
-                                            <div class="csgo-boost-whychooseus-section">
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                                                    <h5>Quick Order Delivery</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                                                    <h5>Guaranteed Rank</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/security.svg" alt=""></span>
-                                                    <h5>100% Safe Boosting</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/privacy-eye.svg" alt=""></span>
-                                                    <h5>Complete Privacy</h5>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <x-whychooseus></x-whychooseus>
                                     </div>
                                 </div>
     
@@ -1085,57 +985,7 @@
     </div>
     <!-- csgo-HomeBoost End -->
 
-    <!-- csgo-boost-howtobuy-Section-Start -->
-    <div class="csgo-boost-howtobuy-container">
-        <h3>Why choose us?</h3>
-        <div class="csgo-boost-howtobuy-section">
-
-            <img src="/assets/img/Vector.svg" alt="" class="round-vector">
-
-            <div class="csgo-boost-howtobuy-inner-section">
-
-                <div class="csgo-howtobuy-box">
-                    <img src="/assets/img/features-card.png" alt="">
-                    <div class="csgo-howtobuy-deatil-container">
-                        <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                        <h4>Guaranteed Rank</h4>
-                        <p>MyBoost.gg offers a Premium CS2 account boosting service, with our team of skilled professionals.
-                            The rank you desire is guarenteed.
-                        </p>
-                    </div>
-                </div>
-                <div class="csgo-howtobuy-box">
-                    <img src="/assets/img/features-card.png" alt="">
-                    <div class="csgo-howtobuy-deatil-container">
-                        <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                        <h4>Professional Boosters</h4>
-                        <p>All our boosters are semi-professional veterans of Counter-Strike, they are all highly trained
-                            and experienced in their craft.</p>
-                    </div>
-                </div>
-                <div class="csgo-howtobuy-box">
-                    <img src="/assets/img/features-card.png" alt="">
-                    <div class="csgo-howtobuy-deatil-container">
-                        <span><img src="/assets/icons/privacy-eye.svg" alt=""></span>
-                        <h4>Complete Privacy</h4>
-                        <p>All your data is safe with us. Boost your Counter Strike 2 accounts without having to worry about
-                            anything.</p>
-                    </div>
-                </div>
-                <div class="csgo-howtobuy-box">
-                    <img src="/assets/img/features-card.png" alt="">
-                    <div class="csgo-howtobuy-deatil-container">
-                        <span><img src="/assets/icons/security.svg" alt=""></span>
-                        <h4>Account Safety</h4>
-                        <p>At MyBoost.gg we have the most safe boosting procedures & the most elite players, with our
-                            protocols in place, your account safety is guaranteed.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- csgo-boost-howtobuy-Section-End -->
+    <x-howtobuy></x-howtobuy>
 
     <!-- csgo-faqs-sections start -->
     <div class="accordion">

@@ -18,7 +18,7 @@
             <div class="csgo-boost-howtobuy-tabs csgo-boost-howtobuy-tabs-esea">
 
                 <div class="csgo-boost-howtobuy-tab csgo-boost-howtobuy-tab-esea active" onclick="openTab(0)"><span
-                        class="Esportal-tab-span-1">Esea Rank Boost</span>
+                        class="Esportal-tab-span-1">Esportal Rank Boost</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 228 48"
                         fill="none">
                         <g filter="url(#filter0_b_645_4079)">
@@ -45,7 +45,7 @@
                     </svg>
                 </div>
                 <div class="csgo-boost-howtobuy-tab csgo-boost-howtobuy-tab-esea" onclick="openTab(1)"><span
-                    class="Esportal-tab-span">Esea Win Boost</span>
+                    class="Esportal-tab-span">Esportal Win Boost</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 228 48"
                         fill="none">
                         <g filter="url(#filter0_b_645_4079)">
@@ -284,27 +284,7 @@
                                             </label>
                                             <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
                                         </div>
-                                        <div class="csgo-boost-whychooseus-main-section">
-                                            <h3>Why choose us?</h3>
-                                            <div class="csgo-boost-whychooseus-section">
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                                                    <h5>Quick Order Delivery</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                                                    <h5>Guaranteed Rank</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/security.svg" alt=""></span>
-                                                    <h5>100% Safe Boosting</h5>
-                                                </div>
-                                                <div class="csgo-boost-whychooseus-box">
-                                                    <span><img src="/assets/icons/privacy-eye.svg" alt=""></span>
-                                                    <h5>Complete Privacy</h5>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <x-whychooseus></x-whychooseus>
                                     </div>
                                 </div>
 
@@ -436,27 +416,7 @@
                                         </label>
                                         <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
                                     </div>
-                                    <div class="csgo-boost-whychooseus-main-section">
-                                        <h3>Why choose us?</h3>
-                                        <div class="csgo-boost-whychooseus-section">
-                                            <div class="csgo-boost-whychooseus-box">
-                                                <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                                                <h5>Quick Order Delivery</h5>
-                                            </div>
-                                            <div class="csgo-boost-whychooseus-box">
-                                                <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                                                <h5>Guaranteed Rank</h5>
-                                            </div>
-                                            <div class="csgo-boost-whychooseus-box">
-                                                <span><img src="/assets/icons/security.svg" alt=""></span>
-                                                <h5>100% Safe Boosting</h5>
-                                            </div>
-                                            <div class="csgo-boost-whychooseus-box">
-                                                <span><img src="/assets/icons/privacy-eye.svg" alt=""></span>
-                                                <h5>Complete Privacy</h5>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <x-whychooseus></x-whychooseus>
                                 </div>
                             </div>
 
@@ -467,56 +427,7 @@
         <!--  -->
     </div>
 
-    <!-- csgo-HomeBoosting Services Start -->
-    <div class="csgo-HomeBoosting-services-container" style="margin-top: 45px; ">
-        <div class="csgo-HomeBoosting-services-innerSection">
-            <h1 style="margin-bottom: 45px;">How to Buy <br> Boosting Services?</h1>
-            <div class="csgo-HomeBoosting-services-line-container">
-
-                <div class="csgo-HomeBoosting-services-section-conatiner-one">
-                    <div class="csgo-HomeBoosting-services-section">
-                        <div class="csgo-HomeBoosting-services-box">
-                            <h3>Select Boosting & Place Order</h3>
-                            <p>Select details of your boost. 
-                                (Current Rank, Desired Rank, Your Level/Elo, Number of wins) then click the Buy button.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="csgo-HomeBoosting-services-section">
-                        <div class="csgo-HomeBoosting-services-box">
-                            <h3>Receive Boost</h3>
-                            <p>Receive your boosted account, that is boosted by professionals in a safe & elite environment, and enjoy the game!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="csgo-HomeBoosting-services-line">
-                    <div class="line-div">
-                        <span class="csgo-HomeBoosting-services-line-span"></span>
-                    </div>
-                    <div class="line-div">
-                        <span class="csgo-HomeBoosting-services-line-span"></span>
-                    </div>
-                    <div class="line-div">
-                        <span class="csgo-HomeBoosting-services-line-span"></span>
-                    </div>
-                </div>
-                <!--  -->
-
-                <div class="csgo-HomeBoosting-services-section">
-                    <div class="csgo-HomeBoosting-services-box">
-                        <h3>Complete Payment</h3>
-                        <p>Complete the payment for the order via your preffered methods. Once paid, watch the boosting magic happen!
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-    <!-- csgo-HomeBoosting Services End -->
+    <x-howtobuy></x-howtobuy>
 
     <!-- csgo-boost-howtobuy-Section-Start -->
     <div class="csgo-boost-howtobuy-container">
