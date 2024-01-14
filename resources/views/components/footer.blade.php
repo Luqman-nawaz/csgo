@@ -1,4 +1,4 @@
-<div class="csgo-HomeFooter-container">
+<div class="csgo-HomeFooter-container" style="text-align: center;">
     <img src="/assets/logo.svg" alt="" class="footer-logo" style="height: 100px; width:100px;">    
     <div class="csgo-Home-InnerFooter-container">
         <div class="csgo-Home-InnerFooter-section">

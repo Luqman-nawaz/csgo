@@ -1100,7 +1100,7 @@ body {
 .footer-line-span {
     width: 150px;
     height: 2px;
-    margin: 25px 0px;
+    margin: 25px auto;
     background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
 }
 
@@ -1118,6 +1118,8 @@ body {
 
 .csgo-footer-list-container li a {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .csgo-footer-list-container li a img {
