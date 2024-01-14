@@ -13,18 +13,12 @@ return new class extends Migration
     {
         Schema::create('coachings', function (Blueprint $table) {
             $table->id();
-            $table->string('current_level');
-            $table->string('desired_level');
-            $table->string('solo_play');
+            $table->unsignedBigInteger('user_id');
+            $table->string('boost_type');
+            $table->string('ingame_role');
+            $table->string('no_of_reviews');
             $table->string('priority_order');
-            $table->string('play_with_booster');
-            $table->string('name');
-            $table->string('skype_id');
-            $table->string('discord_username');
-            $table->string('available_time');
-            $table->text('account_data');
-            $table->string('payment_method');
-            $table->string('total_amount');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

@@ -11,14 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('eseas', function (Blueprint $table) {
+        Schema::create('payments', function (Blueprint $table) {
             $table->id();
-            $table->string('current_level');
-            $table->string('desired_level');
-            $table->string('boost_type');
-            $table->string('solo_play');
-            $table->string('priority_order');
-            $table->string('play_with_booster');
+            $table->unsignedBigInteger('order_id');
             $table->string('name');
             $table->string('skype_id');
             $table->string('discord_username');
@@ -26,6 +21,8 @@ return new class extends Migration
             $table->text('account_data');
             $table->string('payment_method');
             $table->string('total_amount');
+            $table->string('order_status');
+            $table->foreign('order_id')->references('id')->on('boosts');
             $table->timestamps();
         });
     }
@@ -35,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('eseas');
+        Schema::dropIfExists('payments');
     }
 };

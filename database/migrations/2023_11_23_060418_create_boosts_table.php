@@ -21,14 +21,6 @@ return new class extends Migration
             $table->boolean('solo_play');
             $table->boolean('priority_order');
             $table->boolean('play_with_booster');
-            $table->string('name');
-            $table->string('skype_id');
-            $table->string('discord_username');
-            $table->string('available_time');
-            $table->text('account_data');
-            $table->string('payment_method');
-            $table->string('total_amount');
-            $table->string('status');
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('boost_id')->references('id')->on('boosttypes');
             $table->timestamps();

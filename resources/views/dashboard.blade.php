@@ -31,6 +31,18 @@
                             </div>
                         </div>
                     @endforeach
+
+                    @foreach(App\Models\coaching::where('user_id', Auth::id())->get() as $orders)
+                        <div class="csgo-jobs-card-box">
+                            <div class="csgo-txt-job-box">
+                                <h3>{{$orders->boost_type}}</h3> @if($orders->priority_order == 1) <span style="color:white;"> Priority Order </span> @endif
+                                <h5>{{$orders->ingame_role}}<span> <br> </span>Reviews: {{$orders->no_of_reviews}}</h5>
+                            </div>
+                            <div class="csgo-btn-box">
+                                <a href="/coaching-checkout/{{$orders->id}}" class="csgo-btn job-apply-btn">Pay now!</a>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>

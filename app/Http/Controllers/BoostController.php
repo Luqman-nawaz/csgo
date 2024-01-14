@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\boost;
+use App\Models\coaching;
+use App\Models\coachingpayment;
 use App\Models\contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use PDO;
 
 class BoostController extends Controller
 {
@@ -92,9 +95,64 @@ class BoostController extends Controller
         }
     }
 
+    public function coachingcheckout(Request $request){
+        
+        if(isset($request->priority_order)) { $priority_order = true; }else{ $priority_order = false; }
+
+        $array = array(
+            'user_id' => Auth::id(),
+            'boost_type' => $request->boost_type,
+            'ingame_role' => $request->ingame_role,
+            'no_of_reviews' => $request->no_of_reviews,
+            'priority_order' => $priority_order,
+        );
+
+        if($boost = coaching::create($array)){
+            return redirect('/coaching-checkout/'.$boost->id);
+        }else{
+            return back()->with('status', 'Failed to Place Order!');    
+        }
+    }
+
+    public function CoachingCheckoutPayment($order_id){
+        $order = coaching::where('id', $order_id)->get()->first();
+        return view('coaching.checkout', ['order' => $order]);
+    }
+
     public function checkoutpayment($order_id){
         $boost = boost::where('id', $order_id)->get()->first();
         return view('checkout', ['boostorder' => $boost]);
+    }
+
+    public function Coachingpayment($order_id, Request $request){
+
+        $order = coaching::where('id', $order_id)->where('user_id', Auth::id())->get()->first();
+
+        $amount = $order->no_of_reviews * 20;
+        if($order->priority_order == 1){
+            $side_order = ($order->no_of_reviews * 20)/5;
+        }else{
+            $side_order = 0;
+        }
+
+        $total_amount = $amount + $side_order;
+
+        $payment = array(
+            'coaching_id' => $order_id,
+            'name' => $request->name,
+            'skype_id' => $request->skype_id,
+            'discord_username' => $request->discord_username,
+            'available_time' => $request->available_time,
+            'account_data' => $request->account_data,
+            'payment_method' => $request->e,
+            'total_amount' => $total_amount,
+            'order_status' => 'Pending Payment',
+        );
+
+        coachingpayment::create($payment);
+
+        dd('Coaching Order Placed, now to redirect to Stripe if Stripe selected OR redirect to Crypto if Crypto selected.');
+
     }
 
     public function payment(Request $request){

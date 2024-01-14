@@ -30,11 +30,11 @@
         </div>
         <div>
             @guest
-            <a href="/login"><button class="csgo-login-btn">Login</button></a>
-            <a href="/register"><button class="csgo-login-btn">Register</button></a>
+            <a href="/login"><button class="csgo-btn csgo-login-btn">Login</button></a>
+            <a href="/register"><button class="csgo-btn csgo-login-btn">Register</button></a>
             @endguest
             @auth
-            <a href="/dashboard"><button class="csgo-login-btn">Dashboard</button></a>
+            <a href="/dashboard"><button class="csgo-btn csgo-login-btn">Dashboard</button></a>
             
                 <a onclick="document.getElementById('logout').submit();"><button class="csgo-login-btn">Logout</button></a>
                 <form action="/logout" method="post" id="logout">

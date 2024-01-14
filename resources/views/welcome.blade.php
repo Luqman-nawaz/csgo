@@ -11,7 +11,7 @@
         <!-- csgo-HeroSection Start -->
         <div class="csgo-heroSection-main-conatiner">
             <div class="csgo-heroSection-text-container">
-                <h1><span>Counter Strike 2</span> Boosting Service!</h1>
+                <h1><span>Counter Strike 2</span><br> Boosting Service!</h1>
                 <p>MyBoost.gg is a fast, affordable and safe CS2 boosting service to help you reach Counter-Strike 2 leaderboards through vetted Radiant players across all regions. We work with the most skilled CS2 boosters to acheive your desired rank effortlessly. Here, you will find a range of services handled by our skilled players such as Rank boost, Wins, ESEA Boosting, FACEIT Boosting, CS2 Placement Matches, ESPORTAL Boosting & so much more. Our team consists of elite players that have delivered thousands of orders, so the safety of your account is guarenteed.</p>
             </div>
             <div class="csgo-heroSection-img-container">

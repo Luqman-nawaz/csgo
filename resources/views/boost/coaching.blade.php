@@ -101,7 +101,7 @@
                     </svg>
                 </div>
                 <div class="csgo-boost-howtobuy-tab csgo-boost-faceit-tab csgo-boost-faceit-tab-coaching"
-                    onclick="openTab(3)"><span class="Esportal-tab-span">Demo Review</span>
+                    onclick="openTab(3)"><span class="Esportal-tab-span">Team Analysis</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 228 48"
                         fill="none">
                         <g filter="url(#filter0_b_645_4079)">
@@ -136,842 +136,498 @@
                     <div class="csgo-boost-howtobuy-content">
     
                         <div class="csgo-boost-howtobuy-tab-content active" id="csgo-boost-tab1">
-                            <div class="csgo-boost-howtobuy-para">
+                            <form action="/coaching/checkout" method="post">
+                                @csrf
+                                <input type="text" value="Textual Review" name="boost_type" style="display: none;" />
+                                
+                                <div class="csgo-boost-howtobuy-para">
 
-                                <p class="csgo-boost-coaching-p">This service involves one text review of the demo by a MyBoost.gg
-                                    trainer. We analyze your actions in every round of the CSGO match, assess your skill level, single out the most
-                                    suitable gaming role, and indicate aspects that you needs to deal with to achieve improved results.
-                                </p>
-    
-                                <div class="csgo-boost-rank-title-conatiner">
-    
-                                    <div class="csgo-boost-rank-title-box">
-                                        <h3>CS2 Current Rank</h3>
-    
-                                        <div class="csgo-boost-rank-select-container">
-                                            <img src="/assets/img/rank.png" alt="" class="rank-img" id="rankImage">
-    
-                                            <select class="addLocationProduct-boost-rank-toggle-new" id="rankSelect"
-                                                onchange="updatePrice()" name="">
-                                                <option value="" selected disabled>
-                                                    Select Rank</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverI">
-                                                    <span>Silver I</span>
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverII">
-                                                    Silver II
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverIII">
-                                                    Silver III
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverIV">
-                                                    Silver IV
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Silver Elite">Silver
-                                                    Elite
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Silver Elite Master">Silver
-                                                    Elite
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova I">Gold
-                                                    Nova
-                                                    I
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova II">Gold
-                                                    Nova
-                                                    II
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova III">Gold
-                                                    Nova
-                                                    III
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova Master">Gold
-                                                    Nova
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Distinguished Master Guardian">
-                                                    Distinguished
-                                                    Master Guardian</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Legendary Eagle">Legendary
-                                                    Eagle
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Legendary Eagle Master">Legendary
-                                                    Eagle
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Supreme Master First Class">Supreme
-                                                    Master
-                                                    First Class</option>
-    
-                                            </select>
-    
-                                        </div>
-                                    </div>
-                                    
-    
-                                    <div class="csgo-boost-rank-title-box">
-                                        <div class="range-number-container">
-                                            <h3>No of Reviews</h3>
-                                            <span>
-                                                <h5 class="slider-value" id="sliderValue">5</h5>
-                                            </span>
-                                        </div>
-                                        <div class="csgo-boost-rank-select-container">
+                                    <p class="csgo-boost-coaching-p">This service involves one text review of the demo by a MyBoost.gg
+                                        trainer. We analyze your actions in every round of the CSGO match, assess your skill level, single out the most
+                                        suitable gaming role, and indicate aspects that you needs to deal with to achieve improved results.
+                                    </p>
+        
+                                    <div class="csgo-boost-rank-title-conatiner">
+        
+                                        <div class="csgo-boost-rank-title-box">
+                                            <h3>Select Your Role</h3>
+        
+                                            <div class="csgo-boost-rank-select-container">
+        
+                                                <select required class="addLocationProduct-boost-rank-toggle-new" id="rankSelect"
+                                                    onchange="updatePrice()" name="ingame_role">
+                                                    <option value="" selected disabled>
+                                                        Select Your In-Game Role</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new"
+                                                        value="Universal Role">
+                                                        <span>Universal Role</span>
+                                                    </option>
+                                                    <option class="addLocationProduct-boost-rank-option-new"
+                                                        value="Entry Fragger">
+                                                        <span>Entry Fragger</span>
+                                                    </option>
+                                                    <option class="addLocationProduct-boost-rank-option-new"
+                                                        value="Support">
+                                                        Support
+                                                    </option>
+                                                    <option class="addLocationProduct-boost-rank-option-new"
+                                                        value="In-game Leader">
+                                                        In-game Leader
+                                                    </option>
+                                                    <option class="addLocationProduct-boost-rank-option-new"
+                                                        value="Lurker">
+                                                        Lurker
+                                                    </option>
+                                                    <option class="addLocationProduct-boost-rank-option-new"
+                                                        value="AWPer">AWPer
+                                                    </option>   
+                                                </select>
 
-                                            <div class="range-slider">
-                                                <input type="range" min="0" max="10" value="2" class="slider-range"
-                                                    id="myRange">
+                                                
+        
                                             </div>
+                                        </div>
+                                        
+        
+                                        <div class="csgo-boost-rank-title-box">
+                                            <div class="range-number-container">
+                                                <h3>No of Reviews</h3>
+                                                <span>
+                                                    <h5 class="slider-value" id="sliderValue">5</h5>
+                                                </span>
+                                            </div>
+                                            <div class="csgo-boost-rank-select-container">
 
+                                                <div class="range-slider">
+                                                    <input type="range" name="no_of_reviews"  min="0" max="10" value="2" class="slider-range"
+                                                        id="myRange" onchange="updatePrice()">
+                                                </div>
+
+                                            </div>
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="csgo-boost-rank-boost-category-conatiner">
+                                        <div class="csgo-boost-rank-boost-category-section" style="display: none;">
+                                            <div class="csgo-boost-rank-boost-category-box">
+                                                <h5>Solo Play</h5>
+                                                <img src="/assets/icons/info-gray.svg" alt="">
+                                                <label class="switch">
+                                                    <!-- <input type="checkbox"> -->
+                                                    <input type="checkbox" id="checkbox1" onchange="updatePrice()">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                            <p>Additional 20%</p>
+                                        </div>
+                                        <div class="csgo-boost-rank-boost-category-section" >
+                                            <div class="csgo-boost-rank-boost-category-box">
+                                                <h5>Priority Order</h5>
+                                                <img src="/assets/icons/info-gray.svg" alt="">
+                                                <label class="switch">
+                                                    <!-- <input type="checkbox"> -->
+                                                    <input type="checkbox" id="checkbox2" onchange="updatePrice()" name="priority_order">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                            <p>Additional 20%</p>
+                                        </div>
+                                        <div class="csgo-boost-rank-boost-category-section" style="display: none;">
+                                            <div class="csgo-boost-rank-boost-category-box">
+                                                <h5>Play with booster</h5>
+                                                <img src="/assets/icons/info-gray.svg" alt="">
+                                                <label class="switch">
+                                                    <!-- <input type="checkbox"> -->
+                                                    <input type="checkbox" id="checkbox3" onchange="updatePrice()">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                            <p>Additional 20%</p>
                                         </div>
                                     </div>
-    
+        
+                                    <div class="csgo-boost-totalAmount-container">
+                                        <div class="shape-boostinner-card">
+                                            <div class="csgo-boost-totalAmount-section">
+                                                <label>
+                                                    <h3>Total Amount</h3>
+                                                    <h4 id="priceTag">$  0.00</h4> &nbsp;
+                                                </label>
+                                                <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
+                                            </div>
+                                            <x-whychooseus></x-whychooseus>
+                                        </div>
+                                    </div>
+        
                                 </div>
-    
-                                <div class="csgo-boost-rank-boost-category-conatiner">
-                                    <div class="csgo-boost-rank-boost-category-section" style="display: none;">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Solo Play</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <!-- <input type="checkbox"> -->
-                                                <input type="checkbox" id="checkbox1" onchange="updatePrice()">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                    <div class="csgo-boost-rank-boost-category-section" >
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Priority Order</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <!-- <input type="checkbox"> -->
-                                                <input type="checkbox" id="checkbox2" onchange="updatePrice()">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                    <div class="csgo-boost-rank-boost-category-section" style="display: none;">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Play with booster</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <!-- <input type="checkbox"> -->
-                                                <input type="checkbox" id="checkbox3" onchange="updatePrice()">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                </div>
-    
-                                <div class="csgo-boost-totalAmount-container">
-                                    <div class="shape-boostinner-card">
-                                        <div class="csgo-boost-totalAmount-section">
-                                            <label>
-                                                <h3>Total Amount</h3>
-                                                <h4 id="priceTag">$0.00</h4>
-                                            </label>
-                                            <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
-                                        </div>
-                                        <x-whychooseus></x-whychooseus>
-                                    </div>
-                                </div>
-    
-                            </div>
+                            </form>
                         </div>
     
                         <div class="csgo-boost-howtobuy-tab-content" id="csgo-boost-tab2">
-                            <div class="csgo-boost-howtobuy-para">
-    
-                                <div class="csgo-boost-rank-title-conatiner">
-                                    <div class="csgo-boost-rank-title-box">
-                                        <h3>CS2 Current Rank</h3>
-    
-                                        <div class="csgo-boost-rank-select-container">
-                                            <img src="/assets/img/rank.png" alt="" class="rank-img">
-    
-                                            <select class="addLocationProduct-boost-rank-toggle-new" id="rankSelect"
-                                                onchange="updatePrice()" name="">
-                                                <option value="" selected disabled>
-                                                    Select Rank</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverI">
-                                                    <span>Silver I</span>
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverII">
-                                                    Silver II
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverIII">
-                                                    Silver III
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverIV">
-                                                    Silver IV
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Silver Elite">Silver
-                                                    Elite
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Silver Elite Master">Silver
-                                                    Elite
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova I">Golden
-                                                    Nova
-                                                    I
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova II">Golden
-                                                    Nova
-                                                    II
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova III">Golden
-                                                    Nova
-                                                    III
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova Master">Golden
-                                                    Nova
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Distinguished Master Guardian">
-                                                    Distinguished
-                                                    Master Guardian</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Legendary Eagle">Legendary
-                                                    Eagle
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Legendary Eagle Master">Legendary
-                                                    Eagle
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Supreme Master First Class">Supreme
-                                                    Master
-                                                    First Class</option>
-    
-                                            </select>
-    
-                                        </div>
-                                    </div>
-                                    <div class="csgo-boost-rank-title-box">
-                                        <div class="range-number-container">
-                                            <h3>Number of Wins</h3>
-                                            <span>
-                                                <h5 class="slider-value" id="sliderValue">5</h5>
-                                                <h6>Wins</h6>
-                                            </span>
-                                        </div>
-                                        <div class="csgo-boost-rank-select-container">
-    
-                                            <div class="range-slider">
-                                                <input type="range" min="0" max="10" value="2" class="slider-range"
-                                                    id="myRange">
+                            
+                            <form action="/coaching/checkout" method="post">
+                                @csrf
+                                <input type="text" value="Call the Coach" name="boost_type" style="display: none;" />
+                                
+                                <div class="csgo-boost-howtobuy-para">
+                                    <p class="csgo-boost-coaching-p">This service involves one text review of the demo by a MyBoost.gg
+                                        trainer. We analyze your actions in every round of the CSGO match, assess your skill level, single out the most
+                                        suitable gaming role, and indicate aspects that you needs to deal with to achieve improved results.
+                                    </p>
+                                    <div class="csgo-boost-rank-title-conatiner">
+                                        <div class="csgo-boost-rank-title-box">
+                                            <h3>Select Your Role</h3>
+        
+                                            <div class="csgo-boost-rank-select-container">
+        
+                                                <select required class="addLocationProduct-boost-rank-toggle-new" id="rankSelect"
+                                                        onchange="updateCoachPrice()" name="ingame_role">
+                                                        <option value="" selected disabled>
+                                                            Select Your In-Game Role</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="Universal Role">
+                                                            <span>Universal Role</span>
+                                                        </option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="Entry Fragger">
+                                                            <span>Entry Fragger</span>
+                                                        </option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="Support">
+                                                            Support
+                                                        </option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="In-game Leader">
+                                                            In-game Leader
+                                                        </option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="Lurker">
+                                                            Lurker
+                                                        </option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="AWPer">AWPer
+                                                        </option>   
+                                                    </select>
+        
                                             </div>
-    
+                                        </div>
+                                        <div class="csgo-boost-rank-title-box">
+                                            <div class="range-number-container">
+                                                <h3>No of Reviews</h3>
+                                                <span>
+                                                    <h5 class="slider-value" id="CoachsliderValue">5</h5>
+                                                </span>
+                                            </div>
+                                            <div class="csgo-boost-rank-select-container">
+
+                                                <div class="range-slider">
+                                                    <input type="range" name="no_of_reviews"  min="0" max="10" value="2" class="slider-range"
+                                                        id="CoachmyRange" onchange="updateCoachPrice()">
+                                                </div>
+
+                                            </div>
                                         </div>
                                     </div>
+        
+                                    <div class="csgo-boost-rank-boost-category-conatiner">
+                                        <div class="csgo-boost-rank-boost-category-section" style="display: none;">
+                                            <div class="csgo-boost-rank-boost-category-box">
+                                                <h5>Solo Play</h5>
+                                                <img src="/assets/icons/info-gray.svg" alt="">
+                                                <label class="switch">
+                                                    <!-- <input type="checkbox"> -->
+                                                    <input type="checkbox" id="checkbox1" onchange="updatePrice()">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                            <p>Additional 20%</p>
+                                        </div>
+                                        <div class="csgo-boost-rank-boost-category-section" >
+                                            <div class="csgo-boost-rank-boost-category-box">
+                                                <h5>Priority Order</h5>
+                                                <img src="/assets/icons/info-gray.svg" alt="">
+                                                <label class="switch">
+                                                    <!-- <input type="checkbox"> -->
+                                                    <input type="checkbox" id="Coachingcheckbox2" onchange="updateCoachPrice()" name="priority_order">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                            <p>Additional 20%</p>
+                                        </div>
+                                        <div class="csgo-boost-rank-boost-category-section" style="display: none;">
+                                            <div class="csgo-boost-rank-boost-category-box">
+                                                <h5>Play with booster</h5>
+                                                <img src="/assets/icons/info-gray.svg" alt="">
+                                                <label class="switch">
+                                                    <!-- <input type="checkbox"> -->
+                                                    <input type="checkbox" id="checkbox3" onchange="updatePrice()">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                            <p>Additional 20%</p>
+                                        </div>
+                                    </div>
+        
+                                    <div class="csgo-boost-totalAmount-container">
+                                        <div class="shape-boostinner-card">
+                                            <div class="csgo-boost-totalAmount-section">
+                                                <label>
+                                                    <h3>Total Amount</h3>
+                                                    <h4 id="CoachpriceTag">$  0.00</h4> &nbsp;
+                                                </label>
+                                                <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
+                                            </div>
+                                            <x-whychooseus></x-whychooseus>
+                                        </div>
+                                    </div>
+        
                                 </div>
-    
-                                <div class="csgo-boost-rank-boost-category-conatiner">
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Solo Play</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Priority Order</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Play with booster</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                </div>
-    
-                                <div class="csgo-boost-totalAmount-container">
-                                    <div class="shape-boostinner-card">
-                                        <div class="csgo-boost-totalAmount-section">
-                                            <label>
-                                                <h3>Total Amount</h3>
-                                                <h4>56$</h4>
-                                            </label>
-                                            <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
-                                        </div>
-                                        <x-whychooseus></x-whychooseus>
-                                    </div>
-                                </div>
-    
-                            </div>
+                            </form>
                         </div>
     
                         <div class="csgo-boost-howtobuy-tab-content" id="csgo-boost-tab3">
-                            <div class="csgo-boost-howtobuy-para">
-    
-                                <div class="csgo-boost-rank-title-conatiner">
-                                    <div class="csgo-boost-rank-title-box">
-                                        <h3>Wingman Current Rank</h3>
-    
-                                        <select class="addLocationProduct-boost-rank-toggle-new" id="rankSelect"
-                                                onchange="updatePrice()" name="">
-                                                <option value="" selected disabled>
-                                                    Select Rank</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverI">
-                                                    <span>Silver I</span>
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverII">
-                                                    Silver II
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverIII">
-                                                    Silver III
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverIV">
-                                                    Silver IV
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Silver Elite">Silver
-                                                    Elite
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Silver Elite Master">Silver
-                                                    Elite
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova I">Golden
-                                                    Nova
-                                                    I
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova II">Golden
-                                                    Nova
-                                                    II
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova III">Golden
-                                                    Nova
-                                                    III
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova Master">Golden
-                                                    Nova
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Distinguished Master Guardian">
-                                                    Distinguished
-                                                    Master Guardian</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Legendary Eagle">Legendary
-                                                    Eagle
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Legendary Eagle Master">Legendary
-                                                    Eagle
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Supreme Master First Class">Supreme
-                                                    Master
-                                                    First Class</option>
-    
-                                            </select>
-                                    </div>
-                                    <div class="csgo-boost-rank-title-box">
-                                        <h3>Wingman Desired Rank</h3>
-                                        <div class="csgo-boost-rank-select-container">
-                                            <img src="/assets/img/rank.png" alt="" class="rank-img">
-    
-                                            <div class="addLocationProduct-boost-rank-dropdown">
-                                                <div class="addLocationProduct-boost-rank-toggle"
-                                                    onclick="addLocationProducttoggleDropdownBoostRank1(this)">
-                                                    Select Rank <span
-                                                        class="addLocationProduct-boost-rank-arrow"></span>
-                                                </div>
-                                                <div class="addLocationProduct-boost-rank-dropdown-menu">
-                                                    <p class="addLocationProduct-boost-rank-option" href="#">Silver I
-                                                    </p>
-                                                    <p class="addLocationProduct-boost-rank-option" href="#">Silver II
-                                                    </p>
-                                                    <p class="addLocationProduct-boost-rank-option" href="#">Silver III
-                                                    </p>
-                                                    <p class="addLocationProduct-boost-rank-option" href="#">Silver IV
-                                                    </p>
-                                                    <p class="addLocationProduct-boost-rank-option" href="#">Silver
-                                                        Elite
-                                                    </p>
-                                                    <p class="addLocationProduct-boost-rank-option" href="#">Silver
-                                                        Elite
-                                                        Master</p>
-                                                    <p class="addLocationProduct-boost-rank-option" href="#">Golden Nova
-                                                        I
-                                                    </p>
-                                                    <p class="addLocationProduct-boost-rank-option" href="#">Golden Nova
-                                                        II
-                                                    </p>
-                                                    <p class="addLocationProduct-boost-rank-option" href="#">Golden Nova
-                                                        III
-                                                    </p>
-                                                    <p class="addLocationProduct-boost-rank-option" href="#">Golden Nova
-                                                        Master</p>
-                                                    <p class="addLocationProduct-boost-rank-option" href="#">
-                                                        Distinguished
-                                                        Master Guardian</p>
-                                                    <p class="addLocationProduct-boost-rank-option" href="#">Legendary
-                                                        Eagle
-                                                    </p>
-                                                    <p class="addLocationProduct-boost-rank-option" href="#">Legendary
-                                                        Eagle
-                                                        Master</p>
-                                                    <p class="addLocationProduct-boost-rank-option" href="#">Supreme
-                                                        Master
-                                                        First Class</p>
-                                                </div>
+                            
+                            <form action="/coaching/checkout" method="post">
+                                @csrf
+                                <input type="text" value="Call the Coach" name="boost_type" style="display: none;" />
+                                
+                                <div class="csgo-boost-howtobuy-para">
+                                    <p class="csgo-boost-coaching-p">This service involves one text review of the demo by a MyBoost.gg
+                                        trainer. We analyze your actions in every round of the CSGO match, assess your skill level, single out the most
+                                        suitable gaming role, and indicate aspects that you needs to deal with to achieve improved results.
+                                    </p>
+                                    <div class="csgo-boost-rank-title-conatiner">
+                                        <div class="csgo-boost-rank-title-box">
+                                            <h3>Select Your Role</h3>
+        
+                                            <div class="csgo-boost-rank-select-container">
+        
+                                                <select required class="addLocationProduct-boost-rank-toggle-new" id="rankSelect"
+                                                        onchange="updateCoachDemoPrice()" name="ingame_role">
+                                                        <option value="" selected disabled>
+                                                            Select Your In-Game Role</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="Universal Role">
+                                                            <span>Universal Role</span>
+                                                        </option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="Entry Fragger">
+                                                            <span>Entry Fragger</span>
+                                                        </option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="Support">
+                                                            Support
+                                                        </option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="In-game Leader">
+                                                            In-game Leader
+                                                        </option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="Lurker">
+                                                            Lurker
+                                                        </option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="AWPer">AWPer
+                                                        </option>   
+                                                    </select>
+        
                                             </div>
-    
+                                        </div>
+                                        <div class="csgo-boost-rank-title-box">
+                                            <div class="range-number-container">
+                                                <h3>No of Reviews</h3>
+                                                <span>
+                                                    <h5 class="slider-value" id="DemoCoachsliderValue">5</h5>
+                                                </span>
+                                            </div>
+                                            <div class="csgo-boost-rank-select-container">
+
+                                                <div class="range-slider">
+                                                    <input type="range" name="no_of_reviews"  min="0" max="10" value="2" class="slider-range"
+                                                        id="DemoCoachmyRange" onchange="updateCoachDemoPrice()">
+                                                </div>
+
+                                            </div>
                                         </div>
                                     </div>
+        
+                                    <div class="csgo-boost-rank-boost-category-conatiner">
+                                        <div class="csgo-boost-rank-boost-category-section" style="display: none;">
+                                            <div class="csgo-boost-rank-boost-category-box">
+                                                <h5>Solo Play</h5>
+                                                <img src="/assets/icons/info-gray.svg" alt="">
+                                                <label class="switch">
+                                                    <!-- <input type="checkbox"> -->
+                                                    <input type="checkbox" id="checkbox1" onchange="updatePrice()">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                            <p>Additional 20%</p>
+                                        </div>
+                                        <div class="csgo-boost-rank-boost-category-section" >
+                                            <div class="csgo-boost-rank-boost-category-box">
+                                                <h5>Priority Order</h5>
+                                                <img src="/assets/icons/info-gray.svg" alt="">
+                                                <label class="switch">
+                                                    <!-- <input type="checkbox"> -->
+                                                    <input type="checkbox" id="DemoCoachingcheckbox2" onchange="updateCoachDemoPrice()" name="priority_order">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                            <p>Additional 20%</p>
+                                        </div>
+                                        <div class="csgo-boost-rank-boost-category-section" style="display: none;">
+                                            <div class="csgo-boost-rank-boost-category-box">
+                                                <h5>Play with booster</h5>
+                                                <img src="/assets/icons/info-gray.svg" alt="">
+                                                <label class="switch">
+                                                    <!-- <input type="checkbox"> -->
+                                                    <input type="checkbox" id="checkbox3" onchange="updatePrice()">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                            <p>Additional 20%</p>
+                                        </div>
+                                    </div>
+        
+                                    <div class="csgo-boost-totalAmount-container">
+                                        <div class="shape-boostinner-card">
+                                            <div class="csgo-boost-totalAmount-section">
+                                                <label>
+                                                    <h3>Total Amount</h3>
+                                                    <h4 id="DemoCoachpriceTag">$  0.00</h4> &nbsp;
+                                                </label>
+                                                <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
+                                            </div>
+                                            <x-whychooseus></x-whychooseus>
+                                        </div>
+                                    </div>
+        
                                 </div>
-    
-                                <div class="csgo-boost-rank-boost-category-conatiner">
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Solo Play</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Priority Order</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Play with booster</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                </div>
-    
-                                <div class="csgo-boost-totalAmount-container">
-                                    <div class="shape-boostinner-card">
-                                        <div class="csgo-boost-totalAmount-section">
-                                            <label>
-                                                <h3>Total Amount</h3>
-                                                <h4>56$</h4>
-                                            </label>
-                                            <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
-                                        </div>
-                                        <x-whychooseus></x-whychooseus>
-                                    </div>
-                                </div>
-    
-                            </div>
+                            </form>
                         </div>
     
                         <div class="csgo-boost-howtobuy-tab-content" id="csgo-boost-tab4">
-                            <div class="csgo-boost-howtobuy-para">
-    
-                                <div class="csgo-boost-rank-title-conatiner">
-                                    <div class="csgo-boost-rank-title-box">
-                                        <h3>CS2 Current Rank</h3>
-    
-                                        <select class="addLocationProduct-boost-rank-toggle-new" id="rankSelect"
-                                                onchange="updatePrice()" name="">
-                                                <option value="" selected disabled>
-                                                    Select Rank</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverI">
-                                                    <span>Silver I</span>
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverII">
-                                                    Silver II
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverIII">
-                                                    Silver III
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverIV">
-                                                    Silver IV
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Silver Elite">Silver
-                                                    Elite
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Silver Elite Master">Silver
-                                                    Elite
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova I">Golden
-                                                    Nova
-                                                    I
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova II">Golden
-                                                    Nova
-                                                    II
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova III">Golden
-                                                    Nova
-                                                    III
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova Master">Golden
-                                                    Nova
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Distinguished Master Guardian">
-                                                    Distinguished
-                                                    Master Guardian</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Legendary Eagle">Legendary
-                                                    Eagle
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Legendary Eagle Master">Legendary
-                                                    Eagle
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Supreme Master First Class">Supreme
-                                                    Master
-                                                    First Class</option>
-    
-                                            </select>
-                                    </div>
-                                    <div class="csgo-boost-rank-title-box">
-                                        <div class="range-number-container">
-                                            <h3>Number of Wins</h3>
-                                            <span>
-                                                <h5 class="slider-value" id="sliderValue">5</h5>
-                                                <h6>Wins</h6>
-                                            </span>
-                                        </div>
-                                        <div class="csgo-boost-rank-select-container">
-    
-                                            <div class="range-slider">
-                                                <input type="range" min="0" max="10" value="2" class="slider-range"
-                                                    id="myRange">
+                            
+                            <form action="/coaching/checkout" method="post">
+                                @csrf
+                                <input type="text" value="Team Analysis" name="boost_type" style="display: none;" />
+                                
+                                <div class="csgo-boost-howtobuy-para">
+                                    <p class="csgo-boost-coaching-p">This service involves one text review of the demo by a MyBoost.gg
+                                        trainer. We analyze your actions in every round of the CSGO match, assess your skill level, single out the most
+                                        suitable gaming role, and indicate aspects that you needs to deal with to achieve improved results.
+                                    </p>
+                                    <div class="csgo-boost-rank-title-conatiner">
+                                        <div class="csgo-boost-rank-title-box">
+                                            <h3>Select Your Role</h3>
+        
+                                            <div class="csgo-boost-rank-select-container">
+        
+                                                <select required class="addLocationProduct-boost-rank-toggle-new" id="rankSelect"
+                                                        onchange="updateTeamCoachPrice()" name="ingame_role">
+                                                        <option value="" selected disabled>
+                                                            Select Your In-Game Role</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="Universal Role">
+                                                            <span>Universal Role</span>
+                                                        </option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="Entry Fragger">
+                                                            <span>Entry Fragger</span>
+                                                        </option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="Support">
+                                                            Support
+                                                        </option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="In-game Leader">
+                                                            In-game Leader
+                                                        </option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="Lurker">
+                                                            Lurker
+                                                        </option>
+                                                        <option class="addLocationProduct-boost-rank-option-new"
+                                                            value="AWPer">AWPer
+                                                        </option>   
+                                                    </select>
+        
                                             </div>
-    
+                                        </div>
+                                        <div class="csgo-boost-rank-title-box">
+                                            <div class="range-number-container">
+                                                <h3>No of Reviews</h3>
+                                                <span>
+                                                    <h5 class="slider-value" id="TeamCoachsliderValue">5</h5>
+                                                </span>
+                                            </div>
+                                            <div class="csgo-boost-rank-select-container">
+
+                                                <div class="range-slider">
+                                                    <input type="range" name="no_of_reviews"  min="0" max="10" value="2" class="slider-range"
+                                                        id="TeamCoachmyRange" onchange="updateTeamCoachPrice()">
+                                                </div>
+
+                                            </div>
                                         </div>
                                     </div>
+        
+                                    <div class="csgo-boost-rank-boost-category-conatiner">
+                                        <div class="csgo-boost-rank-boost-category-section" style="display: none;">
+                                            <div class="csgo-boost-rank-boost-category-box">
+                                                <h5>Solo Play</h5>
+                                                <img src="/assets/icons/info-gray.svg" alt="">
+                                                <label class="switch">
+                                                    <!-- <input type="checkbox"> -->
+                                                    <input type="checkbox" id="checkbox1" onchange="updatePrice()">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                            <p>Additional 20%</p>
+                                        </div>
+                                        <div class="csgo-boost-rank-boost-category-section" >
+                                            <div class="csgo-boost-rank-boost-category-box">
+                                                <h5>Priority Order</h5>
+                                                <img src="/assets/icons/info-gray.svg" alt="">
+                                                <label class="switch">
+                                                    <!-- <input type="checkbox"> -->
+                                                    <input type="checkbox" id="TeamCoachingcheckbox2" onchange="updateTeamCoachPrice()" name="priority_order">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                            <p>Additional 20%</p>
+                                        </div>
+                                        <div class="csgo-boost-rank-boost-category-section" style="display: none;">
+                                            <div class="csgo-boost-rank-boost-category-box">
+                                                <h5>Play with booster</h5>
+                                                <img src="/assets/icons/info-gray.svg" alt="">
+                                                <label class="switch">
+                                                    <!-- <input type="checkbox"> -->
+                                                    <input type="checkbox" id="checkbox3" onchange="updatePrice()">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                            <p>Additional 20%</p>
+                                        </div>
+                                    </div>
+        
+                                    <div class="csgo-boost-totalAmount-container">
+                                        <div class="shape-boostinner-card">
+                                            <div class="csgo-boost-totalAmount-section">
+                                                <label>
+                                                    <h3>Total Amount</h3>
+                                                    <h4 id="TeamCoachpriceTag">$  0.00</h4> &nbsp;
+                                                </label>
+                                                <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
+                                            </div>
+                                            <x-whychooseus></x-whychooseus>
+                                        </div>
+                                    </div>
+        
                                 </div>
-    
-                                <div class="csgo-boost-rank-boost-category-conatiner">
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Solo Play</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Priority Order</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Play with booster</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                </div>
-    
-                                <div class="csgo-boost-totalAmount-container">
-                                    <div class="shape-boostinner-card">
-                                        <div class="csgo-boost-totalAmount-section">
-                                            <label>
-                                                <h3>Total Amount</h3>
-                                                <h4>56$</h4>
-                                            </label>
-                                            <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
-                                        </div>
-                                        <x-whychooseus></x-whychooseus>
-                                    </div>
-                                </div>
-    
-                            </div>
-                        </div>
-    
-                        <div class="csgo-boost-howtobuy-tab-content" id="csgo-boost-tab5">
-                            <div class="csgo-boost-howtobuy-para">
-    
-                                <div class="csgo-boost-rank-title-conatiner">
-                                    <div class="csgo-boost-rank-title-box">
-                                        <h3>Danger Zone Current Rank</h3>
-    
-                                        <div class="csgo-boost-rank-select-container">
-                                            <img src="/assets/img/rank.png" alt="" class="rank-img">
-    
-                                            <select class="addLocationProduct-boost-rank-toggle-new" id="rankSelect"
-                                                onchange="updatePrice()" name="">
-                                                <option value="" selected disabled>
-                                                    Select Rank</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverI">
-                                                    <span>Silver I</span>
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverII">
-                                                    Silver II
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverIII">
-                                                    Silver III
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverIV">
-                                                    Silver IV
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Silver Elite">Silver
-                                                    Elite
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Silver Elite Master">Silver
-                                                    Elite
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova I">Golden
-                                                    Nova
-                                                    I
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova II">Golden
-                                                    Nova
-                                                    II
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova III">Golden
-                                                    Nova
-                                                    III
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova Master">Golden
-                                                    Nova
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Distinguished Master Guardian">
-                                                    Distinguished
-                                                    Master Guardian</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Legendary Eagle">Legendary
-                                                    Eagle
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Legendary Eagle Master">Legendary
-                                                    Eagle
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Supreme Master First Class">Supreme
-                                                    Master
-                                                    First Class</option>
-    
-                                            </select>
-    
-                                        </div>
-                                    </div>
-                                    <div class="csgo-boost-rank-title-box">
-                                        <h3>Danger Zone Desired Rank</h3>
-                                        <div class="csgo-boost-rank-select-container">
-                                            <img src="/assets/img/rank.png" alt="" class="rank-img">
-    
-                                            <select class="addLocationProduct-boost-rank-toggle-new" id="rankSelect"
-                                                onchange="updatePrice()" name="">
-                                                <option value="" selected disabled>
-                                                    Select Rank</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverI">
-                                                    <span>Silver I</span>
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverII">
-                                                    Silver II
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverIII">
-                                                    Silver III
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="SilverIV">
-                                                    Silver IV
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Silver Elite">Silver
-                                                    Elite
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Silver Elite Master">Silver
-                                                    Elite
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova I">Golden
-                                                    Nova
-                                                    I
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova II">Golden
-                                                    Nova
-                                                    II
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova III">Golden
-                                                    Nova
-                                                    III
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Golden Nova Master">Golden
-                                                    Nova
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Distinguished Master Guardian">
-                                                    Distinguished
-                                                    Master Guardian</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Legendary Eagle">Legendary
-                                                    Eagle
-                                                </option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Legendary Eagle Master">Legendary
-                                                    Eagle
-                                                    Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Supreme Master First Class">Supreme
-                                                    Master
-                                                    First Class</option>
-    
-                                            </select>
-    
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="csgo-boost-rank-boost-category-conatiner">
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Solo Play</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Priority Order</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Play with booster</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                </div>
-    
-                                <div class="csgo-boost-totalAmount-container">
-                                    <div class="shape-boostinner-card">
-                                        <div class="csgo-boost-totalAmount-section">
-                                            <label>
-                                                <h3>Total Amount</h3>
-                                                <h4>56$</h4>
-                                            </label>
-                                            <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
-                                        </div>
-                                        <x-whychooseus></x-whychooseus>
-                                    </div>
-                                </div>
-    
-                            </div>
+                            </form>
                         </div>
     
                     </div>
@@ -1059,6 +715,99 @@
 @endsection
 
 @push('js')
+    <script>
+    function updatePrice(){
+            var reviews = document.getElementById('myRange').value;
+            
+            var additionalAmount = 0;
+
+            if (document.getElementById("checkbox2").checked) {
+                additionalAmount += 0.20;
+            }
+
+            var totalAmount = (reviews * 20) * (1 + additionalAmount);
+            
+            document.getElementById("priceTag").innerText = "$" + totalAmount.toFixed(2);
+        
+
+            const slider = document.getElementById("myRange");
+            const sliderValue = document.getElementById("sliderValue");
+
+            // Update the slider value text when the slider is moved
+            slider.addEventListener("input", function() {
+                sliderValue.textContent = this.value;
+        });
+    }
+
+    function updateCoachDemoPrice(){
+            var reviews = document.getElementById('DemoCoachmyRange').value;
+            
+            var additionalAmount = 0;
+
+            if (document.getElementById("DemoCoachingcheckbox2").checked) {
+                additionalAmount += 0.20;
+            }
+
+            var totalAmount = (reviews * 20) * (1 + additionalAmount);
+            
+            document.getElementById("DemoCoachpriceTag").innerText = "$" + totalAmount.toFixed(2);
+        
+
+            const slider = document.getElementById("DemoCoachmyRange");
+            const sliderValue = document.getElementById("DemoCoachsliderValue");
+
+            // Update the slider value text when the slider is moved
+            slider.addEventListener("input", function() {
+                sliderValue.textContent = this.value;
+            });
+    }
+
+    function updateCoachPrice(){
+            var reviews = document.getElementById('CoachmyRange').value;
+            
+            var additionalAmount = 0;
+
+            if (document.getElementById("Coachingcheckbox2").checked) {
+                additionalAmount += 0.20;
+            }
+
+            var totalAmount = (reviews * 20) * (1 + additionalAmount);
+            
+            document.getElementById("CoachpriceTag").innerText = "$" + totalAmount.toFixed(2);
+        
+
+            const slider = document.getElementById("CoachmyRange");
+            const sliderValue = document.getElementById("CoachsliderValue");
+
+            // Update the slider value text when the slider is moved
+            slider.addEventListener("input", function() {
+                sliderValue.textContent = this.value;
+            });
+    }
+
+    function updateTeamCoachPrice(){
+            var reviews = document.getElementById('TeamCoachmyRange').value;
+            
+            var additionalAmount = 0;
+
+            if (document.getElementById("TeamCoachingcheckbox2").checked) {
+                additionalAmount += 0.20;
+            }
+
+            var totalAmount = (reviews * 20) * (1 + additionalAmount);
+            
+            document.getElementById("TeamCoachpriceTag").innerText = "$" + totalAmount.toFixed(2);
+        
+
+            const slider = document.getElementById("TeamCoachmyRange");
+            const sliderValue = document.getElementById("TeamCoachsliderValue");
+
+            // Update the slider value text when the slider is moved
+            slider.addEventListener("input", function() {
+                sliderValue.textContent = this.value;
+            });
+    }
+    </script>
     <script src="/vendor/js/app.js"></script>
     <script src="/vendor/js/dropdowns.js"></script>
     <script src="/vendor/js/carousel.js"></script>
