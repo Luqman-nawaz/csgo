@@ -5,10 +5,10 @@
             <h5>CONTACT US</h5>
             <div class="footer-line-span"></div>
             <ul class="csgo-footer-list-container">
-                <li><a href="#"><img src="./assets/icons/facebook.svg" alt="">Facebook</a></li>
-                <li><a href="#"><img src="./assets/icons/twitch.svg" alt="">Twitch</a></li>
-                <li><a href="#"><img src="./assets/icons/twitter.svg" alt="">Twitter</a></li>
-                <li><a href="#"><img src="./assets/icons/mail.svg" alt="">Mail Us</a></li>
+                <li><a href="#"><img src="/assets/icons/facebook.svg" alt="">Facebook</a></li>
+                <li><a href="#"><img src="/assets/icons/twitch.svg" alt="">Twitch</a></li>
+                <li><a href="#"><img src="/assets/icons/twitter.svg" alt="">Twitter</a></li>
+                <li><a href="#"><img src="/assets/icons/mail.svg" alt="">Mail Us</a></li>
             </ul>
         </div>
         <div class="csgo-Home-InnerFooter-section">
