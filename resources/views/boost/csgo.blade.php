@@ -1,5 +1,5 @@
 @extends('layouts.csgo')
-
+@section('title') <title>MyBoost.GG - Boost your CS2 Account, Rank Boost, Win Boost, Wingman Boost, Danger Zone</title> @endsection
 @section('content')
     <x-navbar></x-navbar>
     

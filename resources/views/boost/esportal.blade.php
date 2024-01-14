@@ -1,5 +1,5 @@
 @extends('layouts.csgo')
-
+@section('title') <title>MyBoost.GG - Safe & Secure Esportal Account Boost</title> @endsection
 @section('content')
     <x-navbar></x-navbar>
     

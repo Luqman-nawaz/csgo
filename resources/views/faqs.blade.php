@@ -1,5 +1,5 @@
 @extends('layouts.csgo')
-
+@section('title') <title>MyBoost.GG - Frequently Asked Questions</title> @endsection
     @section('content')
     <div class="main-site-container">
         <!-- csgo-UpperHeader Start -->

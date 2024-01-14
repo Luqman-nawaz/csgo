@@ -1,5 +1,5 @@
 @extends('layouts.csgo')
-
+@section('title') <title>MyBoost.GG - Privacy Policy</title> @endsection
 @section('content')
     <x-navbar></x-navbar>
     

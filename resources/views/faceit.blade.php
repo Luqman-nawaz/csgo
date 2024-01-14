@@ -1,5 +1,5 @@
 @extends('layouts.guest')
-
+    @section('title') <title>MyBoost.GG - The Most Proessional FaceIT Boosters!</title> @endsection
 @section('content')
     <x-navbar></x-navbar>
     

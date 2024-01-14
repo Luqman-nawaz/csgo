@@ -1,5 +1,5 @@
 @extends('layouts.csgo')
-
+@section('title') <title>MyBoost.GG - Boost your ESEA Account, 100% Safe & Secure</title> @endsection
 @section('content')
     <x-navbar></x-navbar>
     
