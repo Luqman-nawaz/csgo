@@ -3,7 +3,7 @@
     <div class="csgo-boost-whychooseus-section">
         <div class="csgo-boost-whychooseus-box">
             <span><img src="/assets/icons/time.svg" alt=""></span>
-            <h5>Quick Order Delivery</h5>
+            <h5>&nbsp; Quick Delivery &nbsp; &nbsp; </h5>
         </div>
         <div class="csgo-boost-whychooseus-box">
             <span><img src="/assets/icons/diamend.svg" alt=""></span>
@@ -11,7 +11,7 @@
         </div>
         <div class="csgo-boost-whychooseus-box">
             <span><img src="/assets/icons/security.svg" alt=""></span>
-            <h5>100% Safe Boosting</h5>
+            <h5>&nbsp; &nbsp;Safe Boosting &nbsp; &nbsp; </h5>
         </div>
         <div class="csgo-boost-whychooseus-box">
             <span><img src="/assets/icons/privacy-eye.svg" alt=""></span>

@@ -124,7 +124,7 @@
                     <h5>Total Amount</h5>
                     <h6>$40</h6>
                 </div>
-                <a href="/payment"><button class="csgo-btncsgo-payment-checkout">CHECKOUT</button></a>
+                <a href="/payment"><button class="csgo-btn csgo-payment-checkout">CHECKOUT</button></a>
             </div>
         </div>
     </div>

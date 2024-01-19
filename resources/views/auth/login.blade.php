@@ -1,5 +1,5 @@
 @extends('layouts.csgo')
-
+@section('title') <title>MyBoost.GG - Login</title> @endsection
     @section('content')
     
     <div class="main-site-container">
@@ -14,6 +14,10 @@
             @if(session('status'))
                 <h1> {{ session('status') }} </h1>
             @endif
+
+            @error('email') <p style="color: red; text-align:center; margin-bottom:10px;"> {{$message}} </p> @enderror
+            @error('password') <p style="color: red; text-align:center; margin-bottom:10px;"> {{$message}} </p> @enderror
+            
             <form method="POST" action="{{ route('login') }}">
                 @csrf
                 <div class="csgo-payment-section csgo-contactus-section">
@@ -32,7 +36,7 @@
                                     </linearGradient>
                                 </defs>
                             </svg>
-                            <input type="text" placeholder="Email" type="email" name="email" :value="old('email')" required autofocus>
+                            <input type="text" placeholder="Email" type="email" name="email" value="{{old('email')}}" required autofocus>
                         </div>
                         <div class="csgo-payment-inner-box">
                             <svg xmlns="http://www.w3.org/2000/svg" width="500" height="80" viewBox="0 0 500 80"
@@ -64,3 +68,10 @@
     </div>    
     
     @endsection
+
+    @push('js')
+    <script src="/vendor/js/app.js"></script>
+    <script src="/vendor/js/dropdowns.js"></script>
+    <script src="/vendor/js/carousel.js"></script>
+    <script src="/vendor/js/boosttabs.js"></script>
+@endpush

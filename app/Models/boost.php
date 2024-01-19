@@ -13,5 +13,9 @@ class boost extends Model
     public function type(){
         return $this->belongsTo(boosttype::class);
     }
+
+    public function payment(){
+        return $this->hasOne(payment::class, 'order_id', 'id');
+    }
     
 }

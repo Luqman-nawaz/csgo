@@ -26,8 +26,7 @@
                                 <h5>{{$orders->current_level}}<span> ▶ </span>{{$orders->desired_level}}</h5>
                             </div>
                             <div class="csgo-btn-box">
-                                <a href="#" class="csgo-btn job-apply-btn">Awaiting Payment</a>
-                                <a href="/checkout/{{$orders->id}}" class="csgo-btn job-apply-btn">Pay now!</a>
+                                <a href="/checkout/{{$orders->id}}" class="csgo-btn csgo-login-btn">Pay now!</a>
                             </div>
                         </div>
                     @endforeach
@@ -39,7 +38,7 @@
                                 <h5>{{$orders->ingame_role}}<span> <br> </span>Reviews: {{$orders->no_of_reviews}}</h5>
                             </div>
                             <div class="csgo-btn-box">
-                                <a href="/coaching-checkout/{{$orders->id}}" class="csgo-btn job-apply-btn">Pay now!</a>
+                                <a href="/coaching-checkout/{{$orders->id}}" class="csgo-btn csgo-login-btn">Pay now!</a>
                             </div>
                         </div>
                     @endforeach
@@ -54,3 +53,9 @@
     
     @endsection
     
+    @push('js')
+    <script src="/vendor/js/app.js"></script>
+    <script src="/vendor/js/dropdowns.js"></script>
+    <script src="/vendor/js/carousel.js"></script>
+    <script src="/vendor/js/boosttabs.js"></script>
+@endpush

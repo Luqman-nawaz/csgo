@@ -227,7 +227,7 @@
                                 <div class="csgo-boost-rank-boost-category-conatiner">
                                     <div class="csgo-boost-rank-boost-category-section">
                                         <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Solo Play</h5>
+                                            <h5>+1 Extra Win</h5>
                                             <img src="/assets/icons/info-gray.svg" alt="">
                                             <label class="switch">
                                                 <!-- <input type="checkbox"> -->
@@ -343,7 +343,7 @@
                                 <div class="csgo-boost-rank-boost-category-conatiner">
                                     <div class="csgo-boost-rank-boost-category-section">
                                         <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Solo Play</h5>
+                                            <h5>+1 Extra Win</h5>
                                             <img src="/assets/icons/info-gray.svg" alt="">
                                             <label class="switch">
                                                 <!-- <input type="checkbox"> -->
@@ -478,7 +478,7 @@
                                     <div class="csgo-boost-rank-boost-category-conatiner">
                                         <div class="csgo-boost-rank-boost-category-section">
                                             <div class="csgo-boost-rank-boost-category-box">
-                                                <h5>Solo Play</h5>
+                                                <h5>+1 Extra Win</h5>
                                                 <img src="/assets/icons/info-gray.svg" alt="">
                                                 <label class="switch">
                                                     <!-- <input type="checkbox"> -->
@@ -593,7 +593,7 @@
                             <div class="csgo-boost-rank-boost-category-conatiner">
                                 <div class="csgo-boost-rank-boost-category-section">
                                     <div class="csgo-boost-rank-boost-category-box">
-                                        <h5>Solo Play</h5>
+                                        <h5>+1 Extra Win</h5>
                                         <img src="/assets/icons/info-gray.svg" alt="">
                                         <label class="switch">
                                             <!-- <input type="checkbox"> -->
@@ -725,7 +725,7 @@
                             <div class="csgo-boost-rank-boost-category-conatiner">
                                 <div class="csgo-boost-rank-boost-category-section">
                                     <div class="csgo-boost-rank-boost-category-box">
-                                        <h5>Solo Play</h5>
+                                        <h5>+1 Extra Win</h5>
                                         <img src="/assets/icons/info-gray.svg" alt="">
                                         <label class="switch">
                                             <!-- <input type="checkbox"> -->

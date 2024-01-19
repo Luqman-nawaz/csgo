@@ -53,7 +53,7 @@
                             </h5>
                             <a href="/csgoboost"><button class="csgo-btn">Get Started Now</button></a>
                         </div>
-                        <img src="https://totalcsgo.com/agent.png" class="homeboost-hero" alt="">
+                        <img src="/assets/img/Daco_4399154.png" class="homeboost-hero" alt="">
                     </div>
                     <div class="csgo-boost-tab-content" id="csgo-boost-tab2">
                         <div class="csgo-boost-para">
@@ -61,7 +61,7 @@
                             <h5>Esportal Boosting is an elite account boosting service provided by MyBoost.gg without using any cheats and with a 100% accurate & safe method. Boost your Esportal account now and enjoy the best experience we have to offer.</h5>
                                 <a href="/esportal"><button class="csgo-btn">Get Started Now</button></a>
                         </div>
-                        <img src="https://cdn.esportfire-services.com/items/Agent.png" alt="">
+                        <img src="/assets/img/bg2.png" alt="">
 
                     </div>
                     <div class="csgo-boost-tab-content" id="csgo-boost-tab3">
