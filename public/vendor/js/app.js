@@ -124,7 +124,7 @@ const updatePrice = () => {
 
     // Rank Dropdown Img Change
     var rankImage = document.getElementById("rankImage");
-    rankImage.src = `./assets/img/${selectedOption}.png`;
+    rankImage.src = `/assets/img/${selectedOption}.png`;
 }
 
 

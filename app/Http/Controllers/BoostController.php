@@ -6,6 +6,7 @@ use App\Models\boost;
 use App\Models\coaching;
 use App\Models\coachingpayment;
 use App\Models\contact;
+use App\Models\payment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use PDO;
@@ -69,6 +70,7 @@ class BoostController extends Controller
         if(isset($request->solo_play)) { $solo_play = true; }else{ $solo_play = false; }
         if(isset($request->priority_order)) { $priority_order = true; }else{ $priority_order = false; }
         if(isset($request->play_with_booster)) { $play_with_booster = true; }else{ $play_with_booster = false; }
+        
         $array = array(
             'user_id' => Auth::id(),
             'boost_id' => 1,
@@ -78,14 +80,74 @@ class BoostController extends Controller
             'solo_play' => $solo_play,
             'priority_order' => $priority_order,
             'play_with_booster' => $play_with_booster,
-            'name' => 'NA',
-            'skype_id' => 'NA',
-            'discord_username' => 'NA',
-            'available_time' => 'NA',
-            'account_data' => 'NA',
-            'payment_method' => 'NA',
-            'total_amount' => 'NA',
-            'status' => 'Payment Pending',
+        );
+
+        if($boost = boost::create($array)){
+            return redirect('/checkout/'.$boost->id)->with('boostorder', $boost);
+        }else{
+            return back()->with('status', 'Failed to Place Order!');    
+        }
+    }
+
+    public function faceitcheckout(Request $request){
+        if(isset($request->solo_play)) { $solo_play = true; }else{ $solo_play = false; }
+        if(isset($request->priority_order)) { $priority_order = true; }else{ $priority_order = false; }
+        if(isset($request->play_with_booster)) { $play_with_booster = true; }else{ $play_with_booster = false; }
+        
+        $array = array(
+            'user_id' => Auth::id(),
+            'boost_id' => 2,
+            'boost_type' => $request->boost_type,
+            'current_level' => $request->current_level,
+            'desired_level' => $request->desired_level,
+            'solo_play' => $solo_play,
+            'priority_order' => $priority_order,
+            'play_with_booster' => $play_with_booster,
+        );
+
+        if($boost = boost::create($array)){
+            return redirect('/checkout/'.$boost->id)->with('boostorder', $boost);
+        }else{
+            return back()->with('status', 'Failed to Place Order!');    
+        }
+    }
+
+    public function eseacheckout(Request $request){
+        if(isset($request->solo_play)) { $solo_play = true; }else{ $solo_play = false; }
+        if(isset($request->priority_order)) { $priority_order = true; }else{ $priority_order = false; }
+        if(isset($request->play_with_booster)) { $play_with_booster = true; }else{ $play_with_booster = false; }
+        
+        $array = array(
+            'user_id' => Auth::id(),
+            'boost_id' => 3,
+            'boost_type' => $request->boost_type,
+            'current_level' => $request->current_level,
+            'desired_level' => $request->desired_level,
+            'solo_play' => $solo_play,
+            'priority_order' => $priority_order,
+            'play_with_booster' => $play_with_booster,
+        );
+
+        if($boost = boost::create($array)){
+            return redirect('/checkout/'.$boost->id)->with('boostorder', $boost);
+        }else{
+            return back()->with('status', 'Failed to Place Order!');    
+        }
+    }
+    public function esportalcheckout(Request $request){
+        if(isset($request->solo_play)) { $solo_play = true; }else{ $solo_play = false; }
+        if(isset($request->priority_order)) { $priority_order = true; }else{ $priority_order = false; }
+        if(isset($request->play_with_booster)) { $play_with_booster = true; }else{ $play_with_booster = false; }
+        
+        $array = array(
+            'user_id' => Auth::id(),
+            'boost_id' => 4,
+            'boost_type' => $request->boost_type,
+            'current_level' => $request->current_level,
+            'desired_level' => $request->desired_level,
+            'solo_play' => $solo_play,
+            'priority_order' => $priority_order,
+            'play_with_booster' => $play_with_booster,
         );
 
         if($boost = boost::create($array)){
@@ -155,36 +217,84 @@ class BoostController extends Controller
 
     }
 
-    public function payment(Request $request){
-        $array = array(
+    public function payment($order_id, Request $request){
+        $order = boost::where('id', $order_id)->where('user_id', Auth::id())->get()->first();
+
+        if($order->boost_type == "Rank Boost" OR $order->boost_type == "Danger Zone Boost" OR $order->boost_type == "Elo Boost" OR $order->boost_type == "ESEA Rank Boost" OR $order->boost_type == "Esportal Rank Boost"){
+
+            if($order->desired_level == "Silver I"){
+                $order_amount = 10;
+            }else if($order->desired_level = "SilverII"){
+                $order_amount = 15;
+            }else if($order->desired_level = "SilverIII"){
+                $order_amount = 20;
+            }else if($order->desired_level = "SilverIV"){
+                $order_amount = 25;
+            }else if($order->desired_level = "SilverElite"){
+                $order_amount = 30;
+            }else if($order->desired_level = "SilverEliteMaster"){
+                $order_amount = 35;
+            }else if($order->desired_level = "GoldNovaI"){
+                $order_amount = 40;
+            }else if($order->desired_level = "GoldNovaII"){
+                $order_amount = 45;
+            }else if($order->desired_level = "GoldNovaIII"){
+                $order_amount = 50;
+            }else if($order->desired_level = "GoldNovaMaster"){
+                $order_amount = 55;
+            }else if($order->desired_level = "MasterGuardian"){
+                $order_amount = 60;
+            }else if($order->desired_level = "MasterGuardianII"){
+                $order_amount = 65;
+            }else if($order->desired_level = "MasterGuardianElite"){
+                $order_amount = 70;
+            }else if($order->desired_level = "DistunguishedMasterGuardian"){
+                $order_amount = 75;
+            }else if($order->desired_level = "LegendaryEagle"){
+                $order_amount = 80;
+            }else if($order->desired_level = "LegendaryEagleMaster"){
+                $order_amount = 85;
+            }else if($order->desired_level = "SupremeMaster"){
+                $order_amount = 90;
+            }else if($order->desired_level = "GlobalElite"){
+                $order_amount = 100;
+            }
+
+        }
+
+        if($order->boost_type == "Win Boost" OR $order->boost_type == "FaceIt Win Boost" OR $order->boost_type == "ESEA Win Boost"){
+            $order_amount = $order->desired_level * 7;
+        }
+
+            if($order->solo_play == 1){
+                $side_amount = ($order_amount * 20) / 5; 
+                $total_amount = $order_amount + $side_amount;
+            }else if($order->priority_order == 1){
+                $side_amount = ($order_amount * 20) / 5; 
+                $total_amount = $order_amount + $side_amount;
+            }else if($order->play_with_booster == 1){
+                $side_amount = ($order_amount * 20) / 5; 
+                $total_amount = $order_amount + $side_amount;
+            }else{
+                $total_amount = $order_amount;
+            }
+
+
+
+        $payment = array(
+            'order_id' => $order_id,
             'name' => $request->name,
             'skype_id' => $request->skype_id,
             'discord_username' => $request->discord_username,
             'available_time' => $request->available_time,
             'account_data' => $request->account_data,
+            'payment_method' => $request->e,
+            'total_amount' => $total_amount,
+            'order_status' => 'Pending Payment',
         );
-        $boost = boost::where('id', $request->order_id)->get()->first()->update($array);
-        
-        \Stripe\Stripe::setApiKey(config('stripe.sk'));
 
-        $session = \Stripe\Checkout\Session::create([
-            'line_items'  => [
-                [
-                    'price_data' => [
-                        'currency'     => 'gbp',
-                        'product_data' => [
-                            'name' => 'gimme money!!!!',
-                        ],
-                        'unit_amount'  => 500,
-                    ],
-                    'quantity'   => 1,
-                ],
-            ],
-            'mode'        => 'payment',
-            'success_url' => route('success'),
-            'cancel_url'  => route('checkout'),
-        ]);
+        payment::create($payment);
 
-        return redirect()->away($session->url);
+        dd('Boosting Order Placed, now to redirect to Stripe if Stripe selected OR redirect to Crypto if Crypto selected.');
     }   
 }

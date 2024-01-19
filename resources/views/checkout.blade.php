@@ -4,7 +4,7 @@
     <x-navbar></x-navbar>
     
     <div class="csgo-payment-container">
-        <form action="/payment" method="post">
+        <form action="/payment/{{$boostorder->id}}" method="post">
             @csrf
             @method('post')
             <input type="text" value="{{$boostorder->id}}" name="order_id" style="display: none;">
@@ -124,7 +124,7 @@
                     <h5>Total Amount</h5>
                     <h6>$40</h6>
                 </div>
-                <a href="/payment"><button class="csgo-payment-checkout">CHECKOUT</button></a>
+                <a href="/payment"><button class="csgo-btncsgo-payment-checkout">CHECKOUT</button></a>
             </div>
         </div>
     </div>
