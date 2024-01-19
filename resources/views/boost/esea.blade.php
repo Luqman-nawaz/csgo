@@ -89,7 +89,7 @@
                                     <h3>ESEA Current Rank</h3>
 
                                     <div class="csgo-boost-rank-select-container">
-                                        <img src="/ranks/esea/dminus.png" alt="" class="rank-img" id="rankboostimage">
+                                        <img src="/ranks/esea/Dminus.png" alt="" class="rank-img" id="rankboostimage">
 
                                         <select class="addLocationProduct-boost-rank-toggle-new" onchange="updateRankBoostimage()" name="current_level" id="rankboostcurrent">
                                             <option value="" selected disabled>
@@ -116,7 +116,7 @@
                                 <div class="csgo-boost-rank-title-box">
                                     <h3>ESEA Required Rank</h3>
                                     <div class="csgo-boost-rank-select-container">
-                                        <img src="/ranks/esea/dminus.png" alt="" id="rankboostimagerequired" class="rank-img">
+                                        <img src="/ranks/esea/Dminus.png" alt="" id="rankboostimagerequired" class="rank-img">
 
                                             <select class="addLocationProduct-boost-rank-toggle-new" id="rankboostrequired"
                                                 onchange="updateRankBoostPriceRequired()" name="desired_level">
@@ -209,7 +209,7 @@
                                     <h3>ESEA Current Rank</h3>
 
                                     <div class="csgo-boost-rank-select-container">
-                                        <img src="/ranks/esea/dminus.png" alt="" class="rank-img" id="placementcurrentimage">
+                                        <img src="/ranks/esea/Dminus.png" alt="" class="rank-img" id="placementcurrentimage">
 
                                         <select class="addLocationProduct-boost-rank-toggle-new" id="placementcurrent"
                                                 onchange="updateplacementImage()" name="current_level">

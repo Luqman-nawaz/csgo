@@ -90,7 +90,7 @@
                                 <h3>Esportal Current Rank</h3>
 
                                 <div class="csgo-boost-rank-select-container">
-                                    <img src="/ranks/esportal/silver.png" alt="" class="rank-img" id="rankboostimage" style="width:20%;">
+                                    <img src="/ranks/esportal/Silver.png" alt="" class="rank-img" id="rankboostimage" style="width:20%;">
 
                                     <select class="addLocationProduct-boost-rank-toggle-new" onchange="updateRankBoostimage()" name="current_level" id="rankboostcurrent">
                                         <option value="" selected disabled>
@@ -116,7 +116,7 @@
                             <div class="csgo-boost-rank-title-box">
                                 <h3>ESEA Required Rank</h3>
                                 <div class="csgo-boost-rank-select-container">
-                                    <img src="/ranks/esportal/silver.png" alt="" id="rankboostimagerequired" class="rank-img" style="width:20%;">
+                                    <img src="/ranks/esportal/Silver.png" alt="" id="rankboostimagerequired" class="rank-img" style="width:20%;">
 
                                         <select class="addLocationProduct-boost-rank-toggle-new" id="rankboostrequired"
                                             onchange="updateRankBoostPriceRequired()" name="desired_level">
@@ -208,7 +208,7 @@
                                 <h3>ESEA Current Rank</h3>
 
                                 <div class="csgo-boost-rank-select-container">
-                                    <img src="/ranks/esportal/silver.png" alt="" class="rank-img" id="placementcurrentimage" style="width:17%;">
+                                    <img src="/ranks/esportal/Silver.png" alt="" class="rank-img" id="placementcurrentimage" style="width:17%;">
 
                                     <select class="addLocationProduct-boost-rank-toggle-new" id="placementcurrent"
                                             onchange="updateplacementImage()" name="current_level">
