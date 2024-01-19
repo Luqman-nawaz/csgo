@@ -116,7 +116,7 @@
                                     <h3>Faceit Current Rank</h3>
 
                                     <div class="csgo-boost-rank-select-container">
-                                        <img src="/ranks/faceit/level1.svg" alt="" class="rank-img" id="faceitcurrentimage" style="width:17%;">
+                                        <img src="/ranks/faceit/Level1.svg" alt="" class="rank-img" id="faceitcurrentimage" style="width:17%;">
 
                                         <select class="addLocationProduct-boost-rank-toggle-new" onchange="updatefaceitcurrentimage()" name="current_level" id="faceitcurrent">
                                             <option value="" selected disabled>
@@ -141,7 +141,7 @@
                                 <div class="csgo-boost-rank-title-box">
                                     <h3>Faceit Required Rank</h3>
                                     <div class="csgo-boost-rank-select-container">
-                                        <img src="/ranks/faceit/level1.svg" alt="" id="faceitrequiredimage" class="rank-img" style="width:17%;">
+                                        <img src="/ranks/faceit/Level1.svg" alt="" id="faceitrequiredimage" class="rank-img" style="width:17%;">
 
                                             <select class="addLocationProduct-boost-rank-toggle-new" id="faceitrequired"
                                                 onchange="updatefaceitpricerequired()" name="desired_level">
@@ -230,7 +230,7 @@
                                     <h3>Faceit Current Rank</h3>
 
                                     <div class="csgo-boost-rank-select-container">
-                                        <img src="/ranks/faceit/level1.svg" alt="" class="rank-img" id="faceitelocurrentimage" style="width:17%;">
+                                        <img src="/ranks/faceit/Level1.svg" alt="" class="rank-img" id="faceitelocurrentimage" style="width:17%;">
 
                                         <select class="addLocationProduct-boost-rank-toggle-new" onchange="updatefaceitelocurrentimage()" name="current_level" id="faceitelocurrent">
                                             <option value="" selected disabled>
@@ -255,7 +255,7 @@
                                 <div class="csgo-boost-rank-title-box">
                                     <h3>Faceit Required Rank</h3>
                                     <div class="csgo-boost-rank-select-container">
-                                        <img src="/ranks/faceit/level1.svg" alt="" id="faceitelorequiredimage" class="rank-img" style="width:17%;">
+                                        <img src="/ranks/faceit/Level1.svg" alt="" id="faceitelorequiredimage" class="rank-img" style="width:17%;">
 
                                             <select class="addLocationProduct-boost-rank-toggle-new" id="faceitelorequired"
                                                 onchange="updatefaceitelopricerequired()" name="desired_level">
@@ -344,7 +344,7 @@
                                         <h3>Faceit Current Rank</h3>
 
                                         <div class="csgo-boost-rank-select-container">
-                                            <img src="/ranks/faceit/level1.svg" alt="" style="width:17%;" class="rank-img" id="faceitwincurrentimage">
+                                            <img src="/ranks/faceit/Level1.svg" alt="" style="width:17%;" class="rank-img" id="faceitwincurrentimage">
 
                                             <select class="addLocationProduct-boost-rank-toggle-new" onchange="updatefaceitwincurrentimage()" name="current_level" id="faceitwincurrent">
                                                 <option value="" selected disabled>
