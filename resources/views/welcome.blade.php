@@ -61,7 +61,7 @@
                             <h5>Esportal Boosting is an elite account boosting service provided by MyBoost.gg without using any cheats and with a 100% accurate & safe method. Boost your Esportal account now and enjoy the best experience we have to offer.</h5>
                                 <a href="/esportal"><button class="csgo-btn">Get Started Now</button></a>
                         </div>
-                        <img src="/assets/image1.png" alt="">
+                        <img src="/assets/Image1.png" alt="">
 
                     </div>
                     <div class="csgo-boost-tab-content" id="csgo-boost-tab3">
