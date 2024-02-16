@@ -67,4 +67,4 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
         }
     });
 });
-/* FAQS End */
+/* FAQS End */  

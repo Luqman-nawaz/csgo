@@ -94,35 +94,54 @@
             <div class="csgo-payment-box-2">
                 <h3>Order ID# <span>{{$boostorder->id}}</span></h3>
                 <p>{{$boostorder->created_at->diffForHumans()}}</p>
-                <div class="csgo-paymen-method-container">
-                    <h5>Select Your Payment Method</h5>
-                    <label><input type="radio" name="e" value="crypto"> Cryptocurrency</label>
-                    <label><input type="radio" name="e" value="stripe"> Mastercard/VISA Card</label>
-                </div>
+                @php
+                    $solo_play = 0;
+                    $priority_order = 0;
+                    $play_with_booster = 0;
+                @endphp
                 <div class="csgo-payment-rate-conatiner">
                     <ul>
                         <li>
                             <p>Boosting</p>
-                            <span>$30</span>
+                            <span>${{$order_amount}}</span>
                         </li>
-                        <li>
-                            <p>Solo Play</p>
-                            <span>$10</span>
-                        </li>
-                        <li>
-                            <p>Priority Order</p>
-                            <span>$20</span>
-                        </li>
+                        @if($boostorder->solo_play == 1)
+                            @php 
+                                $solo_play = $order_amount * 20 / 100;
+                            @endphp
+                            <li>
+                                <p>Solo Play</p>
+                                <span>${{$order_amount * 20 / 100}}</span>
+                            </li>
+                        @endif
+                        @if($boostorder->priority_order == 1)
+                            @php 
+                                $priority_order = $order_amount * 20 / 100;
+                            @endphp
+                            <li>
+                                <p>Priority Order</p>
+                                <span>${{$order_amount * 20 / 100}}</span>
+                            </li>
+                        @endif
+                        @if($boostorder->play_with_booster == 1)
+                            @php 
+                                $play_with_booster = $order_amount * 20 / 100;
+                            @endphp
+                            <li>
+                                <p>Priority Order</p>
+                                <span>${{$order_amount * 20 / 100}}</span>
+                            </li>
+                        @endif
                         <li>
                             <p>Subtotal</p>
-                            <span>$30</span>
+                            <span>${{$order_amount + $solo_play + $play_with_booster + $priority_order}}</span>
                         </li>
                     </ul>
                 </div>
                 <hr>
                 <div class="csgo-total-payment-conatiner">
                     <h5>Total Amount</h5>
-                    <h6>$40</h6>
+                    <h6>${{$order_amount + $solo_play + $play_with_booster + $priority_order}}</h6>
                 </div>
                 <a href="/payment"><button class="csgo-btn csgo-payment-checkout">CHECKOUT</button></a>
             </div>

@@ -96,16 +96,16 @@
                                         <option value="" selected disabled>
                                             Select Rank</option>
                                             <option class="addLocationProduct-boost-rank-option-new" value="Silver"><span>Silver</span></option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Gold1">Gold 1</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Gold2">Gold 2</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Veteran1">Veteran 1</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Veteran2">Veteran 2</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Master1">Master 1</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Master2">Master 2</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Elite1">Elite 1</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Elite2">Elite 2</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Pro1">Pro 1</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Pro2">Pro 2</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Gold 1">Gold 1</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Gold 2">Gold 2</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Veteran 1">Veteran 1</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Veteran 2">Veteran 2</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Master 1">Master 1</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Master 2">Master 2</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Elite 1">Elite 1</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Elite 2">Elite 2</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Pro 1">Pro 1</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Pro 2">Pro 2</option>
 
                                     </select>
 
@@ -121,16 +121,16 @@
                                         <select class="addLocationProduct-boost-rank-toggle-new" id="rankboostrequired"
                                             onchange="updateRankBoostPriceRequired()" name="desired_level">
                                             <option class="addLocationProduct-boost-rank-option-new" value="Silver"><span>Silver</span></option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Gold1">Gold 1</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Gold2">Gold 2</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Veteran1">Veteran 1</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Veteran2">Veteran 2</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Gold 1">Gold 1</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Gold 2">Gold 2</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Veteran 1">Veteran 1</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Veteran 2">Veteran 2</option>
                                             <option class="addLocationProduct-boost-rank-option-new" value="Master 1">Master 1</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Master2">Master 2</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Elite1">Elite 1</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Elite2">Elite 2</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Pro1">Pro 1</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Pro2">Pro 2</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Master 2">Master 2</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Elite 1">Elite 1</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Elite 2">Elite 2</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Pro 1">Pro 1</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Pro 2">Pro 2</option>
 
                                         </select>
 
@@ -213,16 +213,16 @@
                                     <select class="addLocationProduct-boost-rank-toggle-new" id="placementcurrent"
                                             onchange="updateplacementImage()" name="current_level">
                                             <option class="addLocationProduct-boost-rank-option-new" value="Silver"><span>Silver</span></option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Gold1">Gold 1</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Gold2">Gold 2</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Veteran1">Veteran 1</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Veteran2">Veteran 2</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Master1">Master 1</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Master2">Master 2</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Elite1">Elite 1</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Elite2">Elite 2</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Pro1">Pro 1</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="Pro2">Pro 2</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Gold 1">Gold 1</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Gold 2">Gold 2</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Veteran 1">Veteran 1</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Veteran 2">Veteran 2</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Master 1">Master 1</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Master 2">Master 2</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Elite 1">Elite 1</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Elite 2">Elite 2</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Pro 1">Pro 1</option>
+                                            <option class="addLocationProduct-boost-rank-option-new" value="Pro 2">Pro 2</option>
 
                                     </select>
 
@@ -254,7 +254,7 @@
                                     <img src="/assets/icons/info-gray.svg" alt="">
                                     <label class="switch">
                                         <!-- <input type="checkbox"> -->
-                                        <input type="checkbox" id="placementcheckbox1" onchange="updateplacement()">
+                                        <input type="checkbox" id="placementcheckbox1" onchange="updateplacement()" name="solo_play">
                                         <span class="slider"></span>
                                     </label>
                                 </div>
@@ -266,7 +266,7 @@
                                     <img src="/assets/icons/info-gray.svg" alt="">
                                     <label class="switch">
                                         <!-- <input type="checkbox"> -->
-                                        <input type="checkbox" id="placementcheckbox2" onchange="updateplacement()">
+                                        <input type="checkbox" id="placementcheckbox2" onchange="updateplacement()" name="priority_order">
                                         <span class="slider"></span>
                                     </label>
                                 </div>
@@ -278,7 +278,7 @@
                                     <img src="/assets/icons/info-gray.svg" alt="">
                                     <label class="switch">
                                         <!-- <input type="checkbox"> -->
-                                        <input type="checkbox" id="placementcheckbox3" onchange="updateplacement()">
+                                        <input type="checkbox" id="placementcheckbox3" onchange="updateplacement()" name="play_with_booster">
                                         <span class="slider"></span>
                                     </label>
                                 </div>
@@ -484,17 +484,17 @@
         function updateRankBoostPriceRequired(){
             var selectedOption = document.getElementById("rankboostrequired").value;
             var prices = {
-                Silver: 10.00,
-                Gold1: 15.00,
-                Gold2: 20.00,
-                Veteran1: 25.00,
-                Veteran2: 30.00,
-                Master1: 35.00,
-                Master2: 40.00,
-                Elite1: 45.00,
-                Elite2: 50.00,
-                Pro1: 55.00,
-                Pro2: 60.00,
+                "Silver": 10.00,
+                "Gold 1": 15.00,
+                "Gold 2": 20.00,
+                "Veteran 1": 25.00,
+                "Veteran 2": 30.00,
+                "Master 1": 35.00,
+                "Master 2": 40.00,
+                "Elite 1": 45.00,
+                "Elite 2": 50.00,
+                "Pro 1": 55.00,
+                "Pro 2": 60.00,
             };
 
             var additionalAmount = 0;

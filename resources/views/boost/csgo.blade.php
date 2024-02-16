@@ -166,24 +166,24 @@
                                             <select class="addLocationProduct-boost-rank-toggle-new" onchange="updateRankBoostPrice()" name="current_level" id="rankboostcurrent">
                                                 <option value="" selected disabled>
                                                     Select Rank</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverI"><span>Silver I</span></option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverII">Silver II</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverIII">Silver III</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverIV">Silver IV</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverElite">Silver Elite</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverEliteMaster">Silver Elite Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaI">Gold Nova I</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaII">Gold Nova II</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaIII">Gold Nova III</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaMaster">Gold Nova Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardian">Master Guardian</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardianII">Master Guardian II</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardianElite">Master Guardian Elite</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="DistunguishedMasterGuardian">Distunguished Master Guardian</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="LegendaryEagle">Legendary Eagle</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="LegendaryEagleMaster">Legendary Eagle Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SupremeMaster">Supreme Master First Class</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="GlobalElite">Global Elite</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver I"><span>Silver I</span></option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver II">Silver II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver III">Silver III</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver IV">Silver IV</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver Elite">Silver Elite</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver Elite Master">Silver Elite Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova I">Gold Nova I</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova II">Gold Nova II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova III">Gold Nova III</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova Master">Gold Nova Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian">Master Guardian</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian II">Master Guardian II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian Elite">Master Guardian Elite</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Legendary Eagle">Legendary Eagle</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Legendary Eagle Master">Legendary Eagle Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Supreme Master">Supreme Master First Class</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Global Elite">Global Elite</option>
 
                                             </select>
 
@@ -198,24 +198,24 @@
 
                                                 <select class="addLocationProduct-boost-rank-toggle-new" id="rankboostrequired"
                                                     onchange="updateRankBoostPriceRequired()" name="desired_level">
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverI"><span>Silver I</span></option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverII">Silver II</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverIII">Silver III</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverIV">Silver IV</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverElite">Silver Elite</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverEliteMaster">Silver Elite Master</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaI">Gold Nova I</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaII">Gold Nova II</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaIII">Gold Nova III</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaMaster">Gold Nova Master</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardian">Master Guardian</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardianII">Master Guardian II</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardianElite">Master Guardian Elite</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="DistunguishedMasterGuardian">Distunguished Master Guardian</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="LegendaryEagle">Legendary Eagle</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="LegendaryEagleMaster">Legendary Eagle Master</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SupremeMaster">Supreme Master First Class</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="GlobalElite">Global Elite</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Silver I"><span>Silver I</span></option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Silver II">Silver II</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Silver III">Silver III</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Silver IV">Silver IV</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Silver Elite">Silver Elite</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Silver Elite Master">Silver Elite Master</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova I">Gold Nova I</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova II">Gold Nova II</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova III">Gold Nova III</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova Master">Gold Nova Master</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian">Master Guardian</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian II">Master Guardian II</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian Elite">Master Guardian Elite</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Legendary Eagle">Legendary Eagle</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Legendary Eagle Master">Legendary Eagle Master</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Supreme Master">Supreme Master First Class</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Global Elite">Global Elite</option>
 
                                                 </select>
 
@@ -298,24 +298,24 @@
 
                                             <select class="addLocationProduct-boost-rank-toggle-new" id="winboostcurrent"
                                                     onchange="updateWinBoostImage()" name="current_level">
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverI"><span>Silver I</span></option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverII">Silver II</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverIII">Silver III</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverIV">Silver IV</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverElite">Silver Elite</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverEliteMaster">Silver Elite Master</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaI">Gold Nova I</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaII">Gold Nova II</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaIII">Gold Nova III</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaMaster">Gold Nova Master</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardian">Master Guardian</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardianII">Master Guardian II</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardianElite">Master Guardian Elite</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="DistunguishedMasterGuardian">Distunguished Master Guardian</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="LegendaryEagle">Legendary Eagle</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="LegendaryEagleMaster">Legendary Eagle Master</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SupremeMaster">Supreme Master First Class</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="GlobalElite">Global Elite</option>
+                                                    <option class="addLocationProduct-boost-rank-option-new" value="Silver I"><span>Silver I</span></option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver II">Silver II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver III">Silver III</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver IV">Silver IV</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver Elite">Silver Elite</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver Elite Master">Silver Elite Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova I">Gold Nova I</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova II">Gold Nova II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova III">Gold Nova III</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova Master">Gold Nova Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian">Master Guardian</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian II">Master Guardian II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian Elite">Master Guardian Elite</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Legendary Eagle">Legendary Eagle</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Legendary Eagle Master">Legendary Eagle Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Supreme Master">Supreme Master First Class</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Global Elite">Global Elite</option>
 
                                             </select>
 
@@ -347,7 +347,7 @@
                                             <img src="/assets/icons/info-gray.svg" alt="">
                                             <label class="switch">
                                                 <!-- <input type="checkbox"> -->
-                                                <input type="checkbox" id="winboostcheckbox1" onchange="updatePriceWinBoost()">
+                                                <input type="checkbox" id="winboostcheckbox1" name="solo_play" onchange="updatePriceWinBoost()">
                                                 <span class="slider"></span>
                                             </label>
                                         </div>
@@ -359,7 +359,7 @@
                                             <img src="/assets/icons/info-gray.svg" alt="">
                                             <label class="switch">
                                                 <!-- <input type="checkbox"> -->
-                                                <input type="checkbox" id="winboostcheckbox2" onchange="updatePriceWinBoost()">
+                                                <input type="checkbox" id="winboostcheckbox2" name="priority_order" onchange="updatePriceWinBoost()">
                                                 <span class="slider"></span>
                                             </label>
                                         </div>
@@ -371,7 +371,7 @@
                                             <img src="/assets/icons/info-gray.svg" alt="">
                                             <label class="switch">
                                                 <!-- <input type="checkbox"> -->
-                                                <input type="checkbox" id="winboostcheckbox3" onchange="updatePriceWinBoost()">
+                                                <input type="checkbox" id="winboostcheckbox3" name="play_with_booster" onchange="updatePriceWinBoost()">
                                                 <span class="slider"></span>
                                             </label>
                                         </div>
@@ -415,24 +415,24 @@
                                                 <select class="addLocationProduct-boost-rank-toggle-new" onchange="updateWingmanBoostImage()" name="current_level" id="wingmanboostcurrent">
                                                     <option value="" selected disabled>
                                                         Select Rank</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverI"><span>Silver I</span></option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverII">Silver II</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverIII">Silver III</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverIV">Silver IV</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverElite">Silver Elite</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SilverEliteMaster">Silver Elite Master</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaI">Gold Nova I</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaII">Gold Nova II</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaIII">Gold Nova III</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaMaster">Gold Nova Master</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardian">Master Guardian</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardianII">Master Guardian II</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardianElite">Master Guardian Elite</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="DistunguishedMasterGuardian">Distunguished Master Guardian</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="LegendaryEagle">Legendary Eagle</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="LegendaryEagleMaster">Legendary Eagle Master</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="SupremeMaster">Supreme Master First Class</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="GlobalElite">Global Elite</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Silver I"><span>Silver I</span></option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Silver II">Silver II</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Silver III">Silver III</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Silver IV">Silver IV</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Silver Elite">Silver Elite</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Silver Elite Master">Silver Elite Master</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova I">Gold Nova I</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova II">Gold Nova II</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova III">Gold Nova III</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova Master">Gold Nova Master</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian">Master Guardian</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian II">Master Guardian II</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian Elite">Master Guardian Elite</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Legendary Eagle">Legendary Eagle</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Legendary Eagle Master">Legendary Eagle Master</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Supreme Master">Supreme Master First Class</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Global Elite">Global Elite</option>
     
                                                 </select>
     
@@ -447,24 +447,24 @@
     
                                                     <select class="addLocationProduct-boost-rank-toggle-new" id="wingmanboostrequired"
                                                         onchange="updateWingmanBoostPriceRequired()" name="desired_level">
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="SilverI"><span>Silver I</span></option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="SilverII">Silver II</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="SilverIII">Silver III</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="SilverIV">Silver IV</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="SilverElite">Silver Elite</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="SilverEliteMaster">Silver Elite Master</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaI">Gold Nova I</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaII">Gold Nova II</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaIII">Gold Nova III</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaMaster">Gold Nova Master</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardian">Master Guardian</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardianII">Master Guardian II</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardianElite">Master Guardian Elite</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="DistunguishedMasterGuardian">Distunguished Master Guardian</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="LegendaryEagle">Legendary Eagle</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="LegendaryEagleMaster">Legendary Eagle Master</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="SupremeMaster">Supreme Master First Class</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="GlobalElite">Global Elite</option>
+                                                        <option class="addLocationProduct-boost-rank-option-new" value="Silver I"><span>Silver I</span></option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver II">Silver II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver III">Silver III</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver IV">Silver IV</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver Elite">Silver Elite</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver Elite Master">Silver Elite Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova I">Gold Nova I</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova II">Gold Nova II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova III">Gold Nova III</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova Master">Gold Nova Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian">Master Guardian</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian II">Master Guardian II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian Elite">Master Guardian Elite</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Legendary Eagle">Legendary Eagle</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Legendary Eagle Master">Legendary Eagle Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Supreme Master">Supreme Master First Class</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Global Elite">Global Elite</option>
     
                                                     </select>
     
@@ -527,8 +527,8 @@
                                         </div>
                                     </div>
 
-                            </div>
-                        </form>
+                                    </div>
+                                </form>
                     </div>
 
                     <div class="csgo-boost-howtobuy-tab-content" id="csgo-boost-tab4">
@@ -548,24 +548,24 @@
 
                                         <select class="addLocationProduct-boost-rank-toggle-new" id="placementcurrent"
                                                 onchange="updateplacementImage()" name="current_level">
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverI"><span>Silver I</span></option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverII">Silver II</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverIII">Silver III</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverIV">Silver IV</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverElite">Silver Elite</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverEliteMaster">Silver Elite Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaI">Gold Nova I</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaII">Gold Nova II</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaIII">Gold Nova III</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaMaster">Gold Nova Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardian">Master Guardian</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardianII">Master Guardian II</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardianElite">Master Guardian Elite</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="DistunguishedMasterGuardian">Distunguished Master Guardian</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="LegendaryEagle">Legendary Eagle</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="LegendaryEagleMaster">Legendary Eagle Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SupremeMaster">Supreme Master First Class</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="GlobalElite">Global Elite</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver I"><span>Silver I</span></option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver II">Silver II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver III">Silver III</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver IV">Silver IV</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver Elite">Silver Elite</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver Elite Master">Silver Elite Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova I">Gold Nova I</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova II">Gold Nova II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova III">Gold Nova III</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova Master">Gold Nova Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian">Master Guardian</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian II">Master Guardian II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian Elite">Master Guardian Elite</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Legendary Eagle">Legendary Eagle</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Legendary Eagle Master">Legendary Eagle Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Supreme Master">Supreme Master First Class</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Global Elite">Global Elite</option>
 
                                         </select>
 
@@ -597,7 +597,7 @@
                                         <img src="/assets/icons/info-gray.svg" alt="">
                                         <label class="switch">
                                             <!-- <input type="checkbox"> -->
-                                            <input type="checkbox" id="placementcheckbox1" onchange="updateplacement()">
+                                            <input type="checkbox" id="placementcheckbox1" name="solo_play" onchange="updateplacement()">
                                             <span class="slider"></span>
                                         </label>
                                     </div>
@@ -609,7 +609,7 @@
                                         <img src="/assets/icons/info-gray.svg" alt="">
                                         <label class="switch">
                                             <!-- <input type="checkbox"> -->
-                                            <input type="checkbox" id="placementcheckbox2" onchange="updateplacement()">
+                                            <input type="checkbox" id="placementcheckbox2" name="priority_order" onchange="updateplacement()">
                                             <span class="slider"></span>
                                         </label>
                                     </div>
@@ -621,7 +621,7 @@
                                         <img src="/assets/icons/info-gray.svg" alt="">
                                         <label class="switch">
                                             <!-- <input type="checkbox"> -->
-                                            <input type="checkbox" id="placementcheckbox3" onchange="updateplacement()">
+                                            <input type="checkbox" id="placementcheckbox3" name="play_with_booster" onchange="updateplacement()">
                                             <span class="slider"></span>
                                         </label>
                                     </div>
@@ -664,24 +664,24 @@
                                         <select class="addLocationProduct-boost-rank-toggle-new" onchange="updatedangerzoneimage()" name="current_level" id="dangerzonecurrent">
                                             <option value="" selected disabled>
                                                 Select Rank</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="SilverI"><span>Silver I</span></option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="SilverII">Silver II</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="SilverIII">Silver III</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="SilverIV">Silver IV</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="SilverElite">Silver Elite</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="SilverEliteMaster">Silver Elite Master</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaI">Gold Nova I</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaII">Gold Nova II</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaIII">Gold Nova III</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaMaster">Gold Nova Master</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardian">Master Guardian</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardianII">Master Guardian II</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardianElite">Master Guardian Elite</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="DistunguishedMasterGuardian">Distunguished Master Guardian</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="LegendaryEagle">Legendary Eagle</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="LegendaryEagleMaster">Legendary Eagle Master</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="SupremeMaster">Supreme Master First Class</option>
-                                            <option class="addLocationProduct-boost-rank-option-new" value="GlobalElite">Global Elite</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver I"><span>Silver I</span></option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver II">Silver II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver III">Silver III</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver IV">Silver IV</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver Elite">Silver Elite</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver Elite Master">Silver Elite Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova I">Gold Nova I</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova II">Gold Nova II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova III">Gold Nova III</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova Master">Gold Nova Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian">Master Guardian</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian II">Master Guardian II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian Elite">Master Guardian Elite</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Legendary Eagle">Legendary Eagle</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Legendary Eagle Master">Legendary Eagle Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Supreme Master">Supreme Master First Class</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Global Elite">Global Elite</option>
 
                                         </select>
 
@@ -696,24 +696,24 @@
 
                                             <select class="addLocationProduct-boost-rank-toggle-new" id="dangerzonerankrequired"
                                                 onchange="updateDangerZoneBoostPriceRequired()" name="desired_level">
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverI"><span>Silver I</span></option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverII">Silver II</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverIII">Silver III</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverIV">Silver IV</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverElite">Silver Elite</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SilverEliteMaster">Silver Elite Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaI">Gold Nova I</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaII">Gold Nova II</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaIII">Gold Nova III</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="GoldNovaMaster">Gold Nova Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardian">Master Guardian</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardianII">Master Guardian II</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="MasterGuardianElite">Master Guardian Elite</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="DistunguishedMasterGuardian">Distunguished Master Guardian</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="LegendaryEagle">Legendary Eagle</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="LegendaryEagleMaster">Legendary Eagle Master</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="SupremeMaster">Supreme Master First Class</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="GlobalElite">Global Elite</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver I"><span>Silver I</span></option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver II">Silver II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver III">Silver III</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver IV">Silver IV</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver Elite">Silver Elite</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Silver Elite Master">Silver Elite Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova I">Gold Nova I</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova II">Gold Nova II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova III">Gold Nova III</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Gold Nova Master">Gold Nova Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian">Master Guardian</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian II">Master Guardian II</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Master Guardian Elite">Master Guardian Elite</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Legendary Eagle">Legendary Eagle</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Legendary Eagle Master">Legendary Eagle Master</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Supreme Master">Supreme Master First Class</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="Global Elite">Global Elite</option>
 
                                             </select>
 
@@ -963,24 +963,24 @@
     function updateWingmanBoostPriceRequired(){
             var selectedOption = document.getElementById("wingmanboostrequired").value;
             var prices = {
-                SilverI: 10.00,
-                SilverII: 15.00,
-                SilverIII: 20.00,
-                SilverIV: 25.00,
-                SilverElite: 30.00,
-                SilverEliteMaster: 35.00,
-                GoldNovaI: 40.00,
-                GoldNovaII: 45.00,
-                GoldNovaIII: 50.00,
-                GoldNovaMaster: 55.00,
-                MasterGuardian: 60.00,
-                MasterGuardianII: 65.00,
-                MasterGuardianElite: 70.00,
-                DistunguishedMasterGuardian: 75.00,
-                LegendaryEagle: 80.00,
-                LegendaryEagleMaster: 85.00,
-                SupremeMaster: 90.00,
-                GlobalElite: 100.00,
+                "Silver I": 10.00,
+                "Silver II": 15.00,
+                "Silver III": 20.00,
+                "Silver IV": 25.00,
+                "Silver Elite": 30.00,
+                "Silver Elite Master": 35.00,
+                "Gold Nova I": 40.00,
+                "Gold Nova II": 45.00,
+                "Gold Nova III": 50.00,
+                "Gold Nova Master": 55.00,
+                "Master Guardian": 60.00,
+                "Master Guardian II": 65.00,
+                "Master Guardian Elite": 70.00,
+                "Distunguished Master Guardian": 75.00,
+                "Legendary Eagle": 80.00,
+                "Legendary Eagle Master": 85.00,
+                "Supreme Master": 90.00,
+                "Global Elite": 100.00,
             };
 
             var additionalAmount = 0;
@@ -1054,25 +1054,26 @@
     function updateDangerZoneBoostPriceRequired(){
             var selectedOption = document.getElementById("dangerzonerankrequired").value;
             var prices = {
-                SilverI: 10.00,
-                SilverII: 15.00,
-                SilverIII: 20.00,
-                SilverIV: 25.00,
-                SilverElite: 30.00,
-                SilverEliteMaster: 35.00,
-                GoldNovaI: 40.00,
-                GoldNovaII: 45.00,
-                GoldNovaIII: 50.00,
-                GoldNovaMaster: 55.00,
-                MasterGuardian: 60.00,
-                MasterGuardianII: 65.00,
-                MasterGuardianElite: 70.00,
-                DistunguishedMasterGuardian: 75.00,
-                LegendaryEagle: 80.00,
-                LegendaryEagleMaster: 85.00,
-                SupremeMaster: 90.00,
-                GlobalElite: 100.00,
+                "Silver I": 10.00,
+                "Silver II": 15.00,
+                "Silver III": 20.00,
+                "Silver IV": 25.00,
+                "Silver Elite": 30.00,
+                "Silver Elite Master": 35.00,
+                "Gold Nova I": 40.00,
+                "Gold Nova II": 45.00,
+                "Gold Nova III": 50.00,
+                "Gold Nova Master": 55.00,
+                "Master Guardian": 60.00,
+                "Master Guardian II": 65.00,
+                "Master Guardian Elite": 70.00,
+                "Distunguished Master Guardian": 75.00,
+                "Legendary Eagle": 80.00,
+                "Legendary Eagle Master": 85.00,
+                "Supreme Master": 90.00,
+                "Global Elite": 100.00,
             };
+
 
             var additionalAmount = 0;
 
@@ -1111,24 +1112,24 @@
         function updateRankBoostPriceRequired(){
             var selectedOption = document.getElementById("rankboostrequired").value;
             var prices = {
-                SilverI: 10.00,
-                SilverII: 15.00,
-                SilverIII: 20.00,
-                SilverIV: 25.00,
-                SilverElite: 30.00,
-                SilverEliteMaster: 35.00,
-                GoldNovaI: 40.00,
-                GoldNovaII: 45.00,
-                GoldNovaIII: 50.00,
-                GoldNovaMaster: 55.00,
-                MasterGuardian: 60.00,
-                MasterGuardianII: 65.00,
-                MasterGuardianElite: 70.00,
-                DistunguishedMasterGuardian: 75.00,
-                LegendaryEagle: 80.00,
-                LegendaryEagleMaster: 85.00,
-                SupremeMaster: 90.00,
-                GlobalElite: 100.00,
+                "Silver I": 10.00,
+                "Silver II": 15.00,
+                "Silver III": 20.00,
+                "Silver IV": 25.00,
+                "Silver Elite": 30.00,
+                "Silver Elite Master": 35.00,
+                "Gold Nova I": 40.00,
+                "Gold Nova II": 45.00,
+                "Gold Nova III": 50.00,
+                "Gold Nova Master": 55.00,
+                "Master Guardian": 60.00,
+                "Master Guardian II": 65.00,
+                "Master Guardian Elite": 70.00,
+                "Distunguished Master Guardian": 75.00,
+                "Legendary Eagle": 80.00,
+                "Legendary Eagle Master": 85.00,
+                "Supreme Master": 90.00,
+                "Global Elite": 100.00,
             };
 
             var additionalAmount = 0;

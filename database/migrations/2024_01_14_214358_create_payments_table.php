@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('available_time');
             $table->text('account_data');
             $table->string('payment_method');
+            $table->string('boost_order_price');
             $table->string('total_amount');
             $table->string('order_status');
             $table->foreign('order_id')->references('id')->on('boosts');

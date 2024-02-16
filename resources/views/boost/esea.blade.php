@@ -89,23 +89,23 @@
                                     <h3>ESEA Current Rank</h3>
 
                                     <div class="csgo-boost-rank-select-container">
-                                        <img src="/ranks/esea/Dminus.png" alt="" class="rank-img" id="rankboostimage">
+                                        <img src="/ranks/esea/D-.png" alt="" class="rank-img" id="rankboostimage">
 
                                         <select class="addLocationProduct-boost-rank-toggle-new" onchange="updateRankBoostimage()" name="current_level" id="rankboostcurrent">
                                             <option value="" selected disabled>
                                                 Select Rank</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Dminus"><span>D-</span></option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="D-"><span>D-</span></option>
                                                 <option class="addLocationProduct-boost-rank-option-new" value="D">D</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Dplus">D+</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Cminus">C-</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="D Plus">D+</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="C-">C-</option>
                                                 <option class="addLocationProduct-boost-rank-option-new" value="C">C</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Cplus">C+</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Bminus">B-</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="C Plus">C+</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="B-">B-</option>
                                                 <option class="addLocationProduct-boost-rank-option-new" value="B">B</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Bplus">B+</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Aminus">A-</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="B Plus">B+</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="A-">A-</option>
                                                 <option class="addLocationProduct-boost-rank-option-new" value="A">A</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Aplus">A+</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="A Plus">A+</option>
 
                                         </select>
 
@@ -116,22 +116,22 @@
                                 <div class="csgo-boost-rank-title-box">
                                     <h3>ESEA Required Rank</h3>
                                     <div class="csgo-boost-rank-select-container">
-                                        <img src="/ranks/esea/Dminus.png" alt="" id="rankboostimagerequired" class="rank-img">
+                                        <img src="/ranks/esea/D-.png" alt="" id="rankboostimagerequired" class="rank-img">
 
                                             <select class="addLocationProduct-boost-rank-toggle-new" id="rankboostrequired"
                                                 onchange="updateRankBoostPriceRequired()" name="desired_level">
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Dminus"><span>D-</span></option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="D-"><span>D-</span></option>
                                                 <option class="addLocationProduct-boost-rank-option-new" value="D">D</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Dplus">D+</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Cminus">C-</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="D Plus">D+</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="C-">C-</option>
                                                 <option class="addLocationProduct-boost-rank-option-new" value="C">C</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Cplus">C+</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Bminus">B-</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="C Plus">C+</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="B-">B-</option>
                                                 <option class="addLocationProduct-boost-rank-option-new" value="B">B</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Bplus">B+</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Aminus">A-</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="B Plus">B+</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="A-">A-</option>
                                                 <option class="addLocationProduct-boost-rank-option-new" value="A">A</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Aplus">A+</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="A Plus">A+</option>
 
                                             </select>
 
@@ -209,22 +209,22 @@
                                     <h3>ESEA Current Rank</h3>
 
                                     <div class="csgo-boost-rank-select-container">
-                                        <img src="/ranks/esea/Dminus.png" alt="" class="rank-img" id="placementcurrentimage">
+                                        <img src="/ranks/esea/D-.png" alt="" class="rank-img" id="placementcurrentimage">
 
                                         <select class="addLocationProduct-boost-rank-toggle-new" id="placementcurrent"
                                                 onchange="updateplacementImage()" name="current_level">
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Dminus"><span>D-</span></option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="D-"><span>D-</span></option>
                                                 <option class="addLocationProduct-boost-rank-option-new" value="D">D</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Dplus">D+</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Cminus">C-</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="D Plus">D+</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="C-">C-</option>
                                                 <option class="addLocationProduct-boost-rank-option-new" value="C">C</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Cplus">C+</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Bminus">B-</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="C Plus">C+</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="B-">B-</option>
                                                 <option class="addLocationProduct-boost-rank-option-new" value="B">B</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Bplus">B+</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Aminus">A-</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="B Plus">B+</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="A-">A-</option>
                                                 <option class="addLocationProduct-boost-rank-option-new" value="A">A</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Aplus">A+</option>
+                                                <option class="addLocationProduct-boost-rank-option-new" value="A Plus">A+</option>
 
                                         </select>
 
@@ -486,18 +486,18 @@
         function updateRankBoostPriceRequired(){
             var selectedOption = document.getElementById("rankboostrequired").value;
             var prices = {
-                Dminus: 10.00,
-                D: 15.00,
-                Dplus: 20.00,
-                Cminus: 25.00,
-                C: 30.00,
-                Cplus: 35.00,
-                Bminus: 40.00,
-                B: 45.00,
-                Bplus: 50.00,
-                Aminus: 55.00,
-                A: 60.00,
-                Aplus: 65.00,
+                "D-": 10.00,
+                "D": 15.00,
+                "D Plus": 20.00,
+                "C-": 25.00,
+                "C": 30.00,
+                "C Plus": 35.00,
+                "B-": 40.00,
+                "B": 45.00,
+                "B Plus": 50.00,
+                "A-": 55.00,
+                "A": 60.00,
+                "A Plus": 65.00,
             };
 
             var additionalAmount = 0;

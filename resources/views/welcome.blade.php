@@ -53,7 +53,7 @@
                             </h5>
                             <a href="/csgoboost"><button class="csgo-btn">Get Started Now</button></a>
                         </div>
-                        <img src="/assets/img/Daco_4399154.png" class="homeboost-hero" alt="">
+                        <img src="/bg1.png" class="homeboost-hero" alt="">
                     </div>
                     <div class="csgo-boost-tab-content" id="csgo-boost-tab2">
                         <div class="csgo-boost-para">
@@ -61,7 +61,7 @@
                             <h5>Esportal Boosting is an elite account boosting service provided by MyBoost.gg without using any cheats and with a 100% accurate & safe method. Boost your Esportal account now and enjoy the best experience we have to offer.</h5>
                                 <a href="/esportal"><button class="csgo-btn">Get Started Now</button></a>
                         </div>
-                        <img src="/assets/img/bg2.png" alt="">
+                        <img src="/assets/image1.png" alt="">
 
                     </div>
                     <div class="csgo-boost-tab-content" id="csgo-boost-tab3">
@@ -70,7 +70,7 @@
                             <h5>FaceIt boosting is a service to increase your FaceIT level. We provide you boosting through some of the most elite boosters in the FaceIt arena. Your account is 100% safe & secure and is in capable hands. Place your order now & enjoy the account with the actual rank that you deserve.</h5>
                                 <a href="/faceit"><button class="csgo-btn">Get Started Now</button></a>
                         </div>
-                        <img src="https://cdn.esportfire-services.com/e658b19f50b81af5bafe1cd5923e6b841a1ea3d90bdcbb8ac395a8bba76e97c0" alt="">
+                        <img src="/assets/image.png" alt="">
 
                     </div>
                     <div class="csgo-boost-tab-content" id="csgo-boost-tab4">
@@ -79,7 +79,7 @@
                             <h5>Check out our service to boost your ESEA account. The service is provided through the most elite Counter Strike players. Place the order now, have your account boosted & play with skilled players that actually match your rank & skill.</h5>
                             <a href="/esea"><button class="csgo-btn">Get Started Now</button></a>
                         </div>
-                        <img src="https://cdn.esportfire-services.com/c7d5462a7b818703efc78504be7a0cdaa01f85e17e91f9241235826acadce489" alt="">
+                        <img src="/assets/image3.png" alt="">
 
                     </div>
                 </div>

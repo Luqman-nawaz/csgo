@@ -5,7 +5,11 @@ use App\Http\Controllers\CsgoboostController;
 use App\Http\Controllers\EseaController;
 use App\Http\Controllers\EsportalController;
 use App\Http\Controllers\FaceitController;
+use App\Http\Controllers\PaymentController;
+use App\Models\payment;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Laravel\Cashier\Cashier;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,6 +49,9 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
+
+    Route::get('/checkout/success', [PaymentController::class, 'success'])->name('home');
+
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
@@ -59,4 +66,10 @@ Route::middleware([
     Route::post('/coaching/checkout', [BoostController::class, 'coachingcheckout']);
     Route::get('/coaching-checkout/{order_id}', [BoostController::class, 'CoachingCheckoutPayment']);
     Route::post('/coaching-payment/{order_id}', [BoostController::class, 'Coachingpayment']);
+
+    Route::get('/checkout/failure', function (Request $request) {
+        dd("Faield");
+    })->name('checkout-cancel');
+    
+     
 });
