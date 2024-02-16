@@ -43,14 +43,14 @@
                                 CS2 Rank Boost or CS2 Premier Rating Boost are the same boosting service.
                                 Our team has CS2 boost professionals who are committed to ensuring 
                                 your success. 
-                                
-                                CS2 Rating Boost is designed to help you achieve a higher rating 
+                            </h5>
+                                <p style="display: none;">CS2 Rating Boost is designed to help you achieve a higher rating 
                                 in Counter Strike 2 with the assistance of an experienced player. 
                                 This service is commonly offered in Solo Boost mode, where a 
                                 professional player logs into your account to participate in 
                                 competitive matches, or in Duo/Lobby Boost mode, allowing you to 
                                 team up with boosters in the same lobby.
-                            </h5>
+                                </p>
                             <a href="/csgoboost"><button class="csgo-btn">Get Started Now</button></a>
                         </div>
                         <img src="/bg1.png" class="homeboost-hero" alt="">
@@ -67,7 +67,7 @@
                     <div class="csgo-boost-tab-content" id="csgo-boost-tab3">
                         <div class="csgo-boost-para">
                             <h2>Faceit Boosting</h2>
-                            <h5>FaceIt boosting is a service to increase your FaceIT level. We provide you boosting through some of the most elite boosters in the FaceIt arena. Your account is 100% safe & secure and is in capable hands. Place your order now & enjoy the account with the actual rank that you deserve.</h5>
+                            <h5>FaceIt boosting is a service to increase your FaceIT level. We boost through the most elite boosters in the FaceIt arena. Your account is 100% safe & secure and is in capable hands. Place your order now & enjoy the account with the actual rank that you deserve.</h5>
                                 <a href="/faceit"><button class="csgo-btn">Get Started Now</button></a>
                         </div>
                         <img src="/assets/image.png" alt="">

@@ -1896,6 +1896,7 @@ body {
 }
 
 .csgo-boost-howtobuy-tab.active {
+    
     z-index: 2;
 }
 
@@ -2517,6 +2518,10 @@ body {
     color: #EFF3FB !important;
 }
 
+.esportal-p-1{
+    margin-left:50px !important;
+}
+
 .Esportal-tab-span {
     font-size: 1.3rem !important;
     margin-top: -12px;
@@ -2524,6 +2529,7 @@ body {
     color: #EFF3FB !important;
 
 }
+
 
 .csgo-boost-Esportal-howtobuy-tab:nth-child(1):before {
     left: 220px !important;
@@ -2697,6 +2703,10 @@ body {
 @media only screen and (max-width: 1336px) {
     .csgo-boost-howtobuy-content {
         width: 95%;
+    }
+    
+    .esportal-p-1{
+        margin-left:50px !important;
     }
 
     .csgo-boost-howtobuy-tab-content {
@@ -3135,6 +3145,12 @@ body {
 }
 
 @media only screen and (max-width: 950px) {
+
+    #left-esportal-margin{
+        margin-left:50% !important;
+    }
+
+
     .csgo-HomeBoosting-services-section-none {
         display: block !important;
     }
@@ -3486,6 +3502,8 @@ body {
 }
 
 @media only screen and (max-width: 706px) {
+    
+    
     .trns-boost-text {
         font-size: 30px;
         -webkit-text-stroke: 1.5px #f10b6b;

@@ -116,7 +116,7 @@
                     </defs>
                 </svg>
             </div>
-            <div class="csgo-boost-howtobuy-tab onlyboostspan csgo-boostmain-tab" onclick="openTab(4)"><span
+            <div class="csgo-boost-howtobuy-tab onlyboostspan csgo-boostmain-tab" id="left-esportal-margin" onclick="openTab(4)"><span
                     class="Esportal-tab-span">Danger Zone Boost</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 228 48" fill="none">
                     <g filter="url(#filter0_b_645_4079)">
