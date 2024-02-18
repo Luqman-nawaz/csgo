@@ -13,7 +13,6 @@
         </div>
     </div>
     <!-- csgo-boost-hero-Section-End -->
-
     <div class="csgo-howtobuy-conatianer csgo-howtobuy-conatianer-faceit">
 
         <div class="csgo-howtobuy-tabs-conatiner">
@@ -73,7 +72,7 @@
                         </defs>
                     </svg>
                 </div>
-                <div class="csgo-boost-howtobuy-tab csgo-boost-faceit-tab" onclick="openTab(2)"><span
+                <div class="csgo-boost-howtobuy-tab csgo-boost-faceit-tab" id="left-esportal-margin" onclick="openTab(2)"><span
                         class="Esportal-tab-span">Faceit Win Boost</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 228 48"
                         fill="none">

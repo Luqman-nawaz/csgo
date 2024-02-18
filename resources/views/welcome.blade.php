@@ -43,9 +43,11 @@
                                 CS2 Rank Boost or CS2 Premier Rating Boost are the same boosting service.
                                 Our team has CS2 boost professionals who are committed to ensuring 
                                 your success. 
-                            </h5>
-                                <p style="display: none;">CS2 Rating Boost is designed to help you achieve a higher rating 
+
+                                CS2 Rating Boost is designed to help you achieve a higher rating 
                                 in Counter Strike 2 with the assistance of an experienced player. 
+                            </h5>
+                                <p style="display: none;">
                                 This service is commonly offered in Solo Boost mode, where a 
                                 professional player logs into your account to participate in 
                                 competitive matches, or in Duo/Lobby Boost mode, allowing you to 
@@ -58,7 +60,12 @@
                     <div class="csgo-boost-tab-content" id="csgo-boost-tab2">
                         <div class="csgo-boost-para">
                             <h2>Esportal Boosting</h2>
-                            <h5>Esportal Boosting is an elite account boosting service provided by MyBoost.gg without using any cheats and with a 100% accurate & safe method. Boost your Esportal account now and enjoy the best experience we have to offer.</h5>
+                            <h5>Esportal Boosting is an elite account boosting service provided by MyBoost.gg 
+                                without using any cheats and with a 100% accurate & safe method. Boost your Esportal 
+                                account now and enjoy the best experience we have to offer.
+                            
+                                This boosting designed to help you achieve a higher rating 
+                                in Esportal with the assistance of an experienced player. </h5>
                                 <a href="/esportal"><button class="csgo-btn">Get Started Now</button></a>
                         </div>
                         <img src="/assets/Image1.png" alt="">
@@ -67,7 +74,13 @@
                     <div class="csgo-boost-tab-content" id="csgo-boost-tab3">
                         <div class="csgo-boost-para">
                             <h2>Faceit Boosting</h2>
-                            <h5>FaceIt boosting is a service to increase your FaceIT level. We boost through the most elite boosters in the FaceIt arena. Your account is 100% safe & secure and is in capable hands. Place your order now & enjoy the account with the actual rank that you deserve.</h5>
+                            <h5>FaceIt boosting is a service to increase your FaceIT level. 
+                                We boost through the most elite boosters in the FaceIt arena. 
+                                Your account is 100% safe & secure and is in capable hands. 
+                                Place your order now & enjoy the account with the actual rank that you deserve.
+                            
+                                You can place your order without any worry and receive your order
+                                within the exact promised time.</h5>
                                 <a href="/faceit"><button class="csgo-btn">Get Started Now</button></a>
                         </div>
                         <img src="/assets/image.png" alt="">
@@ -76,7 +89,13 @@
                     <div class="csgo-boost-tab-content" id="csgo-boost-tab4">
                         <div class="csgo-boost-para">
                             <h2>ESEA Boosting</h2>
-                            <h5>Check out our service to boost your ESEA account. The service is provided through the most elite Counter Strike players. Place the order now, have your account boosted & play with skilled players that actually match your rank & skill.</h5>
+                            <h5>Check out our service to boost your ESEA account. 
+                                The service is provided through the most elite Counter Strike players. 
+                                Place the order now, have your account boosted & play with skilled players that
+                                 actually match your rank & skill.
+                                
+                                The service is entirely safe & secure, all of our services are on the most professional
+                                & competitive market standard.</h5>
                             <a href="/esea"><button class="csgo-btn">Get Started Now</button></a>
                         </div>
                         <img src="/assets/image3.png" alt="">

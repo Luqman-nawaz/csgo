@@ -171,7 +171,7 @@ body {
     transition: color 0.5s, border-bottom-width 0.5s;
     border-bottom: 2px solid transparent;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .csgo-menu-conatiner ul li a:hover {
@@ -981,6 +981,10 @@ body {
     font-size: 15px;
     font-weight: 300;
     padding: 1rem 0rem;
+}
+
+.hidden-links{
+    display:none;
 }
 
 /* csgo-Home-FAQS End */
@@ -3040,6 +3044,10 @@ body {
 
     .csgo-menu-conatiner ul li a {
         font-size: 1.2rem !important;
+    }
+
+    .hidden-links{
+        display:block;
     }
 
     .csgo-boost-tabs {

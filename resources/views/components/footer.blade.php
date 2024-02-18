@@ -1,4 +1,7 @@
-<div class="csgo-HomeFooter-container" style="text-align: center;">
+<input type="range" min="0" max="10" value="2" class="slider-range"
+     id="myRange" style="display: none;"></input>
+     
+     <div class="csgo-HomeFooter-container" style="text-align: center;">
     <img src="/assets/logo.svg" alt="" class="footer-logo" style="height: 100px; width:100px;">    
     <div class="csgo-Home-InnerFooter-container">
         <div class="csgo-Home-InnerFooter-section">

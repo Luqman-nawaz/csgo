@@ -26,6 +26,14 @@
                 <li><a href="/esportal">Esportal Boost</a></li>
                 <li><a href="/coaching">Coaching</a></li>
                 <li><a href="/about">About</a></li>
+                @guest
+                <li class="hidden-links"><a href="/login">Login</a></li>
+                <li class="hidden-links"><a href="/register">Register</a></li>
+                @endguest
+                @auth
+                <li class="hidden-links"><a href="/dashboard">Dashboard</a></li>
+                @endauth
+                
             </ul>
         </div>
         <div>
