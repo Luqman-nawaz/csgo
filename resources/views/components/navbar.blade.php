@@ -27,7 +27,7 @@
                 <li><a href="/coaching">Coaching</a></li>
                 <li><a href="/about">About</a></li>
                 @guest
-                <li class="hidden-links"><a href="/login">Login</a></li>
+                <li class="hidden-links" style="padding: 1%;"><a href="/login" class="csgo-btn csgo-login-btn">Login</a></li>
                 <li class="hidden-links"><a href="/register">Register</a></li>
                 @endguest
                 @auth
