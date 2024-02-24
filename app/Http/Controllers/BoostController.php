@@ -185,41 +185,27 @@ class BoostController extends Controller
     public function checkoutpayment($order_id){
         $order = boost::where('id', $order_id)->get()->first();
 
-        if($order->boost_type == "Rank Boost" OR $order->boost_type == "ESEA Win Boost" OR $order->boost_type == "Esportal Win Boost" OR $order->boost_type == "Wingman Boost" OR $order->boost_type == "Level Boost" OR $order->boost_type == "Danger Zone Boost" OR $order->boost_type == "Elo Boost" OR $order->boost_type == "ESEA Rank Boost" OR $order->boost_type == "Esportal Rank Boost"){
-            
-            $order_amount = orderamounts::where('current_level', $order->current_level)->where('desired_level', $order->desired_level)->get()->first()->amount;
+        $order_amount = orderamounts::where('boost_type', $order->boost_type)->where('current_level', $order->current_level)->where('desired_level', $order->desired_level)->get()->first();
+        if(empty($order_amount)){
+            return back()->with('error', 'Cannot process order with selected values');
+        }            
 
+        $order_amount = $order_amount->amount;
 
-            if($order->solo_play == 1){
-                $side_amount = ($order_amount * 20) / 100; 
-                $total_amount = $order_amount + $side_amount;
-            }else if($order->priority_order == 1){
-                $side_amount = ($order_amount * 20) / 100; 
-                $total_amount = $order_amount + $side_amount;
-            }else if($order->play_with_booster == 1){
-                $side_amount = ($order_amount * 20) / 100;
-                $total_amount = $order_amount + $side_amount;
-            }else{
-                $total_amount = $order_amount;
-            }
+        $side_amount = ($order_amount * 0.20); 
+        
+        $total_amount = $order_amount;
 
+        if($order->solo_play == 1){
+            $total_amount = $total_amount + $side_amount;
+        }
+    
+        if($order->priority_order == 1){
+            $total_amount = $total_amount + $side_amount;
         }
 
-        if($order->boost_type == "Win Boost" OR $order->boost_type == "FaceIt Win Boost" OR $order->boost_type == "ESEA Win Boost"){
-            $order_amount = $order->desired_level * 7;
-
-            if($order->solo_play == 1){
-                $side_amount = ($order_amount * 0.20); 
-                $total_amount = $order_amount + $side_amount;
-            }else if($order->priority_order == 1){
-                $side_amount = ($order_amount * 0.20); 
-                $total_amount = $order_amount + $side_amount;
-            }else if($order->play_with_booster == 1){
-                $side_amount = ($order_amount * 0.20); 
-                $total_amount = $order_amount + $side_amount;
-            }else{
-                $total_amount = $order_amount;
-            }
+        if($order->play_with_booster == 1){
+            $total_amount = $total_amount + $side_amount;
         }
 
         return view('checkout', ['boostorder' => $order, 'total_amount' => $total_amount, 'order_amount' => $order_amount]);
@@ -278,13 +264,16 @@ class BoostController extends Controller
     public function payment($order_id, Request $request){
         
         $order = boost::where('id', $order_id)->where('user_id', Auth::id())->get()->first();
+            
+            $order_amount = orderamounts::where('boost_type', $order->boost_type)->where('current_level', $order->current_level)->where('desired_level', $order->desired_level)->get()->first();
+            if(empty($order_amount)){
+                return back()->with('error', 'Cannot process order with selected values');
+            }            
 
-        if($order->boost_type == "Rank Boost" OR $order->boost_type == "Esportal Win Boost" OR $order->boost_type == "Wingman Boost" OR $order->boost_type == "Level Boost" OR $order->boost_type == "ESEA Rank Boost" OR $order->boost_type == "Esportal Rank Boost" OR $order->boost_type == "Danger Zone Boost" OR $order->boost_type == "ESEA Rank Boost" OR $order->boost_type == "Esportal Rank Boost" OR $order->boost_type == "Elo Boost"){
-            
-            
-            $order_amount = orderamounts::where('current_level', $order->current_level)->where('desired_level', $order->desired_level)->get()->first()->amount;
-            
+            $order_amount = $order_amount->amount;
+
             $side_amount = ($order_amount * 0.20); 
+
             $total_amount = $order_amount;
 
             if($order->solo_play == 1){
@@ -298,25 +287,6 @@ class BoostController extends Controller
             if($order->play_with_booster == 1){
                 $total_amount = $total_amount + $side_amount;
             }
-
-        }
-
-        if($order->boost_type == "Win Boost" OR $order->boost_type == "FaceIt Win Boost" OR $order->boost_type == "ESEA Win Boost"){
-            $order_amount = $order->desired_level * 7;
-
-            if($order->solo_play == 1){
-                $side_amount = ($order_amount * 0.20); 
-                $total_amount = $order_amount + $side_amount;
-            }else if($order->priority_order == 1){
-                $side_amount = ($order_amount * 0.20); 
-                $total_amount = $order_amount + $side_amount;
-            }else if($order->play_with_booster == 1){
-                $side_amount = ($order_amount * 0.20); 
-                $total_amount = $order_amount + $side_amount;
-            }else{
-                $total_amount = $order_amount;
-            }
-        }
 
         $payment = array(
             'order_id' => $order_id,
