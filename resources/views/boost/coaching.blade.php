@@ -715,101 +715,102 @@
 @endsection
 
 @push('js')
+<script>
+    function updatePrice(){
+            var reviews = document.getElementById('myRange').value;
+            
+            var additionalAmount = 0;
+
+            if (document.getElementById("checkbox2").checked) {
+                additionalAmount += 0.20;
+            }
+
+            var totalAmount = (reviews * 20) * (1 + additionalAmount);
+            
+            document.getElementById("priceTag").innerText = "$" + totalAmount.toFixed(2);
+        
+
+            const slider = document.getElementById("myRange");
+            const sliderValue = document.getElementById("sliderValue");
+
+            // Update the slider value text when the slider is moved
+            slider.addEventListener("input", function() {
+                sliderValue.textContent = this.value;
+        });
+    }
+
+    function updateCoachDemoPrice(){
+            var reviews = document.getElementById('DemoCoachmyRange').value;
+            
+            var additionalAmount = 0;
+
+            if (document.getElementById("DemoCoachingcheckbox2").checked) {
+                additionalAmount += 0.20;
+            }
+
+            var totalAmount = (reviews * 20) * (1 + additionalAmount);
+            
+            document.getElementById("DemoCoachpriceTag").innerText = "$" + totalAmount.toFixed(2);
+        
+
+            const slider = document.getElementById("DemoCoachmyRange");
+            const sliderValue = document.getElementById("DemoCoachsliderValue");
+
+            // Update the slider value text when the slider is moved
+            slider.addEventListener("input", function() {
+                sliderValue.textContent = this.value;
+            });
+    }
+
+    function updateCoachPrice(){
+            var reviews = document.getElementById('CoachmyRange').value;
+            
+            var additionalAmount = 0;
+
+            if (document.getElementById("Coachingcheckbox2").checked) {
+                additionalAmount += 0.20;
+            }
+
+            var totalAmount = (reviews * 20) * (1 + additionalAmount);
+            
+            document.getElementById("CoachpriceTag").innerText = "$" + totalAmount.toFixed(2);
+        
+
+            const slider = document.getElementById("CoachmyRange");
+            const sliderValue = document.getElementById("CoachsliderValue");
+
+            // Update the slider value text when the slider is moved
+            slider.addEventListener("input", function() {
+                sliderValue.textContent = this.value;
+            });
+    }
+
+    function updateTeamCoachPrice(){
+            var reviews = document.getElementById('TeamCoachmyRange').value;
+            
+            var additionalAmount = 0;
+
+            if (document.getElementById("TeamCoachingcheckbox2").checked) {
+                additionalAmount += 0.20;
+            }
+
+            var totalAmount = (reviews * 20) * (1 + additionalAmount);
+            
+            document.getElementById("TeamCoachpriceTag").innerText = "$" + totalAmount.toFixed(2);
+        
+
+            const slider = document.getElementById("TeamCoachmyRange");
+            const sliderValue = document.getElementById("TeamCoachsliderValue");
+
+            // Update the slider value text when the slider is moved
+            slider.addEventListener("input", function() {
+                sliderValue.textContent = this.value;
+            });
+    }
+</script>
     <script src="/vendor/js/app.js"></script>
     <script src="/vendor/js/dropdowns.js"></script>
     <script src="/vendor/js/carousel.js"></script>
     <script src="/vendor/js/boosttabs.js"></script>
-    <script>
-        function updatePrice(){
-                var reviews = document.getElementById('myRange').value;
-                
-                var additionalAmount = 0;
-
-                if (document.getElementById("checkbox2").checked) {
-                    additionalAmount += 0.20;
-                }
-
-                var totalAmount = (reviews * 20) * (1 + additionalAmount);
-                
-                document.getElementById("priceTag").innerText = "$" + totalAmount.toFixed(2);
-            
-
-                const slider = document.getElementById("myRange");
-                const sliderValue = document.getElementById("sliderValue");
-
-                // Update the slider value text when the slider is moved
-                slider.addEventListener("input", function() {
-                    sliderValue.textContent = this.value;
-            });
-        }
-
-        function updateCoachDemoPrice(){
-                var reviews = document.getElementById('DemoCoachmyRange').value;
-                
-                var additionalAmount = 0;
-
-                if (document.getElementById("DemoCoachingcheckbox2").checked) {
-                    additionalAmount += 0.20;
-                }
-
-                var totalAmount = (reviews * 20) * (1 + additionalAmount);
-                
-                document.getElementById("DemoCoachpriceTag").innerText = "$" + totalAmount.toFixed(2);
-            
-
-                const slider = document.getElementById("DemoCoachmyRange");
-                const sliderValue = document.getElementById("DemoCoachsliderValue");
-
-                // Update the slider value text when the slider is moved
-                slider.addEventListener("input", function() {
-                    sliderValue.textContent = this.value;
-                });
-        }
-
-        function updateCoachPrice(){
-                var reviews = document.getElementById('CoachmyRange').value;
-                
-                var additionalAmount = 0;
-
-                if (document.getElementById("Coachingcheckbox2").checked) {
-                    additionalAmount += 0.20;
-                }
-
-                var totalAmount = (reviews * 20) * (1 + additionalAmount);
-                
-                document.getElementById("CoachpriceTag").innerText = "$" + totalAmount.toFixed(2);
-            
-
-                const slider = document.getElementById("CoachmyRange");
-                const sliderValue = document.getElementById("CoachsliderValue");
-
-                // Update the slider value text when the slider is moved
-                slider.addEventListener("input", function() {
-                    sliderValue.textContent = this.value;
-                });
-        }
-
-        function updateTeamCoachPrice(){
-                var reviews = document.getElementById('TeamCoachmyRange').value;
-                
-                var additionalAmount = 0;
-
-                if (document.getElementById("TeamCoachingcheckbox2").checked) {
-                    additionalAmount += 0.20;
-                }
-
-                var totalAmount = (reviews * 20) * (1 + additionalAmount);
-                
-                document.getElementById("TeamCoachpriceTag").innerText = "$" + totalAmount.toFixed(2);
-            
-
-                const slider = document.getElementById("TeamCoachmyRange");
-                const sliderValue = document.getElementById("TeamCoachsliderValue");
-
-                // Update the slider value text when the slider is moved
-                slider.addEventListener("input", function() {
-                    sliderValue.textContent = this.value;
-                });
-        }
-    </script>
+    
 @endpush

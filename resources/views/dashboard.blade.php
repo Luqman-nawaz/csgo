@@ -30,6 +30,10 @@
                                 <div class="csgo-btn-box">
                                     <a href="#" class="csgo-btn csgo-login-btn">Order in Progress</a>
                                 </div>
+                            @elseif($orders->payment->order_status == 'delivered')
+                                <div class="csgo-btn-box">
+                                    <a href="#" class="csgo-btn csgo-login-btn">Order Delivered</a>
+                                </div>
                             @else
                                 <div class="csgo-btn-box">
                                     <a href="/checkout/{{$orders->id}}" class="csgo-btn csgo-login-btn">Pay now!</a>
