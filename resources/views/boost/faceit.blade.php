@@ -1,581 +1,528 @@
 @extends('layouts.csgo')
 @section('title') <title>MyBoost.GG - Boost your FaceIT Account, Win Boost, Eloboost</title> @endsection
+
+    @push('css')
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    @endpush
+
 @section('content')
-    <x-navbar></x-navbar>
-    
-    <!-- csgo-boost-hero-Section-Start -->
-    <div class="csgo-boost-container" style="display: none;">
-        <!-- <img src="/assets/img/Group 3.svg" alt=""> -->
-        <div class="csgo-boost-section csgo-boost-section-1">
-            <div class="boost-hero-text-container">
-                <h2 class="trns-boost-text">FaceIT Account Boost<br>MyBoost.gg</h2>
-            </div>
-        </div>
-    </div>
-    <!-- csgo-boost-hero-Section-End -->
-    <div class="csgo-howtobuy-conatianer csgo-howtobuy-conatianer-faceit">
 
-        <div class="csgo-howtobuy-tabs-conatiner">
-            <div class="csgo-boost-howtobuy-tabs csgo-boost-faceit-tabs">
-
-                <div class="csgo-boost-howtobuy-tab csgo-boost-faceit-tab active" onclick="openTab(0)"><span
-                        class="Esportal-tab-span-1">Faceit Level Boost</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 228 48"
-                        fill="none">
-                        <g filter="url(#filter0_b_645_4079)">
-                            <path
-                                d="M191.482 0H38.1489C33.2553 0 29.9929 2.4 26.7305 7.2L1.12345 44.8758C0.220961 46.2036 1.17205 48 2.77756 48H225.222C226.828 48 227.779 46.2036 226.877 44.8758L201.27 7.2C198.007 2.4 196.376 0 191.482 0Z"
-                                fill="url(#paint0_linear_645_4079)" fill-opacity="0.8" />
-                        </g>
-                        <defs>
-                            <filter id="filter0_b_645_4079" x="-9.22586" y="-10" width="100%" height="100%"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
-                                <feComposite in2="SourceAlpha" operator="in"
-                                    result="effect1_backgroundBlur_645_4079" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_645_4079"
-                                    result="shape" />
-                            </filter>
-                            <linearGradient id="paint0_linear_645_4079" x1="114" y1="-18.75" x2="116.934"
-                                y2="104.221" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#FD432A" />
-                                <stop offset="1" stop-color="#FD2AA9" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
+    <div class="landing-page-container">
+        <x-navbar></x-navbar>
+        
+            <div class="heroSectionCS2-container">
+                <div class="heroSectionCS2-inner-container">
+                    <div class="heroSectionCS2-innerLeft-container">
+                        <h5>UNLOCK YOUR GAMING POTENTIAL WITH FACEIT BOOST</h5>
+                        <h1>Faceit Boosting Services</h1>
+                        <p>Enhance your Faceit experience with our professional boosting services. Whether you’re striving
+                            for a higher rank, better performance, or personalised coaching, our skilled team is here to
+                            assist you. We offer fair play—no cheats, bots, or prohibited methods.</p>
+                    </div>
                 </div>
-                <div class="csgo-boost-howtobuy-tab csgo-boost-faceit-tab" onclick="openTab(1)"><span
-                        class="Esportal-tab-span">Faceit ELO Boost</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 228 48"
-                        fill="none">
-                        <g filter="url(#filter0_b_645_4079)">
-                            <path
-                                d="M191.482 0H38.1489C33.2553 0 29.9929 2.4 26.7305 7.2L1.12345 44.8758C0.220961 46.2036 1.17205 48 2.77756 48H225.222C226.828 48 227.779 46.2036 226.877 44.8758L201.27 7.2C198.007 2.4 196.376 0 191.482 0Z"
-                                fill="url(#paint0_linear_645_4079)" fill-opacity="0.8" />
-                        </g>
-                        <defs>
-                            <filter id="filter0_b_645_4079" x="-9.22586" y="-10" width="100%" height="100%"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
-                                <feComposite in2="SourceAlpha" operator="in"
-                                    result="effect1_backgroundBlur_645_4079" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_645_4079"
-                                    result="shape" />
-                            </filter>
-                            <linearGradient id="paint0_linear_645_4079" x1="114" y1="-18.75" x2="116.934"
-                                y2="104.221" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#FD432A" />
-                                <stop offset="1" stop-color="#FD2AA9" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
-                <div class="csgo-boost-howtobuy-tab csgo-boost-faceit-tab" id="left-esportal-margin" onclick="openTab(2)"><span
-                        class="Esportal-tab-span">Faceit Win Boost</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 228 48"
-                        fill="none">
-                        <g filter="url(#filter0_b_645_4079)">
-                            <path
-                                d="M191.482 0H38.1489C33.2553 0 29.9929 2.4 26.7305 7.2L1.12345 44.8758C0.220961 46.2036 1.17205 48 2.77756 48H225.222C226.828 48 227.779 46.2036 226.877 44.8758L201.27 7.2C198.007 2.4 196.376 0 191.482 0Z"
-                                fill="url(#paint0_linear_645_4079)" fill-opacity="0.8" />
-                        </g>
-                        <defs>
-                            <filter id="filter0_b_645_4079" x="-9.22586" y="-10" width="100%" height="100%"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
-                                <feComposite in2="SourceAlpha" operator="in"
-                                    result="effect1_backgroundBlur_645_4079" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_645_4079"
-                                    result="shape" />
-                            </filter>
-                            <linearGradient id="paint0_linear_645_4079" x1="114" y1="-18.75" x2="116.934"
-                                y2="104.221" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#FD432A" />
-                                <stop offset="1" stop-color="#FD2AA9" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
+                <div class="boostLogo-box"><img src="/assets/images/faceitBoost.png" alt=""></div>
             </div>
 
-            <div class="shape-try">
-                <div class="csgo-boost-howtobuy-content">
-                    <div class="csgo-boost-howtobuy-tab-content active" id="csgo-boost-tab1">
-                        <div class="csgo-boost-howtobuy-para">
-                            <form action="/faceit/checkout" method="post">
+            <!-- CS2 Boosting Tabs Start -->
+            <div class="boosting-main-container">
+                <div class="boosting-centered-container">
+
+
+                    <div class="tabs flex justify-between items-center gap-4">
+                        <button class="boostingTabBtn boostingTabBtnOther active" onclick="openTab(event, 'tab1')">Faceit
+                            Level Boost</button>
+                        <button class="boostingTabBtn boostingTabBtnOther" onclick="openTab(event, 'tab2')">Faceit ELO
+                            Boost</button>
+                        <button class="boostingTabBtn boostingTabBtnOther" onclick="openTab(event, 'tab3')">Faceit Win
+                            Boost</button>
+                    </div>
+
+                    <div id="tab1" class="boostingTab active">
+                        <form action="/faceit/checkout" method="post">
                                 @csrf
                                 <input type="text" value="Level Boost" name="boost_type" style="display: none;" />
 
-                                <div class="csgo-boost-rank-title-conatiner">
+                                <div class="boostingTabContent">
 
-                                    <div class="csgo-boost-rank-title-box">
-                                        <h3>Faceit Current Rank</h3>
+                                    <div class="boosting-option-container">
 
-                                        <div class="csgo-boost-rank-select-container">
-                                            <img src="/ranks/faceit/Level 1.svg" alt="" class="rank-img" id="faceitcurrentimage" style="width:17%;">
+                                        <div class="boosting-option-inner-container">
 
-                                            <select class="addLocationProduct-boost-rank-toggle-new" onchange="updatefaceitcurrentimage()" name="current_level" id="faceitcurrent">
-                                                <option value="" selected disabled>
-                                                    Select Rank</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 1"><span>Level 1</span></option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 2">Level 2</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 3">Level 3</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 4">Level 4</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 5">Level 5</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 6">Level 6</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 7">Level 7</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 8">Level 8</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 9">Level 9</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 10">Level 10</option>
-
-                                            </select>
-
-                                        </div>
-                                    </div>
-                                    
-
-                                    <div class="csgo-boost-rank-title-box">
-                                        <h3>Faceit Required Rank</h3>
-                                        <div class="csgo-boost-rank-select-container">
-                                            <img src="/ranks/faceit/Level 1.svg" alt="" id="faceitrequiredimage" class="rank-img" style="width:17%;">
-
-                                                <select class="addLocationProduct-boost-rank-toggle-new" id="faceitrequired"
-                                                    onchange="updatefaceitpricerequired()" name="desired_level">
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="Level 1"><span>Level 1</span></option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 2">Level 2</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 3">Level 3</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 4">Level 4</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 5">Level 5</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 6">Level 6</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 7">Level 7</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 8">Level 8</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 9">Level 9</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="Level 10">Level 10</option>
-
+                                            <div class="boosting-option-img-box">
+                                                <img src="/assets/images/rankImgs/RankIMG1.png" id="faceitcurrentimage" alt="">
+                                            </div>
+                                            <div class="custom-select">
+                                                <label for="select">Label</label>
+                                                <select id="select" class="faceitcurrent" onchange="updatefaceitcurrentimage()" name="current_level">
+                                                    <option value="Level 1"><span>Level 1</span></option>
+                                                    <option value="Level 2">Level 2</option>
+                                                    <option value="Level 3">Level 3</option>
+                                                    <option value="Level 4">Level 4</option>
+                                                    <option value="Level 5">Level 5</option>
+                                                    <option value="Level 6">Level 6</option>
+                                                    <option value="Level 7">Level 7</option>
+                                                    <option value="Level 8">Level 8</option>
+                                                    <option value="Level 9">Level 9</option>
+                                                    <option value="Level 10">Level 10</option>
                                                 </select>
+                                            </div>
+
+
 
                                         </div>
+
+                                        <div class="boosting-rankConverttoImg-box">
+                                            <img src="/assets/icons/CaretCircleDoubleRight.png" alt="">
+                                        </div>
+
+                                        <div class="boosting-option-inner-container">
+
+                                            <div class="boosting-option-img-box">
+                                                <img src="/assets/images/rankImgs/RankIMG1.png" id="faceitrequiredimage" alt="">
+                                            </div>
+                                            <div class="custom-select">
+                                                <label for="select">Label</label>
+                                                <select id="select" class="faceitrequired" onchange="updatefaceitpricerequired()" name="desired_level">
+                                                    <option value="Level 1"><span>Level 1</span></option>
+                                                    <option value="Level 2">Level 2</option>
+                                                    <option value="Level 3">Level 3</option>
+                                                    <option value="Level 4">Level 4</option>
+                                                    <option value="Level 5">Level 5</option>
+                                                    <option value="Level 6">Level 6</option>
+                                                    <option value="Level 7">Level 7</option>
+                                                    <option value="Level 8">Level 8</option>
+                                                    <option value="Level 9">Level 9</option>
+                                                    <option value="Level 10">Level 10</option>
+                                                </select>
+                                            </div>
+
+
+
+                                        </div>
+
                                     </div>
 
-                                </div>
+                                    <div class="boosting-additional-conatiner">
+                                        <h5>Additional Features</h5>
+                                        <span>
+                                            <img src="/assets/icons/Info.png" alt="">
+                                            <p>Per additional features will charge 20% of the total amount.</p>
+                                        </span>
 
-                                <div class="csgo-boost-rank-boost-category-conatiner">
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>+1 Extra Win</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <!-- <input type="checkbox"> -->
-                                                <input type="checkbox" id="faceitcheckbox1" name="solo_play" onchange="updatefaceitpricerequired()">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Priority Order</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <!-- <input type="checkbox"> -->
-                                                <input type="checkbox" id="faceitcheckbox2" name="priority_order" onchange="updatefaceitpricerequired()">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Play with booster</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <!-- <input type="checkbox"> -->
-                                                <input type="checkbox" id="faceitcheckbox3" name="play_with_booster" onchange="updatefaceitpricerequired()">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                </div>
+                                        <div class="boosting-additionalInput-conatiner">
 
-                                <div class="csgo-boost-totalAmount-container">
-                                    <div class="shape-boostinner-card">
-                                        <div class="csgo-boost-totalAmount-section">
                                             <label>
-                                                <h3>Total Amount</h3>
-                                                <h4 id="faceitprice">$0.00</h4>
+                                                <input type="checkbox" name="solo_play" id="faceitcheckbox1" onclick="updatefaceitpricerequired()">
+                                                +1 Extra Win
+                                                <span>+20%</span>
                                             </label>
-                                            <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
-                                        </div>
-                                        <x-whychooseus></x-whychooseus>
-                                    </div>
-                                </div>
-                            </form>
+                                            <label>
+                                                <input type="checkbox" name="priority_order" id="faceitcheckbox2" onclick="updatefaceitpricerequired()">
+                                                Priority Order
+                                                <span>+20%</span>
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="play_with_booster" id="faceitcheckbox3" onclick="updatefaceitpricerequired()">
+                                                Play with Booster
+                                                <span>+20%</span>
+                                            </label>
 
-                        </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="boosting-pricing-conatiner">
+
+                                        <div class="boosting-pricing-txt-conatiner">
+                                            <span>Final Price <h3 id="faceitprice">$56</h3></span>
+                                            <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
+                                                    alt=""></button>
+                                        </div>
+
+                                        <div class="boosting-pricing-opt-conatiner">
+                                            <div class="boosting-pricing-optLeft-conatiner">
+                                                <img src="/assets/images/Gpay-trans.png" alt="">
+                                                <img src="/assets/images/AE-trans.png" alt="">
+                                                <img src="/assets/images/Mastercard-trans.png" alt="">
+                                                <img src="/assets/images/Applepay-trans.png" alt="">
+                                                <img src="/assets/images/Visa-trans.png" alt="">
+                                            </div>
+                                            <div class="boosting-pricing-optRight-conatiner">
+                                                <h6>Our Customers rated us</h6>
+                                                <div class="boosting-greenStar-container">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                </div>
+                                                <span>4.9 on</span>
+                                                <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                        </form>
                     </div>
 
-                    <div class="csgo-boost-howtobuy-tab-content" id="csgo-boost-tab2">
-                        <div class="csgo-boost-howtobuy-para">
-                            <form action="/faceit/checkout" method="post">
+                    <div id="tab3" class="boostingTab">
+                        <form action="/faceit/checkout" method="post">
                                 @csrf
                                 <input type="text" value="Elo Boost" name="boost_type" style="display: none;" />
+                                
+                                <div class="boostingTabContent">
 
-                                <div class="csgo-boost-rank-title-conatiner">
+                                    <div class="boosting-option-container">
 
-                                    <div class="csgo-boost-rank-title-box">
-                                        <h3>Faceit Current Rank</h3>
+                                        <div class="boosting-option-inner-container">
 
-                                        <div class="csgo-boost-rank-select-container">
-                                            <img src="/ranks/faceit/Level 1.svg" alt="" class="rank-img" id="faceitelocurrentimage" style="width:17%;">
-
-                                            <select class="addLocationProduct-boost-rank-toggle-new" onchange="updatefaceitelocurrentimage()" name="current_level" id="faceitelocurrent">
-                                                <option value="" selected disabled>
-                                                    Select Rank</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="Level 1"><span>Level 1</span></option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="Level 2">Level 2</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="Level 3">Level 3</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="Level 4">Level 4</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="Level 5">Level 5</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="Level 6">Level 6</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="Level 7">Level 7</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="Level 8">Level 8</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="Level 9">Level 9</option>
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="Level 10">Level 10</option>
-
-                                            </select>
-
-                                        </div>
-                                    </div>
-                                    
-
-                                    <div class="csgo-boost-rank-title-box">
-                                        <h3>Faceit Required Elo</h3>
-                                        <div class="csgo-boost-rank-select-container">
-                                            
-                                                <select class="addLocationProduct-boost-rank-toggle-new" id="faceitelorequired"
-                                                    onchange="updatefaceitelopricerequired()" name="desired_level">
-                                                    <option class="addLocationProduct-boost-rank-option-new" value="200"><span>200</span></option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="400">400</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="600">600</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="800">800</option>
-                                                <option class="addLocationProduct-boost-rank-option-new" value="1000">1000</option>
-
+                                            <div class="boosting-option-img-box">
+                                                <img src="/assets/images/rankImgs/RankIMG1.png" id="" alt="">
+                                            </div>
+                                            <div class="custom-select">
+                                                <label for="select">Label</label>
+                                                <select id="select" class="" onchange="updatefaceitelocurrentimage()">
+                                                    <option value="Level 1"><span>Level 1</span></option>
+                                                    <option value="Level 2">Level 2</option>
+                                                    <option value="Level 3">Level 3</option>
+                                                    <option value="Level 4">Level 4</option>
+                                                    <option value="Level 5">Level 5</option>
+                                                    <option value="Level 6">Level 6</option>
+                                                    <option value="Level 7">Level 7</option>
+                                                    <option value="Level 8">Level 8</option>
+                                                    <option value="Level 9">Level 9</option>
+                                                    <option value="Level 10">Level 10</option>
                                                 </select>
+                                            </div>
+
+
 
                                         </div>
+
+                                        <div class="counter-box">
+                                            <label for="counter1">Number of Wins</label>
+                                            <div class="counter">
+                                                <button class="minus" data-counter="counter1"><img
+                                                        src="/assets/icons/MinusCircle.png" alt=""></button>
+                                                <input type="number" class="value" id="counter1" value="1">
+                                                <button class="plus" data-counter="counter1"><img
+                                                        src="/assets/icons/PlusCircle.png" alt=""></button>
+                                            </div>
+                                        </div>
+
+
                                     </div>
 
-                                </div>
+                                    <div class="boosting-additional-conatiner">
+                                        <h5>Additional Features</h5>
+                                        <span>
+                                            <img src="/assets/icons/Info.png" alt="">
+                                            <p>Per additional features will charge 20% of the total amount.</p>
+                                        </span>
 
-                                <div class="csgo-boost-rank-boost-category-conatiner">
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>+1 Extra Win</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <!-- <input type="checkbox"> -->
-                                                <input type="checkbox" id="faceitelocheckbox1" name="solo_play" onchange="updatefaceitelopricerequired()">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Priority Order</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <!-- <input type="checkbox"> -->
-                                                <input type="checkbox" id="faceitelocheckbox2" name="priority_order" onchange="updatefaceitelopricerequired()">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                    <div class="csgo-boost-rank-boost-category-section">
-                                        <div class="csgo-boost-rank-boost-category-box">
-                                            <h5>Play with booster</h5>
-                                            <img src="/assets/icons/info-gray.svg" alt="">
-                                            <label class="switch">
-                                                <!-- <input type="checkbox"> -->
-                                                <input type="checkbox" id="faceitelocheckbox3" name="play_with_booster" onchange="updatefaceitelopricerequired()">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-                                        <p>Additional 20%</p>
-                                    </div>
-                                </div>
+                                        <div class="boosting-additionalInput-conatiner">
 
-                                <div class="csgo-boost-totalAmount-container">
-                                    <div class="shape-boostinner-card">
-                                        <div class="csgo-boost-totalAmount-section">
                                             <label>
-                                                <h3>Total Amount</h3>
-                                                <h4 id="faceiteloprice">$0.00</h4>
+                                                <input type="checkbox">
+                                                +1 Extra Win
+                                                <span>+20%</span>
                                             </label>
-                                            <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
+                                            <label>
+                                                <input type="checkbox">
+                                                Priority Order
+                                                <span>+20%</span>
+                                            </label>
+                                            <label>
+                                                <input type="checkbox">
+                                                Play with Booster
+                                                <span>+20%</span>
+                                            </label>
+
                                         </div>
-                                        <x-whychooseus></x-whychooseus>
+
                                     </div>
+
+                                    <div class="boosting-pricing-conatiner">
+
+                                        <div class="boosting-pricing-txt-conatiner">
+                                            <span>Final Price <h3>$56</h3></span>
+                                            <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
+                                                    alt=""></button>
+                                        </div>
+
+                                        <div class="boosting-pricing-opt-conatiner">
+                                            <div class="boosting-pricing-optLeft-conatiner">
+                                                <img src="/assets/images/Gpay-trans.png" alt="">
+                                                <img src="/assets/images/AE-trans.png" alt="">
+                                                <img src="/assets/images/Mastercard-trans.png" alt="">
+                                                <img src="/assets/images/Applepay-trans.png" alt="">
+                                                <img src="/assets/images/Visa-trans.png" alt="">
+                                            </div>
+                                            <div class="boosting-pricing-optRight-conatiner">
+                                                <h6>Our Customers rated us</h6>
+                                                <div class="boosting-greenStar-container">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                </div>
+                                                <span>4.9 on</span>
+                                                <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
                                 </div>
-                            </form>
+                        </form>
+                    </div>
+
+                    <div id="tab2" class="boostingTab">
+                        <form action="/faceit/checkout" method="post">
+                                @csrf
+                                <input type="text" value="Elo Boost" name="boost_type" style="display: none;" />
+                            
+                            <div class="boostingTabContent">
+
+                                <div class="boosting-option-container">
+
+                                    <div class="boosting-option-inner-container">
+
+                                        <div class="boosting-option-img-box">
+                                            <img src="/assets/images/rankImgs/RankIMG1.png" id="faceitelocurrentimage" alt="">
+                                        </div>
+                                        <div class="custom-select">
+                                            <label for="select">Label</label>
+                                            <select id="select" class="faceitelocurrent" name="current_level" onchange="updatefaceitelocurrentimage()">
+                                                        <option value="Level 1"><span>Level 1</span></option>
+                                                        <option value="Level 2">Level 2</option>
+                                                        <option value="Level 3">Level 3</option>
+                                                        <option value="Level 4">Level 4</option>
+                                                        <option value="Level 5">Level 5</option>
+                                                        <option value="Level 6">Level 6</option>
+                                                        <option value="Level 7">Level 7</option>
+                                                        <option value="Level 8">Level 8</option>
+                                                        <option value="Level 9">Level 9</option>
+                                                        <option value="Level 10">Level 10</option>
+                                            </select>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <div class="boosting-rankConverttoImg-box">
+                                        <img src="/assets/icons/CaretCircleDoubleRight.png" alt="">
+                                    </div>
+
+                                    <div class="boosting-option-inner-container">
+
+                                        <div class="custom-select">
+                                            <label for="select">Label</label>
+                                            <select id="select" class="faceitelorequired" onchange="updatefaceitelopricerequired()" name="desired_level">
+                                                <option value="200"><span>200</span></option>
+                                                <option value="400">400</option>
+                                                <option value="600">600</option>
+                                                <option value="800">800</option>
+                                                <option value="1000">1000</option>
+                                            </select>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="boosting-additional-conatiner">
+                                    <h5>Additional Features</h5>
+                                    <span>
+                                        <img src="/assets/icons/Info.png" alt="">
+                                        <p>Per additional features will charge 20% of the total amount.</p>
+                                    </span>
+
+                                    <div class="boosting-additionalInput-conatiner">
+
+                                        <label>
+                                            <input type="checkbox" id="faceitelocheckbox1" name="solo_play" onclick="updatefaceitelopricerequired()">
+                                            +1 Extra Win
+                                            <span>+20%</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" id="faceitelocheckbox2" name="priority_order" onclick="updatefaceitelopricerequired()">
+                                            Priority Order
+                                            <span>+20%</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" id="faceitelocheckbox3" name="play_with_booster" onclick="updatefaceitelopricerequired()">
+                                            Play with Booster
+                                            <span>+20%</span>
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="boosting-pricing-conatiner">
+
+                                    <div class="boosting-pricing-txt-conatiner">
+                                        <span>Final Price <h3 id="faceiteloprice">$56</h3></span>
+                                        <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
+                                                alt=""></button>
+                                    </div>
+
+                                    <div class="boosting-pricing-opt-conatiner">
+                                        <div class="boosting-pricing-optLeft-conatiner">
+                                            <img src="/assets/images/Gpay-trans.png" alt="">
+                                            <img src="/assets/images/AE-trans.png" alt="">
+                                            <img src="/assets/images/Mastercard-trans.png" alt="">
+                                            <img src="/assets/images/Applepay-trans.png" alt="">
+                                            <img src="/assets/images/Visa-trans.png" alt="">
+                                        </div>
+                                        <div class="boosting-pricing-optRight-conatiner">
+                                            <h6>Our Customers rated us</h6>
+                                            <div class="boosting-greenStar-container">
+                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                            </div>
+                                            <span>4.9 on</span>
+                                            <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <!-- CS2 Boosting Tabs End -->
+
+            <div class="MyBoost-main-container">
+                <div class="MyBoost-centered-container">
+                    <h5>FEATURES</h5>
+                    <h2>Why choose MyBoost?</h2>
+                    <div class="MyBoost-grid-container">
+                        <div class="MyBoost-grid-box">
+                            <span><img src="/assets/icons/CloudSlash.png" alt=""></span>
+                            <div class="MyBoost-text">
+                                <h5>Appear Offline</h5>
+                                <p>None of your friends will see the boosters playing on your account.</p>
+                            </div>
+                        </div>
+                        <div class="MyBoost-grid-box">
+                            <span><img src="/assets/icons/Path.png" alt=""></span>
+                            <div class="MyBoost-text">
+                                <h5>Order Tracking</h5>
+                                <p>You can track your orders from user dashboard provided to you.</p>
+                            </div>
+                        </div>
+                        <div class="MyBoost-grid-box">
+                            <span><img src="/assets/icons/Headset.png" alt=""></span>
+                            <div class="MyBoost-text">
+                                <h5>24/7 Live Support</h5>
+                                <p>Rely on our professional support team 24/7.</p>
+                            </div>
+                        </div>
+                        <div class="MyBoost-grid-box">
+                            <span><img src="/assets/icons/Seal.png" alt=""></span>
+                            <div class="MyBoost-text">
+                                <h5>Loyalty Rewards</h5>
+                                <p>Receive significant, cashback rewards on all orders.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <x-boostingservices></x-boostingservices>
+
+            <div class="stepsSection-container">
+
+                <div class="stepsSection-inner-container">
+                    <h5>HOW TO GET SERVICE</h5>
+                    <h2>4 easy steps to start with us</h2>
+
+                    <div class="stepsSection-flow-container">
+                        <div class="stepsSection-box">
+                            <span>
+                                <img src="/assets//icons/HandTap.png" alt="">
+                            </span>
+                            <h2>1. Select Boosting</h2>
+                            <p>Choose your desired game and rank boost type (ESEA, Faceit, etc.)</p>
+                        </div>
+                        <div class="stepsSection-box">
+                            <span>
+                                <img src="/assets//icons/CreditCard.png" alt="">
+                            </span>
+                            <h2>2. Make Payment</h2>
+                            <p>Complete the secure payment process using your preferred method.</p>
+                        </div>
+                        <div class="stepsSection-box">
+                            <span>
+                                <img src="/assets//icons/Note.png" alt="">
+                            </span>
+                            <h2>3. Provide Order Details</h2>
+                            <p>Share your account information and any specific requirements.</p>
+                        </div>
+                        <div class="stepsSection-box">
+                            <span>
+                                <img src="/assets//icons/RocketLaunch.png" alt="">
+                            </span>
+                            <h2>4. Boosting Starts</h2>
+                            <p>Our expert boosters begin enhancing your gaming experience.</p>
                         </div>
                     </div>
 
-                    <div class="csgo-boost-howtobuy-tab-content" id="csgo-boost-tab3">
-                            <div class="csgo-boost-howtobuy-para">
+                </div>
 
-                                <form action="/faceit/checkout" method="post">
-                                    @csrf
-                                    <input type="text" value="FaceIt Win Boost" name="boost_type" style="display: none;" />
+            </div>
 
-                                    <div class="csgo-boost-rank-title-conatiner">
-                                        <div class="csgo-boost-rank-title-box">
-                                            <h3>Faceit Current Rank</h3>
-
-                                            <div class="csgo-boost-rank-select-container">
-                                                <img src="/ranks/faceit/Level 1.svg" alt="" style="width:17%;" class="rank-img" id="faceitwincurrentimage">
-
-                                                <select class="addLocationProduct-boost-rank-toggle-new" onchange="updatefaceitwincurrentimage()" name="current_level" id="faceitwincurrent">
-                                                    <option value="" selected disabled>
-                                                        Select Rank</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="Level 1"><span>Level 1</span></option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="Level 2">Level 2</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="Level 3">Level 3</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="Level 4">Level 4</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="Level 5">Level 5</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="Level 6">Level 6</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="Level 7">Level 7</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="Level 8">Level 8</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="Level 9">Level 9</option>
-                                                        <option class="addLocationProduct-boost-rank-option-new" value="Level 10">Level 10</option>
-        
-                                                </select>
-
-                                            </div>
-                                        </div>
-                                        <div class="csgo-boost-rank-title-box">
-                                            <div class="range-number-container">
-                                                <h3>Number of Wins</h3>
-                                                <span>
-                                                    <h5 class="slider-value" id="PlacementsliderValue">5 </h5>
-                                                    <h6>&nbsp;Wins</h6>
-                                                </span>
-                                            </div>
-                                            <div class="csgo-boost-rank-select-container">
-
-                                                <div class="range-slider">
-                                                    <input type="range" min="0" max="10" value="2" class="slider-range"
-                                                        id="placementrange" name="desired_level" onchange="updateplacement()">
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="csgo-boost-rank-boost-category-conatiner">
-                                        <div class="csgo-boost-rank-boost-category-section">
-                                            <div class="csgo-boost-rank-boost-category-box">
-                                                <h5>+1 Extra Win</h5>
-                                                <img src="/assets/icons/info-gray.svg" alt="">
-                                                <label class="switch">
-                                                    <!-- <input type="checkbox"> -->
-                                                    <input type="checkbox" id="placementcheckbox1" onchange="updateplacement()">
-                                                    <span class="slider"></span>
-                                                </label>
-                                            </div>
-                                            <p>Additional 20%</p>
-                                        </div>
-                                        <div class="csgo-boost-rank-boost-category-section">
-                                            <div class="csgo-boost-rank-boost-category-box">
-                                                <h5>Priority Order</h5>
-                                                <img src="/assets/icons/info-gray.svg" alt="">
-                                                <label class="switch">
-                                                    <!-- <input type="checkbox"> -->
-                                                    <input type="checkbox" id="placementcheckbox2" onchange="updateplacement()">
-                                                    <span class="slider"></span>
-                                                </label>
-                                            </div>
-                                            <p>Additional 20%</p>
-                                        </div>
-                                        <div class="csgo-boost-rank-boost-category-section">
-                                            <div class="csgo-boost-rank-boost-category-box">
-                                                <h5>Play with booster</h5>
-                                                <img src="/assets/icons/info-gray.svg" alt="">
-                                                <label class="switch">
-                                                    <!-- <input type="checkbox"> -->
-                                                    <input type="checkbox" id="placementcheckbox3" onchange="updateplacement()">
-                                                    <span class="slider"></span>
-                                                </label>
-                                            </div>
-                                            <p>Additional 20%</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="csgo-boost-totalAmount-container">
-                                        <div class="shape-boostinner-card">
-                                            <div class="csgo-boost-totalAmount-section">
-                                                <label>
-                                                    <h3>Total Amount</h3>
-                                                    <h4 id="placementprice">$0.00</h4>
-                                                </label>
-                                                <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
-                                            </div>
-                                            <x-whychooseus></x-whychooseus>
-                                        </div>
-                                    </div>
-
-                                    </div>
-                                </form>
-                    </div>
-
+            <div class="boostNow-container">
+                <div class="boostNow-inner-container">
+                    <h3>Boost your game now and conquer the ranks!</h3>
+                    <button class="themebtn-bg-white">Boost your game</button>
                 </div>
             </div>
 
-        </div>
-        <!--  -->
+            <div class="payment-container">
+                <div class="payment-inner-container">
+                    <img src="/assets/images/Visa.png" alt="">
+                    <img src="/assets/images/Gpay.png" alt="">
+                    <img src="/assets/images/AE.png" alt="">
+                    <img src="/assets/images/Mastercard.png" alt="">
+                    <img src="/assets/images/Paypal.png" alt="">
+                    <img src="/assets/images/Applepay.png" alt="">
+                </div>
+                <p>*All these payment methods are acceptable.</p>
+            </div>
+
+        <x-footer></x-footer>
     </div>
 
-    <x-howtobuy></x-howtobuy>
-
-    <!-- csgo-boost-howtobuy-Section-Start -->
-    <div class="csgo-boost-howtobuy-container">
-        <h3>Why choose us?</h3>
-        <div class="csgo-boost-howtobuy-section">
-
-            <img src="/assets/img/Vector.svg" alt="" class="round-vector">
-
-            <div class="csgo-boost-howtobuy-inner-section">
-
-                <div class="csgo-howtobuy-box">
-                    <img src="/assets/img/features-card.png" alt="">
-                    <div class="csgo-howtobuy-deatil-container">
-                        <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                        <h4>Guaranteed Rank</h4>
-                        <p>MyBoost.gg offers a Premium CS2 account boosting service, with our team of skilled professionals.
-                            The rank you desire is guarenteed.
-                        </p>
-                    </div>
-                </div>
-                <div class="csgo-howtobuy-box">
-                    <img src="/assets/img/features-card.png" alt="">
-                    <div class="csgo-howtobuy-deatil-container">
-                        <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                        <h4>Professional Boosters</h4>
-                        <p>All our boosters are semi-professional veterans of Counter-Strike, they are all highly trained
-                            and experienced in their craft.</p>
-                    </div>
-                </div>
-                <div class="csgo-howtobuy-box">
-                    <img src="/assets/img/features-card.png" alt="">
-                    <div class="csgo-howtobuy-deatil-container">
-                        <span><img src="/assets/icons/privacy-eye.svg" alt=""></span>
-                        <h4>Complete Privacy</h4>
-                        <p>All your data is safe with us. Boost your Counter Strike 2 accounts without having to worry about
-                            anything.</p>
-                    </div>
-                </div>
-                <div class="csgo-howtobuy-box">
-                    <img src="/assets/img/features-card.png" alt="">
-                    <div class="csgo-howtobuy-deatil-container">
-                        <span><img src="/assets/icons/security.svg" alt=""></span>
-                        <h4>Account Safety</h4>
-                        <p>At MyBoost.gg we have the most safe boosting procedures & the most elite players, with our
-                            protocols in place, your account safety is guaranteed.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- csgo-boost-howtobuy-Section-End -->
-
-    <!-- csgo-faqs-sections start -->
-    <div class="accordion">
-        <h1>Frequently Asked Questions</h1>
-        <div class="accordion-item">
-            <div class="accordion-item-header">
-                How does MyBoost.gg work?
-            </div>
-            <div class="accordion-item-body">
-                <div class="accordion-item-body-content">
-                    MyBoost.gg offers you all types of CS2 account boosting services, for CS2 matchmaking, FaceIt, ESEA and Esportal. We level up your account to where you believe it should be.
-
-                    For boosting your CS2 account, we use our professional players. We do NOT use cheats or bots. Your accounts are completely safe.
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <div class="accordion-item-header">
-                Is it safe for me to boost my account?
-            </div>
-            <div class="accordion-item-body">
-                <div class="accordion-item-body-content">
-                    Yes, your account is in safe hands. Our professional players make sure to rank your account
-                    by playing. NO cheats/bots are used.
-                </div>
-            </div>
-        </div>
-
-        <div class="accordion-item">
-            <div class="accordion-item-header">
-                What payment methods does MyBoost.gg support?
-            </div>
-            <div class="accordion-item-body">
-                <div class="accordion-item-body-content">
-                    MyBoost currently accepts Mastercard/Visa/Crypto payments.
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- csgo-faqs-sections start -->
-
-    <!-- csgo-Subscribe Section Start -->
-    <div class="csgo-HomeSubscribe-container">
-        <div class="csgo-h1-Subscribe">
-            <h5 class="trns-text">SUBSCRIBE</h5>
-            <h6>WANT MORE ?</h6>
-            <p>Sign up to our newsletter and receive regular updates from our side and avail best discounts </p>
-        </div>
-        <div class="csgo-subscribe-email-container">
-            <div class="csgo-subscribe-email-section">
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="500" height="80" viewBox="0 0 500 80" fill="none">
-                    <path d="M1.5 78.5V1.5H498.5V47.6811L450.559 78.5H1.5Z" stroke="url(#paint0_linear_158_4146)"
-                        stroke-opacity="0.8" stroke-width="3" />
-                    <defs>
-                        <linearGradient id="paint0_linear_158_4146" x1="250" y1="-31.25" x2="253.75" y2="173.75"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#FD432A" />
-                            <stop offset="1" stop-color="#FD2AA9" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-                <input type="text" placeholder="ENTER YOUR EMAIL ADDRESS">
-            </div>
-            <button class="csgo-login-btn SUBSCRIBE-btn">SUBSCRIBE</button>
-        </div>
-    </div>
-    <!-- csgo-Subscribe Section End -->
-
-    <x-footer></x-footer>
 @endsection
 
 @push('js')
     <script>
     function updatefaceitcurrentimage(){
-            var selectedOption = document.getElementById("faceitcurrent").value;
+            var selectedOption = document.querySelector(".faceitcurrent").value;
                 // Rank Dropdown Img Change
             var rankImage = document.getElementById("faceitcurrentimage");
             rankImage.src = `/ranks/faceit/${selectedOption}.svg`;
     }
 
     function updatefaceitpricerequired(){
-            var selectedOption = document.getElementById("faceitrequired").value;
+            var selectedOption = document.querySelector(".faceitrequired").value;
             var prices = {
                 "Level 1": 10.00,
                 "Level 2": 20.00,
@@ -614,14 +561,14 @@
 
     //faceit elo
     function updatefaceitelocurrentimage(){
-            var selectedOption = document.getElementById("faceitelocurrent").value;
+            var selectedOption = document.querySelector(".faceitelocurrent").value;
                 // Rank Dropdown Img Change
             var rankImage = document.getElementById("faceitelocurrentimage");
             rankImage.src = `/ranks/faceit/${selectedOption}.svg`;
     }
 
     function updatefaceitelopricerequired(){
-            var selectedOption = document.getElementById("faceitelorequired").value;
+            var selectedOption = document.querySelector(".faceitelorequired").value;
             var prices = {
                 "200": 10.00,
                 "400": 20.00,
@@ -690,8 +637,28 @@
         });
     }
     </script>
-    <script src="/vendor/js/app.js"></script>
-    <script src="/vendor/js/dropdowns.js"></script>
-    <script src="/vendor/js/carousel.js"></script>
-    <script src="/vendor/js/boosttabs.js"></script>
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.style.left = sidebar.style.left === '0px' ? '-280px' : '0px';
+        }
+
+    </script>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("boostingTab");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("boostingTabBtn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+    <script src="/vendor/js/boostDropdown.js"></script>
+    <script src="/vendor/js/counter.js"></script>
 @endpush

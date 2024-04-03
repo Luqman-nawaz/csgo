@@ -1,446 +1,567 @@
 @extends('layouts.csgo')
     @section('title') <title>MyBoost.GG - Best CS2 Account Boosting Service</title> @endsection
+
+    @push('css') 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    @endpush
+    
     @section('content')
-    <div class="main-site-container">
-        <!-- csgo-UpperHeader Start -->
-        
-        <!-- csgo-UpperHeader End -->
-        <!-- csgo-Header Start -->
+
+    <div class="landing-page-container">
         <x-navbar></x-navbar>
-        <!-- csgo-Header End -->
-        <!-- csgo-HeroSection Start -->
-        <div class="csgo-heroSection-main-conatiner">
-            <div class="csgo-heroSection-text-container">
-                <h1><span>Counter Strike 2</span><br> Boosting Service!</h1>
-                <p>MyBoost.gg is a fast, affordable and safe CS2 boosting service to help you reach Counter-Strike 2 leaderboards through vetted Radiant players across all regions. We work with the most skilled CS2 boosters to acheive your desired rank effortlessly. Here, you will find a range of services handled by our skilled players such as Rank boost, Wins, ESEA Boosting, FACEIT Boosting, CS2 Placement Matches, ESPORTAL Boosting & so much more. Our team consists of elite players that have delivered thousands of orders, so the safety of your account is guarenteed.</p>
+
+        <div class="heroSection-container">
+            <h1>Raise your rank up to Global Elite with our help.</h1>
+            <p>If you are bored of playing with trolls and unskilled players - purchase boost now and our professional
+                players will help you with winning matches.</p>
+            <div class="heroPills-container flex justify-center items-center gap-5">
+                <span><a href="#">CS2 BOOST</span></a>
+                <span><a href="#">FACEIT BOOST</span></a>
+                <span><a href="#">ESEA BOOST</span></a>
+                <span><a href="#">ESPORTAL BOOST</span></a>
+                <span><a href="#">COACHING</span></a>
             </div>
-            <div class="csgo-heroSection-img-container">
-                <img src="/assets/img/hero.png" alt="">
-            </div>
-            <img src="/assets/img/right-hero-angle.png" alt="" class="hero-angle-corner-img">
         </div>
-        <!-- csgo-HeroSection End -->
-        <!-- csgo-HomeBoost Start -->
-        <!-- csgo-HomeBoost Start -->
-        <div class="csgo-HomeBoost-conatianer section">
-            <img src="/assets/img/homeBoost-bg.jpg" alt="">
-            <!--  -->
-            <div class="csgo-HomeBoost-tabs-conatiner">
-                <div class="csgo-boost-tabs">
-                    <div class="svg-shape csgo-boost-tab active" onclick="openTab(0)"><span>CS2
-                            Boost</span>
-                    </div>
-                    <div class="svg-shape csgo-boost-tab" onclick="openTab(1)"><span>Esportal Win Boost</span></div>
-                    <div class="svg-shape csgo-boost-tab" onclick="openTab(2)"><span>Faceit Win Boost</span></div>
-                    <div class="svg-shape csgo-boost-tab" onclick="openTab(3)"><span>ESEA Boost</span></div>
-                </div>
 
-                <div class="csgo-boost-content">
-                    <div class="csgo-boost-tab-content active" id="csgo-boost-tab1">
-                        <div class="csgo-boost-para">
-                            <h2>CS2 Boosting</h2>
-                            <h5>We specialize in enhancing your CS2 rating through our Boosters. 
-                                CS2 Rank Boost or CS2 Premier Rating Boost are the same boosting service.
-                                Our team has CS2 boost professionals who are committed to ensuring 
-                                your success. 
-
-                                CS2 Rating Boost is designed to help you achieve a higher rating 
-                                in Counter Strike 2 with the assistance of an experienced player. 
-                            </h5>
-                                <p style="display: none;">
-                                This service is commonly offered in Solo Boost mode, where a 
-                                professional player logs into your account to participate in 
-                                competitive matches, or in Duo/Lobby Boost mode, allowing you to 
-                                team up with boosters in the same lobby.
-                                </p>
-                            <a href="/csgoboost"><button class="csgo-btn">Get Started Now</button></a>
-                        </div>
-                        <img src="/bg1.png" class="homeboost-hero" alt="">
-                    </div>
-                    <div class="csgo-boost-tab-content" id="csgo-boost-tab2">
-                        <div class="csgo-boost-para">
-                            <h2>Esportal Boosting</h2>
-                            <h5>Esportal Boosting is an elite account boosting service provided by MyBoost.gg 
-                                without using any cheats and with a 100% accurate & safe method. Boost your Esportal 
-                                account now and enjoy the best experience we have to offer.
-                            
-                                This boosting designed to help you achieve a higher rating 
-                                in Esportal with the assistance of an experienced player. </h5>
-                                <a href="/esportal"><button class="csgo-btn">Get Started Now</button></a>
-                        </div>
-                        <img src="/assets/Image1.png" alt="">
-
-                    </div>
-                    <div class="csgo-boost-tab-content" id="csgo-boost-tab3">
-                        <div class="csgo-boost-para">
-                            <h2>Faceit Boosting</h2>
-                            <h5>FaceIt boosting is a service to increase your FaceIT level. 
-                                We boost through the most elite boosters in the FaceIt arena. 
-                                Your account is 100% safe & secure and is in capable hands. 
-                                Place your order now & enjoy the account with the actual rank that you deserve.
-                            
-                                You can place your order without any worry and receive your order
-                                within the exact promised time.</h5>
-                                <a href="/faceit"><button class="csgo-btn">Get Started Now</button></a>
-                        </div>
-                        <img src="/assets/image.png" alt="">
-
-                    </div>
-                    <div class="csgo-boost-tab-content" id="csgo-boost-tab4">
-                        <div class="csgo-boost-para">
-                            <h2>ESEA Boosting</h2>
-                            <h5>Check out our service to boost your ESEA account. 
-                                The service is provided through the most elite Counter Strike players. 
-                                Place the order now, have your account boosted & play with skilled players that
-                                 actually match your rank & skill.
-                                
-                                The service is entirely safe & secure, all of our services are on the most professional
-                                & competitive market standard.</h5>
-                            <a href="/esea"><button class="csgo-btn">Get Started Now</button></a>
-                        </div>
-                        <img src="/assets/image3.png" alt="">
-
+        <div class="specialOffer-container flex justify-between items-center">
+            <div class="specialOffer-left-container">
+                <h5>FEATURES</h5>
+                <h2>What’s special we offer</h2>
+                <div class="specialOffer-box">
+                    <span>
+                        <img src="/assets/icons/SketchLogo.png" alt="">
+                    </span>
+                    <div class="specialOffer-txt-box">
+                        <h6>Victory Awaits</h6>
+                        <p>Tired of losing streaks? Fear not! Our boosters guarantee an improved win rate. Whether it’s
+                            competitive matches or ranked games, we’ll turn the tide in your favour. Get ready to
+                            celebrate those sweet victories!</p>
                     </div>
                 </div>
-            </div>
-            <!--  -->
-        </div>
-        <!-- csgo-HomeBoost End -->
-        <!-- csgo-HomeBoost Start -->
-        <div class="csgo-HomeFeatures-container">
-            <div class="csgo-HomeFeatures-innerSection">
-                <div class="csgo-HomeFeatures-box">
-                    <h3>Why you should trust us?</h3>
-                </div>
-                <div class="csgo-HomeFeatures-box">
-                    <img src="/assets/img/features-card.png" alt="">
-                    <div class="csgo-HomeFeatures-deatil-container">
-                        <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                        <h4>Guaranteed Rank</h4>
-                        <p>MyBoost.gg offers a Premium CS2 account boosting service, 
-                            ensuring quick and safe boost to your desired rank with our team of skilled professionals.</p>
+                <br />
+                <br />
+                <div class="specialOffer-box">
+                    <span>
+                        <img src="/assets/icons/Shield.png" alt="">
+                    </span>
+                    <div class="specialOffer-txt-box">
+                        <h6>Your Privacy Matters</h6>
+                        <p>Worried about account security? We’ve got you covered. Our boosters operate with the utmost
+                            discretion, using VPNs and offline mode to ensure your account remains anonymous. </p>
                     </div>
                 </div>
-                <div class="csgo-HomeFeatures-box">
-                    <img src="/assets/img/features-card.png" alt="">
-                    <div class="csgo-HomeFeatures-deatil-container">
-                        <span><img src="/assets/icons/security.svg" alt=""></span>
-                        <h4>No Cheats</h4>
-                        <p>At MyBoost.gg, all the boosting services uphold the highest standards,
-                            ensuring your progress is achieved through expertise without any use of cheats.</p>
-                    </div>
-                </div>
-                <div class="csgo-HomeFeatures-box">
-                    <img src="/assets/img/features-card.png" alt="">
-                    <div class="csgo-HomeFeatures-deatil-container">
-                        <span><img src="/assets/icons/privacy-eye.svg" alt=""></span>
-                        <h4>Complete Privacy</h4>
-                        <p>All your data is safe with us. Boost your Counter Strike 2 accounts without having to worry about
-                            anything.
+                <br />
+                <br />
+                <div class="specialOffer-box">
+                    <span>
+                        <img src="/assets/icons/Headset.png" alt="">
+                    </span>
+                    <div class="specialOffer-txt-box">
+                        <h6>We’re Here When You Need Us</h6>
+                        <p>No bots, no automated responses—just real humans ready to assist you. Have questions,
+                            concerns, or need help? Reach out to our friendly support team via Discord or live chat.
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="csgo-HomeFeatures-innerSection">
-                <div class="csgo-HomeFeatures-box">
-                    <!-- <h3>Why you should trust us?</h3> -->
-                </div>
-                <div class="csgo-HomeFeatures-box">
-                    <img src="/assets/img/features-card.png" alt="">
-                    <div class="csgo-HomeFeatures-deatil-container">
-                        <span><img src="/assets/icons/security.svg" alt=""></span>
-                        <h4>Account Safety</h4>
-                        <p>At MyBoost.gg we have the most safe boosting procedures & the most elite players, with our
-                            protocols in place, your account safety is guaranteed.
-                        </p>
-                    </div>
-                </div>
-                <div class="csgo-HomeFeatures-box">
-                    <img src="/assets/img/features-card.png" alt="">
-                    <div class="csgo-HomeFeatures-deatil-container">
-                        <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                        <h4>Professional Boosters</h4>
-                        <p>All our boosters are semi-professional veterans of Counter-Strike, they are all highly trained
-                             and experienced in their craft.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="csgo-HomeFeatures-box">
-                    <img src="/assets/img/features-card.png" alt="">
-                    <div class="csgo-HomeFeatures-deatil-container">
-                        <span><img src="/assets/icons/diamend.svg" alt=""></span>
-                        <h4>Quick Delivery</h4>
-                        <p>In MyBoost.gg we sell only guaranteed services, which means our boosters will quickly
-                            advance to your dream rank or you will get money back.</p>
+                <br />
+                <br />
+                <div class="specialOffer-box">
+                    <span>
+                        <img src="/assets/icons/LockKey.png" alt="">
+                    </span>
+                    <div class="specialOffer-txt-box">
+                        <h6>Your Account, Our Priority</h6>
+                        <p>We take security seriously. When you choose GameBoost, rest assured that your account is in
+                            safe hands. Our boosters follow strict protocols to protect your login credentials, personal
+                            information, and in-game assets. </p>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- csgo-HomeBoost End -->
-        <x-howtobuy></x-howtobuy>
-        {{-- <!-- csgo-HomeBoosting Services Start -->
-        <div class="csgo-HomeBoosting-services-container">
-            <div class="csgo-HomeBoosting-services-innerSection">
-                <h1>How to Buy <br> Boosting Services?</h1>
-                <div class="csgo-HomeBoosting-services-line-container">
-
-                    <div class="csgo-HomeBoosting-services-section-conatiner-one">
-                        <div class="csgo-HomeBoosting-services-section">
-                            <div class="csgo-HomeBoosting-services-box">
-                                <h3>Select Boosting & Place Order</h3>
-                                <p>Select details of your boost. 
-                                    (Current Rank, Desired Rank, Your Level/Elo, Number of wins) then click the Buy button.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="csgo-HomeBoosting-services-section">
-                            <div class="csgo-HomeBoosting-services-box">
-                                <h3>Receive Boost</h3>
-                                <p>Receive your boosted account, that is boosted by professionals in a safe & elite environment, and enjoy the game!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  -->
-                    <div class="csgo-HomeBoosting-services-line">
-                        <div class="line-div">
-                            <span class="csgo-HomeBoosting-services-line-span"></span>
-                        </div>
-                        <div class="line-div">
-                            <span class="csgo-HomeBoosting-services-line-span"></span>
-                        </div>
-                        <div class="line-div">
-                            <span class="csgo-HomeBoosting-services-line-span"></span>
-                        </div>
-                    </div>
-                    <!--  -->
-
-                    <div class="csgo-HomeBoosting-services-section">
-                        <div class="csgo-HomeBoosting-services-box">
-                            <h3>Complete Payment</h3>
-                            <p>Complete the payment for the order via your preffered methods. Once paid, watch the boosting magic happen!
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-        <!-- csgo-HomeBoosting Services End --> --}}
-
-
-        <div class="csgo-HomeWhyChoose-services-container">
-            <img src="/assets/img/Rectangle 11.png" alt="" class="HomeWhyChoose-img">
-            <div class="csgo-HomeWhyChoose-services-img-section">
-                <img src="/assets/img/Daco_4402547.png" alt="">
-            </div>
-            <div class="csgo-HomeWhyChoose-services-detail-section">
-                <h3>Why choose our CS2 Boosting Services?</h3>
-                <p>Our boosters are experts who never resort to cheats or any other unfair advantages. 
-                     All our orders are handled by exceptional players who were semi-professional
-                     gamers before joining our boosting team. 
-                     Our service is 100% safe, and there's no risk of getting banned. 
-                     Each of our players works under a contract and undergoes rigorous testing to earn our trust. 
-                     Rest assured that your Steam account and inventory are in safe hands.</p>
-                <div class="csgo-HomeWhyChoose-happyCustomers-section">
-                    <div class="csgo-HomeWhyChoose-happyCustomers-box">
-                        <img src="/assets/img/Rectangle 10.png" alt="">
-                        <div class="csgo-HomeWhyChoose-happyCustomers-txt-box">
-                            <!-- <h5>20k</h5> -->
-                            <h5 id="happyCustomersCount">0</h5>
-                            <h6>HAPPY CUSTOMERS</h6>
-                        </div>
-                    </div>
-                    <div class="csgo-HomeWhyChoose-happyCustomers-box">
-                        <img src="/assets/img/Rectangle 10.png" alt="">
-                        <div class="csgo-HomeWhyChoose-happyCustomers-txt-box">
-                            <!-- <h5>8</h5> -->
-                            <h5 id="boostingYearsCount">0</h5>
-                            <h6>YEAS IN BOOSTING</h6>
-                        </div>
-                    </div>
-                    <div class="csgo-HomeWhyChoose-happyCustomers-box">
-                        <img src="/assets/img/Rectangle 10.png" alt="">
-                        <div class="csgo-HomeWhyChoose-happyCustomers-txt-box">
-                            <!-- <h5>30k</h5> -->
-                            <h5 id="ordersCompletedCount">0<span></h5>
-                            <h6>ORDERS COMPLETED</h6>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="specialOffer-right-container">
+                <img src="/assets/images/offerImg.png" class="m-auto" alt="">
             </div>
         </div>
 
-        <!-- csgo-whychoose Services Start -->
-        <div class="csgo-HomeReview-container">
-            <h3>Real Customer Reviews</h3>
-            <p>All the reviews about our boosting services are from our buyers. Check some of them,
-                they speak for themselves!</p>
+        <div class="services-container">
+            <h5>OUR SERVICES</h5>
+            <h2>We provide boosting for</h2>
 
-            <div class="csgo-HomeReview-carousel-container">
-                <div class="csgo-HomeReview-carousel">
-                    <div class="csgo-HomeReview-cards">
-
-                        <div class="csgo-HomeReview-card">
-                            <img src="/assets/img/Group 3.png" alt="">
-                            <div class="csgo-HomeReview-person-detail">
-                                <p>Better than expectations. Used them twice now (Duo/Lobby Boost). Was a bit
-                                    scared/skeptical with boosting services but using this service has put my fears to
-                                    rest.
-                                </p>
-                                <div class="csgo-HomeReview-person-span">
-                                    <span><img src="/assets/img/Avatar.png" alt=""></span>
-                                    <h6>Gamer</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="csgo-HomeReview-card">
-                            <img src="/assets/img/Group 3.png" alt="">
-                            <div class="csgo-HomeReview-person-detail">
-                                <p>Better than expectations. Used them twice now (Duo/Lobby Boost). Was a bit
-                                    scared/skeptical with boosting services but using this service has put my fears to
-                                    rest.
-                                </p>
-                                <div class="csgo-HomeReview-person-span">
-                                    <span><img src="/assets/img/Avatar.png" alt=""></span>
-                                    <h6>Gamer</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="csgo-HomeReview-card">
-                            <img src="/assets/img/Group 3.png" alt="">
-                            <div class="csgo-HomeReview-person-detail">
-                                <p>Better than expectations. Used them twice now (Duo/Lobby Boost). Was a bit
-                                    scared/skeptical with boosting services but using this service has put my fears to
-                                    rest.
-                                </p>
-                                <div class="csgo-HomeReview-person-span">
-                                    <span><img src="/assets/img/Avatar.png" alt=""></span>
-                                    <h6>Gamer</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="csgo-HomeReview-card">
-                            <img src="/assets/img/Group 3.png" alt="">
-                            <div class="csgo-HomeReview-person-detail">
-                                <p>Better than expectations. Used them twice now (Duo/Lobby Boost). Was a bit
-                                    scared/skeptical with boosting services but using this service has put my fears to
-                                    rest.
-                                </p>
-                                <div class="csgo-HomeReview-person-span">
-                                    <span><img src="/assets/img/Avatar.png" alt=""></span>
-                                    <h6>Gamer</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="csgo-HomeReview-card">
-                            <img src="/assets/img/Group 3.png" alt="">
-                            <div class="csgo-HomeReview-person-detail">
-                                <p>Better than expectations. Used them twice now (Duo/Lobby Boost). Was a bit
-                                    scared/skeptical with boosting services but using this service has put my fears to
-                                    rest.
-                                </p>
-                                <div class="csgo-HomeReview-person-span">
-                                    <span><img src="/assets/img/Avatar.png" alt=""></span>
-                                    <h6>Gamer</h6>
-                                </div>
-                            </div>
-                        </div>
-
+            <div class="services-card-container">
+                <div class="services-card-box">
+                    <img class="services-box-img" src="/assets/images/IMG.png" alt="">
+                    <img class="services-small-img" src="/assets/images/cs2.png" alt="">
+                    <div class="services-text">
+                        <h3>CS 2 Boost</h3>
+                        <p>Master CS2 with our boosting services! From map control to clutch plays, our boosters enhance
+                            your performance.</p>
+                        <button class="themebtn-bg flex items-center gap-3">
+                            Boost Now
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M8.10702 14.5266C8.07655 14.6477 7.31484 17.5 3.12499 17.5C2.95923 17.5 2.80026 17.4341 2.68305 17.3169C2.56584 17.1997 2.49999 17.0408 2.49999 16.875C2.49999 12.6852 5.35234 11.9234 5.47343 11.893C5.63432 11.8528 5.80459 11.8781 5.94678 11.9635C6.08897 12.0488 6.19144 12.1872 6.23163 12.348C6.27183 12.5089 6.24647 12.6792 6.16112 12.8214C6.07578 12.9636 5.93745 13.066 5.77655 13.1062C5.70624 13.1258 4.02499 13.6172 3.77968 16.2203C6.3828 15.975 6.87499 14.2969 6.8953 14.2187C6.93674 14.0581 7.04032 13.9204 7.18324 13.8361C7.32616 13.7518 7.49673 13.7277 7.65741 13.7691C7.8181 13.8106 7.95574 13.9142 8.04006 14.0571C8.12437 14.2 8.14846 14.3706 8.10702 14.5312V14.5266ZM15.3726 9.26093L15 9.63359V14.1906C15.0009 14.3554 14.9691 14.5187 14.9063 14.6711C14.8435 14.8234 14.7511 14.9618 14.6344 15.0781L11.9531 17.7578C11.8375 17.8743 11.6999 17.9667 11.5484 18.0297C11.3969 18.0927 11.2344 18.1251 11.0703 18.125C10.9349 18.125 10.8003 18.1031 10.6719 18.0602C10.4513 17.9872 10.2556 17.854 10.1067 17.6756C9.95791 17.4973 9.86194 17.2808 9.82968 17.0508L9.41015 14.0437L5.95624 10.5898L2.95077 10.1703C2.72042 10.138 2.50364 10.0421 2.32484 9.89327C2.14604 9.74448 2.0123 9.54875 1.93867 9.3281C1.86504 9.10745 1.85443 8.87063 1.90805 8.64428C1.96167 8.41794 2.07739 8.21104 2.24218 8.04687L4.92187 5.36562C5.03818 5.24889 5.17654 5.15645 5.3289 5.09368C5.48126 5.03091 5.64458 4.99907 5.80937 5H10.3664L10.7391 4.62734C12.8234 2.54375 15.3351 2.4539 16.318 2.5125C16.6227 2.53102 16.9101 2.66043 17.126 2.87631C17.3419 3.0922 17.4713 3.37963 17.4898 3.68437C17.5469 4.66484 17.457 7.17656 15.3734 9.26093H15.3726ZM3.12499 8.93281L6.02734 9.3375L9.1164 6.25H5.80937L3.12499 8.93281ZM7.13437 10L9.99999 12.8656L14.4883 8.37734C15.0931 7.77656 15.5624 7.05326 15.8645 6.25606C16.1666 5.45886 16.2946 4.60623 16.2398 3.75546C15.3895 3.70273 14.5377 3.83205 13.7414 4.13478C12.945 4.4375 12.2224 4.90667 11.6219 5.51093L7.13437 10ZM13.75 10.8836L10.6617 13.9719L11.068 16.875L13.75 14.1906V10.8836Z"
+                                    fill="black" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
-                <div class="csgo-HomeReview-arrow-buttons">
-                    <button class="csgo-HomeReview-left-arrow"><img src="/assets/icons/right-arrow.svg"
-                            alt=""></button>
-                    <button class="csgo-HomeReview-right-arrow"><img src="/assets/icons/left-arrow.svg"
-                            alt=""></button>
+                <div class="services-card-box">
+                    <img class="services-box-img" src="/assets/images/IMG2.png" alt="">
+                    <img class="services-small-img" src="/assets/images/esea.png" alt="">
+                    <div class="services-text">
+                        <h3>ESEA Boost</h3>
+                        <p>Climb the ranks in ESEA League! Our expert boosters will elevate your Elo, improve your
+                            gameplay, and help you compete at a higher level.</p>
+                        <button class="themebtn-bg flex items-center gap-3">
+                            Boost Now
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M8.10702 14.5266C8.07655 14.6477 7.31484 17.5 3.12499 17.5C2.95923 17.5 2.80026 17.4341 2.68305 17.3169C2.56584 17.1997 2.49999 17.0408 2.49999 16.875C2.49999 12.6852 5.35234 11.9234 5.47343 11.893C5.63432 11.8528 5.80459 11.8781 5.94678 11.9635C6.08897 12.0488 6.19144 12.1872 6.23163 12.348C6.27183 12.5089 6.24647 12.6792 6.16112 12.8214C6.07578 12.9636 5.93745 13.066 5.77655 13.1062C5.70624 13.1258 4.02499 13.6172 3.77968 16.2203C6.3828 15.975 6.87499 14.2969 6.8953 14.2187C6.93674 14.0581 7.04032 13.9204 7.18324 13.8361C7.32616 13.7518 7.49673 13.7277 7.65741 13.7691C7.8181 13.8106 7.95574 13.9142 8.04006 14.0571C8.12437 14.2 8.14846 14.3706 8.10702 14.5312V14.5266ZM15.3726 9.26093L15 9.63359V14.1906C15.0009 14.3554 14.9691 14.5187 14.9063 14.6711C14.8435 14.8234 14.7511 14.9618 14.6344 15.0781L11.9531 17.7578C11.8375 17.8743 11.6999 17.9667 11.5484 18.0297C11.3969 18.0927 11.2344 18.1251 11.0703 18.125C10.9349 18.125 10.8003 18.1031 10.6719 18.0602C10.4513 17.9872 10.2556 17.854 10.1067 17.6756C9.95791 17.4973 9.86194 17.2808 9.82968 17.0508L9.41015 14.0437L5.95624 10.5898L2.95077 10.1703C2.72042 10.138 2.50364 10.0421 2.32484 9.89327C2.14604 9.74448 2.0123 9.54875 1.93867 9.3281C1.86504 9.10745 1.85443 8.87063 1.90805 8.64428C1.96167 8.41794 2.07739 8.21104 2.24218 8.04687L4.92187 5.36562C5.03818 5.24889 5.17654 5.15645 5.3289 5.09368C5.48126 5.03091 5.64458 4.99907 5.80937 5H10.3664L10.7391 4.62734C12.8234 2.54375 15.3351 2.4539 16.318 2.5125C16.6227 2.53102 16.9101 2.66043 17.126 2.87631C17.3419 3.0922 17.4713 3.37963 17.4898 3.68437C17.5469 4.66484 17.457 7.17656 15.3734 9.26093H15.3726ZM3.12499 8.93281L6.02734 9.3375L9.1164 6.25H5.80937L3.12499 8.93281ZM7.13437 10L9.99999 12.8656L14.4883 8.37734C15.0931 7.77656 15.5624 7.05326 15.8645 6.25606C16.1666 5.45886 16.2946 4.60623 16.2398 3.75546C15.3895 3.70273 14.5377 3.83205 13.7414 4.13478C12.945 4.4375 12.2224 4.90667 11.6219 5.51093L7.13437 10ZM13.75 10.8836L10.6617 13.9719L11.068 16.875L13.75 14.1906V10.8836Z"
+                                    fill="black" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="services-card-box">
+                    <img class="services-box-img" src="/assets/images/IMG3.png" alt="">
+                    <img class="services-small-img" src="/assets/images/esportal.png" alt="">
+                    <div class="services-text">
+                        <h3>ESPortal Boost</h3>
+                        <p>Unlock your potential on ESportal! Whether it’s improving your K/D ratio or achieving higher
+                            ranks, our boosters have you covered.</p>
+                        <button class="themebtn-bg flex items-center gap-3">
+                            Boost Now
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M8.10702 14.5266C8.07655 14.6477 7.31484 17.5 3.12499 17.5C2.95923 17.5 2.80026 17.4341 2.68305 17.3169C2.56584 17.1997 2.49999 17.0408 2.49999 16.875C2.49999 12.6852 5.35234 11.9234 5.47343 11.893C5.63432 11.8528 5.80459 11.8781 5.94678 11.9635C6.08897 12.0488 6.19144 12.1872 6.23163 12.348C6.27183 12.5089 6.24647 12.6792 6.16112 12.8214C6.07578 12.9636 5.93745 13.066 5.77655 13.1062C5.70624 13.1258 4.02499 13.6172 3.77968 16.2203C6.3828 15.975 6.87499 14.2969 6.8953 14.2187C6.93674 14.0581 7.04032 13.9204 7.18324 13.8361C7.32616 13.7518 7.49673 13.7277 7.65741 13.7691C7.8181 13.8106 7.95574 13.9142 8.04006 14.0571C8.12437 14.2 8.14846 14.3706 8.10702 14.5312V14.5266ZM15.3726 9.26093L15 9.63359V14.1906C15.0009 14.3554 14.9691 14.5187 14.9063 14.6711C14.8435 14.8234 14.7511 14.9618 14.6344 15.0781L11.9531 17.7578C11.8375 17.8743 11.6999 17.9667 11.5484 18.0297C11.3969 18.0927 11.2344 18.1251 11.0703 18.125C10.9349 18.125 10.8003 18.1031 10.6719 18.0602C10.4513 17.9872 10.2556 17.854 10.1067 17.6756C9.95791 17.4973 9.86194 17.2808 9.82968 17.0508L9.41015 14.0437L5.95624 10.5898L2.95077 10.1703C2.72042 10.138 2.50364 10.0421 2.32484 9.89327C2.14604 9.74448 2.0123 9.54875 1.93867 9.3281C1.86504 9.10745 1.85443 8.87063 1.90805 8.64428C1.96167 8.41794 2.07739 8.21104 2.24218 8.04687L4.92187 5.36562C5.03818 5.24889 5.17654 5.15645 5.3289 5.09368C5.48126 5.03091 5.64458 4.99907 5.80937 5H10.3664L10.7391 4.62734C12.8234 2.54375 15.3351 2.4539 16.318 2.5125C16.6227 2.53102 16.9101 2.66043 17.126 2.87631C17.3419 3.0922 17.4713 3.37963 17.4898 3.68437C17.5469 4.66484 17.457 7.17656 15.3734 9.26093H15.3726ZM3.12499 8.93281L6.02734 9.3375L9.1164 6.25H5.80937L3.12499 8.93281ZM7.13437 10L9.99999 12.8656L14.4883 8.37734C15.0931 7.77656 15.5624 7.05326 15.8645 6.25606C16.1666 5.45886 16.2946 4.60623 16.2398 3.75546C15.3895 3.70273 14.5377 3.83205 13.7414 4.13478C12.945 4.4375 12.2224 4.90667 11.6219 5.51093L7.13437 10ZM13.75 10.8836L10.6617 13.9719L11.068 16.875L13.75 14.1906V10.8836Z"
+                                    fill="black" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="services-card-box">
+                    <img class="services-box-img" src="/assets/images/IMG4.png" alt="">
+                    <img class="services-small-img" src="/assets/images/faceit.png" alt="">
+                    <div class="services-text">
+                        <h3>Faceit Boost</h3>
+                        <p>Faceit glory awaits! Our boosters will skyrocket your Faceit Elo, ensuring you play alongside
+                            the best.</p>
+                        <button class="themebtn-bg flex items-center gap-3">
+                            Boost Now
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M8.10702 14.5266C8.07655 14.6477 7.31484 17.5 3.12499 17.5C2.95923 17.5 2.80026 17.4341 2.68305 17.3169C2.56584 17.1997 2.49999 17.0408 2.49999 16.875C2.49999 12.6852 5.35234 11.9234 5.47343 11.893C5.63432 11.8528 5.80459 11.8781 5.94678 11.9635C6.08897 12.0488 6.19144 12.1872 6.23163 12.348C6.27183 12.5089 6.24647 12.6792 6.16112 12.8214C6.07578 12.9636 5.93745 13.066 5.77655 13.1062C5.70624 13.1258 4.02499 13.6172 3.77968 16.2203C6.3828 15.975 6.87499 14.2969 6.8953 14.2187C6.93674 14.0581 7.04032 13.9204 7.18324 13.8361C7.32616 13.7518 7.49673 13.7277 7.65741 13.7691C7.8181 13.8106 7.95574 13.9142 8.04006 14.0571C8.12437 14.2 8.14846 14.3706 8.10702 14.5312V14.5266ZM15.3726 9.26093L15 9.63359V14.1906C15.0009 14.3554 14.9691 14.5187 14.9063 14.6711C14.8435 14.8234 14.7511 14.9618 14.6344 15.0781L11.9531 17.7578C11.8375 17.8743 11.6999 17.9667 11.5484 18.0297C11.3969 18.0927 11.2344 18.1251 11.0703 18.125C10.9349 18.125 10.8003 18.1031 10.6719 18.0602C10.4513 17.9872 10.2556 17.854 10.1067 17.6756C9.95791 17.4973 9.86194 17.2808 9.82968 17.0508L9.41015 14.0437L5.95624 10.5898L2.95077 10.1703C2.72042 10.138 2.50364 10.0421 2.32484 9.89327C2.14604 9.74448 2.0123 9.54875 1.93867 9.3281C1.86504 9.10745 1.85443 8.87063 1.90805 8.64428C1.96167 8.41794 2.07739 8.21104 2.24218 8.04687L4.92187 5.36562C5.03818 5.24889 5.17654 5.15645 5.3289 5.09368C5.48126 5.03091 5.64458 4.99907 5.80937 5H10.3664L10.7391 4.62734C12.8234 2.54375 15.3351 2.4539 16.318 2.5125C16.6227 2.53102 16.9101 2.66043 17.126 2.87631C17.3419 3.0922 17.4713 3.37963 17.4898 3.68437C17.5469 4.66484 17.457 7.17656 15.3734 9.26093H15.3726ZM3.12499 8.93281L6.02734 9.3375L9.1164 6.25H5.80937L3.12499 8.93281ZM7.13437 10L9.99999 12.8656L14.4883 8.37734C15.0931 7.77656 15.5624 7.05326 15.8645 6.25606C16.1666 5.45886 16.2946 4.60623 16.2398 3.75546C15.3895 3.70273 14.5377 3.83205 13.7414 4.13478C12.945 4.4375 12.2224 4.90667 11.6219 5.51093L7.13437 10ZM13.75 10.8836L10.6617 13.9719L11.068 16.875L13.75 14.1906V10.8836Z"
+                                    fill="black" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="services-card-box">
+                    <img class="services-box-img" src="/assets/images/IMG5.png" alt="">
+                    <img class="services-small-img" src="/assets/images/coashing.png" alt="">
+                    <div class="services-text">
+                        <h3>Coaching</h3>
+                        <p>Personalized coaching for gamers! Learn from seasoned pros, refine your strategies, and
+                            elevate your skills.</p>
+                        <button class="themebtn-bg flex items-center gap-3">
+                            Boost Now
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M8.10702 14.5266C8.07655 14.6477 7.31484 17.5 3.12499 17.5C2.95923 17.5 2.80026 17.4341 2.68305 17.3169C2.56584 17.1997 2.49999 17.0408 2.49999 16.875C2.49999 12.6852 5.35234 11.9234 5.47343 11.893C5.63432 11.8528 5.80459 11.8781 5.94678 11.9635C6.08897 12.0488 6.19144 12.1872 6.23163 12.348C6.27183 12.5089 6.24647 12.6792 6.16112 12.8214C6.07578 12.9636 5.93745 13.066 5.77655 13.1062C5.70624 13.1258 4.02499 13.6172 3.77968 16.2203C6.3828 15.975 6.87499 14.2969 6.8953 14.2187C6.93674 14.0581 7.04032 13.9204 7.18324 13.8361C7.32616 13.7518 7.49673 13.7277 7.65741 13.7691C7.8181 13.8106 7.95574 13.9142 8.04006 14.0571C8.12437 14.2 8.14846 14.3706 8.10702 14.5312V14.5266ZM15.3726 9.26093L15 9.63359V14.1906C15.0009 14.3554 14.9691 14.5187 14.9063 14.6711C14.8435 14.8234 14.7511 14.9618 14.6344 15.0781L11.9531 17.7578C11.8375 17.8743 11.6999 17.9667 11.5484 18.0297C11.3969 18.0927 11.2344 18.1251 11.0703 18.125C10.9349 18.125 10.8003 18.1031 10.6719 18.0602C10.4513 17.9872 10.2556 17.854 10.1067 17.6756C9.95791 17.4973 9.86194 17.2808 9.82968 17.0508L9.41015 14.0437L5.95624 10.5898L2.95077 10.1703C2.72042 10.138 2.50364 10.0421 2.32484 9.89327C2.14604 9.74448 2.0123 9.54875 1.93867 9.3281C1.86504 9.10745 1.85443 8.87063 1.90805 8.64428C1.96167 8.41794 2.07739 8.21104 2.24218 8.04687L4.92187 5.36562C5.03818 5.24889 5.17654 5.15645 5.3289 5.09368C5.48126 5.03091 5.64458 4.99907 5.80937 5H10.3664L10.7391 4.62734C12.8234 2.54375 15.3351 2.4539 16.318 2.5125C16.6227 2.53102 16.9101 2.66043 17.126 2.87631C17.3419 3.0922 17.4713 3.37963 17.4898 3.68437C17.5469 4.66484 17.457 7.17656 15.3734 9.26093H15.3726ZM3.12499 8.93281L6.02734 9.3375L9.1164 6.25H5.80937L3.12499 8.93281ZM7.13437 10L9.99999 12.8656L14.4883 8.37734C15.0931 7.77656 15.5624 7.05326 15.8645 6.25606C16.1666 5.45886 16.2946 4.60623 16.2398 3.75546C15.3895 3.70273 14.5377 3.83205 13.7414 4.13478C12.945 4.4375 12.2224 4.90667 11.6219 5.51093L7.13437 10ZM13.75 10.8836L10.6617 13.9719L11.068 16.875L13.75 14.1906V10.8836Z"
+                                    fill="black" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
+
+        </div>
+
+        <div class="aboutUsSection-container">
+            <div class="aboutUsSection-inner-container">
+                <h5>ABOUT US</h5>
+                <h2>Who we are</h2>
+                <p>Welcome to MyBoost—where gaming excellence meets passion! Our journey began with a simple goal: to
+                    elevate the gaming experience for players worldwide. At MyBoost, we’re more than just a service;
+                    we’re a
+                    community of dedicated gamers who understand the thrill of competition, the joy of victory, and the
+                    frustration of defeat.</p>
+                <p>Our team comprises seasoned players, former esports professionals, and top-ranked streamers. They’re
+                    not
+                    just boosters; they’re your allies in the virtual battlefield. We safeguard your accounts like our
+                    own,
+                    using encrypted communication channels, VPNs, and strict protocols. Your privacy and security remain
+                    our
+                    priority.</p>
+                <p>No cookie-cutter approaches here! Whether it’s ESEA, Faceit, or coaching services, we customize our
+                    offerings to fit your unique gaming needs. And when you need assistance, our real humans are
+                    available
+                    24/7 via Discord or live chat.</p>
+            </div>
+            <img src="/assets/images/rocket.png" alt="">
+        </div>
+
+        <div class="whyUsSection-container">
+            <h3>Why Us?</h3>
+            <div class="whyUsSection-inner-container">
+                <div class="whyUsSection-box">
+                    <h5>Community Engagement and Events</h5>
+                    <p>MyBoost isn’t just about boosting accounts; it’s about building a community. Join our Discord
+                        server for exclusive events, tournaments, and giveaways. Connect with fellow gamers, share tips,
+                        and celebrate victories together.</p>
+                </div>
+                <div class="whyUsSection-box">
+                    <h5>Tailored Strategies for Every Game</h5>
+                    <p>We don’t believe in one-size-fits-all solutions. Our boosters analyse each game’s maps, and
+                        mechanics to create personalised strategies. Whether it’s capturing objectives, or mastering
+                        rotations, we’ve got you covered.</p>
+                </div>
+                <div class="whyUsSection-box">
+                    <h5>Transparency and Progress Tracking</h5>
+                    <p>Wondering how your boost is progressing? We provide real-time updates. Track your rank gains, win
+                        streaks, and achievements. Transparency is our policy—we want you to be part of the journey.</p>
+                </div>
+                <div class="whyUsSection-box">
+                    <h5>Referral Rewards Program</h5>
+                    <p>Spread the word about MyBoost! Refer friends, streamers, or fellow gamers, and earn rewards. It’s
+                        a win-win—you help them level up, and we thank you with discounts and exclusive perks.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ourstatSection-container">
+            <h5>OUR STATS</h5>
+            <h2>Because numbers Speak</h2>
+            <div class="ourstatSection-inner-container">
+                <div class="ourstatSection-box">
+                    <h2>8 Years</h2>
+                    <p>OF SERVICE</p>
+                </div>
+                <div class="ourstatSection-box">
+                    <h2>20K</h2>
+                    <p>HAPPY CLIENTS</p>
+                </div>
+                <div class="ourstatSection-box">
+                    <h2>99%</h2>
+                    <p>ORDERS COMPLETION</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stepsSection-container">
+
+            <div class="stepsSection-inner-container">
+                <h5>HOW TO GET SERVICE</h5>
+                <h2>4 easy steps to start with us</h2>
+
+                <div class="stepsSection-flow-container">
+                    <div class="stepsSection-box">
+                        <span>
+                            <img src="/assets//icons/HandTap.png" alt="">
+                        </span>
+                        <h2>1. Select Boosting</h2>
+                        <p>Choose your desired game and rank boost type (ESEA, Faceit, etc.)</p>
+                    </div>
+                    <div class="stepsSection-box">
+                        <span>
+                            <img src="/assets//icons/CreditCard.png" alt="">
+                        </span>
+                        <h2>2. Make Payment</h2>
+                        <p>Complete the secure payment process using your preferred method.</p>
+                    </div>
+                    <div class="stepsSection-box">
+                        <span>
+                            <img src="/assets//icons/Note.png" alt="">
+                        </span>
+                        <h2>3. Provide Order Details</h2>
+                        <p>Share your account information and any specific requirements.</p>
+                    </div>
+                    <div class="stepsSection-box">
+                        <span>
+                            <img src="/assets//icons/RocketLaunch.png" alt="">
+                        </span>
+                        <h2>4. Boosting Starts</h2>
+                        <p>Our expert boosters begin enhancing your gaming experience.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="testimonialsSection-container">
+            <div class="testimonialsSection-inner-container">
+                <h5>TESTIMONIALS</h5>
+                <h2>Let’s hear from happy clients</h2>
+                <div class="center">
+                    <div class="Testimonials-card-box">
+                        <h5>Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                            interdum, ac aliquet odio mattis. Qorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h5>
+                        <span class="flex items-center gap-3">
+                            <img src="/assets/icons/Avatar.png" alt="">
+                            <h6>Smith J.</h6>
+                        </span>
+                    </div>
+                    <div class="Testimonials-card-box">
+                        <h5>Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                            interdum, ac aliquet odio mattis. Qorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h5>
+                        <span class="flex items-center gap-3">
+                            <img src="/assets/icons/Avatar.png" alt="">
+                            <h6>Smith J.</h6>
+                        </span>
+                    </div>
+                    <div class="Testimonials-card-box">
+                        <h5>Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                            interdum, ac aliquet odio mattis. Qorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h5>
+                        <span class="flex items-center gap-3">
+                            <img src="/assets/icons/Avatar.png" alt="">
+                            <h6>Smith J.</h6>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
 
 
         </div>
-        <!-- csgo-whychoose Services End -->
 
-        <!-- csgo-faqs-sections start -->
-        <div class="accordion">
-            <h1>Frequently Asked Questions</h1>
-            <div class="accordion-item">
-                <div class="accordion-item-header">
-                    How does MyBoost.gg work?
-                </div>
-                <div class="accordion-item-body">
-                    <div class="accordion-item-body-content">
-                        MyBoost.gg offers you all types of CS2 account boosting services, for CS2 matchmaking, FaceIt, ESEA and Esportal. We level up your account to where you believe it should be.
-
-                        For boosting your CS2 account, we use our professional players. We do NOT use cheats or bots. Your accounts are completely safe.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <div class="accordion-item-header">
-                    Is it safe for me to boost my account?
-                </div>
-                <div class="accordion-item-body">
-                    <div class="accordion-item-body-content">
-                        Yes, your account is in safe hands. Our professional players make sure to rank your account
-                        by playing. NO cheats/bots are used.
-                    </div>
-                </div>
+        <div class="frequentlySection-container">
+            <div class="frequentlySection-inner-container">
+                <h5>FREQUENTLY ASKED QUESTIONS</h5>
+                <h2>Feel free to explore queries and find answers! </h2>
             </div>
 
-            <div class="accordion-item">
-                <div class="accordion-item-header">
-                    What payment methods does MyBoost.gg support?
+            <div class="frequeantly-tabs-conatiner">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'general')" id="defaultOpen">GENERAL</button>
+                    <button class="tablinks" onclick="openCity(event, 'TRUST&SAFETY')">TRUST & SAFETY</button>
+                    <button class="tablinks" onclick="openCity(event, 'SERVICES')">SERVICES</button>
+                    <button class="tablinks" onclick="openCity(event, 'BILLING')">BILLING</button>
                 </div>
-                <div class="accordion-item-body">
-                    <div class="accordion-item-body-content">
-                        MyBoost currently accepts Mastercard/Visa/Crypto payments.
+
+                <div id="general" class="tabcontent">
+                    <div class="m-2 space-y-2">
+                        <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="1">
+                            <div class="flex cursor-pointer items-center justify-between">
+                                <span class="faq-1-span">What is an FAQ page?</span>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
+                                    class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
+                            </div>
+                            <div
+                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
+                                interdum, aliquet odio mattis.
+                            </div>
+                        </div>
+
+                        <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="2">
+                            <div class="flex cursor-pointer items-center justify-between">
+                                <span class="faq-1-span">Why should I visit the FAQ page?</span>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
+                                    class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
+                            </div>
+                            <div
+                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
+                                interdum, aliquet odio mattis.
+                            </div>
+                        </div>
+
+                        <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="3">
+                            <div class="flex cursor-pointer items-center justify-between">
+                                <span class="faq-1-span">How do I find answers to common questions?</span>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
+                                    class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
+                            </div>
+                            <div
+                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
+                                interdum, aliquet odio mattis.
+                            </div>
+                        </div>
+
+                        <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="4">
+                            <div class="flex cursor-pointer items-center justify-between">
+                                <span class="faq-1-span">What’s the difference between an FAQ page and an About Us
+                                    page?</span>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
+                                    class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
+                            </div>
+                            <div
+                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
+                                interdum, aliquet odio mattis.
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <div id="TRUST&SAFETY" class="tabcontent">
+                    <h3>TRUST&SAFETY</h3>
+                    <p>TRUST&SAFETY is the capital of France.</p>
+                </div>
+
+                <div id="SERVICES" class="tabcontent">
+                    <h3>SERVICES</h3>
+                    <p>SERVICES is the capital of Japan.</p>
+                </div>
+
+                <div id="BILLING" class="tabcontent">
+                    <h3>BILLING</h3>
+                    <p>BILLING is the capital of Japan.</p>
+                </div>
+
+            </div>
+
+            <div class="frequentlyStill-inner-container">
+                <div class="">
+                    <h5>Still Have Questions?</h5>
+                    <p>Can’t find the answer you’re looking for/ Please chat to our friendly team.</p>
+                </div>
+
+                <button class="themebtn-bg">Get In Touch</button>
             </div>
         </div>
-        <!-- csgo-faqs-sections start -->
 
-        <!-- csgo-Subscribe Section Start -->
-        <div class="csgo-HomeSubscribe-container">
-            <div class="csgo-h1-Subscribe">
-                <h5 class="trns-text">SUBSCRIBE</h5>
-                <h6>WANT MORE ?</h6>
-                <p>Sign up to our newsletter and receive regular updates from our side and avail best discounts </p>
-            </div>
-            <div class="csgo-subscribe-email-container">
-                <div class="csgo-subscribe-email-section">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="80" viewBox="0 0 500 80" fill="none">
-                        <path d="M1.5 78.5V1.5H498.5V47.6811L450.559 78.5H1.5Z" stroke="url(#paint0_linear_158_4146)"
-                            stroke-opacity="0.8" stroke-width="3" />
-                        <defs>
-                            <linearGradient id="paint0_linear_158_4146" x1="250" y1="-31.25" x2="253.75" y2="173.75"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#FD432A" />
-                                <stop offset="1" stop-color="#FD2AA9" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <input type="text" placeholder="ENTER YOUR EMAIL ADDRESS">
-                </div>
-                <button class="csgo-btn SUBSCRIBE-btn">SUBSCRIBE</button>
+        <div class="boostNow-container">
+            <div class="boostNow-inner-container">
+                <h3>Boost your game now and conquer the ranks!</h3>
+                <button class="themebtn-bg-white">Boost your game</button>
             </div>
         </div>
-        <!-- csgo-Subscribe Section End -->
 
-        <!-- csgo-Footer Section Start -->
-       <x-footer></x-footer>
-        <!-- csgo-Footer Section End -->
+        <div class="payment-container">
+            <div class="payment-inner-container">
+                <img src="/assets/images/Visa.png" alt="">
+                <img src="/assets/images/Gpay.png" alt="">
+                <img src="/assets/images/AE.png" alt="">
+                <img src="/assets/images/Mastercard.png" alt="">
+                <img src="/assets/images/Paypal.png" alt="">
+                <img src="/assets/images/Applepay.png" alt="">
+            </div>
+            <p>*All these payment methods are acceptable.</p>
+        </div>
 
-    </div>    
+        <Footer class="flex">
+            <div class="footer-left-container">
+
+                <div class="footer-leftFirst-inner-container">
+                    <img src="/assets//images/footerLogo.png" alt="">
+                    <p>Unlock your gaming potential with MyBoost—your trusted partner for rank boosting, coaching, and
+                        more. Level up today!</p>
+                </div>
+
+                <div class="footer-leftSecond-inner-container">
+                    <div class="footer-leftSecond-box">
+                        <h5>SERVICES</h5>
+                        <ul>
+                            <li><a href="#">CS2 Boost</a></li>
+                            <li><a href="#">Faceit Boost</a></li>
+                            <li><a href="#">ESEA Boost</a></li>
+                            <li><a href="#">ESPortal Boost</a></li>
+                            <li><a href="#">Coaching</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-leftSecond-box">
+                        <h5>COMPANY</h5>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-leftthird-inner-container">
+                    <a href="#"><img src="/assets/icons/start icon.png" alt=""></a>
+                    <a href="#"><img src="/assets/icons/start icon (1).png" alt=""></a>
+                    <a href="#"><img src="/assets/icons/start icon (2).png" alt=""></a>
+                    <a href="#"><img src="/assets/icons/start icon (3).png" alt=""></a>
+                </div>
+
+                <div class="footer-leftfourth-inner-container">
+                    <p>Copyright © Hotel Chauffeur.com 2017. All rights reserved.</p>
+                </div>
+
+            </div>
+
+            <div class="footer-right-container">
+                <div class="footersubscribe-container">
+                    <h2>Subscribe To Our Newsletter</h2>
+                    <div class="flex setDirection-input gap-4 mt-5">
+                        <div class="footersubscribe-input-container flex">
+                            <img src="/assets/icons/✳️ Start Icon.png" alt="">
+                            <input type="text" placeholder="Enter Your Email Here">
+                        </div>
+                        <button class="themebtn-bg">Subscribe</button>
+                    </div>
+                </div>
+                <div class="flex justify-end">
+                    <img src="/assets/images/IMG7.png" alt="">
+                </div>
+            </div>
+        </Footer>
+
+    </div>
     @endsection
 
     @push('js')
         <script>
+            <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="/vendor/js/tabs.js"></script>
+    <!-- <script src="app.js"></script> -->
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.style.left = sidebar.style.left === '0px' ? '-280px' : '0px';
+        }
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.center').slick({
+                centerMode: true,
+                dots: true,
+                centerPadding: '60px',
+                slidesToShow: 1,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+
+    </script>
+        {{-- <script>
             function animateCount(elementId, targetValue, suffix = '') {
                 let currentCount = 0;
                 const interval = setInterval(function () {
@@ -461,5 +582,5 @@
         </script>
         <!-- Script -->
         <script src="/vendor/js/app.js"></script>
-        <script src="/vendor/js/carousel.js"></script>
+        <script src="/vendor/js/carousel.js"></script> --}}
     @endpush

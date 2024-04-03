@@ -38,6 +38,10 @@ class BoostController extends Controller
         return view('jobs');
     }
 
+    public function applyjobs(){
+        return view('applyjobs');
+    }
+
     public function terms(){
         return view('terms');
     }

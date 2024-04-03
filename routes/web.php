@@ -42,6 +42,7 @@ Route::get('/contact', [BoostController::class, 'contact']);
 Route::post('/contact', [BoostController::class, 'savecontact']);
 
 Route::get('/jobs', [BoostController::class, 'jobs']);
+Route::get('/apply-jobs', [BoostController::class, 'applyjobs']);
 Route::get('/terms', [BoostController::class, 'terms']);
 
 Route::middleware([
