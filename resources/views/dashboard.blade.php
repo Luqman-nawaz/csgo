@@ -1,4 +1,5 @@
 @extends('layouts.csgo')
+
 @section('title') <title>MyBoost.GG - User Dashboard</title> @endsection
 
         @push('css')
@@ -163,9 +164,9 @@
             </div>
 
             <x-footer></x-footer>
-        <!-- csgo-Footer Section End -->
+            <!-- csgo-Footer Section End -->
 
-    </div>    
+        </div>    
     
     @endsection
     
