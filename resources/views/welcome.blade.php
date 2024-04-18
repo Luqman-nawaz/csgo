@@ -15,12 +15,12 @@
             <h1>Raise your rank up to Global Elite with our help.</h1>
             <p>If you are bored of playing with trolls and unskilled players - purchase boost now and our professional
                 players will help you with winning matches.</p>
-            <div class="heroPills-container flex justify-center items-center gap-5">
-                <span><a href="#">CS2 BOOST</span></a>
-                <span><a href="#">FACEIT BOOST</span></a>
-                <span><a href="#">ESEA BOOST</span></a>
-                <span><a href="#">ESPORTAL BOOST</span></a>
-                <span><a href="#">COACHING</span></a>
+            <div class="heroPills-container flex justify-center items-center gap-5" style="margin-bottom:10%;">
+                <span><a href="/csgoboost">CS2 BOOST</span></a>
+                <span><a href="/faceit">FACEIT BOOST</span></a>
+                <span><a href="/esea">ESEA BOOST</span></a>
+                <span><a href="/esportal">ESPORTAL BOOST</span></a>
+                <span><a href="/coaching">COACHING</span></a>
             </div>
         </div>
 
