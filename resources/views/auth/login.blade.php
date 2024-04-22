@@ -44,11 +44,11 @@
                         </div>
     
                         <div class="w-full flex justify-end">
-                            <a href="#" class="Forgot-txt">Forgot Password?</a>
+                            <a href="/forgot-password" class="Forgot-txt">Forgot Password?</a>
                         </div>
     
                             <button type="submit" class="themebtn-bg w-full mt-5">Login to account</button>
-                            <a href="#" class="Forgot-txt mt-5 w-full text-center">Create New Account</a>
+                            <a href="/register" class="Forgot-txt mt-5 w-full text-center">Create New Account</a>
                         </form>
                     </div>
     

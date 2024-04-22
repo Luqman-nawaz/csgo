@@ -1,10 +1,11 @@
 <Header class="flex justify-between items-center">
     <div class="width-85 mx-auto flex justify-between items-center">
         <div class="leftmenu-container w-5/12 flex items-center">
-                <a href="/contact">Contact Us</a>
+                <a href="/">Home</a>
                 <a href="/about">About</a>
                 <a href="/csgoboost">Boost</a>
                 <a href="/coaching">Coaching</a>
+                <a href="/contact">Contact</a>
             
         </div>
         <div class="logo-container w-3/12 flex justify-between items-center">
