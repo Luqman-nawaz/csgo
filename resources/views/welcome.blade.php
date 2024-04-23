@@ -12,7 +12,7 @@
         <x-navbar></x-navbar>
 
         <div class="heroSection-container">
-            <h1>Raise your rank up to Global Elite with our help.</h1>
+            <h1 style="letter-spacing:1px;">Raise your rank up to Global Elite with our help.</h1>
             <p>If you are bored of playing with trolls and unskilled players - purchase boost now and our professional
                 players will help you with winning matches.</p>
             <div class="heroPills-container flex justify-center items-center gap-5" style="margin-bottom:10%;">
@@ -89,7 +89,7 @@
 
             <div class="services-card-container">
                 <div class="services-card-box">
-                    <img class="services-box-img" src="/assets/images/IMG.png" alt="">
+                    <img style="object-fit: fill; width:100%;" class="services-box-img" src="/assets/images/IMG.png" alt="">
                     <img class="services-small-img" src="/assets/images/cs2.png" alt="">
                     <div class="services-text">
                         <h3>CS 2 Boost</h3>
@@ -109,7 +109,7 @@
                     </div>
                 </div>
                 <div class="services-card-box">
-                    <img class="services-box-img" src="/assets/images/IMG2.png" alt="">
+                    <img style="object-fit: fill; width:100%;" class="services-box-img" src="/assets/images/IMG2.png" alt="">
                     <img class="services-small-img" src="/assets/images/esea.png" alt="">
                     <div class="services-text">
                         <h3>ESEA Boost</h3>
@@ -129,7 +129,7 @@
                     </div>
                 </div>
                 <div class="services-card-box">
-                    <img class="services-box-img" src="/assets/images/IMG3.png" alt="">
+                    <img style="object-fit: fill; width:100%;" class="services-box-img" src="/assets/images/IMG3.png" alt="">
                     <img class="services-small-img" src="/assets/images/esportal.png" alt="">
                     <div class="services-text">
                         <h3>ESPortal Boost</h3>
@@ -149,7 +149,7 @@
                     </div>
                 </div>
                 <div class="services-card-box">
-                    <img class="services-box-img" src="/assets/images/IMG4.png" alt="">
+                    <img style="object-fit: fill; width:100%;" class="services-box-img" src="/assets/images/IMG4.png" alt="">
                     <img class="services-small-img" src="/assets/images/faceit.png" alt="">
                     <div class="services-text">
                         <h3>Faceit Boost</h3>
@@ -169,7 +169,7 @@
                     </div>
                 </div>
                 <div class="services-card-box">
-                    <img class="services-box-img" src="/assets/images/IMG5.png" alt="">
+                    <img style="object-fit: fill; width:100%;" class="services-box-img" src="/assets/images/IMG5.png" alt="">
                     <img class="services-small-img" src="/assets/images/coashing.png" alt="">
                     <div class="services-text">
                         <h3>Coaching</h3>
@@ -310,27 +310,24 @@
                 <h2>Let’s hear from happy clients</h2>
                 <div class="center">
                     <div class="Testimonials-card-box">
-                        <h5>Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
-                            interdum, ac aliquet odio mattis. Qorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h5>
+                        <h5>The service was fast and very convenient. The boosters were great in person & very professional.</h5>
+                        <br>
                         <span class="flex items-center gap-3">
                             <img src="/assets/icons/Avatar.png" alt="">
                             <h6>Smith J.</h6>
                         </span>
                     </div>
                     <div class="Testimonials-card-box">
-                        <h5>Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
-                            interdum, ac aliquet odio mattis. Qorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h5>
+                        <h5>Good site. The boosters were great, had a blast being in game with them. Highly Recommended!</h5>
+                        <br>
                         <span class="flex items-center gap-3">
                             <img src="/assets/icons/Avatar.png" alt="">
                             <h6>Smith J.</h6>
                         </span>
                     </div>
                     <div class="Testimonials-card-box">
-                        <h5>Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
-                            interdum, ac aliquet odio mattis. Qorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h5>
+                        <h5>After experiencing everything for myself, I use MyBoost exclusively. Great service & staff. Recommended.</h5>
+                        <br>
                         <span class="flex items-center gap-3">
                             <img src="/assets/icons/Avatar.png" alt="">
                             <h6>Smith J.</h6>
@@ -451,8 +448,7 @@
     @endsection
 
     @push('js')
-        <script>
-            <!-- scripts -->
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="/vendor/js/tabs.js"></script>
@@ -495,26 +491,4 @@
         });
 
     </script>
-        {{-- <script>
-            function animateCount(elementId, targetValue, suffix = '') {
-                let currentCount = 0;
-                const interval = setInterval(function () {
-                    currentCount += 100;
-                    if (currentCount <= targetValue) {
-                        document.getElementById(elementId).textContent = (currentCount / 100) + suffix;
-                    } else {
-                        document.getElementById(elementId).textContent = targetValue / 100 + suffix;
-                        clearInterval(interval);
-                    }
-                }, 100); // You can adjust the interval duration as needed
-            }
-
-            // Call the animation function for each counter with 'k' suffix for thousands
-            animateCount('happyCustomersCount', 2000, 'k');
-            animateCount('boostingYearsCount', 800, ''); // No suffix for this counter
-            animateCount('ordersCompletedCount', 3000, 'k');
-        </script>
-        <!-- Script -->
-        <script src="/vendor/js/app.js"></script>
-        <script src="/vendor/js/carousel.js"></script> --}}
     @endpush
