@@ -169,114 +169,119 @@
                 </div>
 
                 <div id="tab2" class="boostingTab">
-                    <div class="boostingTabContent">
+                    <form action="/esea/checkout" method="post">
+                        @csrf
+                        
+                            <input type="text" value="ESEA Win Boost" name="boost_type" style="display: none;" />
+                            
+                            <div class="boostingTabContent">
 
-                        <div class="boosting-option-container">
+                                <div class="boosting-option-container">
 
-                            <div class="boosting-option-inner-container">
+                                    <div class="boosting-option-inner-container">
 
-                                <div class="boosting-option-img-box">
-                                    <img src="/assets/images/rankImgs/RankIMG1.png" id="rankImage1" alt="">
-                                </div>
-                                <div class="custom-select">
-                                    <label for="select">Label</label>
-                                    <select id="select" onchange="updateSelected(this)">
-                                        <option value="RankIMG1">Silver I</option>
-                                        <option value="RankIMG2">Silver II</option>
-                                        <option value="RankIMG3">Silver III</option>
-                                        <option value="RankIMG4">Silver IV</option>
-                                        <option value="RankIMG5">Silver Elite</option>
-                                        <option value="RankIMG6">Silver Elite Master</option>
-                                        <option value="RankIMG7">Golden Nova I</option>
-                                        <option value="RankIMG8">Golden Nova II</option>
-                                        <option value="RankIMG9">Golden Nova III</option>
-                                        <option value="RankIMG10">Golden Nova Master</option>
-                                        <option value="RankIMG11">Legendary Eagle</option>
-                                        <option value="RankIMG12">Legendary Eagle Master</option>
-                                        <option value="RankIMG13">Supreme Master First Class</option>
-                                    </select>
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="counter-box">
-                                <label for="counter2">Number of Wins</label>
-                                <div class="counter">
-                                    <button class="minus" data-counter="counter1"><img
-                                            src="/assets/icons/MinusCircle.png" alt=""></button>
-                                    <input type="number" class="value" id="counter1" value="1">
-                                    <button class="plus" data-counter="counter1"><img
-                                            src="/assets/icons/PlusCircle.png" alt=""></button>
-                                </div>
-                            </div>
+                                        <div class="boosting-option-img-box">
+                                            <img src="/assets/images/rankImgs/RankIMG1.png" id="placementcurrentimage" alt="">
+                                        </div>
+                                        <div class="custom-select">
+                                            <label for="select">Label</label>
+                                            <select id="select" class="placementcurrent" onchange="updateplacementImage()">
+                                                        <option value="D-"><span>D-</span></option>
+                                                        <option value="D">D</option>
+                                                        <option value="D Plus">D+</option>
+                                                        <option value="C-">C-</option>
+                                                        <option value="C">C</option>
+                                                        <option value="C Plus">C+</option>
+                                                        <option value="B-">B-</option>
+                                                        <option value="B">B</option>
+                                                        <option value="B Plus">B+</option>
+                                                        <option value="A-">A-</option>
+                                                        <option value="A">A</option>
+                                                        <option value="A Plus">A+</option>
+                                                    </select>
+                                        </div>
 
 
-                        </div>
 
-                        <div class="boosting-additional-conatiner">
-                            <h5>Additional Features</h5>
-                            <span>
-                                <img src="/assets/icons/Info.png" alt="">
-                                <p>Per additional features will charge 20% of the total amount.</p>
-                            </span>
-
-                            <div class="boosting-additionalInput-conatiner">
-
-                                <label>
-                                    <input type="checkbox">
-                                    +1 Extra Win
-                                    <span>+20%</span>
-                                </label>
-                                <label>
-                                    <input type="checkbox">
-                                    Priority Order
-                                    <span>+20%</span>
-                                </label>
-                                <label>
-                                    <input type="checkbox">
-                                    Play with Booster
-                                    <span>+20%</span>
-                                </label>
-
-                            </div>
-
-                        </div>
-
-                        <div class="boosting-pricing-conatiner">
-
-                            <div class="boosting-pricing-txt-conatiner">
-                                <span>Final Price <h3>$56</h3></span>
-                                <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
-                                        alt=""></button>
-                            </div>
-
-                            <div class="boosting-pricing-opt-conatiner">
-                                <div class="boosting-pricing-optLeft-conatiner">
-                                    <img src="/assets/images/Gpay-trans.png" alt="">
-                                    <img src="/assets/images/AE-trans.png" alt="">
-                                    <img src="/assets/images/Mastercard-trans.png" alt="">
-                                    <img src="/assets/images/Applepay-trans.png" alt="">
-                                    <img src="/assets/images/Visa-trans.png" alt="">
-                                </div>
-                                <div class="boosting-pricing-optRight-conatiner">
-                                    <h6>Our Customers rated us</h6>
-                                    <div class="boosting-greenStar-container">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
                                     </div>
-                                    <span>4.9 on</span>
-                                    <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+
+                                    <div class="counter-box">
+                                        <label for="counter2">Number of Wins</label>
+                                        <div class="counter">
+                                            <button type="button" class="minus" data-counter="counter1"><img
+                                                    src="/assets/icons/MinusCircle.png" alt=""></button>
+                                            <input name="desired_level" type="number" class="placementrange value" id="counter1" value="1" onchange="updateplacement();">
+                                            <button type="button" class="plus" data-counter="counter1"><img
+                                                    src="/assets/icons/PlusCircle.png" alt=""></button>
+                                        </div>
+                                    </div>
+
+
                                 </div>
+
+                                <div class="boosting-additional-conatiner">
+                                    <h5>Additional Features</h5>
+                                    <span>
+                                        <img src="/assets/icons/Info.png" alt="">
+                                        <p>Per additional features will charge 20% of the total amount.</p>
+                                    </span>
+
+                                    <div class="boosting-additionalInput-conatiner">
+
+                                        <label>
+                                            <input type="checkbox" name="solo_play" id="placementcheckbox1" onclick="updateplacement()">
+                                            +1 Extra Win
+                                            <span>+20%</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="priority_order" id="placementcheckbox2" onclick="updateplacement()">
+                                            Priority Order
+                                            <span>+20%</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="play_with_booster" id="placementcheckbox3" onclick="updateplacement()">
+                                            Play with Booster
+                                            <span>+20%</span>
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="boosting-pricing-conatiner">
+
+                                    <div class="boosting-pricing-txt-conatiner">
+                                        <span>Final Price <h3 id="placementprice">$56</h3></span>
+                                        <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
+                                                alt=""></button>
+                                    </div>
+
+                                    <div class="boosting-pricing-opt-conatiner">
+                                        <div class="boosting-pricing-optLeft-conatiner">
+                                            <img src="/assets/images/Gpay-trans.png" alt="">
+                                            <img src="/assets/images/AE-trans.png" alt="">
+                                            <img src="/assets/images/Mastercard-trans.png" alt="">
+                                            <img src="/assets/images/Applepay-trans.png" alt="">
+                                            <img src="/assets/images/Visa-trans.png" alt="">
+                                        </div>
+                                        <div class="boosting-pricing-optRight-conatiner">
+                                            <h6>Our Customers rated us</h6>
+                                            <div class="boosting-greenStar-container">
+                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                            </div>
+                                            <span>4.9 on</span>
+                                            <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+
                             </div>
-
-                        </div>
-
-                    </div>
+                    </form>
                 </div>
 
 
@@ -391,14 +396,14 @@
 @push('js')
     <script>
         function updateplacementImage(){
-            var selectedOption = document.getElementById("placementcurrent").value;
+            var selectedOption = document.querySelector(".placementcurrent").value;
                 // Rank Dropdown Img Change
             var rankImage = document.getElementById("placementcurrentimage");
             rankImage.src = `/ranks/esea/${selectedOption}.png`;
         }
 
         function updateplacement(){
-                var reviews = document.getElementById('placementrange').value;
+                var reviews = document.querySelector('.placementrange').value;
                 
                 var additionalAmount = 0;
 
@@ -417,13 +422,6 @@
                 var totalAmount = (reviews * 7) * (1 + additionalAmount);
                 document.getElementById("placementprice").innerText = "$" + totalAmount.toFixed(2);
 
-                const slider = document.getElementById("placementrange");
-                const sliderValue = document.getElementById("PlacementsliderValue");
-
-                // Update the slider value text when the slider is moved
-                slider.addEventListener("input", function() {
-                    sliderValue.textContent = this.value;
-            });
         }
 
         //rank boost

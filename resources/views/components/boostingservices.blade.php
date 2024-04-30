@@ -4,7 +4,7 @@
 
         <div class="services-card-container">
             <div class="services-card-box">
-                <img class="services-box-img" src="/assets/images/IMG.png" alt="">
+                <img style="object-fit: fill; width:100%;" class="services-box-img" src="/assets/images/IMG.png" alt="">
                 <img class="services-small-img" src="/assets/images/cs2.png" alt="">
                 <div class="services-text">
                     <h3>CS 2 Boost</h3>
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="services-card-box">
-                <img class="services-box-img" src="/assets/images/IMG2.png" alt="">
+                <img style="object-fit: fill; width:100%;" class="services-box-img" src="/assets/images/IMG2.png" alt="">
                 <img class="services-small-img" src="/assets/images/esea.png" alt="">
                 <div class="services-text">
                     <h3>ESEA Boost</h3>
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="services-card-box">
-                <img class="services-box-img" src="/assets/images/IMG3.png" alt="">
+                <img style="object-fit: fill; width:100%;" class="services-box-img" src="/assets/images/IMG3.png" alt="">
                 <img class="services-small-img" src="/assets/images/esportal.png" alt="">
                 <div class="services-text">
                     <h3>ESPortal Boost</h3>
@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="services-card-box">
-                <img class="services-box-img" src="/assets/images/IMG4.png" alt="">
+                <img style="object-fit: fill; width:100%;" class="services-box-img" src="/assets/images/IMG4.png" alt="">
                 <img class="services-small-img" src="/assets/images/faceit.png" alt="">
                 <div class="services-text">
                     <h3>Faceit Boost</h3>
@@ -84,13 +84,13 @@
                 </div>
             </div>
             <div class="services-card-box">
-                <img class="services-box-img" src="/assets/images/IMG5.png" alt="">
+                <img style="object-fit: fill; width:100%;" class="services-box-img" src="/assets/images/IMG5.png" alt="">
                 <img class="services-small-img" src="/assets/images/coashing.png" alt="">
                 <div class="services-text">
                     <h3>Coaching</h3>
                     <p>Personalized coaching for gamers! Learn from seasoned pros, refine your strategies, and
                         elevate your skills.</p>
-                        <a href="/csgoboost">
+                        <a href="/coaching">
                             <button class="themebtn-bg flex items-center gap-3">
                                 Boost Now
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
@@ -105,4 +105,4 @@
             </div>
         </div>
 
-    </div>
+</div>

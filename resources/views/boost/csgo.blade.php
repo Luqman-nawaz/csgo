@@ -25,6 +25,8 @@
         <div class="boostLogo-box"><img src="/assets/images/cs2Boost.png" alt=""></div>
     </div>
 
+    
+
     <!-- CS2 Boosting Tabs Start -->
     <div class="boosting-main-container">
         <div class="boosting-centered-container">
@@ -201,7 +203,7 @@
                                         </div>
                                         <div class="custom-select">
                                             <label for="select">Current Level</label>
-                                            <select id="select" name="current_level" onchange="updateWinBoostImage()" >
+                                            <select class="updateWinBoostPriceRequired" id="select" name="current_level" onchange="updateWinBoostImage()" >
                                                         <option value="Silver I">Silver I</option>
                                                         <option value="Silver II">Silver II</option>
                                                         <option value="Silver III">Silver III</option>
@@ -228,13 +230,13 @@
                                 <div class="counter-box">
                                         <label for="counter1">Number of Wins</label>
                                         <div class="counter">
-                                            <button class="minus" data-counter="counter1" onclick="updatePrice();"><img
+                                            <button type="button" class="minus" data-counter="counter1" onclick="updatePrice();"><img
                                                     src="./assets/icons/MinusCircle.png" alt=""></button>
-                                            <input type="number" class="value" id="counter1" value="1" onchange="updatePrice();">
-                                            <button class="plus" data-counter="counter1" onclick="updatePrice();"><img
+                                            <input name="desired_level" type="number" class="counter1winboost value" id="counter1" value="1" onchange="updatePriceWinBoost();">
+                                            <button type="button" class="plus" data-counter="counter1" onclick="updatePrice();"><img
                                                     src="./assets/icons/PlusCircle.png" alt=""></button>
                                         </div>
-                                    </div>
+                                </div>
 
 
                             </div>
@@ -249,17 +251,17 @@
                                 <div class="boosting-additionalInput-conatiner">
 
                                     <label>
-                                        <input type="checkbox">
+                                        <input type="checkbox" name="solo_play" id="winboostcheckbox1" onclick="updatePriceWinBoost()">
                                         +1 Extra Win
                                         <span>+20%</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input type="checkbox" name="priority_order" id="winboostcheckbox2" onclick="updatePriceWinBoost()">
                                         Priority Order
                                         <span>+20%</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input type="checkbox" name="play_with_booster" id="winboostcheckbox3" onclick="updatePriceWinBoost()">
                                         Play with Booster
                                         <span>+20%</span>
                                     </label>
@@ -271,7 +273,7 @@
                             <div class="boosting-pricing-conatiner">
 
                                 <div class="boosting-pricing-txt-conatiner">
-                                    <span>Final Price <h3>$56</h3></span>
+                                    <span>Final Price <h3 id="winboostprice">$56</h3></span>
                                     <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                             alt=""></button>
                                 </div>
@@ -442,142 +444,121 @@
             </div>
 
             <div id="tab4" class="boostingTab">
-                <div class="boostingTabContent">
+                <form action="/cs2/checkout" method="post">
+                    @csrf
+                        <input type="text" value="Placement Matches" name="boost_type" style="display: none;" />
+                        <div class="boostingTabContent">
 
-                    <div class="boosting-option-container">
+                            <div class="boosting-option-container">
 
-                        <div class="boosting-option-inner-container">
+                                <div class="boosting-option-inner-container">
 
-                            <div class="boosting-option-img-box">
-                                <img src="/assets/images/rankImgs/RankIMG1.png" id="rankImage1" alt="">
+                                    <div class="boosting-option-img-box">   
+                                            <img src="/assets/images/rankImgs/RankIMG1.png" id="placementcurrent" alt="">
+                                        </div>
+                                        <div class="custom-select">
+                                            <label for="select">Current Level</label>
+                                            <select class="placementcurrent" id="select" name="current_level" onchange="updateplacementImage()" >
+                                                        <option value="Silver I">Silver I</option>
+                                                        <option value="Silver II">Silver II</option>
+                                                        <option value="Silver III">Silver III</option>
+                                                        <option value="Silver IV">Silver IV</option>
+                                                        <option value="Silver Elite">Silver Elite</option>
+                                                        <option value="Silver Elite Master">Silver Elite Master</option>
+                                                        <option value="Gold Nova I">Gold Nova I</option>
+                                                        <option value="Gold Nova II">Gold Nova II</option>
+                                                        <option value="Gold Nova III">Gold Nova III</option>
+                                                        <option value="Gold Nova Master">Gold Nova Master</option>
+                                                        <option value="Master Guardian">Master Guardian</option>
+                                                        <option value="Master Guardian II">Master Guardian II</option>
+                                                        <option value="Master Guardian Elite">Master Guardian Elite</option>
+                                                        <option value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                                        <option value="Legendary Eagle">Legendary Eagle</option>
+                                                        <option value="Legendary Eagle Master">Legendary Eagle Master</option>
+                                                        <option value="Supreme Master">Supreme Master First Class</option>
+                                                        <option value="Global Elite">Global Elite</option>
+                                            </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="counter-box">
+                                        <label for="counter1">Number of Wins</label>
+                                        <div class="counter">
+                                            <button type="button" class="minus" data-counter="counter1" onclick="preventDefault();"><img
+                                                    src="./assets/icons/MinusCircle.png" alt=""></button>
+                                            <input name="desired_level" type="number" class="placementrange value" id="counter1" value="1" onchange="updateplacement();">
+                                            <button type="button" class="plus" data-counter="counter1" onclick="preventDefault();"><img
+                                                    src="./assets/icons/PlusCircle.png" alt=""></button>
+                                        </div>
+                                </div>
+
+
                             </div>
 
-                            <div class="custom-select" onclick="openSelect(this)">
-                                <label for="">Label</label>
-                                <div class="select-selected flex justify-between ">Select Rank <img
-                                        src="/assets/icons/droparrow.png" alt=""></div>
-                                <div class="select-items">
-                                    <div class="dropOpt" data-img="RankIMG1" onclick="selectOption(this)">Silver I
+                            <div class="boosting-additional-conatiner">
+                                <h5>Additional Features</h5>
+                                <span>
+                                    <img src="/assets/icons/Info.png" alt="">
+                                    <p>Per additional features will charge 20% of the total amount.</p>
+                                </span>
+
+                                <div class="boosting-additionalInput-conatiner">
+
+                                    <label>
+                                        <input type="checkbox" name="solo_play" id="placementcheckbox1" onclick="updateplacement()">
+                                        +1 Extra Win
+                                        <span>+20%</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="priority_order" id="placementcheckbox2" onclick="updateplacement()">
+                                        Priority Order
+                                        <span>+20%</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="play_with_booster" id="placementcheckbox3" onclick="updateplacement()">
+                                        Play with Booster
+                                        <span>+20%</span>
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="boosting-pricing-conatiner">
+
+                                <div class="boosting-pricing-txt-conatiner">
+                                    <span>Final Price <h3 id="placementprice">$56</h3></span>
+                                    <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
+                                            alt=""></button>
+                                </div>
+
+                                <div class="boosting-pricing-opt-conatiner">
+                                    <div class="boosting-pricing-optLeft-conatiner">
+                                        <img src="/assets/images/Gpay-trans.png" alt="">
+                                        <img src="/assets/images/AE-trans.png" alt="">
+                                        <img src="/assets/images/Mastercard-trans.png" alt="">
+                                        <img src="/assets/images/Applepay-trans.png" alt="">
+                                        <img src="/assets/images/Visa-trans.png" alt="">
                                     </div>
-                                    <div class="dropOpt" data-img="RankIMG2" onclick="selectOption(this)">Silver II
-                                    </div>
-                                    <div class="dropOpt" data-img="RankIMG3" onclick="selectOption(this)">Silver III
-                                    </div>
-                                    <div class="dropOpt" data-img="RankIMG4" onclick="selectOption(this)">Silver IV
-                                    </div>
-                                    <div class="dropOpt" data-img="RankIMG5" onclick="selectOption(this)">Silver
-                                        Elite</div>
-                                    <div class="dropOpt" data-img="RankIMG6" onclick="selectOption(this)">Silver
-                                        Elite Master</div>
-                                    <div class="dropOpt" data-img="RankIMG7" onclick="selectOption(this)">Golden
-                                        Nova I</div>
-                                    <div class="dropOpt" data-img="RankIMG8" onclick="selectOption(this)">Golden
-                                        Nova II</div>
-                                    <div class="dropOpt" data-img="RankIMG9" onclick="selectOption(this)">Golden
-                                        Nova II</div>
-                                    <div class="dropOpt" data-img="RankIMG10" onclick="selectOption(this)">Golden
-                                        Nova Master</div>
-                                    <div class="dropOpt" data-img="RankIMG11" onclick="selectOption(this)">Legendary
-                                        Eagle</div>
-                                    <div class="dropOpt" data-img="RankIMG12" onclick="selectOption(this)">Legendary
-                                        Eagle Master</div>
-                                    <div class="dropOpt" data-img="RankIMG13" onclick="selectOption(this)">Supreme
-                                        Master First Class
+                                    <div class="boosting-pricing-optRight-conatiner">
+                                        <h6>Our Customers rated us</h6>
+                                        <div class="boosting-greenStar-container">
+                                            <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                            <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                            <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                            <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                            <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                        </div>
+                                        <span>4.9 on</span>
+                                        <img src="/assets/images/trustpilot_logo.svg.png" alt="">
                                     </div>
                                 </div>
-                                <select id="select" onchange="updateSelected(this)">
-                                    <option value="1">Silver I</option>
-                                    <option value="2">Silver II</option>
-                                    <option value="3">Silver III</option>
-                                    <option value="4">Silver IV</option>
-                                    <option value="5">Silver Elite</option>
-                                    <option value="6">Silver Elite Master</option>
-                                    <option value="7">Golden Nova I</option>
-                                    <option value="8">Golden Nova II</option>
-                                    <option value="9">Golden Nova III</option>
-                                    <option value="10">Golden Nova Master</option>
-                                    <option value="11">Legendary Eagle</option>
-                                    <option value="12">Legendary Eagle Master</option>
-                                    <option value="13">Supreme Master First Class</option>
-                                </select>
+
                             </div>
 
                         </div>
-
-                        <div class="counter-box">
-                            <label for="">Number of Wins</label>
-                            <div class="counter">
-                                <button class="minus"><img src="/assets/icons/MinusCircle.png" alt=""></button>
-                                <span class="value">1</span>
-                                <button class="plus"><img src="/assets/icons/PlusCircle.png" alt=""></button>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                    <div class="boosting-additional-conatiner">
-                        <h5>Additional Features</h5>
-                        <span>
-                            <img src="/assets/icons/Info.png" alt="">
-                            <p>Per additional features will charge 20% of the total amount.</p>
-                        </span>
-
-                        <div class="boosting-additionalInput-conatiner">
-
-                            <label>
-                                <input type="checkbox">
-                                +1 Extra Win
-                                <span>+20%</span>
-                            </label>
-                            <label>
-                                <input type="checkbox">
-                                Priority Order
-                                <span>+20%</span>
-                            </label>
-                            <label>
-                                <input type="checkbox">
-                                Play with Booster
-                                <span>+20%</span>
-                            </label>
-
-                        </div>
-
-                    </div>
-
-                    <div class="boosting-pricing-conatiner">
-
-                        <div class="boosting-pricing-txt-conatiner">
-                            <span>Final Price <h3>$56</h3></span>
-                            <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
-                                    alt=""></button>
-                        </div>
-
-                        <div class="boosting-pricing-opt-conatiner">
-                            <div class="boosting-pricing-optLeft-conatiner">
-                                <img src="/assets/images/Gpay-trans.png" alt="">
-                                <img src="/assets/images/AE-trans.png" alt="">
-                                <img src="/assets/images/Mastercard-trans.png" alt="">
-                                <img src="/assets/images/Applepay-trans.png" alt="">
-                                <img src="/assets/images/Visa-trans.png" alt="">
-                            </div>
-                            <div class="boosting-pricing-optRight-conatiner">
-                                <h6>Our Customers rated us</h6>
-                                <div class="boosting-greenStar-container">
-                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                </div>
-                                <span>4.9 on</span>
-                                <img src="/assets/images/trustpilot_logo.svg.png" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
+                </form>
             </div>
 
             <div id="tab5" class="boostingTab">
@@ -858,7 +839,7 @@
     <script>
         //win boost
         function updatePriceWinBoost(){
-                var reviews = document.getElementById('winboostrange').value;
+                var reviews = document.querySelector('.counter1winboost').value;
                 
                 var additionalAmount = 0;
 
@@ -877,18 +858,10 @@
                 var totalAmount = (reviews * 7) * (1 + additionalAmount);
                 document.getElementById("winboostprice").innerText = "$" + totalAmount.toFixed(2);
 
-                const slider = document.getElementById("winboostrange");
-                const sliderValue = document.getElementById("sliderValue");
-
-                // Update the slider value text when the slider is moved
-                slider.addEventListener("input", function() {
-                    sliderValue.textContent = this.value;
-            });
         }
 
         function updateWinBoostImage(){
-                var selectedOption = document.querySelector('.updateRankBoostPriceRequired').value;
-                var selectedOption = document.getElementById("winboostcurrent").value;
+                var selectedOption = document.querySelector('.updateWinBoostPriceRequired').value;
                 // Rank Dropdown Img Change
                 var rankImage = document.getElementById("winboostcurrentimage");
                 rankImage.src = `/ranks/csgo/${selectedOption}.png`;
@@ -950,14 +923,14 @@
 
         //placement matches
         function updateplacementImage(){
-            var selectedOption = document.getElementById("placementcurrent").value;
+            var selectedOption = document.querySelector(".placementcurrent").value;
                 // Rank Dropdown Img Change
-            var rankImage = document.getElementById("placementcurrentimage");
+            var rankImage = document.getElementById("placementcurrent");
             rankImage.src = `/ranks/csgo/${selectedOption}.png`;
         }
 
         function updateplacement(){
-                var reviews = document.getElementById('placementrange').value;
+                var reviews = document.querySelector('.placementrange').value;
                 
                 var additionalAmount = 0;
 
@@ -975,14 +948,6 @@
 
                 var totalAmount = (reviews * 7) * (1 + additionalAmount);
                 document.getElementById("placementprice").innerText = "$" + totalAmount.toFixed(2);
-
-                const slider = document.getElementById("placementrange");
-                const sliderValue = document.getElementById("PlacementsliderValue");
-
-                // Update the slider value text when the slider is moved
-                slider.addEventListener("input", function() {
-                    sliderValue.textContent = this.value;
-            });
         }
 
         //Danger Zone Boost

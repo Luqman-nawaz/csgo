@@ -235,7 +235,7 @@ class BoostController extends Controller
             'discord_username' => $request->discord_username,
             'available_time' => $request->available_time,
             'account_data' => $request->account_data,
-            'payment_method' => $request->e,
+            'payment_method' => "card",
             'total_amount' => $total_amount,
             'order_status' => 'Pending Payment',
         );
