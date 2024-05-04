@@ -16,11 +16,9 @@ class registered extends Mailable
     /**
      * Create a new message instance.
      */
-    public $url;
-
-    public function __construct($url)
+    public function __construct()
     {
-        $this->url = $url;
+        //
     }
 
     /**

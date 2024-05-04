@@ -27,9 +27,8 @@ class CreateNewUser implements CreatesNewUsers
             'password' => $this->passwordRules(),
             'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['accepted', 'required'] : '',
         ])->validate();
-        
-        $url = "https://myboost.gg/";
-        Mail::to($input['email'])->send(new registered($url));
+
+        Mail::to($input['email'])->send(new registered());
 
         return User::create([
             'name' => $input['name'],
