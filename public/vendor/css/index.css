@@ -2554,6 +2554,9 @@
   }
 }
 @media (max-width: 700px) {
+  .boosting-main-container .boosting-centered-container .boostingTabContent .boosting-option-container .counter-box {
+    width: 100%;
+  }
   .landing-page-container .heroSection-container h1 {
     font-size: 40px !important;
     line-height: 40px !important;
@@ -2737,6 +2740,9 @@
   }
 }
 @media (max-width: 550px) {
+  .boosting-main-container .boosting-centered-container .boostingTabContent .boosting-option-container .counter-box {
+    width: 100%;
+  }
   .landing-page-container .ourstatSection-container h2 {
     font-size: 25px;
   }
@@ -2799,6 +2805,9 @@
   }
 }
 @media (max-width: 440px) {
+  .boosting-main-container .boosting-centered-container .boostingTabContent .boosting-option-container .counter-box {
+    width: 100%;
+  }
   .landing-page-container .specialOffer-box {
     flex-direction: column;
   }

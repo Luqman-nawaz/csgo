@@ -51,10 +51,6 @@
                                 <div class="boosting-option-container">
 
                                     <div class="boosting-option-inner-container">
-
-                                        <div class="boosting-option-img-box">
-                                            <img src="/assets/images/rankImgs/RankIMG1.png" id="rankImage1" alt="">
-                                        </div>
                                         <div class="custom-select">
                                             <label for="select">Label</label>
                                             <select name="ingame_role" id="select" onchange="updateSelected(this)">
@@ -161,9 +157,6 @@
 
                                     <div class="boosting-option-inner-container">
 
-                                        <div class="boosting-option-img-box">
-                                            <img src="/assets/images/rankImgs/RankIMG1.png" id="rankImage1" alt="">
-                                        </div>
                                         <div class="custom-select">
                                             <label for="select">Label</label>
                                             <select name="ingame_role" id="select" onchange="updateSelected(this)">
@@ -270,9 +263,6 @@
 
                                     <div class="boosting-option-inner-container">
 
-                                        <div class="boosting-option-img-box">
-                                            <img src="/assets/images/rankImgs/RankIMG1.png" id="rankImage1" alt="">
-                                        </div>
                                         <div class="custom-select">
                                             <label for="select">Label</label>
                                             <select name="ingame_role" id="select" onchange="updateSelected(this)">
@@ -379,9 +369,6 @@
 
                                     <div class="boosting-option-inner-container">
 
-                                        <div class="boosting-option-img-box">
-                                            <img src="/assets/images/rankImgs/RankIMG1.png" id="rankImage1" alt="">
-                                        </div>
                                         <div class="custom-select">
                                             <label for="select">Label</label>
                                             <select name="ingame_role" id="select" onchange="updateSelected(this)">
