@@ -35,7 +35,8 @@ Route::get('/privacy', function () {
 Route::get('/faqs', [BoostController::class, 'faqs']);
 
 Route::get('/mail', function() {
-    Mail::to('luqmanalihrp@gmail.com')->send(new registered());
+    $url = "https://myboost.gg/";
+    Mail::to('luqmanalihrp@gmail.com')->send(new registered($url));
 });
 
 
