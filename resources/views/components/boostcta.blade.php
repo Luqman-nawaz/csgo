@@ -1,7 +1,7 @@
 <div class="boostNow-container">
     <div class="boostNow-inner-container">
         <h3>Boost your game now and conquer the ranks!</h3>
-        <a href="/csgoboost"><button class="themebtn-bg-white">Boost your game</button></a>
+        <a href="/csboost"><button class="themebtn-bg-white">Boost your game</button></a>
     </div>
 </div>
 
