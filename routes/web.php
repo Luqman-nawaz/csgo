@@ -6,8 +6,10 @@ use App\Http\Controllers\EseaController;
 use App\Http\Controllers\EsportalController;
 use App\Http\Controllers\FaceitController;
 use App\Http\Controllers\PaymentController;
+use App\Mail\registered;
 use App\Models\payment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use Laravel\Cashier\Cashier;
 
@@ -32,7 +34,12 @@ Route::get('/privacy', function () {
 
 Route::get('/faqs', [BoostController::class, 'faqs']);
 
-Route::get('/csgoboost', [BoostController::class, 'csgoboost']);
+Route::get('/mail', function() {
+    Mail::to('luqmanalihrp@gmail.com')->send(new registered());
+});
+
+
+Route::get('/csboost', [BoostController::class, 'csgoboost']);
 Route::get('/faceit', [BoostController::class, 'faceit']);
 Route::get('/esea', [BoostController::class, 'esea']);
 Route::get('/esportal', [BoostController::class, 'esportal']);

@@ -245,6 +245,8 @@
   height: 360px;
   overflow: hidden;
   cursor: pointer;
+  margin:auto;
+  margin-bottom: 40px;
 }
 .landing-page-container .services-container .services-card-container .services-card-box .services-box-img {
   transition: transform 1s ease-in-out;

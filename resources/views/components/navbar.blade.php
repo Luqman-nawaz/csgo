@@ -3,13 +3,13 @@
         <div class="leftmenu-container w-5/12 flex items-center">
                 <a href="/">Home</a>
                 <a href="/about">About</a>
-                <a href="/csgoboost">Boost</a>
+                <a href="/csboost">Boost</a>
                 <a href="/coaching">Coaching</a>
                 <a href="/contact">Contact</a>
             
         </div>
         <div class="logo-container w-3/12 flex justify-between items-center">
-            <img src="/assets/logo.svg" class="m-auto" alt="">
+            <img src="/assets/logo.svg" class="m-auto" style="cursor: pointer;" alt="" onclick="window.location.href='/'";>
         </div>
         <div class="rightmenu-container w-5/12 flex justify-end items-center gap-4">
             @guest
@@ -17,7 +17,7 @@
                 <a href="/register"><button class="themebtn-bg">SIGN UP</button></a>
             @endguest
             @auth
-            <a href="/csgoboost">
+            <a href="/#boostingservices">
                 <button class="themebtn-bg">PLACE NEW ORDER&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -49,7 +49,7 @@
             <div class="menu-container-mob">
                 <a href="/">Home</a>
                 <a href="/about">About</a>
-                <a href="/csgoboost">Boost</a>
+                <a href="/csboost">Boost</a>
                 <a href="/coaching">Coaching</a>
                 <a href="/contact">Contact</a>
             </div>
@@ -59,7 +59,7 @@
                     <a href="/register"><button class="themebtn-bg">SIGN UP</button></a>
                 @endguest
                 @auth
-            <a href="/csgoboost">
+            <a href="/csboost">
                 <button class="themebtn-bg">PLACE NEW ORDER&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" viewBox="0 0 24 24" fill="none">
                         <path

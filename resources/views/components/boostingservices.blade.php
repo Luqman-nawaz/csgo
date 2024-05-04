@@ -1,4 +1,4 @@
-<div class="services-container">
+<div class="services-container" id="boostingservices">
         <h5>OUR SERVICES</h5>
         <h2>We provide boosting for</h2>
 
@@ -10,7 +10,7 @@
                     <h3>CS 2 Boost</h3>
                     <p>Master CS2 with our boosting services! From map control to clutch plays, our boosters enhance
                         your performance.</p>
-                    <a href="/csgoboost">
+                    <a href="/csboost">
                         <button class="themebtn-bg flex items-center gap-3">
                             Boost Now
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
@@ -47,8 +47,8 @@
                 <img style="object-fit: fill; width:100%;" class="services-box-img" src="/assets/images/IMG3.png" alt="">
                 <img class="services-small-img" src="/assets/images/esportal.png" alt="">
                 <div class="services-text">
-                    <h3>ESPortal Boost</h3>
-                    <p>Unlock your potential on ESportal! Whether it’s improving your K/D ratio or achieving higher
+                    <h3>Esportal Boost</h3>
+                    <p>Unlock your potential on Esportal! Whether it’s improving your K/D ratio or achieving higher
                         ranks, our boosters have you covered.</p>
                         <a href="/esportal">
                             <button class="themebtn-bg flex items-center gap-3">
