@@ -2348,6 +2348,9 @@
   font-style: normal;
   font-weight: 600;
 }
+.widthfix{
+  width:100%;
+}
 
 /*--------------------------------- Mob Nav ------------------------------------ */
 /*--------------------------------- Responsiveness ------------------------------------ */
@@ -2369,6 +2372,9 @@
   }
 }
 @media (max-width: 930px) {
+  .widthfix{
+    width:50%;
+  }
   header {
     background-color: #333;
     color: #fff;
@@ -2554,6 +2560,9 @@
   }
 }
 @media (max-width: 700px) {
+  .widthfix{
+    width:100%;
+  } 
   .boosting-main-container .boosting-centered-container .boostingTabContent .boosting-option-container .counter-box {
     width: 100%;
   }
@@ -2740,6 +2749,9 @@
   }
 }
 @media (max-width: 550px) {
+  .widthfix{
+    width:100%;
+  }
   .boosting-main-container .boosting-centered-container .boostingTabContent .boosting-option-container .counter-box {
     width: 100%;
   }
@@ -2807,6 +2819,9 @@
 @media (max-width: 440px) {
   .boosting-main-container .boosting-centered-container .boostingTabContent .boosting-option-container .counter-box {
     width: 100%;
+  }
+  .widthfix{
+    width:100%;
   }
   .landing-page-container .specialOffer-box {
     flex-direction: column;
