@@ -11,7 +11,7 @@
             <div class="footer-leftSecond-box">
                 <h5>SERVICES</h5>
                 <ul>
-                    <li><a href="/csgoboost">CS2 Boost</a></li>
+                    <li><a href="/csboost">CS2 Boost</a></li>
                     <li><a href="/faceit">Faceit Boost</a></li>
                     <li><a href="/esea">ESEA Boost</a></li>
                     <li><a href="/esportal">ESPortal Boost</a></li>
@@ -31,7 +31,7 @@
         </div>
 
         <div class="footer-leftthird-inner-container">
-            <a href="#"><img src="/assets/icons/start icon.png" alt=""></a>
+            <a href="https://twitter.com/MyBoostGG"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="" style="width:25px; height:24px;"></a>
             <a href="#"><img src="/assets/icons/start icon (1).png" alt=""></a>
             <a href="#"><img src="/assets/icons/start icon (2).png" alt=""></a>
             <a href="#"><img src="/assets/icons/start icon (3).png" alt=""></a>
