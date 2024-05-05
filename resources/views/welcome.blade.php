@@ -305,10 +305,9 @@
                 </div>
 
                 <div id="TRUST&SAFETY" class="tabcontent">
-                    <div class="m-2 space-y-2">
-                        <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="1">
+                    <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="1">
                             <div class="flex cursor-pointer items-center justify-between">
-                                <span class="faq-1-span">What is an FAQ page?</span>
+                                <span class="faq-1-span">What is trust & safety?</span>
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
@@ -317,9 +316,9 @@
                                 Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
                                 interdum, aliquet odio mattis.
                             </div>
-                        </div>
+                    </div>
 
-                        <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="2">
+                    <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="2">
                             <div class="flex cursor-pointer items-center justify-between">
                                 <span class="faq-1-span">Why should I visit the FAQ page?</span>
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
@@ -331,41 +330,12 @@
                                 interdum, aliquet odio mattis.
                             </div>
                         </div>
-
-                        <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="3">
-                            <div class="flex cursor-pointer items-center justify-between">
-                                <span class="faq-1-span">How do I find answers to common questions?</span>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
-                                    class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
-                            </div>
-                            <div
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
-                            </div>
-                        </div>
-
-                        <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="4">
-                            <div class="flex cursor-pointer items-center justify-between">
-                                <span class="faq-1-span">What’s the difference between an FAQ page and an About Us
-                                    page?</span>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
-                                    class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
-                            </div>
-                            <div
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div id="SERVICES" class="tabcontent">
-                    <div class="m-2 space-y-2">
-                        <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="1">
+                    <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="1">
                             <div class="flex cursor-pointer items-center justify-between">
-                                <span class="faq-1-span">What is an FAQ page?</span>
+                                <span class="faq-1-span">What is a services page?</span>
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
@@ -375,54 +345,12 @@
                                 interdum, aliquet odio mattis.
                             </div>
                         </div>
-
-                        <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="2">
-                            <div class="flex cursor-pointer items-center justify-between">
-                                <span class="faq-1-span">Why should I visit the FAQ page?</span>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
-                                    class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
-                            </div>
-                            <div
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
-                            </div>
-                        </div>
-
-                        <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="3">
-                            <div class="flex cursor-pointer items-center justify-between">
-                                <span class="faq-1-span">How do I find answers to common questions?</span>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
-                                    class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
-                            </div>
-                            <div
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
-                            </div>
-                        </div>
-
-                        <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="4">
-                            <div class="flex cursor-pointer items-center justify-between">
-                                <span class="faq-1-span">What’s the difference between an FAQ page and an About Us
-                                    page?</span>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
-                                    class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
-                            </div>
-                            <div
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div id="BILLING" class="tabcontent">
-                    <div class="m-2 space-y-2">
                         <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="1">
                             <div class="flex cursor-pointer items-center justify-between">
-                                <span class="faq-1-span">What is an FAQ page?</span>
+                                <span class="faq-1-span">What is an billing page?</span>
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
@@ -432,47 +360,7 @@
                                 interdum, aliquet odio mattis.
                             </div>
                         </div>
-
-                        <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="2">
-                            <div class="flex cursor-pointer items-center justify-between">
-                                <span class="faq-1-span">Why should I visit the FAQ page?</span>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
-                                    class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
-                            </div>
-                            <div
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
-                            </div>
-                        </div>
-
-                        <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="3">
-                            <div class="flex cursor-pointer items-center justify-between">
-                                <span class="faq-1-span">How do I find answers to common questions?</span>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
-                                    class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
-                            </div>
-                            <div
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
-                            </div>
-                        </div>
-
-                        <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="4">
-                            <div class="flex cursor-pointer items-center justify-between">
-                                <span class="faq-1-span">What’s the difference between an FAQ page and an About Us
-                                    page?</span>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
-                                    class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
-                            </div>
-                            <div
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
-                            </div>
-                        </div>
-                    </div>
+                        
                 </div>
 
             </div>
