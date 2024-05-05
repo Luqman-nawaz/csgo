@@ -50,7 +50,7 @@
                                         </div>
                                         <div class="custom-select">
                                             <label for="select">Label</label>
-                                            <select id="select" class="rankboostcurrent" onchange="updateRankBoostimage()">
+                                            <select name="current_level" id="select" class="rankboostcurrent" onchange="updateRankBoostimage()">
                                                 <option value="D-"><span>D-</span></option>
                                                 <option value="D">D</option>
                                                 <option value="D Plus">D+</option>
@@ -81,7 +81,7 @@
                                         </div>
                                         <div class="custom-select">
                                             <label for="select">Label</label>
-                                            <select id="select" class="rankboostrequired" onchange="updateRankBoostPriceRequired()">
+                                            <select name="desired_level" id="select" class="rankboostrequired" onchange="updateRankBoostPriceRequired()">
                                                 <option value="D-"><span>D-</span></option>
                                                 <option value="D">D</option>
                                                 <option value="D Plus">D+</option>
@@ -185,7 +185,7 @@
                                         </div>
                                         <div class="custom-select">
                                             <label for="select">Label</label>
-                                            <select id="select" class="placementcurrent" onchange="updateplacementImage()">
+                                            <select name="current_level" id="select" class="placementcurrent" onchange="updateplacementImage()">
                                                         <option value="D-"><span>D-</span></option>
                                                         <option value="D">D</option>
                                                         <option value="D Plus">D+</option>

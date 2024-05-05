@@ -68,7 +68,7 @@
                                     </div>
 
                                     <div class="counter-box">
-                                        <label for="counter1">Number of Wins</label>
+                                        <label for="counter1">Number of Reviews</label>
                                         <div class="counter">
                                             <button type="button" class="minus" data-counter="counter1"><img
                                                     src="/assets/icons/MinusCircle.png" alt=""></button>
@@ -174,7 +174,7 @@
                                     </div>
 
                                     <div class="counter-box">
-                                        <label for="counter1">Number of Wins</label>
+                                        <label for="counter1">Number of Reviews</label>
                                         <div class="counter">
                                             <button type="button" class="minus" data-counter="counter1"><img
                                                     src="/assets/icons/MinusCircle.png" alt=""></button>
@@ -280,7 +280,7 @@
                                     </div>
 
                                     <div class="counter-box">
-                                        <label for="counter1">Number of Wins</label>
+                                        <label for="counter1">Number of Reviews</label>
                                         <div class="counter">
                                             <button type="button" class="minus" data-counter="counter1"><img
                                                     src="/assets/icons/MinusCircle.png" alt=""></button>
@@ -386,7 +386,7 @@
                                     </div>
 
                                     <div class="counter-box">
-                                        <label for="counter1">Number of Wins</label>
+                                        <label for="counter1">Number of Reviews</label>
                                         <div class="counter">
                                             <button type="button" class="minus" data-counter="counter1"><img
                                                     src="/assets/icons/MinusCircle.png" alt=""></button>
