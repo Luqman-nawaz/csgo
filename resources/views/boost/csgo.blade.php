@@ -974,9 +974,6 @@
                     "Ember Wolf": 70.00,
                     "Wildfire Wolf": 75.00,
                     "The Howling Alpha": 80.00,
-                    "Legendary Eagle Master": 85.00,
-                    "Supreme Master": 90.00,
-                    "Global Elite": 100.00,
                 };
 
                 var additionalAmount = 0;
