@@ -38,7 +38,7 @@
         </div>
 
         <div class="footer-leftfourth-inner-container">
-            <p>Copyright © Hotel Chauffeur.com 2017. All rights reserved.</p>
+            <p>Copyright © MyBoost.GG 2024. All rights reserved.</p>
         </div>
 
     </div>
