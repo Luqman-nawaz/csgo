@@ -207,23 +207,23 @@
                         <br>
                         <span class="flex items-center gap-3">
                             <img src="/assets/icons/Avatar.png" alt="">
-                            <h6>Smith J.</h6>
+                            <h6>Ryan</h6>
                         </span>
                     </div>
                     <div class="Testimonials-card-box">
                         <h5>Good site. The boosters were great, had a blast being in game with them. Highly Recommended!</h5>
                         <br>
                         <span class="flex items-center gap-3">
-                            <img src="/assets/icons/Avatar.png" alt="">
-                            <h6>Smith J.</h6>
+                            <img src="/assets/icons/avatar2.svg" alt="">
+                            <h6>Judy Smith</h6>
                         </span>
                     </div>
                     <div class="Testimonials-card-box">
                         <h5>After experiencing everything for myself, I use MyBoost exclusively. Great service & staff. Recommended.</h5>
                         <br>
                         <span class="flex items-center gap-3">
-                            <img src="/assets/icons/Avatar.png" alt="">
-                            <h6>Smith J.</h6>
+                            <img src="/assets/icons/avatar1.png" alt="">
+                            <h6>Jake</h6>
                         </span>
                     </div>
                 </div>
