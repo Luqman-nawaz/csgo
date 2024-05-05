@@ -575,26 +575,25 @@
                                     <img src="/assets/images/rankImgs/RankIMG1.png" id="dangerzonecurrentimage" alt="">
                                 </div>
 
-                                <select id="select" class="updatedangerzoneimage" name="current_level" onchange="updatedangerzoneimage();">
-                                                <option value="Silver I">Silver I</option>
-                                                <option value="Silver II">Silver II</option>
-                                                <option value="Silver III">Silver III</option>
-                                                <option value="Silver IV">Silver IV</option>
-                                                <option value="Silver Elite">Silver Elite</option>
-                                                <option value="Silver Elite Master">Silver Elite Master</option>
-                                                <option value="Gold Nova I">Gold Nova I</option>
-                                                <option value="Gold Nova II">Gold Nova II</option>
-                                                <option value="Gold Nova III">Gold Nova III</option>
-                                                <option value="Gold Nova Master">Gold Nova Master</option>
-                                                <option value="Master Guardian">Master Guardian</option>
-                                                <option value="Master Guardian II">Master Guardian II</option>
-                                                <option value="Master Guardian Elite">Master Guardian Elite</option>
-                                                <option value="Distunguished Master Guardian">Distunguished Master Guardian</option>
-                                                <option value="Legendary Eagle">Legendary Eagle</option>
-                                                <option value="Legendary Eagle Master">Legendary Eagle Master</option>
-                                                <option value="Supreme Master">Supreme Master First Class</option>
-                                                <option value="Global Elite">Global Elite</option>
-                                    </select>
+                                        <div class="custom-select">
+                                            <select id="select" class="updatedangerzoneimage" name="current_level" onchange="updatedangerzoneimage();">
+                                                <option value="Lab Rat I">Lab Rat I</option>
+                                                <option value="Lab Rat II">Lab Rat II</option>
+                                                <option value="Sprinting Hare I">Sprinting Hare I</option>
+                                                <option value="Sprinting Hare II">Sprinting Hare II</option>
+                                                <option value="Wild Scout I">Wild Scout I</option>
+                                                <option value="Wild Scout II">Wild Scout II</option>
+                                                <option value="Wild Scout Elite">Wild Scout Elite</option>
+                                                <option value="Hunter Fox I">Hunter Fox I</option>
+                                                <option value="Hunter Fox II">Hunter Fox II</option>
+                                                <option value="Hunter Fox III">Hunter Fox III</option>
+                                                <option value="Hunter Fox Elite">Hunter Fox Elite</option>
+                                                <option value="Timber Wolf">Timber Wolf</option>
+                                                <option value="Ember Wolf">Ember Wolf</option>
+                                                <option value="Wildfire Wolf">Wildfire Wolf</option>
+                                                <option value="The Howling Alpha">The Howling Alpha</option>
+                                            </select>
+                                        </div>
 
                             </div>
 
@@ -607,27 +606,26 @@
                                 <div class="boosting-option-img-box">
                                     <img src="/assets/images/rankImgs/RankIMG1.png" id="dangerzoneimagerequired" alt="">
                                 </div>
+                                        <div class="custom-select">
 
-                                <select id="select" class="dangerzonerankrequired" name="desired_level" onchange="updateDangerZoneBoostPriceRequired();">
-                                                <option value="Silver I">Silver I</option>
-                                                <option value="Silver II">Silver II</option>
-                                                <option value="Silver III">Silver III</option>
-                                                <option value="Silver IV">Silver IV</option>
-                                                <option value="Silver Elite">Silver Elite</option>
-                                                <option value="Silver Elite Master">Silver Elite Master</option>
-                                                <option value="Gold Nova I">Gold Nova I</option>
-                                                <option value="Gold Nova II">Gold Nova II</option>
-                                                <option value="Gold Nova III">Gold Nova III</option>
-                                                <option value="Gold Nova Master">Gold Nova Master</option>
-                                                <option value="Master Guardian">Master Guardian</option>
-                                                <option value="Master Guardian II">Master Guardian II</option>
-                                                <option value="Master Guardian Elite">Master Guardian Elite</option>
-                                                <option value="Distunguished Master Guardian">Distunguished Master Guardian</option>
-                                                <option value="Legendary Eagle">Legendary Eagle</option>
-                                                <option value="Legendary Eagle Master">Legendary Eagle Master</option>
-                                                <option value="Supreme Master">Supreme Master First Class</option>
-                                                <option value="Global Elite">Global Elite</option>
-                                    </select>
+                                            <select id="select" class="dangerzonerankrequired" name="desired_level" onchange="updateDangerZoneBoostPriceRequired();">
+                                                <option value="Lab Rat I">Lab Rat I</option>
+                                                <option value="Lab Rat II">Lab Rat II</option>
+                                                <option value="Sprinting Hare I">Sprinting Hare I</option>
+                                                <option value="Sprinting Hare II">Sprinting Hare II</option>
+                                                <option value="Wild Scout I">Wild Scout I</option>
+                                                <option value="Wild Scout II">Wild Scout II</option>
+                                                <option value="Wild Scout Elite">Wild Scout Elite</option>
+                                                <option value="Hunter Fox I">Hunter Fox I</option>
+                                                <option value="Hunter Fox II">Hunter Fox II</option>
+                                                <option value="Hunter Fox III">Hunter Fox III</option>
+                                                <option value="Hunter Fox Elite">Hunter Fox Elite</option>
+                                                <option value="Timber Wolf">Timber Wolf</option>
+                                                <option value="Ember Wolf">Ember Wolf</option>
+                                                <option value="Wildfire Wolf">Wildfire Wolf</option>
+                                                <option value="The Howling Alpha">The Howling Alpha</option>
+                                            </select>
+                                        </div>
 
                             </div>
 
@@ -955,32 +953,31 @@
             var selectedOption = document.querySelector(".updatedangerzoneimage").value;
                 // Rank Dropdown Img Change
             var rankImage = document.getElementById("dangerzonecurrentimage");
-            rankImage.src = `/ranks/csgo/${selectedOption}.png`;
+            rankImage.src = `/ranks/dangerzone/${selectedOption}.webp`;
         }
 
         function updateDangerZoneBoostPriceRequired(){
                 var selectedOption = document.querySelector(".dangerzonerankrequired").value;
                 var prices = {
-                    "Silver I": 10.00,
-                    "Silver II": 15.00,
-                    "Silver III": 20.00,
-                    "Silver IV": 25.00,
-                    "Silver Elite": 30.00,
-                    "Silver Elite Master": 35.00,
-                    "Gold Nova I": 40.00,
-                    "Gold Nova II": 45.00,
-                    "Gold Nova III": 50.00,
-                    "Gold Nova Master": 55.00,
-                    "Master Guardian": 60.00,
-                    "Master Guardian II": 65.00,
-                    "Master Guardian Elite": 70.00,
-                    "Distunguished Master Guardian": 75.00,
-                    "Legendary Eagle": 80.00,
+                    "Lab Rat I": 10.00,
+                    "Lab Rat II": 15.00,
+                    "Sprinting Hare I": 20.00,
+                    "Sprinting Hare II": 25.00,
+                    "Wild Scout I": 30.00,
+                    "Wild Scout II": 35.00,
+                    "Wild Scout Elite": 40.00,
+                    "Hunter Fox I": 45.00,
+                    "Hunter Fox II": 50.00,
+                    "Hunter Fox III": 55.00,
+                    "Hunter Fox Elite": 60.00,
+                    "Timber Wolf": 65.00,
+                    "Ember Wolf": 70.00,
+                    "Wildfire Wolf": 75.00,
+                    "The Howling Alpha": 80.00,
                     "Legendary Eagle Master": 85.00,
                     "Supreme Master": 90.00,
                     "Global Elite": 100.00,
                 };
-
 
                 var additionalAmount = 0;
 
@@ -1002,7 +999,7 @@
 
                 // Rank Dropdown Img Change
                 var rankImage = document.getElementById("dangerzoneimagerequired");
-                rankImage.src = `/ranks/csgo/${selectedOption}.png`;
+                rankImage.src = `/ranks/dangerzone/${selectedOption}.webp`;
         }
 
         //rank boost
