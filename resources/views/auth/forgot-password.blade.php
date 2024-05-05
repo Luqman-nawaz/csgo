@@ -13,7 +13,14 @@
         <div class="credentials-main-container">
             <div class="credentials-centered-container">
 
-                @if (session('status'))
+                
+
+                <div class="credentials-left-container">
+                    <img src="./assets/images/Group 1.png" alt="">
+                </div>
+                <div class="credentials-right-container">
+                    <h2>Forgot Password</h2>
+                    @if (session('status'))
                     <div class="forget-spam-box w-full flex justify-start">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
@@ -23,12 +30,6 @@
                         {{ session('status') }}
                     </div>
                 @endif
-
-                <div class="credentials-left-container">
-                    <img src="./assets/images/Group 1.png" alt="">
-                </div>
-                <div class="credentials-right-container">
-                    <h2>Forgot Password</h2>
                     <p>A reset link will be sent to your email account. You can reset your password using that link.</p>
                     <br />
 
