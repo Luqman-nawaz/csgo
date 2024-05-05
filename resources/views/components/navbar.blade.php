@@ -47,7 +47,7 @@
             <span></span>
             <span></span>
         </button>
-        <div class="sidebar" id="sidebar">
+        <div class="sidebar" id="sidebar" style="z-index:1;">
             <button class="close-btn" onclick="toggleSidebar()">
                 <span>&times;</span>
             </button>
