@@ -34,7 +34,7 @@
                             Level Boost</button>
                         <button class="boostingTabBtn boostingTabBtnOther" onclick="openTab(event, 'tab2')">Faceit ELO
                             Boost</button>
-                        <button class="boostingTabBtn boostingTabBtnOther" onclick="openTab(event, 'tab3')">Faceit Win
+                        <button class="boostingTabBtn boostingTabBtnOther lastBtn" onclick="openTab(event, 'tab3')">Faceit Win
                             Boost</button>
                     </div>
 

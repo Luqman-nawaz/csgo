@@ -37,7 +37,7 @@
                 <button class="boostingTabBtn" onclick="openTab(event, 'tab2')">CS2 Win Boost</button>
                 <button class="boostingTabBtn" onclick="openTab(event, 'tab3')">CS2 Wingman Boost</button>
                 <button class="boostingTabBtn" onclick="openTab(event, 'tab4')">CS2 Placement Matches</button>
-                <button class="boostingTabBtn" onclick="openTab(event, 'tab5')">Danger Zone Boost</button>
+                <button class="boostingTabBtn lastBtn" onclick="openTab(event, 'tab5')">Danger Zone Boost</button>
             </div>
 
             <div id="tab1" class="boostingTab active">
