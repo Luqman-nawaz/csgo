@@ -576,7 +576,7 @@
 
 @push('js')
 
-@auth
+        @auth
             <script>
                 window.intercomSettings = {
                     api_base: "https://api-iam.intercom.io",
@@ -595,6 +595,10 @@
         @endauth
 
     <script>
+
+        HTMLInputElementObject.addEventListener('input', function (evt) {
+            something(this.value);
+        });
         
         function updatePrice(){
             var reviews = document.querySelector('.updatecounter1').value;
