@@ -6,9 +6,6 @@
         <!-- csgo-UpperHeader Start -->
         
         <!-- csgo-UpperHeader End -->
-        <!-- csgo-Header Start -->
-        <x-navbar></x-navbar>
-        <!-- csgo-Header End -->
 
         <div class="landing-page-container">
 

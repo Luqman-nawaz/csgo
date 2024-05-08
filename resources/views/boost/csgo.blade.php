@@ -320,7 +320,8 @@
                                     <img src="/assets/images/rankImgs/RankIMG1.png" id="wingmanboostcurrentimage" alt="">
                                 </div>
 
-                                <select id="select" class="wingmanboostcurrent" name="current_level" onchange="updateWingmanBoostImage();">
+                                        <div class="custom-select">
+                                            <select id="select" class="wingmanboostcurrent" name="current_level" onchange="updateWingmanBoostImage();">
                                                 <option value="Silver I">Silver I</option>
                                                 <option value="Silver II">Silver II</option>
                                                 <option value="Silver III">Silver III</option>
@@ -339,7 +340,8 @@
                                                 <option value="Legendary Eagle Master">Legendary Eagle Master</option>
                                                 <option value="Supreme Master">Supreme Master First Class</option>
                                                 <option value="Global Elite">Global Elite</option>
-                                    </select>
+                                            </select>
+                                        </div>
 
                             </div>
 
@@ -353,7 +355,8 @@
                                     <img src="/assets/images/rankImgs/RankIMG1.png" id="wingmanboostimagerequired" alt="">
                                 </div>
 
-                                <select id="select" class="wingmanboostrequired" name="desired_level" onchange="updateWingmanBoostPriceRequired();">
+                                        <div class="custom-select">
+                                            <select id="select" class="wingmanboostrequired" name="desired_level" onchange="updateWingmanBoostPriceRequired();">
                                                 <option value="Silver I">Silver I</option>
                                                 <option value="Silver II">Silver II</option>
                                                 <option value="Silver III">Silver III</option>
@@ -372,7 +375,8 @@
                                                 <option value="Legendary Eagle Master">Legendary Eagle Master</option>
                                                 <option value="Supreme Master">Supreme Master First Class</option>
                                                 <option value="Global Elite">Global Elite</option>
-                                    </select>
+                                            </select>
+                                        </div>
 
                             </div>
 
@@ -888,7 +892,7 @@
                 var selectedOption = document.querySelector('.wingmanboostcurrent').value;
                 // Rank Dropdown Img Change
                 var rankImage = document.getElementById("wingmanboostcurrentimage");
-                rankImage.src = `/ranks/csgo/${selectedOption}.png`;
+                rankImage.src = `/ranks/wingman/${selectedOption}.webp`;
         }
 
         function updateWingmanBoostPriceRequired(){
@@ -934,7 +938,7 @@
 
                 // Rank Dropdown Img Change
                 var rankImage = document.getElementById("wingmanboostimagerequired");
-                rankImage.src = `/ranks/csgo/${selectedOption}.png`;
+                rankImage.src = `/ranks/wingman/${selectedOption}.webp`;
         }
 
         //placement matches

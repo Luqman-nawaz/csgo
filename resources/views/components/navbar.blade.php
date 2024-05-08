@@ -55,7 +55,7 @@
                 <img src="/assets/Logo.svg" class="m-auto" alt="">
             </div>
             <div class="menu-container-mob">
-                <a href="/" style="margin-top:20%;">Home</a>
+                <a href="/">Home</a>
                 <a href="/about">About</a>
                 <a href="/csboost">Boost</a>
                 <a href="/coaching">Coaching</a>
