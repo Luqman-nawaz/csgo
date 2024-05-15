@@ -44,6 +44,45 @@
   font-weight: 600;
   margin-right: 40px;
 }
+.landing-page-container Header .leftmenu-container .dropdown-box {
+  position: relative;
+  margin-top: 10px;
+}
+.landing-page-container Header .leftmenu-container .dropdown-box:hover .boost-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+.landing-page-container Header .leftmenu-container .dropdown-box .boost-link {
+  position: relative;
+}
+.landing-page-container Header .leftmenu-container .dropdown-box .boost-dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #000;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid #FFA500;
+  overflow: hidden;
+}
+.landing-page-container Header .leftmenu-container .dropdown-box .boost-dropdown a {
+  color: var(--Text-primary, #FFF);
+  font-family: Karla;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 10px;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+.landing-page-container Header .leftmenu-container .dropdown-box .boost-dropdown a:last-child {
+  margin-bottom: 0;
+}
+.landing-page-container Header .leftmenu-container .dropdown-box .boost-dropdown a:hover {
+  background-color: #FFA500;
+}
 .landing-page-container .dashheader .leftmenu-container .themebtn-trans {
   gap: 10px;
   color: #fff;
@@ -2400,6 +2439,25 @@
     font-weight: 600;
     margin-right: 40px;
     padding: 10px 15px;
+  }
+  .menu-container-mob .boost-dropdown {
+    width: 100%;
+  }
+  .menu-container-mob .boost-dropdown span {
+    color: var(--Text-primary, #FFF);
+    font-family: Karla;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    margin-right: 40px;
+    padding: 10px 15px;
+  }
+  .menu-container-mob .boost-dropdown .dropdown-content {
+    padding: 10px 0px;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #191919;
   }
   .buttonmob-container {
     padding: 10px 15px;

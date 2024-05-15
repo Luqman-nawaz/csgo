@@ -1263,6 +1263,7 @@ class DatabaseSeeder extends Seeder
     DB::table('boosttypes')->insert(['name' => 'FaceIT Boost']);
     DB::table('boosttypes')->insert(['name' => 'ESEA']);
     DB::table('boosttypes')->insert(['name' => 'Esportal']);
+    DB::table('boosttypes')->insert(['name' => 'Premier']);
 
     DB::table('admin')->insert(['username' => 'admin' , 'password' => '$2y$10$bqH/ePrd2vFYzFWMgwpmWOaFp0mpOX43zYu9gHIdrXN1SwqcQrO0G']);
 

@@ -71,6 +71,10 @@ class BoostController extends Controller
         return view('boost.esportal');
     }
 
+    public function premier(){
+        return view('boost.premiere');
+    }
+
     public function cs2checkout(Request $request){
         if(isset($request->solo_play)) { $solo_play = true; }else{ $solo_play = false; }
         if(isset($request->priority_order)) { $priority_order = true; }else{ $priority_order = false; }
@@ -139,6 +143,7 @@ class BoostController extends Controller
             return back()->with('status', 'Failed to Place Order!');    
         }
     }
+
     public function esportalcheckout(Request $request){
         if(isset($request->solo_play)) { $solo_play = true; }else{ $solo_play = false; }
         if(isset($request->priority_order)) { $priority_order = true; }else{ $priority_order = false; }
@@ -147,6 +152,29 @@ class BoostController extends Controller
         $array = array(
             'user_id' => Auth::id(),
             'boost_id' => 4,
+            'boost_type' => $request->boost_type,
+            'current_level' => $request->current_level,
+            'desired_level' => $request->desired_level,
+            'solo_play' => $solo_play,
+            'priority_order' => $priority_order,
+            'play_with_booster' => $play_with_booster,
+        );
+
+        if($boost = boost::create($array)){
+            return redirect('/checkout/'.$boost->id)->with('boostorder', $boost);
+        }else{
+            return back()->with('status', 'Failed to Place Order!');    
+        }
+    }
+
+    public function premiercheckout(Request $request){
+        if(isset($request->solo_play)) { $solo_play = true; }else{ $solo_play = false; }
+        if(isset($request->priority_order)) { $priority_order = true; }else{ $priority_order = false; }
+        if(isset($request->play_with_booster)) { $play_with_booster = true; }else{ $play_with_booster = false; }
+        
+        $array = array(
+            'user_id' => Auth::id(),
+            'boost_id' => 5,
             'boost_type' => $request->boost_type,
             'current_level' => $request->current_level,
             'desired_level' => $request->desired_level,

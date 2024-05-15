@@ -1,5 +1,5 @@
 @extends('layouts.csgo')
-@section('title') <title>MyBoost.GG - Safe & Secure Esportal Account Boost</title> @endsection
+@section('title') <title>MyBoost.GG - Safe & Secure CS2 Premier Account Boost</title> @endsection
 
     @push('css')
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
@@ -14,14 +14,14 @@
         <div class="heroSectionCS2-container">
                 <div class="heroSectionCS2-inner-container">
                     <div class="heroSectionCS2-innerLeft-container">
-                        <h5>UNLEASH YOUR COMPETITIVE EDGE ON ESPORTAL</h5>
-                        <h1>ESPortal Boosting Services</h1>
-                        <p>Step up your game on ESportal with our elite rank boosting services. Our seasoned boosters, armed
+                        <h5>UNLEASH YOUR COMPETITIVE EDGE ON CS2 Premier</h5>
+                        <h1>CS2 Premier Boosting Services</h1>
+                        <p>Step up your game on CS2 Premier with our elite rank boosting services. Our seasoned boosters, armed
                             with lightning-fast ping, will elevate your rank, enhance your gameplay, and secure those
                             crucial wins. Fair play, no shortcuts—just pure skill and dedication. </p>
                     </div>
                 </div>
-                <div class="boostLogo-box"><img src="./assets/images/esportalBoost.png" alt=""></div>
+                <div class="boostLogo-box"><img src="/assets/images/cs2premier.png" style="opacity:0.5;" alt=""></div>
             </div>
 
             <!-- CS2 Boosting Tabs Start -->
@@ -30,74 +30,40 @@
 
 
                     <div class="tabs flex justify-between items-center gap-4">
-                        <button class="boostingTabBtn boostingTabBtnOther active" onclick="openTab(event, 'tab1')">Esportal
+                        <button class="boostingTabBtn boostingTabBtnOther active" onclick="openTab(event, 'tab1')">Premier
                             Rank Boost</button>
-                        <button class="boostingTabBtn boostingTabBtnOther" onclick="openTab(event, 'tab2')">Esportal Win
+                        <button class="boostingTabBtn boostingTabBtnOther" onclick="openTab(event, 'tab2')">Premier Win
                             Boost</button>
                     </div>
 
                     <div id="tab1" class="boostingTab active">
-                        <form action="/esportal/checkout" method="post">
+                        <form action="/premier/checkout" method="post">
                                 @csrf
-                                <input type="text" value="Esportal Rank Boost" name="boost_type" style="display: none;" />
+                                <input type="text" value="Premier Rank Boost" name="boost_type" style="display: none;" />
                                 <div class="boostingTabContent">
 
                                     <div class="boosting-option-container">
 
-                                        <div class="boosting-option-inner-container">
-
-                                            <div class="boosting-option-img-box">
-                                                <img src="/assets/images/rankImgs/RankIMG1.png" id="rankboostimage" alt="">
+                                        <div class="counter-box">
+                                            <label for="counter1">Current Premiere Rank</label>
+                                            <div class="counter">
+                                                <button type="button" class="minus" data-counter="counter1"><img
+                                                        src="/assets/icons/MinusCircle.png" alt=""></button>
+                                                <input name="current_level" type="number" class="placementrangecurrent value" id="counter1" value="1" onchange="updateRankBoostPriceRequired()" min="1" max="35000" required>
+                                                <button type="button" class="plus" data-counter="counter1"><img
+                                                        src="/assets/icons/PlusCircle.png" alt=""></button>
                                             </div>
-                                            <div class="custom-select">
-                                                <label for="select">Label</label>
-                                                <select id="select" class="rankboostcurrent" onchange="updateRankBoostimage()" name="current_level">
-                                                    <option value="Silver"><span>Silver</span></option>
-                                                    <option value="Gold 1">Gold 1</option>
-                                                    <option value="Gold 2">Gold 2</option>
-                                                    <option value="Veteran 1">Veteran 1</option>
-                                                    <option value="Veteran 2">Veteran 2</option>
-                                                    <option value="Master 1">Master 1</option>
-                                                    <option value="Master 2">Master 2</option>
-                                                    <option value="Elite 1">Elite 1</option>
-                                                    <option value="Elite 2">Elite 2</option>
-                                                    <option value="Pro 1">Pro 1</option>
-                                                    <option value="Pro 2">Pro 2</option>
-                                                </select>
-                                            </div>
-
-
-
                                         </div>
 
-                                        <div class="boosting-rankConverttoImg-box">
-                                            <img src="/assets/icons/CaretCircleDoubleRight.png" alt="">
-                                        </div>
-
-                                        <div class="boosting-option-inner-container">
-
-                                            <div class="boosting-option-img-box">
-                                                <img src="./assets/images/rankImgs/RankIMG1.png" id="rankboostimagerequired" alt="">
+                                        <div class="counter-box">
+                                            <label for="counter1">Required Premiere Rank</label>
+                                            <div class="counter">
+                                                <button type="button" class="minus" data-counter="counter1"><img
+                                                        src="/assets/icons/MinusCircle.png" alt=""></button>
+                                                <input name="desired_level" type="number" class="placementrangerequired value" id="counter1" value="1" onchange="updateRankBoostPriceRequired()" min="1" max="35000" required>
+                                                <button type="button" class="plus" data-counter="counter1"><img
+                                                        src="/assets/icons/PlusCircle.png" alt=""></button>
                                             </div>
-                                            <div class="custom-select">
-                                                <label for="select">Label</label>
-                                                <select id="select" name="desired_level" class="rankboostrequired" onchange="updateRankBoostPriceRequired()">
-                                                    <option value="Silver"><span>Silver</span></option>
-                                                    <option value="Gold 1">Gold 1</option>
-                                                    <option value="Gold 2">Gold 2</option>
-                                                    <option value="Veteran 1">Veteran 1</option>
-                                                    <option value="Veteran 2">Veteran 2</option>
-                                                    <option value="Master 1">Master 1</option>
-                                                    <option value="Master 2">Master 2</option>
-                                                    <option value="Elite 1">Elite 1</option>
-                                                    <option value="Elite 2">Elite 2</option>
-                                                    <option value="Pro 1">Pro 1</option>
-                                                    <option value="Pro 2">Pro 2</option>
-                                                </select>
-                                            </div>
-
-
-
                                         </div>
 
                                     </div>
@@ -105,7 +71,7 @@
                                     <div class="boosting-additional-conatiner">
                                         <h5>Additional Features</h5>
                                         <span>
-                                            <img src="./assets/icons/Info.png" alt="">
+                                            <img src="/assets/icons/Info.png" alt="">
                                             <p>Per additional features will charge 20% of the total amount.</p>
                                         </span>
 
@@ -135,29 +101,29 @@
 
                                         <div class="boosting-pricing-txt-conatiner">
                                             <span>Final Price <h3 id="rankboostprice">$56</h3></span>
-                                            <button class="themebtn-bg gap-3">ORDER NOW <img src="./assets/icons/circleArrow.png"
+                                            <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                                     alt=""></button>
                                         </div>
 
                                         <div class="boosting-pricing-opt-conatiner">
                                             <div class="boosting-pricing-optLeft-conatiner">
-                                                <img src="./assets/images/Gpay-trans.png" alt="">
-                                                <img src="./assets/images/AE-trans.png" alt="">
-                                                <img src="./assets/images/Mastercard-trans.png" alt="">
-                                                <img src="./assets/images/Applepay-trans.png" alt="">
-                                                <img src="./assets/images/Visa-trans.png" alt="">
+                                                <img src="/assets/images/Gpay-trans.png" alt="">
+                                                <img src="/assets/images/AE-trans.png" alt="">
+                                                <img src="/assets/images/Mastercard-trans.png" alt="">
+                                                <img src="/assets/images/Applepay-trans.png" alt="">
+                                                <img src="/assets/images/Visa-trans.png" alt="">
                                             </div>
                                             <div class="boosting-pricing-optRight-conatiner">
                                                 <h6>Our Customers rated us</h6>
                                                 <div class="boosting-greenStar-container">
-                                                    <img src="./assets/images/trustpilot_icon.png.png" alt="">
-                                                    <img src="./assets/images/trustpilot_icon.png.png" alt="">
-                                                    <img src="./assets/images/trustpilot_icon.png.png" alt="">
-                                                    <img src="./assets/images/trustpilot_icon.png.png" alt="">
-                                                    <img src="./assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
                                                 </div>
                                                 <span>4.9 on</span>
-                                                <img src="./assets/images/trustpilot_logo.svg.png" alt="">
+                                                <img src="/assets/images/trustpilot_logo.svg.png" alt="">
                                             </div>
                                         </div>
 
@@ -168,9 +134,9 @@
                     </div>
 
                     <div id="tab2" class="boostingTab">
-                        <form action="/esportal/checkout" method="post">
+                        <form action="/premier/checkout" method="post">
                                 @csrf
-                                <input type="text" value="Esportal Rank Boost" name="boost_type" style="display: none;" />
+                                <input type="text" value="Premier Win Boost" name="boost_type" style="display: none;" />
                             
                                 <div class="boostingTabContent">
 
@@ -179,22 +145,12 @@
                                         <div class="boosting-option-inner-container">
 
                                             <div class="boosting-option-img-box">
-                                                <img src="./assets/images/rankImgs/RankIMG1.png" id="placementcurrentimage" alt="">
+                                                <img src="/ranks/premier/unrated.png" id="placementcurrentimage" alt="">
                                             </div>
                                             <div class="custom-select">
                                                 <label for="select">Label</label>
                                                 <select id="select" class="placementcurrent" onchange="updateplacementImage()" name="current_level">
-                                                    <option value="Silver"><span>Silver</span></option>
-                                                    <option value="Gold 1">Gold 1</option>
-                                                    <option value="Gold 2">Gold 2</option>
-                                                    <option value="Veteran 1">Veteran 1</option>
-                                                    <option value="Veteran 2">Veteran 2</option>
-                                                    <option value="Master 1">Master 1</option>
-                                                    <option value="Master 2">Master 2</option>
-                                                    <option value="Elite 1">Elite 1</option>
-                                                    <option value="Elite 2">Elite 2</option>
-                                                    <option value="Pro 1">Pro 1</option>
-                                                    <option value="Pro 2">Pro 2</option>
+                                                    <option value="Unrated"><span>Unrated</span></option>
                                                 </select>
                                             </div>
 
@@ -206,10 +162,10 @@
                                             <label for="counter1">Number of Wins</label>
                                             <div class="counter">
                                                 <button type="button" class="minus" onclick="updatetab1minus();"><img
-                                                        src="./assets/icons/MinusCircle.png" alt=""></button>
-                                                <input name="desired_level" type="number" class="placementrange value" id="counter1" value="1" onchange="updateplacement()">
+                                                        src="/assets/icons/MinusCircle.png" alt=""></button>
+                                                <input name="desired_level" type="number" class="placementrange value" id="counter1" value="1" onchange="updateplacement()" min="1" max="10">
                                                 <button type="button" class="plus" onclick="updatetab1plus();"><img
-                                                        src="./assets/icons/PlusCircle.png" alt=""></button>
+                                                        src="/assets/icons/PlusCircle.png" alt=""></button>
                                             </div>
                                         </div>
 
@@ -219,7 +175,7 @@
                                     <div class="boosting-additional-conatiner">
                                         <h5>Additional Features</h5>
                                         <span>
-                                            <img src="./assets/icons/Info.png" alt="">
+                                            <img src="/assets/icons/Info.png" alt="">
                                             <p>Per additional features will charge 20% of the total amount.</p>
                                         </span>
 
@@ -249,29 +205,29 @@
 
                                         <div class="boosting-pricing-txt-conatiner">
                                             <span>Final Price <h3 id="placementprice">$56</h3></span>
-                                            <button class="themebtn-bg gap-3">ORDER NOW <img src="./assets/icons/circleArrow.png"
+                                            <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                                     alt=""></button>
                                         </div>
 
                                         <div class="boosting-pricing-opt-conatiner">
                                             <div class="boosting-pricing-optLeft-conatiner">
-                                                <img src="./assets/images/Gpay-trans.png" alt="">
-                                                <img src="./assets/images/AE-trans.png" alt="">
-                                                <img src="./assets/images/Mastercard-trans.png" alt="">
-                                                <img src="./assets/images/Applepay-trans.png" alt="">
-                                                <img src="./assets/images/Visa-trans.png" alt="">
+                                                <img src="/assets/images/Gpay-trans.png" alt="">
+                                                <img src="/assets/images/AE-trans.png" alt="">
+                                                <img src="/assets/images/Mastercard-trans.png" alt="">
+                                                <img src="/assets/images/Applepay-trans.png" alt="">
+                                                <img src="/assets/images/Visa-trans.png" alt="">
                                             </div>
                                             <div class="boosting-pricing-optRight-conatiner">
                                                 <h6>Our Customers rated us</h6>
                                                 <div class="boosting-greenStar-container">
-                                                    <img src="./assets/images/trustpilot_icon.png.png" alt="">
-                                                    <img src="./assets/images/trustpilot_icon.png.png" alt="">
-                                                    <img src="./assets/images/trustpilot_icon.png.png" alt="">
-                                                    <img src="./assets/images/trustpilot_icon.png.png" alt="">
-                                                    <img src="./assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                                    <img src="/assets/images/trustpilot_icon.png.png" alt="">
                                                 </div>
                                                 <span>4.9 on</span>
-                                                <img src="./assets/images/trustpilot_logo.svg.png" alt="">
+                                                <img src="/assets/images/trustpilot_logo.svg.png" alt="">
                                             </div>
                                         </div>
 
@@ -292,28 +248,28 @@
                     <h2>Why choose MyBoost?</h2>
                     <div class="MyBoost-grid-container">
                         <div class="MyBoost-grid-box">
-                            <span><img src="./assets/icons/CloudSlash.png" alt=""></span>
+                            <span><img src="/assets/icons/CloudSlash.png" alt=""></span>
                             <div class="MyBoost-text">
                                 <h5>Appear Offline</h5>
                                 <p>None of your friends will see the boosters playing on your account.</p>
                             </div>
                         </div>
                         <div class="MyBoost-grid-box">
-                            <span><img src="./assets/icons/Path.png" alt=""></span>
+                            <span><img src="/assets/icons/Path.png" alt=""></span>
                             <div class="MyBoost-text">
                                 <h5>Order Tracking</h5>
                                 <p>You can track your orders from user dashboard provided to you.</p>
                             </div>
                         </div>
                         <div class="MyBoost-grid-box">
-                            <span><img src="./assets/icons/Headset.png" alt=""></span>
+                            <span><img src="/assets/icons/Headset.png" alt=""></span>
                             <div class="MyBoost-text">
                                 <h5>24/7 Live Support</h5>
                                 <p>Rely on our professional support team 24/7.</p>
                             </div>
                         </div>
                         <div class="MyBoost-grid-box">
-                            <span><img src="./assets/icons/Seal.png" alt=""></span>
+                            <span><img src="/assets/icons/Seal.png" alt=""></span>
                             <div class="MyBoost-text">
                                 <h5>Loyalty Rewards</h5>
                                 <p>Receive significant, cashback rewards on all orders.</p>
@@ -335,28 +291,28 @@
                     <div class="stepsSection-flow-container">
                         <div class="stepsSection-box">
                             <span>
-                                <img src="./assets//icons/HandTap.png" alt="">
+                                <img src="/assets//icons/HandTap.png" alt="">
                             </span>
                             <h2>1. Select Boosting</h2>
                             <p>Choose your desired game and rank boost type (ESEA, Faceit, etc.)</p>
                         </div>
                         <div class="stepsSection-box">
                             <span>
-                                <img src="./assets//icons/CreditCard.png" alt="">
+                                <img src="/assets//icons/CreditCard.png" alt="">
                             </span>
                             <h2>2. Make Payment</h2>
                             <p>Complete the secure payment process using your preferred method.</p>
                         </div>
                         <div class="stepsSection-box">
                             <span>
-                                <img src="./assets//icons/Note.png" alt="">
+                                <img src="/assets//icons/Note.png" alt="">
                             </span>
                             <h2>3. Provide Order Details</h2>
                             <p>Share your account information and any specific requirements.</p>
                         </div>
                         <div class="stepsSection-box">
                             <span>
-                                <img src="./assets//icons/RocketLaunch.png" alt="">
+                                <img src="/assets//icons/RocketLaunch.png" alt="">
                             </span>
                             <h2>4. Boosting Starts</h2>
                             <p>Our expert boosters begin enhancing your gaming experience.</p>
@@ -376,12 +332,12 @@
 
             <div class="payment-container">
                 <div class="payment-inner-container">
-                    <img src="./assets/images/Visa.png" alt="">
-                    <img src="./assets/images/Gpay.png" alt="">
-                    <img src="./assets/images/AE.png" alt="">
-                    <img src="./assets/images/Mastercard.png" alt="">
-                    <img src="./assets/images/Paypal.png" alt="">
-                    <img src="./assets/images/Applepay.png" alt="">
+                    <img src="/assets/images/Visa.png" alt="">
+                    <img src="/assets/images/Gpay.png" alt="">
+                    <img src="/assets/images/AE.png" alt="">
+                    <img src="/assets/images/Mastercard.png" alt="">
+                    <img src="/assets/images/Paypal.png" alt="">
+                    <img src="/assets/images/Applepay.png" alt="">
                 </div>
                 <p>*All these payment methods are acceptable.</p>
             </div>
@@ -412,12 +368,6 @@
 
         
     <script>
-        function updateplacementImage(){
-            var selectedOption = document.querySelector(".placementcurrent").value;
-                // Rank Dropdown Img Change
-            var rankImage = document.getElementById("placementcurrentimage");
-            rankImage.src = `/ranks/esportal/${selectedOption}.png`;
-        }
 
         function updatetab1minus(){
             var reviews = document.querySelector('.placementrange').value;
@@ -458,31 +408,59 @@
 
         //rank boost
 
-        function updateRankBoostimage(){
-            var selectedOption = document.querySelector(".rankboostcurrent").value;
+        function placementrangecurrent(){
 
-            // Rank Dropdown Img Change
-            var rankImage = document.getElementById("rankboostimage");
-            rankImage.src = `/ranks/esportal/${selectedOption}.png`;
-            
         }
 
         function updateRankBoostPriceRequired(){
-            var selectedOption = document.querySelector(".rankboostrequired").value;
-            var prices = {
-                "Silver": 10.00,
-                "Gold 1": 15.00,
-                "Gold 2": 20.00,
-                "Veteran 1": 25.00,
-                "Veteran 2": 30.00,
-                "Master 1": 35.00,
-                "Master 2": 40.00,
-                "Elite 1": 45.00,
-                "Elite 2": 50.00,
-                "Pro 1": 55.00,
-                "Pro 2": 60.00,
+            var selectedOption = document.querySelector(".placementrangerequired").value;
+            var currentSelectedOption = document.querySelector(".placementrangecurrent").value;
+            var goal = selectedOption - currentSelectedOption;
+
+            const prices = {
+                "0": 5.00,
+                "1000": 10.00,
+                "2000": 15.00,
+                "3000": 20.00,
+                "4000": 25.00,
+                "5000": 30.00,
+                "6000": 35.00,
+                "7000": 40.00,
+                "8000": 45.00,
+                "9000": 50.00,
+                "10000": 55.00,
+                "11000": 60.00,
+                "12000": 65.00,
+                "13000": 70.00,
+                "14000": 75.00,
+                "15000": 80.00,
+                "16000": 85.00,
+                "17000": 90.00,
+                "18000": 95.00,
+                "19000": 100.00,
+                "20000": 105.00,
+                "21000": 110.00,
+                "22000": 120.00,
+                "23000": 130.00,
+                "24000": 140.00,
+                "25000": 150.00,
+                "26000": 160.00,
+                "27000": 170.00,
+                "28000": 180.00,
+                "29000": 190.00,
+                "30000": 200.00,
+                "31000": 225.00,
+                "32000": 250.00,
+                "33000": 275.00,
+                "34000": 300.00,
+                "35000": 350.00,
+                "36000": 400.00,
             };
 
+            goal = Math.round(goal/1000)*1000;
+
+            price = prices[goal];
+            
             var additionalAmount = 0;
 
             if (document.getElementById("CS2RankBoostcheckbox1").checked) {
@@ -497,15 +475,13 @@
                 additionalAmount += 0.20;
             }
 
-            var totalPrice = prices[selectedOption] * (1 + additionalAmount);
+            var totalPrice = price * (1 + additionalAmount);
 
             document.getElementById("rankboostprice").innerText = "$" + totalPrice.toFixed(2);
 
-            // Rank Dropdown Img Change
-            var rankImage = document.getElementById("rankboostimagerequired");
-            rankImage.src = `/ranks/esportal/${selectedOption}.png`;
-            
         }
+
+            
     </script>
     <script>
         function toggleSidebar() {

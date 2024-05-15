@@ -70,10 +70,10 @@
                                     <div class="counter-box">
                                         <label for="counter1">Number of Reviews</label>
                                         <div class="counter">
-                                            <button type="button" class="minus" data-counter="counter1"><img
+                                            <button type="button" class="minus" onclick="updatetab1minus();"><img
                                                     src="/assets/icons/MinusCircle.png" alt=""></button>
                                             <input type="number" name="no_of_reviews" class="updatecounter1 value" id="counter1" value="1" onchange="updatePrice();">
-                                            <button type="button" class="plus" data-counter="counter1"><img
+                                            <button type="button" class="plus" onclick="updatetab1plus();"><img
                                                     src="/assets/icons/PlusCircle.png" alt=""></button>
                                         </div>
                                     </div>
@@ -176,10 +176,10 @@
                                     <div class="counter-box">
                                         <label for="counter1">Number of Reviews</label>
                                         <div class="counter">
-                                            <button type="button" class="minus" data-counter="counter1"><img
+                                            <button type="button" class="minus" onclick="updatetab2minus();"><img
                                                     src="/assets/icons/MinusCircle.png" alt=""></button>
                                             <input type="number" name="no_of_reviews" class="DemoCoachmyRange value" id="counter1" value="1" onchange="updateCoachDemoPrice();">
-                                            <button type="button" class="plus" data-counter="counter1"><img
+                                            <button type="button" class="plus" onclick="updatetab2plus();"><img
                                                     src="/assets/icons/PlusCircle.png" alt=""></button>
                                         </div>
                                     </div>
@@ -282,10 +282,10 @@
                                     <div class="counter-box">
                                         <label for="counter1">Number of Reviews</label>
                                         <div class="counter">
-                                            <button type="button" class="minus" data-counter="counter1"><img
+                                            <button type="button" class="minus" onclick="updatetab3minus();"><img
                                                     src="/assets/icons/MinusCircle.png" alt=""></button>
                                             <input type="number" name="no_of_reviews" class="CoachmyRange value" id="counter1" value="1" onchange="updateCoachPrice();">
-                                            <button type="button" class="plus" data-counter="counter1"><img
+                                            <button type="button" class="plus" onclick="updatetab3plus();"><img
                                                     src="/assets/icons/PlusCircle.png" alt=""></button>
                                         </div>
                                     </div>
@@ -388,10 +388,10 @@
                                     <div class="counter-box">
                                         <label for="counter1">Number of Reviews</label>
                                         <div class="counter">
-                                            <button type="button" class="minus" data-counter="counter1"><img
+                                            <button type="button" class="minus" onclick="updatetab4minus();"><img
                                                     src="/assets/icons/MinusCircle.png" alt=""></button>
                                             <input type="number" name="no_of_reviews" class="TeamCoachmyRange value" id="counter1" value="1" onchange="updateTeamCoachPrice();">
-                                            <button type="button" class="plus" data-counter="counter1"><img
+                                            <button type="button" class="plus" onclick="updatetab4plus();"><img
                                                     src="/assets/icons/PlusCircle.png" alt=""></button>
                                         </div>
                                     </div>
@@ -596,10 +596,22 @@
 
     <script>
 
-        HTMLInputElementObject.addEventListener('input', function (evt) {
-            something(this.value);
-        });
-        
+        function updatetab1minus(){
+            var reviews = document.querySelector('.updatecounter1').value;
+            let newvalue = +reviews - 1;
+            document.querySelector('.updatecounter1').value = newvalue;
+
+            updatePrice();
+        }
+
+        function updatetab1plus(){
+            var reviews = document.querySelector('.updatecounter1').value;
+            let newvalue = +reviews + 1;
+            document.querySelector('.updatecounter1').value = newvalue;
+
+            updatePrice();
+        }
+
         function updatePrice(){
             var reviews = document.querySelector('.updatecounter1').value;
             
@@ -613,6 +625,22 @@
             
             document.getElementById("priceTag").innerText = "$" + totalAmount.toFixed(2);
             
+        }
+
+        function updatetab2minus(){
+            var reviews = document.querySelector('.DemoCoachmyRange').value;
+            let newvalue = +reviews - 1;
+            document.querySelector('.DemoCoachmyRange').value = newvalue;
+
+            updateCoachDemoPrice();
+        }
+
+        function updatetab2plus(){
+            var reviews = document.querySelector('.DemoCoachmyRange').value;
+            let newvalue = +reviews + 1;
+            document.querySelector('.DemoCoachmyRange').value = newvalue;
+
+            updateCoachDemoPrice();
         }
 
         function updateCoachDemoPrice(){
@@ -629,6 +657,22 @@
                 document.getElementById("DemoCoachpriceTag").innerText = "$" + totalAmount.toFixed(2);
         }
 
+        function updatetab3minus(){
+            var reviews = document.querySelector('.CoachmyRange').value;
+            let newvalue = +reviews - 1;
+            document.querySelector('.CoachmyRange').value = newvalue;
+
+            updateCoachPrice();
+        }
+
+        function updatetab3plus(){
+            var reviews = document.querySelector('.CoachmyRange').value;
+            let newvalue = +reviews + 1;
+            document.querySelector('.CoachmyRange').value = newvalue;
+
+            updateCoachPrice();
+        }
+
         function updateCoachPrice(){
                 var reviews = document.querySelector('.CoachmyRange').value;
                 
@@ -642,6 +686,22 @@
                 
                 document.getElementById("CoachpriceTag").innerText = "$" + totalAmount.toFixed(2);
    
+        }
+
+        function updatetab4minus(){
+            var reviews = document.querySelector('.TeamCoachmyRange').value;
+            let newvalue = +reviews - 1;
+            document.querySelector('.TeamCoachmyRange').value = newvalue;
+
+            updateTeamCoachPrice();
+        }
+
+        function updatetab4plus(){
+            var reviews = document.querySelector('.TeamCoachmyRange').value;
+            let newvalue = +reviews + 1;
+            document.querySelector('.TeamCoachmyRange').value = newvalue;
+
+            updateTeamCoachPrice();
         }
 
         function updateTeamCoachPrice(){

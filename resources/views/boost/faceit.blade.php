@@ -328,10 +328,10 @@
                                         <div class="counter-box">
                                             <label for="counter1">Number of Wins</label>
                                             <div class="counter">
-                                                <button type="button" class="minus" data-counter="counter1"><img
+                                                <button type="button" class="minus" onclick="updatetab1minus();"><img
                                                         src="/assets/icons/MinusCircle.png" alt=""></button>
                                                 <input name="desired_level" type="number" class="placementrange value" id="counter1" value="1" onchange="updateplacement()">
-                                                <button type="button" class="plus" data-counter="counter1"><img
+                                                <button type="button" class="plus" onclick="updatetab1plus();"><img
                                                         src="/assets/icons/PlusCircle.png" alt=""></button>
                                             </div>
                                         </div>
@@ -629,6 +629,22 @@
             var rankImage = document.getElementById("faceitwincurrentimage");
             rankImage.src = `/ranks/faceit/${selectedOption}.svg`;
     }
+
+        function updatetab1minus(){
+            var reviews = document.querySelector('.placementrange').value;
+            let newvalue = +reviews - 1;
+            document.querySelector('.placementrange').value = newvalue;
+
+            updateplacement();
+        }
+
+        function updatetab1plus(){
+            var reviews = document.querySelector('.placementrange').value;
+            let newvalue = +reviews + 1;
+            document.querySelector('.placementrange').value = newvalue;
+
+            updateplacement();
+        }
 
     function updateplacement(){
             var reviews = document.querySelector('.placementrange').value;

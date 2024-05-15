@@ -43,6 +43,7 @@ Route::get('/csboost', [BoostController::class, 'csgoboost']);
 Route::get('/faceit', [BoostController::class, 'faceit']);
 Route::get('/esea', [BoostController::class, 'esea']);
 Route::get('/esportal', [BoostController::class, 'esportal']);
+Route::get('/premier', [BoostController::class, 'premier']);
 Route::get('/coaching', [BoostController::class, 'coaching']);
 Route::get('/about', [BoostController::class, 'about']);
 Route::get('/contact', [BoostController::class, 'contact']);
@@ -68,6 +69,7 @@ Route::middleware([
     Route::post('/faceit/checkout', [BoostController::class, 'faceitcheckout']);
     Route::post('/esea/checkout', [BoostController::class, 'eseacheckout']);
     Route::post('/esportal/checkout', [BoostController::class, 'esportalcheckout']);
+    Route::post('/premier/checkout', [BoostController::class, 'premiercheckout']);
     
     Route::post('/payment/{order_id}', [BoostController::class, 'payment']);
 

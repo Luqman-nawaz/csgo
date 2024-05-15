@@ -20,6 +20,53 @@
                 font-weight: 600;
                 margin-right: 40px;
             }
+
+            .dropdown-box {
+                position: relative;
+                margin-top: 10px;
+
+                &:hover .boost-dropdown {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .boost-link {
+                    position: relative;
+                }
+
+                .boost-dropdown {
+                    display: none;
+                    position: absolute;
+                    // top: calc(100% + 5px);
+                    left: 0;
+                    background-color: #000;
+                    width: 200px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    border-radius: 10px;
+                    border: 1px solid #FFA500;
+                    overflow: hidden;
+
+                    a {
+                        color: var(--Text-primary, #FFF);
+                        font-family: Karla;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 600;
+                        text-decoration: none;
+                        padding: 10px 10px;
+                        width: 100%;
+                        transition: 0.5s ease-in-out;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        &:hover {
+                            background-color: #FFA500;
+                        }
+                    }
+                }
+            }
         }
 
         .logo-container {
@@ -2809,6 +2856,28 @@
             font-weight: 600;
             margin-right: 40px;
             padding: 10px 15px;
+        }
+
+        .boost-dropdown {
+            width: 100%;
+
+            span {
+                color: var(--Text-primary, #FFF);
+                font-family: Karla;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                margin-right: 40px;
+                padding: 10px 15px;
+            }
+
+            .dropdown-content {
+                padding: 10px 0px;
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #191919;
+            }
         }
     }
 

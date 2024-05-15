@@ -4,6 +4,20 @@
     @push('css') 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+        <style>
+        .invisible {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .rotate-180 {
+            transform: rotate(180deg);
+        }
+    </style>
     @endpush
     
     @section('content')
@@ -16,7 +30,7 @@
             <p>If you are bored of playing with trolls and unskilled players - purchase boost now and our professional
                 players will help you with winning matches.</p>
             <div class="heroPills-container flex justify-center items-center gap-5" style="margin-bottom:10%;">
-                <span><a href="/csgoboost">CS2 BOOST</span></a>
+                <span><a href="/csboost">CS2 BOOST</span></a>
                 <span><a href="/faceit">FACEIT BOOST</span></a>
                 <span><a href="/esea">ESEA BOOST</span></a>
                 <span><a href="/esportal">ESPORTAL BOOST</span></a>
@@ -250,12 +264,14 @@
                 <div id="general" class="tabcontent">
                     <div class="m-2 space-y-2">
                         <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="1">
-                            <div class="flex cursor-pointer items-center justify-between">
+                            <div class="flex cursor-pointer items-center justify-between"
+                                onclick="toggleFAQ('faqContent1', 'chevron1')">
                                 <span class="faq-1-span">What is an FAQ page?</span>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
+                                <img id="chevron1"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
-                            <div
+                            <div id="faqContent1"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                                 Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
                                 interdum, aliquet odio mattis.
@@ -263,12 +279,14 @@
                         </div>
 
                         <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="2">
-                            <div class="flex cursor-pointer items-center justify-between">
+                            <div class="flex cursor-pointer items-center justify-between"
+                                onclick="toggleFAQ('faqContent2', 'chevron2')">
                                 <span class="faq-1-span">Why should I visit the FAQ page?</span>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
+                                <img id="chevron2"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
-                            <div
+                            <div id="faqContent2"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                                 Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
                                 interdum, aliquet odio mattis.
@@ -276,12 +294,14 @@
                         </div>
 
                         <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="3">
-                            <div class="flex cursor-pointer items-center justify-between">
+                            <div class="flex cursor-pointer items-center justify-between"
+                                onclick="toggleFAQ('faqContent3', 'chevron3')">
                                 <span class="faq-1-span">How do I find answers to common questions?</span>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
+                                <img id="chevron3"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
-                            <div
+                            <div id="faqContent3"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                                 Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
                                 interdum, aliquet odio mattis.
@@ -289,13 +309,15 @@
                         </div>
 
                         <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="4">
-                            <div class="flex cursor-pointer items-center justify-between">
+                            <div class="flex cursor-pointer items-center justify-between"
+                                onclick="toggleFAQ('faqContent4', 'chevron4')">
                                 <span class="faq-1-span">What’s the difference between an FAQ page and an About Us
                                     page?</span>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
+                                <img id="chevron3"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
-                            <div
+                            <div id="faqContent4"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                                 Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
                                 interdum, aliquet odio mattis.
@@ -446,5 +468,28 @@
             });
         });
 
+    </script>
+    <script>
+        function toggleFAQ(contentId, chevronId) {
+            const chevron = document.getElementById(chevronId);
+            const faqContent = document.getElementById(contentId);
+            const isVisible = faqContent.classList.contains('visible');
+
+            if (isVisible) {
+                faqContent.classList.remove('visible');
+                faqContent.classList.add('invisible');
+                chevron.classList.remove('rotate-180');
+            } else {
+                faqContent.classList.remove('invisible');
+                faqContent.classList.add('visible');
+                chevron.classList.add('rotate-180');
+            }
+        }
+    </script>
+    <script>
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("boostDropdown");
+            dropdownContent.style.display === "none" ? dropdownContent.style.display = "flex" : dropdownContent.style.display = "none";
+        }
     </script>
     @endpush
