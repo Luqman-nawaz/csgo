@@ -20,7 +20,7 @@
                     <a href="/contact">Contact</a>
                 </div>
                 <div class="logo-container w-3/12 flex justify-between items-center">
-                    <img src="./assets/Logo.svg" class="m-auto" alt="" style="cursor: pointer;" alt="" onclick="window.location.href='/'";>
+                    <img src="/assets/logo.svg" class="m-auto" alt="" style="cursor: pointer;" alt="" onclick="window.location.href='/'";>
                 </div>
                 <div class="rightmenu-container w-5/12 flex justify-end items-center gap-4">
                     @guest

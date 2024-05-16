@@ -11,12 +11,12 @@
         <!-- csgo-Header End -->
 
         <div class="credentials-main-container">
-            <div class="credentials-centered-container">
+            <div class="credentials-centered-container" style="margin-top:7%">
 
                 
 
                 <div class="credentials-left-container">
-                    <img src="./assets/images/Group 1.png" alt="">
+                    <img src="/assets/images/Group 1.png" alt="">
                 </div>
                 <div class="credentials-right-container">
                     <h2>Forgot Password</h2>
@@ -40,7 +40,7 @@
                         <form method="POST" action="{{ route('password.email') }}">
                             @csrf
                         <div class="credentials-input-box">
-                            <img src="./assets/icons/✳️ Start Icon.png" alt="">
+                            <img src="/assets/icons/✳️ Start Icon.png" alt="">
                             <input type="email" name="email" :value="old('email')" required autofocus placeholder="johndoe@gmail.com">
                         </div>
                     </div>
