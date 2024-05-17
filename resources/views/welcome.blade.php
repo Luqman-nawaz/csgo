@@ -272,7 +272,7 @@
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent1"
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+                                style="font-family:Karla;" class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                                 Myboost.gg is a professional boosting & coaching service for Counter-Strike 2. We help players improve their rankings, achieve specific in-game goals, 
                                 and enhance their overall gaming experience through expert assistance from highly skilled players.
                             </div>
@@ -287,7 +287,7 @@
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent2"
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+                                style="font-family:Karla;" class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                                 Once you place an order, one of our experienced boosters will log into your account or play alongside you to achieve the desired rank or goal. We offer various types of boosts, 
                                 including rank boosts, win boosts, and more. You can track the progress in real-time through our secure platform.
                             </div>
@@ -302,7 +302,7 @@
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent3"
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+                                style="font-family:Karla;" class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                                 Absolutely! We offer a "Duo Queue" option where you can play alongside one of our professional boosters. 
                                 This way, you retain full control of your account while still benefiting from the expertise of our team to achieve your desired rank or goals.
                             </div>
@@ -317,7 +317,7 @@
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent4"
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+                                style="font-family:Karla;" class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                                 The duration of a boost depends on the type and extent of the service you’ve ordered. Generally, rank boosts can take a few hours to several days, depending on the starting and desired ranks.
                                 Our team strives to complete all orders as quickly and efficiently as possible while maintaining high-quality service.
                             </div>
@@ -335,7 +335,7 @@
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent5"
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+                                style="font-family:Karla;" class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                                 We prioritize your account's security by using secure VPN connections and employing strict confidentiality protocols. 
                                 Our boosters are thoroughly vetted professionals who follow a code of conduct to protect your account information and maintain the integrity of your gaming profile.
                             </div>
@@ -350,7 +350,7 @@
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent6"
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+                               style="font-family:Karla;" class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                                 Yes, all boosters at myboost.gg undergo a rigorous verification process. We ensure that they are experienced, highly skilled, 
                                 and adhere to our strict privacy and security standards. Your account is in safe hands with our trusted professionals.
                             </div>
@@ -365,7 +365,7 @@
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent7"
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+                               style="font-family:Karla;" class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                                 Yes, you can. We understand the importance of trust when it comes to sharing your account credentials. 
                                 Our secure platform ensures that your information is handled with the utmost care and is only accessible to the assigned booster and our support team.
                             </div>
@@ -380,7 +380,7 @@
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent8"
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+                               style="font-family:Karla;" class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                                 In the unlikely event that your account is banned due to our services, we offer a comprehensive compensation policy. 
                                 We will work with you to resolve the issue, which may include a full or partial refund or additional services to compensate for any inconvenience caused.
                             </div>
@@ -390,14 +390,14 @@
                 <div id="SERVICES" class="tabcontent">
                     <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="9">
                             <div class="flex cursor-pointer items-center justify-between"
-                                onclick="toggleFAQ('faqContent9', 'chevron9')">
+                               style="font-family:Karla;" onclick="toggleFAQ('faqContent9', 'chevron9')">
                                 <span class="faq-1-span">What types of boosting services do you offer?</span>
                                 <img id="chevron9"
                                     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent9"
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+                               style="font-family:Karla;" class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                                 Myboost.gg offers a variety of boosting services for CS2, Faceit, Esportal, ESEA, including rank boosting, win boosting, placement matches, and specific achievements. 
                                 We also provide personalized coaching sessions to help you improve your skills and strategies.
                             </div>
@@ -405,7 +405,7 @@
 
                     <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="10">
                             <div class="flex cursor-pointer items-center justify-between"
-                                onclick="toggleFAQ('faqContent10', 'chevron10')">
+                               style="font-family:Karla;" onclick="toggleFAQ('faqContent10', 'chevron10')">
                                 <span class="faq-1-span">Can I choose my preferred booster?</span>
                                 <img id="chevron10"
                                     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
@@ -427,7 +427,7 @@
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent11"
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+                               style="font-family:Karla;" class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                                 You can track the progress of your boost through our secure client area on the myboost.gg website. Here, you can see real-time updates, communicate with your booster, 
                                 and review detailed reports of completed matches.
                             </div>
@@ -442,7 +442,7 @@
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent12"
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+                               style="font-family:Karla;" class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                                 Customer satisfaction is our priority. If you are not satisfied with the service, please contact our support team. We offer a satisfaction guarantee and will work with you to address any issues, 
                                 which may include revisiting the boost or providing a partial refund.
                             </div>
@@ -459,7 +459,7 @@
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent13"
-                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+                               style="font-family:Karla;" class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                                 Myboost.gg accepts a variety of secure payment methods, including major credit cards (Visa, MasterCard, American Express), PayPal, and other popular online payment systems. 
                                 We ensure that all transactions are processed through secure and encrypted payment gateways to protect your financial information.
                             </div>
