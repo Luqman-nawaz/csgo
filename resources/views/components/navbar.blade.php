@@ -74,7 +74,7 @@
                         <div class="boost-dropdown" onclick="toggleDropdown()">
                             <div class="flex justify-between items-center pr-4 w-full">
                                 <span>Boost</span>
-                                <div>&#11167;</div>
+                                <div><i class="arrow down"></i></div>
                             </div>
                             <div class="dropdown-content toggleDropDownOnPhone" id="boostDropdown">
                                 <a href="/csboost">CS2 Boost</a>
