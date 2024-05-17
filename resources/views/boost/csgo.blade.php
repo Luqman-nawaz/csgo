@@ -167,26 +167,32 @@
                             </div>
 
                             <div class="boosting-pricing-opt-conatiner">
-                                <div class="boosting-pricing-optLeft-conatiner">
-                                    <img src="/assets/images/Gpay-trans.png" alt="">
-                                    <img src="/assets/images/AE-trans.png" alt="">
-                                    <img src="/assets/images/Mastercard-trans.png" alt="">
-                                    <img src="/assets/images/Applepay-trans.png" alt="">
-                                    <img src="/assets/images/Visa-trans.png" alt="">
-                                </div>
-                                <div class="boosting-pricing-optRight-conatiner">
-                                    <h6>Our Customers rated us</h6>
-                                    <div class="boosting-greenStar-container">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                    </div>
-                                    <span>4.9 on</span>
-                                    <img src="/assets/images/trustpilot_logo.svg.png" alt="">
-                                </div>
-                            </div>
+                                            <div class="boosting-pricing-optLeft-conatiner">
+                                                <img src="/assets/images/Gpay-trans.png" alt="">
+                                                <img src="/assets/images/AE-trans.png" alt="">
+                                                <img src="/assets/images/Mastercard-trans.png" alt="">
+                                                <img src="/assets/images/Applepay-trans.png" alt="">
+                                                <img src="/assets/images/Visa-trans.png" alt="">
+                                            </div>
+                                            <div class="boosting-pricing-optRight-conatiner">
+                                            
+                                                <h6>Our Customers rated us</h6>
+                                                
+                                                <div class="boosting-greenStar-container">
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                </div>
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <span>4.9 on</span>
+                                                </a>
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
 
                         </div>
 
@@ -285,26 +291,32 @@
                                 </div>
 
                                 <div class="boosting-pricing-opt-conatiner">
-                                    <div class="boosting-pricing-optLeft-conatiner">
-                                        <img src="/assets/images/Gpay-trans.png" alt="">
-                                        <img src="/assets/images/AE-trans.png" alt="">
-                                        <img src="/assets/images/Mastercard-trans.png" alt="">
-                                        <img src="/assets/images/Applepay-trans.png" alt="">
-                                        <img src="/assets/images/Visa-trans.png" alt="">
-                                    </div>
-                                    <div class="boosting-pricing-optRight-conatiner">
-                                        <h6>Our Customers rated us</h6>
-                                        <div class="boosting-greenStar-container">
-                                            <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                            <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                            <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                            <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                            <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                            <div class="boosting-pricing-optLeft-conatiner">
+                                                <img src="/assets/images/Gpay-trans.png" alt="">
+                                                <img src="/assets/images/AE-trans.png" alt="">
+                                                <img src="/assets/images/Mastercard-trans.png" alt="">
+                                                <img src="/assets/images/Applepay-trans.png" alt="">
+                                                <img src="/assets/images/Visa-trans.png" alt="">
+                                            </div>
+                                            <div class="boosting-pricing-optRight-conatiner">
+                                            
+                                                <h6>Our Customers rated us</h6>
+                                                
+                                                <div class="boosting-greenStar-container">
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                </div>
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <span>4.9 on</span>
+                                                </a>
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                                </a>
+                                            </div>
                                         </div>
-                                        <span>4.9 on</span>
-                                        <img src="/assets/images/trustpilot_logo.svg.png" alt="">
-                                    </div>
-                                </div>
 
                             </div>
 
@@ -426,26 +438,32 @@
                             </div>
 
                             <div class="boosting-pricing-opt-conatiner">
-                                <div class="boosting-pricing-optLeft-conatiner">
-                                    <img src="/assets/images/Gpay-trans.png" alt="">
-                                    <img src="/assets/images/AE-trans.png" alt="">
-                                    <img src="/assets/images/Mastercard-trans.png" alt="">
-                                    <img src="/assets/images/Applepay-trans.png" alt="">
-                                    <img src="/assets/images/Visa-trans.png" alt="">
-                                </div>
-                                <div class="boosting-pricing-optRight-conatiner">
-                                    <h6>Our Customers rated us</h6>
-                                    <div class="boosting-greenStar-container">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                    </div>
-                                    <span>4.9 on</span>
-                                    <img src="/assets/images/trustpilot_logo.svg.png" alt="">
-                                </div>
-                            </div>
+                                            <div class="boosting-pricing-optLeft-conatiner">
+                                                <img src="/assets/images/Gpay-trans.png" alt="">
+                                                <img src="/assets/images/AE-trans.png" alt="">
+                                                <img src="/assets/images/Mastercard-trans.png" alt="">
+                                                <img src="/assets/images/Applepay-trans.png" alt="">
+                                                <img src="/assets/images/Visa-trans.png" alt="">
+                                            </div>
+                                            <div class="boosting-pricing-optRight-conatiner">
+                                            
+                                                <h6>Our Customers rated us</h6>
+                                                
+                                                <div class="boosting-greenStar-container">
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                </div>
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <span>4.9 on</span>
+                                                </a>
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
 
                         </div>
 
@@ -544,26 +562,32 @@
                                 </div>
 
                                 <div class="boosting-pricing-opt-conatiner">
-                                    <div class="boosting-pricing-optLeft-conatiner">
-                                        <img src="/assets/images/Gpay-trans.png" alt="">
-                                        <img src="/assets/images/AE-trans.png" alt="">
-                                        <img src="/assets/images/Mastercard-trans.png" alt="">
-                                        <img src="/assets/images/Applepay-trans.png" alt="">
-                                        <img src="/assets/images/Visa-trans.png" alt="">
-                                    </div>
-                                    <div class="boosting-pricing-optRight-conatiner">
-                                        <h6>Our Customers rated us</h6>
-                                        <div class="boosting-greenStar-container">
-                                            <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                            <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                            <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                            <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                            <img src="/assets/images/trustpilot_icon.png.png" alt="">
+                                            <div class="boosting-pricing-optLeft-conatiner">
+                                                <img src="/assets/images/Gpay-trans.png" alt="">
+                                                <img src="/assets/images/AE-trans.png" alt="">
+                                                <img src="/assets/images/Mastercard-trans.png" alt="">
+                                                <img src="/assets/images/Applepay-trans.png" alt="">
+                                                <img src="/assets/images/Visa-trans.png" alt="">
+                                            </div>
+                                            <div class="boosting-pricing-optRight-conatiner">
+                                            
+                                                <h6>Our Customers rated us</h6>
+                                                
+                                                <div class="boosting-greenStar-container">
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                </div>
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <span>4.9 on</span>
+                                                </a>
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                                </a>
+                                            </div>
                                         </div>
-                                        <span>4.9 on</span>
-                                        <img src="/assets/images/trustpilot_logo.svg.png" alt="">
-                                    </div>
-                                </div>
 
                             </div>
 
@@ -679,26 +703,32 @@
                             </div>
 
                             <div class="boosting-pricing-opt-conatiner">
-                                <div class="boosting-pricing-optLeft-conatiner">
-                                    <img src="/assets/images/Gpay-trans.png" alt="">
-                                    <img src="/assets/images/AE-trans.png" alt="">
-                                    <img src="/assets/images/Mastercard-trans.png" alt="">
-                                    <img src="/assets/images/Applepay-trans.png" alt="">
-                                    <img src="/assets/images/Visa-trans.png" alt="">
-                                </div>
-                                <div class="boosting-pricing-optRight-conatiner">
-                                    <h6>Our Customers rated us</h6>
-                                    <div class="boosting-greenStar-container">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                        <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                    </div>
-                                    <span>4.9 on</span>
-                                    <img src="/assets/images/trustpilot_logo.svg.png" alt="">
-                                </div>
-                            </div>
+                                            <div class="boosting-pricing-optLeft-conatiner">
+                                                <img src="/assets/images/Gpay-trans.png" alt="">
+                                                <img src="/assets/images/AE-trans.png" alt="">
+                                                <img src="/assets/images/Mastercard-trans.png" alt="">
+                                                <img src="/assets/images/Applepay-trans.png" alt="">
+                                                <img src="/assets/images/Visa-trans.png" alt="">
+                                            </div>
+                                            <div class="boosting-pricing-optRight-conatiner">
+                                            
+                                                <h6>Our Customers rated us</h6>
+                                                
+                                                <div class="boosting-greenStar-container">
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                </div>
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <span>4.9 on</span>
+                                                </a>
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
 
                         </div>
 
@@ -818,24 +848,6 @@
 @endsection
 
 @push('js')
-
-        @auth
-            <script>
-                window.intercomSettings = {
-                    api_base: "https://api-iam.intercom.io",
-                    app_id: "h6qfo7br",
-                    name: @php print_r(json_encode(Auth::user()->name)); @endphp, // Full name
-                    user_id: @php print_r(json_encode(Auth::user()->id)); @endphp, // a UUID for your user
-                    email: @php print(json_encode(Auth::user()->email)); @endphp, // the email for your user
-                    created_at: "<?php echo strtotime(Auth::user()->created_at) ?>" // Signup date as a Unix timestamp
-                };
-            </script>
-
-            <script>
-                // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/h6qfo7br'
-                (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/h6qfo7br';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-            </script>
-        @endauth
 
     <script>
         function toggleSidebar() {

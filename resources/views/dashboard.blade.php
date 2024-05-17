@@ -34,12 +34,7 @@
                                 <h3>All Orders</h3>
                                 <span>{{App\Models\boost::where('user_id', Auth::id())->get()->count()}} orders</span>
                             </div>
-                            {{-- <div class="tableSearch-input-container">
-                                <div class="tableSearch-input-box">
-                                    <img src="./assets/icons/search.png" alt="">
-                                    <input type="text" placeholder="Search...">
-                                </div>
-                            </div> --}}
+
                         </div>
                         <!-- Table -->
                         <div class="table-div relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -123,36 +118,6 @@
                                             </tr>
                                     @endforeach
                                     
-                                    {{-- @foreach(App\Models\coaching::where('user_id', Auth::id())->get() as $orders)
-                                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                        <th scope="row"
-                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                            {{$orders->boost_type}}
-                                        </th>
-                                        <td class="px-6 py-4">
-                                            {{$orders->current_level}}
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            {{$orders->desired_level}}
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            ${{$orders->payment}}
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            <span class="completed-pill">
-                                                @if($orders->payment->order_status == 'completed') Order in Progress
-                                                @elseif($orders->payment->order_status == 'delivered') Order Delivered
-                                                @else Pending Payment @endif
-                                            </span>
-                                        </td>
-                                        <td class="flex gap-2 px-6 py-4">
-                                            @if($orders->payment->order_status != 'completed' && $orders->payment->order_status != 'delivered')
-                                                <a href="/checkout/{{$orders->id}}"><span class="trans-pill">Pay Now!</span></a>
-                                            @endif
-                                            <a href="/csgoboost"><span class="trans-pill">Order Again</span></a>
-                                        </td>
-                                    </tr>
-                                    @endforeach --}}
                                 </tbody>
                             </table>
                         </div>
@@ -214,24 +179,4 @@
         });
 
     </script>
-    @endpush
-    
-    @push('js')
-    
-        <script>
-            window.intercomSettings = {
-                api_base: "https://api-iam.intercom.io",
-                app_id: "h6qfo7br",
-                name: @php print_r(json_encode(Auth::user()->name)); @endphp, // Full name
-                user_id: @php print_r(json_encode(Auth::user()->id)); @endphp, // a UUID for your user
-                email: @php print(json_encode(Auth::user()->email)); @endphp, // the email for your user
-                created_at: "<?php echo strtotime(Auth::user()->created_at) ?>" // Signup date as a Unix timestamp
-            };
-        </script>
-
-        <script>
-            // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/h6qfo7br'
-            (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/h6qfo7br';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-        </script>
-
     @endpush

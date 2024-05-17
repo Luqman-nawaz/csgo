@@ -156,11 +156,11 @@
             <h2>Because numbers Speak</h2>
             <div class="ourstatSection-inner-container">
                 <div class="ourstatSection-box">
-                    <h2>8 Years</h2>
+                    <h2>2+ Years</h2>
                     <p>OF SERVICE</p>
                 </div>
                 <div class="ourstatSection-box">
-                    <h2>20K</h2>
+                    <h2>5000+</h2>
                     <p>HAPPY CLIENTS</p>
                 </div>
                 <div class="ourstatSection-box">
@@ -216,12 +216,12 @@
                 <h5>TESTIMONIALS</h5>
                 <h2>Let’s hear from happy clients</h2>
                 <div class="center">
-                    <div class="Testimonials-card-box">
+                     <div class="Testimonials-card-box">
                         <h5>The service was fast and very convenient. The boosters were great in person & very professional.</h5>
                         <br>
                         <span class="flex items-center gap-3">
                             <img src="/assets/icons/Avatar.png" alt="">
-                            <h6>Ryan</h6>
+                            <h6>Wn***ak</h6>
                         </span>
                     </div>
                     <div class="Testimonials-card-box">
@@ -229,7 +229,7 @@
                         <br>
                         <span class="flex items-center gap-3">
                             <img src="/assets/icons/avatar2.svg" alt="">
-                            <h6>Judy Smith</h6>
+                            <h6>Si***er</h6>
                         </span>
                     </div>
                     <div class="Testimonials-card-box">
@@ -237,7 +237,7 @@
                         <br>
                         <span class="flex items-center gap-3">
                             <img src="/assets/icons/avatar1.png" alt="">
-                            <h6>Jake</h6>
+                            <h6>G*r03</h6>
                         </span>
                     </div>
                 </div>
@@ -250,7 +250,7 @@
         <div class="frequentlySection-container">
             <div class="frequentlySection-inner-container">
                 <h5>FREQUENTLY ASKED QUESTIONS</h5>
-                <h2>Feel free to explore queries and find answers! </h2>
+                <h2>Feel free to explore queries and find answers! </h2>
             </div>
 
             <div class="frequeantly-tabs-conatiner">
@@ -266,61 +266,60 @@
                         <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="1">
                             <div class="flex cursor-pointer items-center justify-between"
                                 onclick="toggleFAQ('faqContent1', 'chevron1')">
-                                <span class="faq-1-span">What is an FAQ page?</span>
+                                <span class="faq-1-span">What is MyBoost.gg?</span>
                                 <img id="chevron1"
                                     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent1"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
+                                Myboost.gg is a professional boosting & coaching service for Counter-Strike 2. We help players improve their rankings, achieve specific in-game goals, 
+                                and enhance their overall gaming experience through expert assistance from highly skilled players.
                             </div>
                         </div>
 
                         <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="2">
                             <div class="flex cursor-pointer items-center justify-between"
                                 onclick="toggleFAQ('faqContent2', 'chevron2')">
-                                <span class="faq-1-span">Why should I visit the FAQ page?</span>
+                                <span class="faq-1-span">How does the boosting process work?</span>
                                 <img id="chevron2"
                                     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent2"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
+                                Once you place an order, one of our experienced boosters will log into your account or play alongside you to achieve the desired rank or goal. We offer various types of boosts, 
+                                including rank boosts, win boosts, and more. You can track the progress in real-time through our secure platform.
                             </div>
                         </div>
 
                         <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="3">
                             <div class="flex cursor-pointer items-center justify-between"
                                 onclick="toggleFAQ('faqContent3', 'chevron3')">
-                                <span class="faq-1-span">How do I find answers to common questions?</span>
+                                <span class="faq-1-span">Can I play with my booster instead of giving them my account details?</span>
                                 <img id="chevron3"
                                     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent3"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
+                                Absolutely! We offer a "Duo Queue" option where you can play alongside one of our professional boosters. 
+                                This way, you retain full control of your account while still benefiting from the expertise of our team to achieve your desired rank or goals.
                             </div>
                         </div>
 
                         <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="4">
                             <div class="flex cursor-pointer items-center justify-between"
                                 onclick="toggleFAQ('faqContent4', 'chevron4')">
-                                <span class="faq-1-span">What’s the difference between an FAQ page and an About Us
-                                    page?</span>
+                                <span class="faq-1-span">How long does a boost typically take?</span>
                                 <img id="chevron3"
                                     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent4"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
+                                The duration of a boost depends on the type and extent of the service you’ve ordered. Generally, rank boosts can take a few hours to several days, depending on the starting and desired ranks.
+                                Our team strives to complete all orders as quickly and efficiently as possible while maintaining high-quality service.
                             </div>
                         </div>
                     </div>
@@ -330,60 +329,60 @@
                     <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="5">
                             <div class="flex cursor-pointer items-center justify-between"
                                 onclick="toggleFAQ('faqContent5', 'chevron5')">
-                                <span class="faq-1-span">What is an FAQ page?</span>
+                                <span class="faq-1-span">How does MyBoost.gg ensure my account's security?</span>
                                 <img id="chevron5"
                                     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent5"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
+                                We prioritize your account's security by using secure VPN connections and employing strict confidentiality protocols. 
+                                Our boosters are thoroughly vetted professionals who follow a code of conduct to protect your account information and maintain the integrity of your gaming profile.
                             </div>
                     </div>
 
                     <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="6">
                             <div class="flex cursor-pointer items-center justify-between"
                                 onclick="toggleFAQ('faqContent6', 'chevron6')">
-                                <span class="faq-1-span">What is an FAQ page?</span>
+                                <span class="faq-1-span">Are the boosters at MyBoost.gg verified and trustworthy?</span>
                                 <img id="chevron6"
                                     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent6"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
+                                Yes, all boosters at myboost.gg undergo a rigorous verification process. We ensure that they are experienced, highly skilled, 
+                                and adhere to our strict privacy and security standards. Your account is in safe hands with our trusted professionals.
                             </div>
                     </div>
 
                     <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="7">
                             <div class="flex cursor-pointer items-center justify-between"
                                 onclick="toggleFAQ('faqContent7', 'chevron7')">
-                                <span class="faq-1-span">What is an FAQ page?</span>
+                                <span class="faq-1-span">Can I trust MyBoost.gg with my account credentials?</span>
                                 <img id="chevron5"
                                     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent7"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
+                                Yes, you can. We understand the importance of trust when it comes to sharing your account credentials. 
+                                Our secure platform ensures that your information is handled with the utmost care and is only accessible to the assigned booster and our support team.
                             </div>
                     </div>
 
                     <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="8">
                             <div class="flex cursor-pointer items-center justify-between"
                                 onclick="toggleFAQ('faqContent8', 'chevron8')">
-                                <span class="faq-1-span">What is an FAQ page?</span>
+                                <span class="faq-1-span">What happens if my account gets banned during the boost?</span>
                                 <img id="chevron8"
                                     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent8"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
+                                In the unlikely event that your account is banned due to our services, we offer a comprehensive compensation policy. 
+                                We will work with you to resolve the issue, which may include a full or partial refund or additional services to compensate for any inconvenience caused.
                             </div>
                     </div>
                 </div>
@@ -392,60 +391,60 @@
                     <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="9">
                             <div class="flex cursor-pointer items-center justify-between"
                                 onclick="toggleFAQ('faqContent9', 'chevron9')">
-                                <span class="faq-1-span">What is an FAQ page?</span>
+                                <span class="faq-1-span">What types of boosting services do you offer?</span>
                                 <img id="chevron9"
                                     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent9"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
+                                Myboost.gg offers a variety of boosting services for CS2, Faceit, Esportal, ESEA, including rank boosting, win boosting, placement matches, and specific achievements. 
+                                We also provide personalized coaching sessions to help you improve your skills and strategies.
                             </div>
                     </div>
 
                     <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="10">
                             <div class="flex cursor-pointer items-center justify-between"
                                 onclick="toggleFAQ('faqContent10', 'chevron10')">
-                                <span class="faq-1-span">What is an FAQ page?</span>
+                                <span class="faq-1-span">Can I choose my preferred booster?</span>
                                 <img id="chevron10"
                                     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent10"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
+                                While we do not guarantee specific boosters due to availability, you can request a booster based on your preferences, such as language or region. 
+                                We aim to match you with the best possible booster to meet your needs.
                             </div>
                     </div>
 
                     <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="11">
                             <div class="flex cursor-pointer items-center justify-between"
                                 onclick="toggleFAQ('faqContent11', 'chevron11')">
-                                <span class="faq-1-span">What is an FAQ page?</span>
+                                <span class="faq-1-span">How do I track the progress of my boost?</span>
                                 <img id="chevron5"
                                     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent11"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
+                                You can track the progress of your boost through our secure client area on the myboost.gg website. Here, you can see real-time updates, communicate with your booster, 
+                                and review detailed reports of completed matches.
                             </div>
                     </div>
 
                     <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="12">
                             <div class="flex cursor-pointer items-center justify-between"
                                 onclick="toggleFAQ('faqContent12', 'chevron12')">
-                                <span class="faq-1-span">What is an FAQ page?</span>
+                                <span class="faq-1-span">What if I am not satisfied with the service?</span>
                                 <img id="chevron12"
                                     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent12"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
+                                Customer satisfaction is our priority. If you are not satisfied with the service, please contact our support team. We offer a satisfaction guarantee and will work with you to address any issues, 
+                                which may include revisiting the boost or providing a partial refund.
                             </div>
                     </div>
                 </div>
@@ -454,32 +453,22 @@
                         <div class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white" tabindex="13">
                             <div class="flex cursor-pointer items-center justify-between"
                                 onclick="toggleFAQ('faqContent13', 'chevron13')">
-                                <span class="faq-1-span">What is an FAQ page?</span>
+                                <span class="faq-1-span">What payment methods does MyBoost.gg accept?</span>
                                 <img id="chevron13"
                                     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent13"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
-                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit
-                                interdum, aliquet odio mattis.
+                                Myboost.gg accepts a variety of secure payment methods, including major credit cards (Visa, MasterCard, American Express), PayPal, and other popular online payment systems. 
+                                We ensure that all transactions are processed through secure and encrypted payment gateways to protect your financial information.
                             </div>
                     </div>
                         
                 </div>
 
             </div>
-
-            <div class="frequentlyStill-inner-container">
-                <div class="">
-                    <h5>Still Have Questions?</h5>
-                    <p>Can’t find the answer you’re looking for/ Please chat to our friendly team.</p>
-                </div>
-
-                <a href="/contact"><button class="themebtn-bg">Get In Touch</button></a>
-            </div>
         </div>
-
 
         <x-boostcta></x-boostcta>
 
@@ -491,24 +480,6 @@
 
 
     @push('js')
-
-        @auth
-            <script>
-                window.intercomSettings = {
-                    api_base: "https://api-iam.intercom.io",
-                    app_id: "h6qfo7br",
-                    name: @php print_r(json_encode(Auth::user()->name)); @endphp, // Full name
-                    user_id: @php print_r(json_encode(Auth::user()->id)); @endphp, // a UUID for your user
-                    email: @php print(json_encode(Auth::user()->email)); @endphp, // the email for your user
-                    created_at: "<?php echo strtotime(Auth::user()->created_at) ?>" // Signup date as a Unix timestamp
-                };
-            </script>
-
-            <script>
-                // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/h6qfo7br'
-                (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/h6qfo7br';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-            </script>
-        @endauth
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>

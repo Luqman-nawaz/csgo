@@ -12,6 +12,7 @@
                 <h5>SERVICES</h5>
                 <ul>
                     <li><a href="/csboost">CS2 Boost</a></li>
+                    <li><a href="/premier">CS2 Premier Boost</a></li>
                     <li><a href="/faceit">Faceit Boost</a></li>
                     <li><a href="/esea">ESEA Boost</a></li>
                     <li><a href="/esportal">ESPortal Boost</a></li>
