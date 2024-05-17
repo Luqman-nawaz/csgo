@@ -9,6 +9,18 @@
         <link rel="stylesheet" href="/vendor/css/style.css">
         <!-- slider -->
         @stack('css')
+        <style>
+            .arrow {
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+            }
+            .down {
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+            }
+        </style>
         <!-- slider -->
         <script src="https://cdn.tailwindcss.com"></script>
 
