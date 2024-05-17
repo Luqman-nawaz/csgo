@@ -349,7 +349,7 @@ class BoostController extends Controller
                         'product_data' => [
                             'name' => $stripePriceId,
                         ],
-                        'currency' => 'usd, eur',
+                        'currency' => 'eur',
                         'unit_amount' => $stripeamount,
                     ],
                     'quantity' => 1,
