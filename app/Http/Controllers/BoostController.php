@@ -276,7 +276,7 @@ class BoostController extends Controller
     
         return $request->user()->checkout([$stripePriceId => $quantity],[
             'mode' => 'payment',
-            'payment_method_types' => ['card', 'paypal', 'link', 'klarna', 'sofort'],
+            'payment_method_types' => ['card', 'klarna', 'sofort', 'paypal', 'link'],
             'line_items' => [
                 [
                     'price_data' => [
