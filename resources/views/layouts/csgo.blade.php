@@ -23,6 +23,12 @@
         
         
         @stack('js')
+        <script>
+            function toggleDropdown() {
+                var dropdownContent = document.getElementById("boostDropdown");
+                dropdownContent.style.display === "none" ? dropdownContent.style.display = "flex" : dropdownContent.style.display = "none";
+            }
+        </script>
     </body>
 
 </html>
