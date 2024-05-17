@@ -76,7 +76,7 @@
                                 <span>Boost</span>
                                 <div>&#11167;</div>
                             </div>
-                            <div class="dropdown-content" id="boostDropdown">
+                            <div class="dropdown-content toggleDropDownOnPhone" id="boostDropdown">
                                 <a href="/csboost">CS2 Boost</a>
                                 <a href="/esea">ESEA Boost</a>
                                 <a href="/premier">CS2 Premiere Boost</a>
