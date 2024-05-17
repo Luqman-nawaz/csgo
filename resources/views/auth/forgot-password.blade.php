@@ -10,13 +10,13 @@
         <x-navbar></x-navbar>
         <!-- csgo-Header End -->
 
-        <div class="credentials-main-container">
-            <div class="credentials-centered-container" style="margin-top:7%">
+        <div class="credentials-main-container" style="padding-top:1%">
+            <div class="credentials-centered-container" style="margin-top:15%">
 
                 
 
                 <div class="credentials-left-container">
-                    <img src="/assets/images/Group 1.png" alt="">
+                    <img src="/assets/images/Group 1.png" alt="" style="max-width:70%;">
                 </div>
                 <div class="credentials-right-container">
                     <h2>Forgot Password</h2>

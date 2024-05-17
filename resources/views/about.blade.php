@@ -83,43 +83,40 @@
     </div>
 
     <div class="testimonialsSection-container">
-        <div class="testimonialsSection-inner-container">
-            <h5>TESTIMONIALS</h5>
-            <h2>Let’s hear from happy clients</h2>
-            <div class="center">
-                <div class="Testimonials-card-box">
-                    <h5>Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
-                        interdum, ac aliquet odio mattis. Qorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h5>
-                    <span class="flex items-center gap-3">
-                        <img src="/assets/icons/Avatar.png" alt="">
-                        <h6>Smith J.</h6>
-                    </span>
-                </div>
-                <div class="Testimonials-card-box">
-                    <h5>Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
-                        interdum, ac aliquet odio mattis. Qorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h5>
-                    <span class="flex items-center gap-3">
-                        <img src="/assets/icons/Avatar.png" alt="">
-                        <h6>Smith J.</h6>
-                    </span>
-                </div>
-                <div class="Testimonials-card-box">
-                    <h5>Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
-                        interdum, ac aliquet odio mattis. Qorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h5>
-                    <span class="flex items-center gap-3">
-                        <img src="/assets/icons/Avatar.png" alt="">
-                        <h6>Smith J.</h6>
-                    </span>
+            <div class="testimonialsSection-inner-container">
+                <h5>TESTIMONIALS</h5>
+                <h2>Let’s hear from happy clients</h2>
+                <div class="center">
+                    <div class="Testimonials-card-box">
+                        <h5>The service was fast and very convenient. The boosters were great in person & very professional.</h5>
+                        <br>
+                        <span class="flex items-center gap-3">
+                            <img src="/assets/icons/Avatar.png" alt="">
+                            <h6>Ryan</h6>
+                        </span>
+                    </div>
+                    <div class="Testimonials-card-box">
+                        <h5>Good site. The boosters were great, had a blast being in game with them. Highly Recommended!</h5>
+                        <br>
+                        <span class="flex items-center gap-3">
+                            <img src="/assets/icons/avatar2.svg" alt="">
+                            <h6>Judy Smith</h6>
+                        </span>
+                    </div>
+                    <div class="Testimonials-card-box">
+                        <h5>After experiencing everything for myself, I use MyBoost exclusively. Great service & staff. Recommended.</h5>
+                        <br>
+                        <span class="flex items-center gap-3">
+                            <img src="/assets/icons/avatar1.png" alt="">
+                            <h6>Jake</h6>
+                        </span>
+                    </div>
                 </div>
             </div>
+
+
+
         </div>
-
-
-
-    </div>
 
     <div class="boostNow-container">
         <div class="boostNow-inner-container">

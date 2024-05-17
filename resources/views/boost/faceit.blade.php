@@ -183,51 +183,27 @@
 
                                 <div class="boosting-option-container">
 
-                                    <div class="boosting-option-inner-container">
-
-                                        <div class="boosting-option-img-box">
-                                            <img src="/assets/images/rankImgs/RankIMG1.png" id="faceitelocurrentimage" alt="">
-                                        </div>
-                                        <div class="custom-select">
-                                            <label for="select">Label</label>
-                                            <select id="select" class="faceitelocurrent" name="current_level" onchange="updatefaceitelocurrentimage()">
-                                                        <option value="Level 1"><span>Level 1</span></option>
-                                                        <option value="Level 2">Level 2</option>
-                                                        <option value="Level 3">Level 3</option>
-                                                        <option value="Level 4">Level 4</option>
-                                                        <option value="Level 5">Level 5</option>
-                                                        <option value="Level 6">Level 6</option>
-                                                        <option value="Level 7">Level 7</option>
-                                                        <option value="Level 8">Level 8</option>
-                                                        <option value="Level 9">Level 9</option>
-                                                        <option value="Level 10">Level 10</option>
-                                            </select>
+                                    <div class="counter-box">
+                                            <label for="counter1">Current Faceit Elo</label>
+                                            <div class="counter">
+                                                <button type="button" class="minus" data-counter="counter1"><img
+                                                        src="/assets/icons/MinusCircle.png" alt=""></button>
+                                                <input name="current_level" type="number" class="placementrangecurrent value" id="counter1" value="1" onchange="updateRankBoostPriceRequired()" min="1" max="35000" required>
+                                                <button type="button" class="plus" data-counter="counter1"><img
+                                                        src="/assets/icons/PlusCircle.png" alt=""></button>
+                                            </div>
                                         </div>
 
-
-
-                                    </div>
-
-                                    <div class="boosting-rankConverttoImg-box">
-                                        <img src="/assets/icons/CaretCircleDoubleRight.png" alt="">
-                                    </div>
-
-                                    <div class="boosting-option-inner-container">
-
-                                        <div class="custom-select">
-                                            <label for="select">Label</label>
-                                            <select id="select" class="faceitelorequired" onchange="updatefaceitelopricerequired()" name="desired_level">
-                                                <option value="200"><span>200</span></option>
-                                                <option value="400">400</option>
-                                                <option value="600">600</option>
-                                                <option value="800">800</option>
-                                                <option value="1000">1000</option>
-                                            </select>
+                                        <div class="counter-box">
+                                            <label for="counter1">Required Faceit Elo</label>
+                                            <div class="counter">
+                                                <button type="button" class="minus" data-counter="counter1"><img
+                                                        src="/assets/icons/MinusCircle.png" alt=""></button>
+                                                <input name="desired_level" type="number" class="placementrangerequired value" id="counter1" value="1" onchange="updateRankBoostPriceRequired()" min="1" max="35000" required>
+                                                <button type="button" class="plus" data-counter="counter1"><img
+                                                        src="/assets/icons/PlusCircle.png" alt=""></button>
+                                            </div>
                                         </div>
-
-
-
-                                    </div>
 
                                 </div>
 

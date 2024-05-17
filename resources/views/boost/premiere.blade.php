@@ -157,6 +157,13 @@
                                                 <label for="select">Label</label>
                                                 <select id="select" class="placementcurrent" onchange="updateplacementImage()" name="current_level">
                                                     <option value="Unrated"><span>Unrated</span></option>
+                                                    <option value="Grey"><span>Grey</span></option>
+                                                    <option value="Cyan"><span>Cyan</span></option>
+                                                    <option value="Blue"><span>Blue</span></option>
+                                                    <option value="Purple"><span>Purple</span></option>
+                                                    <option value="Pink"><span>Pink</span></option>
+                                                    <option value="Red"><span>Red</span></option>
+                                                    <option value="Gold"><span>Gold</span></option>
                                                 </select>
                                             </div>
 
@@ -414,8 +421,11 @@
 
         //rank boost
 
-        function placementrangecurrent(){
-
+        function updateplacementImage(){
+                var selectedOption = document.querySelector('.placementcurrent').value;
+                // Rank Dropdown Img Change
+                var rankImage = document.getElementById("placementcurrentimage");
+                rankImage.src = `/ranks/premier/${selectedOption}.png`;
         }
 
         function updateRankBoostPriceRequired(){

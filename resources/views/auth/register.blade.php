@@ -10,10 +10,10 @@
             <x-navbar></x-navbar>
 
             <div class="credentials-main-container credentials-signup-container" style="padding-top:2%;">
-                <div class="credentials-centered-container" style="margin-top:7%">
+                <div class="credentials-centered-container" style="margin-top:10%">
 
                     <div class="credentials-left-container">
-                        <img src="/assets/images/Logo.png" alt="">
+                        <img src="/assets/logo.svg" alt="">
                     </div>
                     <div class="credentials-right-container">
                         <h2>Create Account</h2>

@@ -12,10 +12,10 @@
             <x-navbar></x-navbar>
     
             <div class="credentials-main-container">
-                <div class="credentials-centered-container" style="margin-top:7%">
+                <div class="credentials-centered-container" style="margin-top:15%">
     
                     <div class="credentials-left-container">
-                        <img src="/assets/images/Logo.png" alt="">
+                        <img src="/assets/logo.svg" alt="">
                     </div>
                     <div class="credentials-right-container">
                         <h2>Login</h2>
