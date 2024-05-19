@@ -493,8 +493,8 @@
 
     </script>
     <script>
-        €(document).ready(function () {
-            €('.center').slick({
+        $(document).ready(function () {
+            $('.center').slick({
                 centerMode: true,
                 dots: true,
                 centerPadding: '60px',
