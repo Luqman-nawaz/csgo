@@ -157,7 +157,7 @@
                                         <div class="boosting-option-inner-container">
 
                                             <div class="boosting-option-img-box">
-                                                <img src="/ranks/premier/unrated.png" id="placementcurrentimage" alt="">
+                                                <img src="/ranks/premier/Unrated.png" id="placementcurrentimage" alt="">
                                             </div>
                                             <div class="custom-select">
                                                 <label for="select">Label</label>
