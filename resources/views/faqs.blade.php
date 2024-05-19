@@ -2,6 +2,9 @@
     @section('title') <title>MyBoost.GG - Best CS2 Account Boosting Service</title> @endsection
 
     @push('css') 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
         <style>
             .invisible {
                 display: none;
@@ -15,8 +18,6 @@
                 transform: rotate(180deg);
             }
         </style>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     @endpush
     
     @section('content')
@@ -24,7 +25,13 @@
     <div class="landing-page-container">
         <x-navbar></x-navbar>
 
-        <div class="frequeantly-tabs-conatiner">
+        <div class="frequentlySection-container">
+            <div class="frequentlySection-inner-container">
+                <h5>FREQUENTLY ASKED QUESTIONS</h5>
+                <h2>Feel free to explore queries and find answers! </h2>
+            </div>
+
+            <div class="frequeantly-tabs-conatiner">
                 <div class="tab">
                     <button class="tablinks" onclick="openCity(event, 'general')" id="defaultOpen">GENERAL</button>
                     <button class="tablinks" onclick="openCity(event, 'TRUST&SAFETY')">TRUST & SAFETY</button>
@@ -239,15 +246,61 @@
                 </div>
 
             </div>
+        </div>
 
         <x-boostcta></x-boostcta>
 
+        
         <x-footer></x-footer>
 
     </div>
     @endsection
 
+
     @push('js')
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="/vendor/js/tabs.js"></script>
+    <!-- <script src="app.js"></script> -->
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.style.left = sidebar.style.left === '0px' ? '-280px' : '0px';
+        }
+
+    </script>
+    <script>
+        €(document).ready(function () {
+            €('.center').slick({
+                centerMode: true,
+                dots: true,
+                centerPadding: '60px',
+                slidesToShow: 1,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+
+    </script>
     <script>
         function toggleFAQ(contentId, chevronId) {
             const chevron = document.getElementById(chevronId);
@@ -265,14 +318,4 @@
             }
         }
     </script>
-        <script>
-            function toggleSidebar() {
-                var sidebar = document.getElementById('sidebar');
-                sidebar.style.left = sidebar.style.left === '0px' ? '-280px' : '0px';
-            }
-
-        </script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-        <script src="/vendor/js/tabs.js"></script>
     @endpush
