@@ -113,7 +113,7 @@
                                 <div class="boosting-pricing-conatiner">
 
                                     <div class="boosting-pricing-txt-conatiner">
-                                        <span>Final Price <h3 id="priceTag">$56</h3></span>
+                                        <span>Final Price <h3 id="priceTag">€56</h3></span>
                                         <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                                 alt=""></button>
                                     </div>
@@ -219,7 +219,7 @@
                                 <div class="boosting-pricing-conatiner">
 
                                     <div class="boosting-pricing-txt-conatiner">
-                                        <span>Final Price <h3 id="DemoCoachpriceTag">$56</h3></span>
+                                        <span>Final Price <h3 id="DemoCoachpriceTag">€56</h3></span>
                                         <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                                 alt=""></button>
                                     </div>
@@ -325,7 +325,7 @@
                                 <div class="boosting-pricing-conatiner">
 
                                     <div class="boosting-pricing-txt-conatiner">
-                                        <span>Final Price <h3 id="CoachpriceTag">$56</h3></span>
+                                        <span>Final Price <h3 id="CoachpriceTag">€56</h3></span>
                                         <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                                 alt=""></button>
                                     </div>
@@ -431,7 +431,7 @@
                                 <div class="boosting-pricing-conatiner">
 
                                     <div class="boosting-pricing-txt-conatiner">
-                                        <span>Final Price <h3 id="TeamCoachpriceTag">$56</h3></span>
+                                        <span>Final Price <h3 id="TeamCoachpriceTag">€56</h3></span>
                                         <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                                 alt=""></button>
                                     </div>
@@ -605,7 +605,7 @@
 
             var totalAmount = (reviews * 20) * (1 + additionalAmount);
             
-            document.getElementById("priceTag").innerText = "$" + totalAmount.toFixed(2);
+            document.getElementById("priceTag").innerText = "€" + totalAmount.toFixed(2);
             
         }
 
@@ -636,7 +636,7 @@
 
                 var totalAmount = (reviews * 20) * (1 + additionalAmount);
                 
-                document.getElementById("DemoCoachpriceTag").innerText = "$" + totalAmount.toFixed(2);
+                document.getElementById("DemoCoachpriceTag").innerText = "€" + totalAmount.toFixed(2);
         }
 
         function updatetab3minus(){
@@ -666,7 +666,7 @@
 
                 var totalAmount = (reviews * 20) * (1 + additionalAmount);
                 
-                document.getElementById("CoachpriceTag").innerText = "$" + totalAmount.toFixed(2);
+                document.getElementById("CoachpriceTag").innerText = "€" + totalAmount.toFixed(2);
    
         }
 
@@ -697,7 +697,7 @@
 
                 var totalAmount = (reviews * 20) * (1 + additionalAmount);
                 
-                document.getElementById("TeamCoachpriceTag").innerText = "$" + totalAmount.toFixed(2);
+                document.getElementById("TeamCoachpriceTag").innerText = "€" + totalAmount.toFixed(2);
             
         }
     </script>

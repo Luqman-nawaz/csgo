@@ -161,7 +161,7 @@
                         <div class="boosting-pricing-conatiner">
 
                             <div class="boosting-pricing-txt-conatiner">
-                                <span>Final Price <h3 id="rankboostprice">$56</h3></span>
+                                <span>Final Price <h3 id="rankboostprice">€56</h3></span>
                                 <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                         alt=""></button>
                             </div>
@@ -285,7 +285,7 @@
                             <div class="boosting-pricing-conatiner">
 
                                 <div class="boosting-pricing-txt-conatiner">
-                                    <span>Final Price <h3 id="winboostprice">$56</h3></span>
+                                    <span>Final Price <h3 id="winboostprice">€56</h3></span>
                                     <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                             alt=""></button>
                                 </div>
@@ -432,7 +432,7 @@
                         <div class="boosting-pricing-conatiner">
 
                             <div class="boosting-pricing-txt-conatiner">
-                                <span>Final Price <h3 id="wingmanboostprice">$56</h3></span>
+                                <span>Final Price <h3 id="wingmanboostprice">€56</h3></span>
                                 <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                         alt=""></button>
                             </div>
@@ -556,7 +556,7 @@
                             <div class="boosting-pricing-conatiner">
 
                                 <div class="boosting-pricing-txt-conatiner">
-                                    <span>Final Price <h3 id="placementprice">$56</h3></span>
+                                    <span>Final Price <h3 id="placementprice">€56</h3></span>
                                     <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                             alt=""></button>
                                 </div>
@@ -697,7 +697,7 @@
                         <div class="boosting-pricing-conatiner">
 
                             <div class="boosting-pricing-txt-conatiner">
-                                <span>Final Price <h3 id="dangerzoneprice">$56</h3></span>
+                                <span>Final Price <h3 id="dangerzoneprice">€56</h3></span>
                                 <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                         alt=""></button>
                             </div>
@@ -912,7 +912,7 @@
                 }
 
                 var totalAmount = (reviews * 7) * (1 + additionalAmount);
-                document.getElementById("winboostprice").innerText = "$" + totalAmount.toFixed(2);
+                document.getElementById("winboostprice").innerText = "€" + totalAmount.toFixed(2);
         }
         
 
@@ -970,7 +970,7 @@
 
                 var totalPrice = prices[selectedOption] * (1 + additionalAmount);
 
-                document.getElementById("wingmanboostprice").innerText = "$" + totalPrice.toFixed(2);
+                document.getElementById("wingmanboostprice").innerText = "€" + totalPrice.toFixed(2);
 
                 // Rank Dropdown Img Change
                 var rankImage = document.getElementById("wingmanboostimagerequired");
@@ -1019,7 +1019,7 @@
                 }
 
                 var totalAmount = (reviews * 7) * (1 + additionalAmount);
-                document.getElementById("placementprice").innerText = "$" + totalAmount.toFixed(2);
+                document.getElementById("placementprice").innerText = "€" + totalAmount.toFixed(2);
         }
 
         //Danger Zone Boost
@@ -1066,7 +1066,7 @@
 
                 var totalPrice = prices[selectedOption] * (1 + additionalAmount);
 
-                document.getElementById("dangerzoneprice").innerText = "$" + totalPrice.toFixed(2);
+                document.getElementById("dangerzoneprice").innerText = "€" + totalPrice.toFixed(2);
 
                 // Rank Dropdown Img Change
                 var rankImage = document.getElementById("dangerzoneimagerequired");
@@ -1124,7 +1124,7 @@
 
                 var totalPrice = prices[selectedOption] * (1 + additionalAmount);
 
-                document.getElementById("rankboostprice").innerText = "$" + totalPrice.toFixed(2);
+                document.getElementById("rankboostprice").innerText = "€" + totalPrice.toFixed(2);
 
                 // Rank Dropdown Img Change
                 var rankImage = document.getElementById("rankImage1");

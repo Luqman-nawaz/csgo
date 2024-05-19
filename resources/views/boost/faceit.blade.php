@@ -141,7 +141,7 @@
                                     <div class="boosting-pricing-conatiner">
 
                                         <div class="boosting-pricing-txt-conatiner">
-                                            <span>Final Price <h3 id="faceitprice">$56</h3></span>
+                                            <span>Final Price <h3 id="faceitprice">€56</h3></span>
                                             <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                                     alt=""></button>
                                         </div>
@@ -245,7 +245,7 @@
                                 <div class="boosting-pricing-conatiner">
 
                                     <div class="boosting-pricing-txt-conatiner">
-                                        <span>Final Price <h3 id="faceiteloprice">$56</h3></span>
+                                        <span>Final Price <h3 id="faceiteloprice">€56</h3></span>
                                         <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                                 alt=""></button>
                                     </div>
@@ -365,7 +365,7 @@
                                     <div class="boosting-pricing-conatiner">
 
                                         <div class="boosting-pricing-txt-conatiner">
-                                            <span>Final Price <h3 id="placementprice">$56</h3></span>
+                                            <span>Final Price <h3 id="placementprice">€56</h3></span>
                                             <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                                     alt=""></button>
                                         </div>
@@ -555,7 +555,7 @@
 
             var totalPrice = prices[selectedOption] * (1 + additionalAmount);
 
-            document.getElementById("faceitprice").innerText = "$" + totalPrice.toFixed(2);
+            document.getElementById("faceitprice").innerText = "€" + totalPrice.toFixed(2);
 
             // Rank Dropdown Img Change
             var rankImage = document.getElementById("faceitrequiredimage");
@@ -596,7 +596,7 @@
 
             var totalPrice = prices[selectedOption] * (1 + additionalAmount);
 
-            document.getElementById("faceiteloprice").innerText = "$" + totalPrice.toFixed(2);
+            document.getElementById("faceiteloprice").innerText = "€" + totalPrice.toFixed(2);
 
             // Rank Dropdown Img Change
             var rankImage = document.getElementById("faceitelorequiredimage");
@@ -645,7 +645,7 @@
             }
 
             var totalAmount = (reviews * 10) * (1 + additionalAmount);
-            document.getElementById("placementprice").innerText = "$" + totalAmount.toFixed(2);
+            document.getElementById("placementprice").innerText = "€" + totalAmount.toFixed(2);
     }
     </script>
     <script>

@@ -106,7 +106,7 @@
                                     <div class="boosting-pricing-conatiner">
 
                                         <div class="boosting-pricing-txt-conatiner">
-                                            <span>Final Price <h3 id="rankboostprice">$56</h3></span>
+                                            <span>Final Price <h3 id="rankboostprice">€56</h3></span>
                                             <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                                     alt=""></button>
                                         </div>
@@ -223,7 +223,7 @@
                                     <div class="boosting-pricing-conatiner">
 
                                         <div class="boosting-pricing-txt-conatiner">
-                                            <span>Final Price <h3 id="placementprice">$56</h3></span>
+                                            <span>Final Price <h3 id="placementprice">€56</h3></span>
                                             <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                                     alt=""></button>
                                         </div>
@@ -409,7 +409,7 @@
                 }
 
                 var totalAmount = (reviews * 7) * (1 + additionalAmount);
-                document.getElementById("placementprice").innerText = "$" + totalAmount.toFixed(2);
+                document.getElementById("placementprice").innerText = "€" + totalAmount.toFixed(2);
         }
 
         //rank boost
@@ -486,7 +486,7 @@
 
             var totalPrice = price * (1 + additionalAmount);
 
-            document.getElementById("rankboostprice").innerText = "$" + totalPrice.toFixed(2);
+            document.getElementById("rankboostprice").innerText = "€" + totalPrice.toFixed(2);
 
         }
 
