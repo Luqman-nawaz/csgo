@@ -50,7 +50,7 @@
             <div class="flex setDirection-input gap-4 mt-5">
                 <a href="/register"><button class="themebtn-bg">Create An Account!</button></a>
                 <a href="/login"><button class="themebtn-bg">Login</button></a>
-                <a href="/csboost"><button class="themebtn-bg">Boost Account</button></a>
+                <a href="/#boostingservices"><button class="themebtn-bg">Boost Account</button></a>
             </div>
         </div>
         <div class="flex justify-end">

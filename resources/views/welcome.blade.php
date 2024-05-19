@@ -412,6 +412,7 @@
                                     class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180" />
                             </div>
                             <div id="faqContent10"
+                            style="font-family:Karla;"
                                 class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
                                 While we do not guarantee specific boosters due to availability, you can request a booster based on your preferences, such as language or region. 
                                 We aim to match you with the best possible booster to meet your needs.
