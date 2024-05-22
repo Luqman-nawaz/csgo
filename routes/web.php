@@ -9,6 +9,8 @@ use App\Http\Controllers\PaymentController;
 use App\Mail\registered;
 use App\Models\payment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use Laravel\Cashier\Cashier;
@@ -36,6 +38,13 @@ Route::get('/faqs', [BoostController::class, 'faqs']);
 
 Route::get('/mail', function() {
     Mail::to('luqmanalihrp@gmail.com')->send(new registered());
+});
+
+Route::get('/coin', function(){
+    
+    $req = array();
+
+
 });
 
 

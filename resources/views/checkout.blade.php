@@ -31,7 +31,7 @@
 
                 <div class="rightmenu-container w-5/12 flex justify-end items-center gap-4">
 
-                    <a href="/csgoboost">
+                    <a href="/csboost">
                         <button class="themebtn-bg">PLACE NEW ORDER<svg xmlns="http://www.w3.org/2000/svg" width="24"
                                 height="24" viewBox="0 0 24 24" fill="none">
                                 <path
@@ -133,13 +133,54 @@
                             </div>
                         </div>
 
-                        <div class="flex items-center gap-3 mt-5">
-                            <button class="themebtn-bg">Proceed to Payment</button>
+                        <div class="boosting-main-container" style="padding: 20px 0px 0px 0px;">
+                            <div class="boosting-centered-container" style="padding: 0px 24px 10px 24px;">
+                                <div class="boostingTabContent" style="padding: 0px 0px 0px 0px;">
+
+                                            <div class="boosting-additional-conatiner">
+                                                <h5 style="margin:0;">Payment Method</h5>
+                                                <span>
+                                                    <img src="/assets/icons/Info.png" alt="">
+                                                    <p>With credit card, you can pay with Giropay, Paypal or Google Pay.</p>
+                                                </span>
+
+                                                <div class="boosting-additionalInput-conatiner">
+
+                                                    <label>
+                                                        <input type="radio" value="card" id="CS2RankBoostcheckbox1" name="payment_method">
+                                                        Card
+                                                        <span>(PayPal, Giropay, Google Pay)</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" value="crypto" id="CS2RankBoostcheckbox2" name="payment_method">
+                                                        Crypto
+                                                        <span>(25+ currencies supported)</span>
+                                                    </label>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="boosting-pricing-conatiner">
+
+                                                <div class="boosting-pricing-txt-conatiner">
+                                                    <span>Price to pay <h3 id="rankboostprice">€{{ $order_amount }}</h3></span>
+                                                    <button type="submit" class="themebtn-bg gap-3">Pay Now <img src="/assets/icons/circleArrow.png"
+                                                            alt=""></button>
+                                                </div>
+
+                                            </div>
+
+                                </div>
+                            </div>
                         </div>
+
                     </form>
 
             </div>
         </div>
+
+        
 
         <x-footer></x-footer>
 

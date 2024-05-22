@@ -10,6 +10,9 @@ use App\Models\orderamounts;
 use App\Models\payment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Hexters\CoinPayment\CoinPayment;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Http;
 use PDO;
 
 class BoostController extends Controller
@@ -321,44 +324,91 @@ class BoostController extends Controller
                 $total_amount = $total_amount + $side_amount;
             }
 
-        $payment = array(
-            'order_id' => $order_id,
-            'name' => $request->name,
-            'skype_id' => $request->skype_id,
-            'discord_username' => $request->discord_username,
-            'available_time' => $request->available_time,
-            'account_data' => $request->account_data,
-            'payment_method' => 'stripe',
-            'boost_order_price' => $order_amount,
-            'total_amount' => $total_amount,
-            'order_status' => 'incomplete',
-        );
+            //stripe payment
+            if($request->payment_method == 'card'){
 
-        payment::create($payment);
+                $payment = array(
+                    'order_id' => $order_id,
+                    'name' => $request->name,
+                    'skype_id' => $request->skype_id,
+                    'discord_username' => $request->discord_username,
+                    'available_time' => $request->available_time,
+                    'account_data' => $request->account_data,
+                    'payment_method' => 'stripe',
+                    'boost_order_price' => $order_amount,
+                    'total_amount' => $total_amount,
+                    'order_status' => 'incomplete',
+                );
 
-        $stripePriceId = 'price_1OivADJAQvzmTijpmLbSd4t3';
-        $quantity = 1;
-        $stripeamount = $total_amount * 100;
+                payment::create($payment);
 
-        return $request->user()->checkout([$stripePriceId => $quantity],[
-            'mode' => 'payment',
-            'payment_method_types' => ['card', 'giropay', 'paypal', 'link'],
-            'line_items' => [
-                [
-                    'price_data' => [
-                        'product_data' => [
-                            'name' => $stripePriceId,
-                        ],
-                        'currency' => 'eur',
-                        'unit_amount' => $stripeamount,
+                $stripePriceId = 'price_1OivADJAQvzmTijpmLbSd4t3';
+                $quantity = 1;
+                $stripeamount = $total_amount * 100;
+
+                return $request->user()->checkout([$stripePriceId => $quantity],[
+                    'mode' => 'payment',
+                    'payment_method_types' => ['card', 'giropay', 'paypal', 'link'],
+                    'line_items' => [
+                        [
+                            'price_data' => [
+                                'product_data' => [
+                                    'name' => $stripePriceId,
+                                ],
+                                'currency' => 'eur',
+                                'unit_amount' => $stripeamount,
+                            ],
+                            'quantity' => 1,
+                        ]
                     ],
-                    'quantity' => 1,
-                ]
-            ],
-            'metadata' => ['order_id' => $order_id],
-            'success_url' => route('home').'?session_id={CHECKOUT_SESSION_ID}',
-            'cancel_url' => route('checkout-cancel'),
-        ]);
+                    'metadata' => ['order_id' => $order_id],
+                    'success_url' => route('home').'?session_id={CHECKOUT_SESSION_ID}',
+                    'cancel_url' => route('checkout-cancel'),
+                ]);
+
+            }else{
+                //crypto payment
+                $payment = array(
+                    'order_id' => $order_id,
+                    'name' => $request->name,
+                    'skype_id' => $request->skype_id,
+                    'discord_username' => $request->discord_username,
+                    'available_time' => $request->available_time,
+                    'account_data' => $request->account_data,
+                    'payment_method' => 'crypto',
+                    'boost_order_price' => $order_amount,
+                    'total_amount' => $total_amount,
+                    'order_status' => 'incomplete',
+                );
+
+
+                $req['version'] = 1;
+                $req['cmd'] = 'create_transaction';
+                $req['amount'] = $total_amount;
+                $req['currency1'] = 'EUR';
+                $req['currency2'] = 'BTC';
+                $req['buyer_email'] = Auth::user()->email;
+                $req['item_name'] = 'Boost';
+                $req['item_number'] = $order_id;
+                $req['ipn_url'] = 'Boost';
+                $req['success_url'] = '/checkout/cryptosuccess';
+                $req['cancel_url'] = '/checkout/cryptofail';
+            
+                $req['key'] = '9426644aed1497fbbdea883c0284ee8a87e3424ecdb7d60dabdfb0418f965c8b';
+                $req['format'] = 'json';
+                $post_data = Arr::query($req);
+            
+                $hmac = hash_hmac('sha512', $post_data, '8bf7577fa582C8e4B158659F45b8af05ef623d8B87EB9976d8A297Ef406DbF08');
+            
+                $response = Http::withHeaders([
+                    'HMAC' => $hmac,
+                ])->asForm()->post('https://www.coinpayments.net/api.php', $req);
+                    
+                $json = json_decode($response, true);
+            
+                return redirect($json['result']['checkout_url']);
+
+            }
 
     }   
 }
