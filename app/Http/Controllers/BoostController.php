@@ -6,6 +6,7 @@ use App\Models\boost;
 use App\Models\coaching;
 use App\Models\coachingpayment;
 use App\Models\contact;
+use App\Models\cryptopayment;
 use App\Models\orderamounts;
 use App\Models\payment;
 use Illuminate\Http\Request;
@@ -381,6 +382,7 @@ class BoostController extends Controller
                     'order_status' => 'incomplete',
                 );
 
+                $createdpayment = payment::create($payment);
 
                 $req['version'] = 1;
                 $req['cmd'] = 'create_transaction';
@@ -391,8 +393,8 @@ class BoostController extends Controller
                 $req['item_name'] = 'Boost';
                 $req['item_number'] = $order_id;
                 $req['ipn_url'] = 'Boost';
-                $req['success_url'] = '/checkout/cryptosuccess';
-                $req['cancel_url'] = '/checkout/cryptofail';
+                $req['success_url'] = '/checkout/cryptosuccess/'.$order_id;
+                $req['cancel_url'] = '/checkout/cryptofail/'.$order_id;
             
                 $req['key'] = '9426644aed1497fbbdea883c0284ee8a87e3424ecdb7d60dabdfb0418f965c8b';
                 $req['format'] = 'json';
@@ -405,6 +407,15 @@ class BoostController extends Controller
                 ])->asForm()->post('https://www.coinpayments.net/api.php', $req);
                     
                 $json = json_decode($response, true);
+
+                $cryptopayment = array(
+                    'order_id' => $order_id,
+                    'payment_id' => $createdpayment->id,
+                    'transaction_id' => $json['result']['txn_id'],
+                    'payment_url' => $json['result']['checkout_url'],
+                );
+
+                cryptopayment::create($cryptopayment);
             
                 return redirect($json['result']['checkout_url']);
 

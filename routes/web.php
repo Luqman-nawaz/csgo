@@ -36,18 +36,6 @@ Route::get('/privacy', function () {
 
 Route::get('/faqs', [BoostController::class, 'faqs']);
 
-Route::get('/mail', function() {
-    Mail::to('luqmanalihrp@gmail.com')->send(new registered());
-});
-
-Route::get('/coin', function(){
-    
-    $req = array();
-
-
-});
-
-
 Route::get('/csboost', [BoostController::class, 'csgoboost']);
 Route::get('/faceit', [BoostController::class, 'faceit']);
 Route::get('/esea', [BoostController::class, 'esea']);
@@ -69,6 +57,8 @@ Route::middleware([
 ])->group(function () {
 
     Route::get('/checkout/success', [PaymentController::class, 'success'])->name('home');
+    Route::get('/checkout/cryptosuccess/{id}', [PaymentController::class, 'cryptosuccess'])->name('cryptohome');
+    Route::get('/checkout/cryptofail/{id}', [PaymentController::class, 'cryptofail'])->name('cryptofail');
 
     Route::get('/dashboard', function () {
         return view('dashboard');

@@ -17,7 +17,13 @@
             
             <div class="dashboard-main-container">
                 <div class="dashboard-centered-container">
-                    
+
+                    @if (session('status'))
+                        <div class="dashboard-userInfoMain-container">
+                            <h5 style="text-align:center;">{{ session('status') }}</h5>
+                        </div>
+                    @endif
+
                     @if(App\Models\boost::where('user_id', Auth::id())->get()->count() == 0)
                         
                     <h2>Orders</h2>
@@ -113,7 +119,12 @@
                                                     @if($orders->payment->order_status != 'completed' && $orders->payment->order_status != 'delivered')
                                                         <a href="/checkout/{{$orders->id}}"><span class="trans-pill">Pay Now!</span></a>
                                                     @endif
-                                                    <a href="/csgoboost"><span class="trans-pill">Order Again</span></a>
+                                                    @if($orders->payment->payment_method == 'crypto')
+
+                                                        <a href="/checkout/cryptosuccess/{{ $orders->id }}"><span class="trans-pill">Already paid?</span></a>
+                                                    @else
+                                                        <a href="/csgoboost"><span class="trans-pill">Order Again</span></a>
+                                                    @endif
                                                 </td>
                                             </tr>
                                     @endforeach
