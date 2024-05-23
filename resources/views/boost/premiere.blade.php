@@ -358,6 +358,11 @@
 
         function updateplacement(){
                 var reviews = document.querySelector('.placementrange').value;
+
+                if(reviews > 10){
+                    reviews = 10;
+                    document.querySelector('.placementrange').value = 10;
+                }
                 
                 var additionalAmount = 0;
 

@@ -192,10 +192,10 @@
                                     <div class="counter-box">
                                             <label for="counter1">Current Faceit Elo</label>
                                             <div class="counter">
-                                                <button type="button" class="minus" data-counter="counter1"><img
+                                                <button type="button" class="minus" onclick="updatetab2minus();"><img
                                                         src="/assets/icons/MinusCircle.png" alt=""></button>
-                                                <input name="current_level" type="number" class="placementrangecurrent value" id="counter1" value="1" onchange="updateRankBoostPriceRequired()" min="1" max="35000" required>
-                                                <button type="button" class="plus" data-counter="counter1"><img
+                                                <input name="current_level" type="number" class="placementrangecurrent value" id="counter1" value="0" onchange="updatefaceitelopricerequired()" min="1" max="5000" required>
+                                                <button type="button" class="plus" onclick="updatetab2plus();"><img
                                                         src="/assets/icons/PlusCircle.png" alt=""></button>
                                             </div>
                                         </div>
@@ -203,10 +203,10 @@
                                         <div class="counter-box">
                                             <label for="counter1">Required Faceit Elo</label>
                                             <div class="counter">
-                                                <button type="button" class="minus" data-counter="counter1"><img
+                                                <button type="button" class="minus" onclick="updatetab3minus();"><img
                                                         src="/assets/icons/MinusCircle.png" alt=""></button>
-                                                <input name="desired_level" type="number" class="placementrangerequired value" id="counter1" value="1" onchange="updateRankBoostPriceRequired()" min="1" max="35000" required>
-                                                <button type="button" class="plus" data-counter="counter1"><img
+                                                <input name="desired_level" type="number" class="placementrangerequired value" id="counter1" value="0" onchange="updatefaceitelopricerequired()" min="1" max="5000" required>
+                                                <button type="button" class="plus" onclick="updatetab3plus();"><img
                                                         src="/assets/icons/PlusCircle.png" alt=""></button>
                                             </div>
                                         </div>
@@ -527,24 +527,53 @@
             rankImage.src = `/ranks/faceit/${selectedOption}.svg`;
     }
 
-    //faceit elo
-    function updatefaceitelocurrentimage(){
-            var selectedOption = document.querySelector(".faceitelocurrent").value;
-                // Rank Dropdown Img Change
-            var rankImage = document.getElementById("faceitelocurrentimage");
-            rankImage.src = `/ranks/faceit/${selectedOption}.svg`;
-    }
+        function updatetab2minus(){
+            var reviews = document.querySelector('.placementrangecurrent').value;
+            let newvalue = +reviews - 25;
+            document.querySelector('.placementrangecurrent').value = newvalue;
+
+            updatefaceitelopricerequired();
+        }
+
+        function updatetab2plus(){
+            var reviews = document.querySelector('.placementrangecurrent').value;
+            let newvalue = +reviews + 25;
+            document.querySelector('.placementrangecurrent').value = newvalue;
+
+            updatefaceitelopricerequired();
+        }
+
+        function updatetab3minus(){
+            var reviews = document.querySelector('.placementrangerequired').value;
+            let newvalue = +reviews - 25;
+            document.querySelector('.placementrangerequired').value = newvalue;
+
+            updatefaceitelopricerequired();
+        }
+
+        function updatetab3plus(){
+            var reviews = document.querySelector('.placementrangerequired').value;
+            let newvalue = +reviews + 25;
+            document.querySelector('.placementrangerequired').value = newvalue;
+
+            updatefaceitelopricerequired();
+        }
 
     function updatefaceitelopricerequired(){
-            var selectedOption = document.querySelector(".faceitelorequired").value;
-            var prices = {
-                "200": 10.00,
-                "400": 20.00,
-                "600": 30.00,
-                "800": 40.00,
-                "1000": 50.00,
-            };
+            var currentelo = document.querySelector(".placementrangecurrent").value;
+            var requiredelo = document.querySelector('.placementrangerequired').value;
+
+            if(+currentelo >= +requiredelo){
+                var reviews = document.querySelector('.placementrangecurrent').value;
+                let newvalue = +reviews + 25;
+                document.querySelector('.placementrangerequired').value = newvalue;
+                requiredelo = newvalue;
+            }
+
+            difference = +requiredelo - +currentelo;
             
+            var amount = difference * 0.05;
+
             var additionalAmount = 0;
 
             if (document.getElementById("faceitelocheckbox1").checked) {
@@ -559,13 +588,9 @@
                 additionalAmount += 0.20;
             }
 
-            var totalPrice = prices[selectedOption] * (1 + additionalAmount);
+            var totalPrice = amount * (1 + additionalAmount);
 
             document.getElementById("faceiteloprice").innerText = "€" + totalPrice.toFixed(2);
-
-            // Rank Dropdown Img Change
-            var rankImage = document.getElementById("faceitelorequiredimage");
-            rankImage.src = `/ranks/faceit/${selectedOption}.svg`;
     }
 
     //faceit win
@@ -636,5 +661,4 @@
         }
     </script>
     <script src="/vendor/js/boostDropdown.js"></script>
-    <script src="/vendor/js/counter.js"></script>
 @endpush

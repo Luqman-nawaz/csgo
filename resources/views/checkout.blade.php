@@ -148,7 +148,7 @@
 
                                                     <label>
                                                         <input type="radio" value="card" id="CS2RankBoostcheckbox1" name="payment_method">
-                                                        Card
+                                                        Stripe
                                                         <span>(PayPal, Giropay, Google Pay)</span>
                                                     </label>
                                                     <label>
@@ -164,7 +164,7 @@
                                             <div class="boosting-pricing-conatiner">
 
                                                 <div class="boosting-pricing-txt-conatiner">
-                                                    <span>Price to pay <h3 id="rankboostprice">€{{ $order_amount }}</h3></span>
+                                                    <span>Price to pay <h3 id="rankboostprice">€{{ $total_amount }}</h3></span>
                                                     <button type="submit" class="themebtn-bg gap-3">Pay Now <img src="/assets/icons/circleArrow.png"
                                                             alt=""></button>
                                                 </div>

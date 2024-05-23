@@ -54,8 +54,6 @@
 
                     <div class="boostingTabContent">
 
-                    
-
                         <div class="boosting-option-container">
 
                             <div class="boosting-option-inner-container">

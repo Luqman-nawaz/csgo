@@ -106,7 +106,7 @@
                                                     {{$orders->desired_level}}
                                                 </td>
                                                 <td class="px-6 py-4">
-                                                    ${{$orders->payment->total_amount}}
+                                                    €{{$orders->payment->total_amount}}
                                                 </td>
                                                 <td class="px-6 py-4">
                                                     <span class="completed-pill">

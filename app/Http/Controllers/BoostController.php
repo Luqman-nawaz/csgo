@@ -15,6 +15,7 @@ use Hexters\CoinPayment\CoinPayment;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Http;
 use PDO;
+use stdClass;
 
 class BoostController extends Controller
 {
@@ -190,6 +191,7 @@ class BoostController extends Controller
         if($boost = boost::create($array)){
             return redirect('/checkout/'.$boost->id)->with('boostorder', $boost);
         }else{
+            dd($boost);
             return back()->with('status', 'Failed to Place Order!');    
         }
     }
@@ -221,10 +223,33 @@ class BoostController extends Controller
     public function checkoutpayment($order_id){
         $order = boost::where('id', $order_id)->get()->first();
 
-        $order_amount = orderamounts::where('boost_type', $order->boost_type)->where('current_level', $order->current_level)->where('desired_level', $order->desired_level)->get()->first();
-        if(empty($order_amount)){
-            return back()->with('error', 'Cannot process order with selected values');
-        }            
+        if($order->boost_type == "Premier Rank Boost"){
+            
+            $difference = $order->desired_level - $order->current_level;
+            $difference = round($difference, -3);
+            $order_amount = orderamounts::where('boost_type', $order->boost_type)->where('current_level', $difference)->where('desired_level', $difference)->get()->first();
+            
+            if(empty($order_amount)){
+                    return back()->with('error', 'Cannot process order with selected values');
+            }
+
+        }else if($order->boost_type == 'Elo Boost'){
+
+            $difference = $order->desired_level - $order->current_level;
+            $amount = $difference * 0.05;
+            
+            $order_amount = new stdClass();
+            $order_amount->amount = $amount;
+
+
+        }else{
+
+            $order_amount = orderamounts::where('boost_type', $order->boost_type)->where('current_level', $order->current_level)->where('desired_level', $order->desired_level)->get()->first();
+            if(empty($order_amount)){
+                return back()->with('error', 'Cannot process order with selected values');
+            }
+
+        }
 
         $order_amount = $order_amount->amount;
 
@@ -243,7 +268,6 @@ class BoostController extends Controller
         if($order->play_with_booster == 1){
             $total_amount = $total_amount + $side_amount;
         }
-
         return view('checkout', ['boostorder' => $order, 'total_amount' => $total_amount, 'order_amount' => $order_amount]);
     }
 
@@ -302,10 +326,33 @@ class BoostController extends Controller
         
         $order = boost::where('id', $order_id)->where('user_id', Auth::id())->get()->first();
             
-            $order_amount = orderamounts::where('boost_type', $order->boost_type)->where('current_level', $order->current_level)->where('desired_level', $order->desired_level)->get()->first();
-            if(empty($order_amount)){
-                return back()->with('error', 'Cannot process order with selected values');
-            }            
+            if($order->boost_type == "Premier Rank Boost"){
+                
+                $difference = $order->desired_level - $order->current_level;
+                $difference = round($difference, -3);
+                $order_amount = orderamounts::where('boost_type', $order->boost_type)->where('current_level', $difference)->where('desired_level', $difference)->get()->first();
+                
+                if(empty($order_amount)){
+                        return back()->with('error', 'Cannot process order with selected values');
+                }
+
+            }else if($order->boost_type == 'Elo Boost'){
+
+                $difference = $order->desired_level - $order->current_level;
+                $amount = $difference * 0.05;
+                
+                $order_amount = new stdClass();
+                $order_amount->amount = $amount;
+
+
+            }else{
+
+                $order_amount = orderamounts::where('boost_type', $order->boost_type)->where('current_level', $order->current_level)->where('desired_level', $order->desired_level)->get()->first();
+                if(empty($order_amount)){
+                    return back()->with('error', 'Cannot process order with selected values');
+                }
+
+            }       
 
             $order_amount = $order_amount->amount;
 
