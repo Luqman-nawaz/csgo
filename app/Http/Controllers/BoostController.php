@@ -243,6 +243,34 @@ class BoostController extends Controller
             $order_amount->amount = $amount;
 
 
+        }else if($order->boost_type == 'Win Boost' && $order->boost_id == 2){
+            $prices = array(
+                "Level 1" => "0.20",
+                "Level 2" => "0.30",
+                "Level 3" => "0.40",
+                "Level 4" => "0.50",
+                "Level 5" => "0.60",
+                "Level 6" => "0.70",
+                "Level 7" => "0.80",
+                "Level 8" => "0.90",
+                "Level 9" => "1.00",
+                "Level 10" => "1.10",
+                "Level 10 Elo 2001" => "1.20",
+                "Level 10 Elo 2150" => "1.40",
+                "Level 10 Elo 2300" => "1.60",
+                "Level 10 Elo 2450" => "1.80",
+                "Level 10 Elo 2600" => "2.00",
+                "Level 10 Elo 2750" => "2.25",
+                "Level 10 Elo 2900" => "2.50",
+                "Level 10 Elo 3050" => "3.00",
+            );
+
+            $reviews = $order->desired_level;
+            $amount = ($reviews * 10) * (1 + $prices[$order->current_level]);
+
+            $order_amount = new stdClass();
+            $order_amount->amount = $amount;
+            
         }else{
 
             $order_amount = orderamounts::where('boost_type', $order->boost_type)->where('current_level', $order->current_level)->where('desired_level', $order->desired_level)->get()->first();

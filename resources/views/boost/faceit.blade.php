@@ -70,11 +70,8 @@
                                                     <option value="Level 7">Level 7</option>
                                                     <option value="Level 8">Level 8</option>
                                                     <option value="Level 9">Level 9</option>
-                                                    <option value="Level 10">Level 10</option>
                                                 </select>
                                             </div>
-
-
 
                                         </div>
 
@@ -311,7 +308,14 @@
                                                     <option value="Level 7">Level 7</option>
                                                     <option value="Level 8">Level 8</option>
                                                     <option value="Level 9">Level 9</option>
-                                                    <option value="Level 10">Level 10</option>
+                                                    <option value="Level 10 Elo 2001">Level 10 Elo 2001</option>
+                                                    <option value="Level 10 Elo 2150">Level 10 Elo 2150</option>
+                                                    <option value="Level 10 Elo 2300">Level 10 Elo 2300</option>
+                                                    <option value="Level 10 Elo 2450">Level 10 Elo 2450</option>
+                                                    <option value="Level 10 Elo 2600">Level 10 Elo 2600</option>
+                                                    <option value="Level 10 Elo 2750">Level 10 Elo 2750</option>
+                                                    <option value="Level 10 Elo 2900">Level 10 Elo 2900</option>
+                                                    <option value="Level 10 Elo 3050">Level 10 Elo 3050</option>
                                                 </select>
                                             </div>
 
@@ -631,11 +635,33 @@
         }
 
     function updateplacement(){
+            var selectedOption = document.querySelector(".faceitwincurrent").value;
             var reviews = document.querySelector('.placementrange').value;
 
             if(reviews > 10){
                 document.querySelector(".placementrange").value = 10;
             }
+
+            var prices = {
+                "Level 1": 0.20,
+                "Level 2": 0.30,
+                "Level 3": 0.40,
+                "Level 4": 0.50,
+                "Level 5": 0.60,
+                "Level 6": 0.70,
+                "Level 7": 0.80,
+                "Level 8": 0.90,
+                "Level 9": 1.00,
+                "Level 10": 1.10,
+                "Level 10 Elo 2001": 1.20,
+                "Level 10 Elo 2150": 1.40,
+                "Level 10 Elo 2300": 1.60,
+                "Level 10 Elo 2450": 1.80,
+                "Level 10 Elo 2600": 2.00,
+                "Level 10 Elo 2750": 2.25,
+                "Level 10 Elo 2900": 2.50,
+                "Level 10 Elo 3050": 3.00,
+            };
             
             var additionalAmount = 0;
 
@@ -651,7 +677,7 @@
                 additionalAmount += 0.20;
             }
 
-            var totalAmount = (reviews * 10) * (1 + additionalAmount);
+            var totalAmount = (reviews * 10) * (1 + additionalAmount) * (1 + prices[selectedOption]);
             document.getElementById("placementprice").innerText = "€" + totalAmount.toFixed(2);
     }
     </script>
