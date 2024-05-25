@@ -563,6 +563,14 @@
             var currentelo = document.querySelector(".placementrangecurrent").value;
             var requiredelo = document.querySelector('.placementrangerequired').value;
 
+            if(currentelo >= 5000){
+                document.querySelector(".placementrangecurrent").value = 4900;
+            }
+
+            if(requiredelo > 5000){
+                document.querySelector(".placementrangerequired").value = 5000;
+            }
+
             if(+currentelo >= +requiredelo){
                 var reviews = document.querySelector('.placementrangecurrent').value;
                 let newvalue = +reviews + 25;
@@ -571,6 +579,11 @@
             }
 
             difference = +requiredelo - +currentelo;
+
+            if(difference < 25){
+                document.querySelector('.placementrangerequired').value = (+requiredelo + 25);
+                updatefaceitelopricerequired();
+            }
             
             var amount = difference * 0.05;
 
@@ -619,6 +632,10 @@
 
     function updateplacement(){
             var reviews = document.querySelector('.placementrange').value;
+
+            if(reviews > 10){
+                document.querySelector(".placementrange").value = 10;
+            }
             
             var additionalAmount = 0;
 

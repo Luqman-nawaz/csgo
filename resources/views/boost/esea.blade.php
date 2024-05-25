@@ -222,7 +222,7 @@
                                         <div class="counter">
                                             <button type="button" class="minus" onclick="updatetab1minus();"><img
                                                     src="/assets/icons/MinusCircle.png" alt=""></button>
-                                            <input name="desired_level" type="number" class="placementrange value" id="counter1" value="1" onchange="updateplacement();">
+                                            <input name="desired_level" type="number" class="placementrange value" id="counter1" value="1" min="1" max="10" onchange="updateplacement();">
                                             <button type="button" class="plus" onclick="updatetab1plus();"><img
                                                     src="/assets/icons/PlusCircle.png" alt=""></button>
                                         </div>
@@ -391,7 +391,7 @@
             var reviews = document.querySelector('.placementrange').value;
             let newvalue = +reviews - 1;
             document.querySelector('.placementrange').value = newvalue;
-
+            
             updateplacement();
         }
 
@@ -405,7 +405,11 @@
 
         function updateplacement(){
                 var reviews = document.querySelector('.placementrange').value;
-                
+
+                if(reviews > 10){
+                    document.querySelector(".placementrange").value = 10;
+                }
+
                 var additionalAmount = 0;
 
                 if (document.getElementById("placementcheckbox1").checked) {

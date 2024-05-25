@@ -37,13 +37,12 @@
     <div class="boosting-main-container">
         <div class="boosting-centered-container">
 
-
             <div class="tabs flex justify-between items-center gap-4">
                 <button class="boostingTabBtn active" onclick="openTab(event, 'tab1')">CS2 Rank Boost</button>
                 <button class="boostingTabBtn" onclick="openTab(event, 'tab2')">CS2 Win Boost</button>
-                <button class="boostingTabBtn" onclick="openTab(event, 'tab3')">CS2 Wingman Boost</button>
-                <button class="boostingTabBtn" onclick="openTab(event, 'tab4')">CS2 Placement Matches</button>
-                <button class="boostingTabBtn lastBtn" onclick="openTab(event, 'tab5')">Danger Zone Boost</button>
+                <button class="boostingTabBtn" onclick="openTab(event, 'tab3')">CS2 Placement Matches</button>
+                <button class="boostingTabBtn" onclick="openTab(event, 'tab4')">CS2 Wingman Boost</button>
+                <button class="boostingTabBtn lastBtn" onclick="openTab(event, 'tab5')">Wingman Win Boost</button>
             </div>
 
             <div id="tab1" class="boostingTab active">
@@ -85,8 +84,6 @@
                                     </select>
                                 </div>
 
-
-
                             </div>
 
                             <div class="boosting-rankConverttoImg-box">
@@ -124,10 +121,50 @@
                                 </div>
 
                             </div>
-
                         </div>
+                        
 
                         <div class="boosting-additional-conatiner">
+                            <h5>Select Map</h5>
+                            <div class="boosting-additionalInput-conatiner"  style="border-bottom: 1px solid rgba(255, 255, 255, 0.2)">
+                                <label>
+                                    <input name="map" required type="radio" value="Mirage">
+                                    Mirage
+                                </label>
+                                <label>
+                                    <input name="map" required type="radio" value="Inferno">
+                                    Inferno
+                                </label>
+                                <label>
+                                    <input name="map" required type="radio" value="Dust II">
+                                    Dust II
+                                </label>
+                                <label>
+                                    <input name="map" required type="radio" value="Overpass">
+                                    Overpass
+                                </label>
+                                <label>
+                                    <input name="map" required type="radio" value="Office">
+                                    Office
+                                </label>
+                                <label>
+                                    <input name="map" required type="radio" value="Ancient">
+                                    Ancient
+                                </label>
+                                <label>
+                                    <input name="map" required type="radio" value="Nuke">
+                                    Nuke
+                                </label>
+                                <label>
+                                    <input name="map" required type="radio" value="Vertigo">
+                                    Vertigo
+                                </label>
+                                <label>
+                                    <input name="map" required type="radio" value="Anubis">
+                                    Anubis
+                                </label>
+                            </div>
+
                             <h5>Additional Features</h5>
                             <span>
                                 <img src="/assets/icons/Info.png" alt="">
@@ -252,6 +289,45 @@
                             </div>
 
                             <div class="boosting-additional-conatiner">
+                                <h5>Select Map</h5>
+                                <div class="boosting-additionalInput-conatiner"  style="border-bottom: 1px solid rgba(255, 255, 255, 0.2)">
+                                    <label>
+                                        <input name="map" required type="radio" value="Mirage">
+                                        Mirage
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Inferno">
+                                        Inferno
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Dust II">
+                                        Dust II
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Overpass">
+                                        Overpass
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Office">
+                                        Office
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Ancient">
+                                        Ancient
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Nuke">
+                                        Nuke
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Vertigo">
+                                        Vertigo
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Anubis">
+                                        Anubis
+                                    </label>
+                                </div>
                                 <h5>Additional Features</h5>
                                 <span>
                                     <img src="/assets/icons/Info.png" alt="">
@@ -324,8 +400,173 @@
 
             <div id="tab3" class="boostingTab">
                 <form action="/cs2/checkout" method="post">
-                                    @csrf
-                                    <input type="text" value="Wingman Boost" name="boost_type" style="display: none;" />
+                    @csrf
+                        <input type="text" value="Placement Matches" name="boost_type" style="display: none;" />
+                        <div class="boostingTabContent">
+
+                            <div class="boosting-option-container">
+
+                                <div class="boosting-option-inner-container">
+
+                                    <div class="boosting-option-img-box">   
+                                            <img src="/assets/images/rankImgs/RankIMG1.png" id="placementcurrent" alt="">
+                                        </div>
+                                        <div class="custom-select">
+                                            <label for="select">Last known rank</label>
+                                            <select class="placementcurrent" id="select" name="current_level" onchange="updateplacementImage()" >
+                                                        <option value="Unraked">Unranked</option>
+                                                        <option value="Silver I">Silver I</option>
+                                                        <option value="Silver II">Silver II</option>
+                                                        <option value="Silver III">Silver III</option>
+                                                        <option value="Silver IV">Silver IV</option>
+                                                        <option value="Silver Elite">Silver Elite</option>
+                                                        <option value="Silver Elite Master">Silver Elite Master</option>
+                                                        <option value="Gold Nova I">Gold Nova I</option>
+                                                        <option value="Gold Nova II">Gold Nova II</option>
+                                                        <option value="Gold Nova III">Gold Nova III</option>
+                                                        <option value="Gold Nova Master">Gold Nova Master</option>
+                                                        <option value="Master Guardian">Master Guardian</option>
+                                                        <option value="Master Guardian II">Master Guardian II</option>
+                                                        <option value="Master Guardian Elite">Master Guardian Elite</option>
+                                                        <option value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                                        <option value="Legendary Eagle">Legendary Eagle</option>
+                                                        <option value="Legendary Eagle Master">Legendary Eagle Master</option>
+                                                        <option value="Supreme Master">Supreme Master First Class</option>
+                                                        <option value="Global Elite">Global Elite</option>
+                                            </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="counter-box">
+                                        <label for="counter1">Number of Wins</label>
+                                        <div class="counter">
+                                            <button type="button" class="minus" onclick="updatetab4minus();"><img
+                                                    src="./assets/icons/MinusCircle.png" alt=""></button>
+                                            <input name="desired_level" type="number" class="placementrange value" id="counter1" value="1" onchange="updateplacement();">
+                                            <button type="button" class="plus" onclick="updatetab4plus();"><img
+                                                    src="./assets/icons/PlusCircle.png" alt=""></button>
+                                        </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="boosting-additional-conatiner">
+                                <h5>Select Map</h5>
+                                <div class="boosting-additionalInput-conatiner"  style="border-bottom: 1px solid rgba(255, 255, 255, 0.2)">
+                                    <label>
+                                        <input name="map" required type="radio" value="Mirage">
+                                        Mirage
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Inferno">
+                                        Inferno
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Dust II">
+                                        Dust II
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Overpass">
+                                        Overpass
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Office">
+                                        Office
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Ancient">
+                                        Ancient
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Nuke">
+                                        Nuke
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Vertigo">
+                                        Vertigo
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Anubis">
+                                        Anubis
+                                    </label>
+                                </div>
+                                <h5>Additional Features</h5>
+                                <span>
+                                    <img src="/assets/icons/Info.png" alt="">
+                                    <p>Per additional features will charge 20% of the total amount.</p>
+                                </span>
+
+                                <div class="boosting-additionalInput-conatiner">
+
+                                    <label>
+                                        <input type="checkbox" name="solo_play" id="placementcheckbox1" onclick="updateplacement()">
+                                        +1 Extra Win
+                                        <span>+20%</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="priority_order" id="placementcheckbox2" onclick="updateplacement()">
+                                        Priority Order
+                                        <span>+20%</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="play_with_booster" id="placementcheckbox3" onclick="updateplacement()">
+                                        Play with Booster
+                                        <span>+20%</span>
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="boosting-pricing-conatiner">
+
+                                <div class="boosting-pricing-txt-conatiner">
+                                    <span>Final Price <h3 id="placementprice">€56</h3></span>
+                                    <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
+                                            alt=""></button>
+                                </div>
+
+                                <div class="boosting-pricing-opt-conatiner">
+                                            <div class="boosting-pricing-optLeft-conatiner">
+                                                <img src="/assets/images/Gpay-trans.png" alt="">
+                                                <img src="/assets/images/AE-trans.png" alt="">
+                                                <img src="/assets/images/Mastercard-trans.png" alt="">
+                                                <img src="/assets/images/Applepay-trans.png" alt="">
+                                                <img src="/assets/images/Visa-trans.png" alt="">
+                                            </div>
+                                            <div class="boosting-pricing-optRight-conatiner">
+                                            
+                                                <h6>Our Customers rated us</h6>
+                                                
+                                                <div class="boosting-greenStar-container">
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                </div>
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <span>4.9 on</span>
+                                                </a>
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                            </div>
+
+                        </div>
+                </form>
+            </div>
+
+            <div id="tab4" class="boostingTab">
+                <form action="/cs2/checkout" method="post">
+                    @csrf
+                    <input type="text" value="Wingman Boost" name="boost_type" style="display: none;" />
+                    
                     <div class="boostingTabContent">
 
                         <div class="boosting-option-container">
@@ -399,6 +640,26 @@
                         </div>
 
                         <div class="boosting-additional-conatiner">
+                            <h5>Select Map</h5>
+                                <div class="boosting-additionalInput-conatiner"  style="border-bottom: 1px solid rgba(255, 255, 255, 0.2)">
+                                    <label>
+                                        <input name="map" required type="radio" value="Inferno">
+                                        Inferno
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Overpass">
+                                        Overpass
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Nuke">
+                                        Nuke
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Vertigo">
+                                        Vertigo
+                                    </label>
+                                </div>
+
                             <h5>Additional Features</h5>
                             <span>
                                 <img src="/assets/icons/Info.png" alt="">
@@ -468,135 +729,12 @@
                     </div>
                 </form>
             </div>
-
-            <div id="tab4" class="boostingTab">
-                <form action="/cs2/checkout" method="post">
-                    @csrf
-                        <input type="text" value="Placement Matches" name="boost_type" style="display: none;" />
-                        <div class="boostingTabContent">
-
-                            <div class="boosting-option-container">
-
-                                <div class="boosting-option-inner-container">
-
-                                    <div class="boosting-option-img-box">   
-                                            <img src="/assets/images/rankImgs/RankIMG1.png" id="placementcurrent" alt="">
-                                        </div>
-                                        <div class="custom-select">
-                                            <label for="select">Current Level</label>
-                                            <select class="placementcurrent" id="select" name="current_level" onchange="updateplacementImage()" >
-                                                        <option value="Silver I">Silver I</option>
-                                                        <option value="Silver II">Silver II</option>
-                                                        <option value="Silver III">Silver III</option>
-                                                        <option value="Silver IV">Silver IV</option>
-                                                        <option value="Silver Elite">Silver Elite</option>
-                                                        <option value="Silver Elite Master">Silver Elite Master</option>
-                                                        <option value="Gold Nova I">Gold Nova I</option>
-                                                        <option value="Gold Nova II">Gold Nova II</option>
-                                                        <option value="Gold Nova III">Gold Nova III</option>
-                                                        <option value="Gold Nova Master">Gold Nova Master</option>
-                                                        <option value="Master Guardian">Master Guardian</option>
-                                                        <option value="Master Guardian II">Master Guardian II</option>
-                                                        <option value="Master Guardian Elite">Master Guardian Elite</option>
-                                                        <option value="Distunguished Master Guardian">Distunguished Master Guardian</option>
-                                                        <option value="Legendary Eagle">Legendary Eagle</option>
-                                                        <option value="Legendary Eagle Master">Legendary Eagle Master</option>
-                                                        <option value="Supreme Master">Supreme Master First Class</option>
-                                                        <option value="Global Elite">Global Elite</option>
-                                            </select>
-                                    </div>
-
-                                </div>
-
-                                <div class="counter-box">
-                                        <label for="counter1">Number of Wins</label>
-                                        <div class="counter">
-                                            <button type="button" class="minus" onclick="updatetab4minus();"><img
-                                                    src="./assets/icons/MinusCircle.png" alt=""></button>
-                                            <input name="desired_level" type="number" class="placementrange value" id="counter1" value="1" onchange="updateplacement();">
-                                            <button type="button" class="plus" onclick="updatetab4plus();"><img
-                                                    src="./assets/icons/PlusCircle.png" alt=""></button>
-                                        </div>
-                                </div>
-
-
-                            </div>
-
-                            <div class="boosting-additional-conatiner">
-                                <h5>Additional Features</h5>
-                                <span>
-                                    <img src="/assets/icons/Info.png" alt="">
-                                    <p>Per additional features will charge 20% of the total amount.</p>
-                                </span>
-
-                                <div class="boosting-additionalInput-conatiner">
-
-                                    <label>
-                                        <input type="checkbox" name="solo_play" id="placementcheckbox1" onclick="updateplacement()">
-                                        +1 Extra Win
-                                        <span>+20%</span>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox" name="priority_order" id="placementcheckbox2" onclick="updateplacement()">
-                                        Priority Order
-                                        <span>+20%</span>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox" name="play_with_booster" id="placementcheckbox3" onclick="updateplacement()">
-                                        Play with Booster
-                                        <span>+20%</span>
-                                    </label>
-
-                                </div>
-
-                            </div>
-
-                            <div class="boosting-pricing-conatiner">
-
-                                <div class="boosting-pricing-txt-conatiner">
-                                    <span>Final Price <h3 id="placementprice">€56</h3></span>
-                                    <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
-                                            alt=""></button>
-                                </div>
-
-                                <div class="boosting-pricing-opt-conatiner">
-                                            <div class="boosting-pricing-optLeft-conatiner">
-                                                <img src="/assets/images/Gpay-trans.png" alt="">
-                                                <img src="/assets/images/AE-trans.png" alt="">
-                                                <img src="/assets/images/Mastercard-trans.png" alt="">
-                                                <img src="/assets/images/Applepay-trans.png" alt="">
-                                                <img src="/assets/images/Visa-trans.png" alt="">
-                                            </div>
-                                            <div class="boosting-pricing-optRight-conatiner">
-                                            
-                                                <h6>Our Customers rated us</h6>
-                                                
-                                                <div class="boosting-greenStar-container">
-                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
-                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
-                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
-                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
-                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
-                                                </div>
-                                                <a href="https://www.trustpilot.com/review/myboost.gg">
-                                                    <span>4.9 on</span>
-                                                </a>
-                                                <a href="https://www.trustpilot.com/review/myboost.gg">
-                                                    <img src="/assets/images/trustpilot_logo.svg.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                            </div>
-
-                        </div>
-                </form>
-            </div>
-
+         
             <div id="tab5" class="boostingTab">
                 <form action="/cs2/checkout" method="post">
-                                @csrf
-                                <input type="text" value="Danger Zone Boost" name="boost_type" style="display: none;" />
+                    @csrf
+                    <input type="text" value="Wingman Win Boost" name="boost_type" style="display: none;" />
+                    
                     <div class="boostingTabContent">
 
                         <div class="boosting-option-container">
@@ -604,26 +742,30 @@
                             <div class="boosting-option-inner-container">
 
                                 <div class="boosting-option-img-box">
-                                    <img src="/assets/images/rankImgs/RankIMG1.png" id="dangerzonecurrentimage" alt="">
+                                    <img src="/assets/images/rankImgs/RankIMG1.png" id="wingmanwinboostimage" alt="">
                                 </div>
 
                                         <div class="custom-select">
-                                            <select id="select" class="updatedangerzoneimage" name="current_level" onchange="updatedangerzoneimage();">
-                                                <option value="Lab Rat I">Lab Rat I</option>
-                                                <option value="Lab Rat II">Lab Rat II</option>
-                                                <option value="Sprinting Hare I">Sprinting Hare I</option>
-                                                <option value="Sprinting Hare II">Sprinting Hare II</option>
-                                                <option value="Wild Scout I">Wild Scout I</option>
-                                                <option value="Wild Scout II">Wild Scout II</option>
-                                                <option value="Wild Scout Elite">Wild Scout Elite</option>
-                                                <option value="Hunter Fox I">Hunter Fox I</option>
-                                                <option value="Hunter Fox II">Hunter Fox II</option>
-                                                <option value="Hunter Fox III">Hunter Fox III</option>
-                                                <option value="Hunter Fox Elite">Hunter Fox Elite</option>
-                                                <option value="Timber Wolf">Timber Wolf</option>
-                                                <option value="Ember Wolf">Ember Wolf</option>
-                                                <option value="Wildfire Wolf">Wildfire Wolf</option>
-                                                <option value="The Howling Alpha">The Howling Alpha</option>
+                                            <select id="select" class="wingmanwinboost" name="current_level" onchange="updatewingmanwinboostimage();">
+                                                <option value="Unranked">Unranked</option>
+                                                <option value="Silver I">Silver I</option>
+                                                <option value="Silver II">Silver II</option>
+                                                <option value="Silver III">Silver III</option>
+                                                <option value="Silver IV">Silver IV</option>
+                                                <option value="Silver Elite">Silver Elite</option>
+                                                <option value="Silver Elite Master">Silver Elite Master</option>
+                                                <option value="Gold Nova I">Gold Nova I</option>
+                                                <option value="Gold Nova II">Gold Nova II</option>
+                                                <option value="Gold Nova III">Gold Nova III</option>
+                                                <option value="Gold Nova Master">Gold Nova Master</option>
+                                                <option value="Master Guardian">Master Guardian</option>
+                                                <option value="Master Guardian II">Master Guardian II</option>
+                                                <option value="Master Guardian Elite">Master Guardian Elite</option>
+                                                <option value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                                <option value="Legendary Eagle">Legendary Eagle</option>
+                                                <option value="Legendary Eagle Master">Legendary Eagle Master</option>
+                                                <option value="Supreme Master">Supreme Master First Class</option>
+                                                <option value="Global Elite">Global Elite</option>
                                             </select>
                                         </div>
 
@@ -633,37 +775,39 @@
                                 <img src="/assets/icons/CaretCircleDoubleRight.png" alt="">
                             </div>
 
-                            <div class="boosting-option-inner-container">
-
-                                <div class="boosting-option-img-box">
-                                    <img src="/assets/images/rankImgs/RankIMG1.png" id="dangerzoneimagerequired" alt="">
-                                </div>
-                                        <div class="custom-select">
-
-                                            <select id="select" class="dangerzonerankrequired" name="desired_level" onchange="updateDangerZoneBoostPriceRequired();">
-                                                <option value="Lab Rat I">Lab Rat I</option>
-                                                <option value="Lab Rat II">Lab Rat II</option>
-                                                <option value="Sprinting Hare I">Sprinting Hare I</option>
-                                                <option value="Sprinting Hare II">Sprinting Hare II</option>
-                                                <option value="Wild Scout I">Wild Scout I</option>
-                                                <option value="Wild Scout II">Wild Scout II</option>
-                                                <option value="Wild Scout Elite">Wild Scout Elite</option>
-                                                <option value="Hunter Fox I">Hunter Fox I</option>
-                                                <option value="Hunter Fox II">Hunter Fox II</option>
-                                                <option value="Hunter Fox III">Hunter Fox III</option>
-                                                <option value="Hunter Fox Elite">Hunter Fox Elite</option>
-                                                <option value="Timber Wolf">Timber Wolf</option>
-                                                <option value="Ember Wolf">Ember Wolf</option>
-                                                <option value="Wildfire Wolf">Wildfire Wolf</option>
-                                                <option value="The Howling Alpha">The Howling Alpha</option>
-                                            </select>
+                            <div class="counter-box">
+                                        <label for="counter1">Number of Wins</label>
+                                        <div class="counter">
+                                            <button type="button" class="minus" onclick="updatetab5minus();"><img
+                                                    src="./assets/icons/MinusCircle.png" alt=""></button>
+                                            <input name="desired_level" type="number" class="wingmanwinboostrange value" id="counter1" value="1" onchange="updatewingmanwinboostcounter();">
+                                            <button type="button" class="plus" onclick="updatetab5plus();"><img
+                                                    src="./assets/icons/PlusCircle.png" alt=""></button>
                                         </div>
-
-                            </div>
-
+                                </div>
                         </div>
 
                         <div class="boosting-additional-conatiner">
+                            <h5>Select Map</h5>
+                                <div class="boosting-additionalInput-conatiner"  style="border-bottom: 1px solid rgba(255, 255, 255, 0.2)">
+                                    <label>
+                                        <input name="map" required type="radio" value="Inferno">
+                                        Inferno
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Overpass">
+                                        Overpass
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Nuke">
+                                        Nuke
+                                    </label>
+                                    <label>
+                                        <input name="map" required type="radio" value="Vertigo">
+                                        Vertigo
+                                    </label>
+                                </div>
+
                             <h5>Additional Features</h5>
                             <span>
                                 <img src="/assets/icons/Info.png" alt="">
@@ -673,17 +817,17 @@
                             <div class="boosting-additionalInput-conatiner">
 
                                 <label>
-                                    <input type="checkbox" name="solo_play" id="dangerzonecheckbox1" onclick="updateDangerZoneBoostPriceRequired()">
+                                    <input type="checkbox" name="solo_play" id="cs2wingmanwinboostcheckbox1" onclick="updatewingmanwinboostcounter();">
                                     +1 Extra Win
                                     <span>+20%</span>
                                 </label>
                                 <label>
-                                    <input type="checkbox" name="priority_order" id="dangerzonecheckbox2" onclick="updateDangerZoneBoostPriceRequired()">
+                                    <input type="checkbox" name="priority_order" id="cs2wingmanwinboostcheckbox2" onclick="updatewingmanwinboostcounter();">
                                     Priority Order
                                     <span>+20%</span>
                                 </label>
                                 <label>
-                                    <input type="checkbox" name="play_with_booster" id="dangerzonecheckbox3" onclick="updateDangerZoneBoostPriceRequired()">
+                                    <input type="checkbox" name="play_with_booster" id="cs2wingmanwinboostcheckbox3" onclick="updatewingmanwinboostcounter();">
                                     Play with Booster
                                     <span>+20%</span>
                                 </label>
@@ -695,7 +839,7 @@
                         <div class="boosting-pricing-conatiner">
 
                             <div class="boosting-pricing-txt-conatiner">
-                                <span>Final Price <h3 id="dangerzoneprice">€56</h3></span>
+                                <span>Final Price <h3 id="wingmanwinboostprice">€56</h3></span>
                                 <button class="themebtn-bg gap-3">ORDER NOW <img src="/assets/icons/circleArrow.png"
                                         alt=""></button>
                             </div>
@@ -733,7 +877,6 @@
                     </div>
                 </form>
             </div>
-
 
         </div>
     </div>
@@ -860,6 +1003,11 @@
         function updatePriceWinBoost(){
                 var reviews = document.querySelector('.counter1winboost').value;
                 
+                if(reviews > 10){
+                    reviews = 10;
+                    document.querySelector('.counter1winboost').value = 10;
+                }
+
                 var additionalAmount = 0;
 
                 if (document.getElementById("winboostcheckbox1").checked) {
@@ -967,6 +1115,10 @@
         function updateplacement(){
                 var reviews = document.querySelector('.placementrange').value;
                 
+                if(reviews > 10){
+                    document.querySelector('.placementrange').value = 10;
+                }
+
                 var additionalAmount = 0;
 
                 if (document.getElementById("placementcheckbox1").checked) {
@@ -986,54 +1138,53 @@
         }
 
         //Danger Zone Boost
-        function updatedangerzoneimage(){
-            var selectedOption = document.querySelector(".updatedangerzoneimage").value;
-                // Rank Dropdown Img Change
-            var rankImage = document.getElementById("dangerzonecurrentimage");
-            rankImage.src = `/ranks/dangerzone/${selectedOption}.webp`;
+        function updatewingmanwinboostimage(){
+            var selectedOption = document.querySelector(".wingmanwinboost").value;
+            // Rank Dropdown Img Change
+            var rankImage = document.getElementById("wingmanwinboostimage");
+            rankImage.src = `/ranks/wingman/${selectedOption}.webp`;
+                
         }
 
-        function updateDangerZoneBoostPriceRequired(){
-                var selectedOption = document.querySelector(".dangerzonerankrequired").value;
-                var prices = {
-                    "Lab Rat I": 10.00,
-                    "Lab Rat II": 15.00,
-                    "Sprinting Hare I": 20.00,
-                    "Sprinting Hare II": 25.00,
-                    "Wild Scout I": 30.00,
-                    "Wild Scout II": 35.00,
-                    "Wild Scout Elite": 40.00,
-                    "Hunter Fox I": 45.00,
-                    "Hunter Fox II": 50.00,
-                    "Hunter Fox III": 55.00,
-                    "Hunter Fox Elite": 60.00,
-                    "Timber Wolf": 65.00,
-                    "Ember Wolf": 70.00,
-                    "Wildfire Wolf": 75.00,
-                    "The Howling Alpha": 80.00,
-                };
+        function updatetab5minus(){
+            var reviews = document.querySelector('.wingmanwinboostrange').value;
+            let newvalue = +reviews - 1;
+            document.querySelector('.wingmanwinboostrange').value = newvalue;
+
+            updatewingmanwinboostcounter();
+        }
+
+        function updatetab5plus(){
+            var reviews = document.querySelector('.wingmanwinboostrange').value;
+            let newvalue = +reviews + 1;
+            document.querySelector('.wingmanwinboostrange').value = newvalue;
+
+            updatewingmanwinboostcounter();
+        }
+
+        function updatewingmanwinboostcounter(){
+            var reviews = document.querySelector('.wingmanwinboostrange').value;
+                
+                if(reviews > 10){
+                    document.querySelector('.wingmanwinboostrange').value = 10;
+                }
 
                 var additionalAmount = 0;
 
-                if (document.getElementById("dangerzonecheckbox1").checked) {
+                if (document.getElementById("cs2wingmanwinboostcheckbox1").checked) {
                     additionalAmount += 0.20;
                 }
 
-                if (document.getElementById("dangerzonecheckbox2").checked) {
+                if (document.getElementById("cs2wingmanwinboostcheckbox2").checked) {
                     additionalAmount += 0.20;
                 }
 
-                if (document.getElementById("dangerzonecheckbox3").checked) {
+                if (document.getElementById("cs2wingmanwinboostcheckbox3").checked) {
                     additionalAmount += 0.20;
                 }
 
-                var totalPrice = prices[selectedOption] * (1 + additionalAmount);
-
-                document.getElementById("dangerzoneprice").innerText = "€" + totalPrice.toFixed(2);
-
-                // Rank Dropdown Img Change
-                var rankImage = document.getElementById("dangerzoneimagerequired");
-                rankImage.src = `/ranks/dangerzone/${selectedOption}.webp`;
+                var totalAmount = (reviews * 7) * (1 + additionalAmount);
+                document.getElementById("wingmanwinboostprice").innerText = "€" + totalAmount.toFixed(2);
         }
 
         //rank boost

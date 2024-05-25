@@ -21,7 +21,7 @@
                 <div class="heroSectionCS2-inner-container">
                     <div class="heroSectionCS2-innerLeft-container">
                         <h5>UNLEASH YOUR COMPETITIVE EDGE ON ESPORTAL</h5>
-                        <h1>ESPortal Boosting Services</h1>
+                        <h1>Esportal Boosting Services</h1>
                         <p>Step up your game on ESportal with our elite rank boosting services. Our seasoned boosters, armed
                             with lightning-fast ping, will elevate your rank, enhance your gameplay, and secure those
                             crucial wins. Fair play, no shortcuts—just pure skill and dedication. </p>
@@ -402,6 +402,10 @@
 
         function updateplacement(){
                 var reviews = document.querySelector('.placementrange').value;
+
+                if(reviews > 10){
+                    document.querySelector(".placementrange").value = 10;
+                }
                 
                 var additionalAmount = 0;
 

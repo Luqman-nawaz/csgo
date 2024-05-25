@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('boost_type');
             $table->string('current_level');
             $table->string('desired_level');
+            $table->string('map')->default('N/A')->nullable();
             $table->boolean('solo_play');
             $table->boolean('priority_order');
             $table->boolean('play_with_booster');

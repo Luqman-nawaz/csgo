@@ -91,6 +91,7 @@ class BoostController extends Controller
             'boost_type' => $request->boost_type,
             'current_level' => $request->current_level,
             'desired_level' => $request->desired_level,
+            'map' => $request->map,
             'solo_play' => $solo_play,
             'priority_order' => $priority_order,
             'play_with_booster' => $play_with_booster,

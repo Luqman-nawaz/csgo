@@ -394,6 +394,15 @@
         function updateRankBoostPriceRequired(){
             var selectedOption = document.querySelector(".placementrangerequired").value;
             var currentSelectedOption = document.querySelector(".placementrangecurrent").value;
+
+            if(selectedOption > 36599){
+                document.querySelector(".placementrangerequired").value = 45799;
+            }
+
+            if(currentSelectedOption > 36599){
+                document.querySelector(".placementrangecurrent").value = 36599;
+            }
+
             var goal = selectedOption - currentSelectedOption;
 
             const prices = {
