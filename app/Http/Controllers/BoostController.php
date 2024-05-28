@@ -217,8 +217,19 @@ class BoostController extends Controller
     }
 
     public function CoachingCheckoutPayment($order_id){
-        $order = coaching::where('id', $order_id)->get()->first();
-        return view('coaching.checkout', ['order' => $order]);
+
+        $order = coaching::where('id', $order_id)->where('user_id', Auth::id())->get()->first();
+
+        $amount = $order->no_of_reviews * 20;
+        if($order->priority_order == 1){
+            $side_order = ($order->no_of_reviews * 20)/5;
+        }else{
+            $side_order = 0;
+        }
+
+        $total_amount = $amount + $side_order;
+
+        return view('coaching.checkout', ['order' => $order, 'total_amount' => $total_amount]);
     }
 
     public function checkoutpayment($order_id){
@@ -327,28 +338,82 @@ class BoostController extends Controller
 
         coachingpayment::create($payment);
 
-        $stripePriceId = 'price_1OivADJAQvzmTijpmLbSd4t3';
-        $quantity = 1;
-        $stripeamount = $total_amount * 100;
-    
-        return $request->user()->checkout([$stripePriceId => $quantity],[
-            'mode' => 'payment',
-            'payment_method_types' => ['card', 'giropay', 'paypal', 'link'],
-            'line_items' => [
-                [
-                    'price_data' => [
-                        'product_data' => [
-                            'name' => $stripePriceId,
+
+
+        if($request->payment_method == 'card'){
+            $stripePriceId = 'price_1OivADJAQvzmTijpmLbSd4t3';
+            $quantity = 1;
+            $stripeamount = $total_amount * 100;
+        
+            return $request->user()->checkout([$stripePriceId => $quantity],[
+                'mode' => 'payment',
+                'payment_method_types' => ['card', 'giropay', 'paypal', 'link'],
+                'line_items' => [
+                    [
+                        'price_data' => [
+                            'product_data' => [
+                                'name' => $stripePriceId,
+                            ],
+                            'currency' => 'eur',
+                            'unit_amount' => $stripeamount,
                         ],
-                        'currency' => 'usd',
-                        'unit_amount' => $stripeamount,
-                    ],
-                    'quantity' => 1,
-                ]
-            ],
-            'success_url' => route('home').'?session_id={CHECKOUT_SESSION_ID}',
-            'cancel_url' => route('checkout-cancel'),
-        ]);
+                        'quantity' => 1,
+                    ]
+                ],
+                'success_url' => route('home').'?session_id={CHECKOUT_SESSION_ID}',
+                'cancel_url' => route('checkout-cancel'),
+            ]);
+        }else{
+
+            $payment = array(
+                'coaching_id' => $order_id,
+                'name' => $request->name,
+                'skype_id' => $request->skype_id,
+                'discord_username' => $request->discord_username,
+                'available_time' => $request->available_time,
+                'account_data' => $request->account_data,
+                'payment_method' => 'crypto',
+                'total_amount' => $total_amount,
+                'order_status' => 'incomplete',
+            );
+
+            $createdpayment = coachingpayment::create($payment);
+
+            $req['version'] = 1;
+            $req['cmd'] = 'create_transaction';
+            $req['amount'] = $total_amount;
+            $req['currency1'] = 'EUR';
+            $req['currency2'] = $request->crypto_currency;
+            $req['buyer_email'] = Auth::user()->email;
+            $req['item_name'] = 'Coaching';
+            $req['item_number'] = $order_id;
+            $req['ipn_url'] = 'Boost';
+            $req['success_url'] = '/checkout/cryptosuccess/'.$order_id;
+            $req['cancel_url'] = '/checkout/cryptofail/'.$order_id;
+        
+            $req['key'] = '9426644aed1497fbbdea883c0284ee8a87e3424ecdb7d60dabdfb0418f965c8b';
+            $req['format'] = 'json';
+            $post_data = Arr::query($req);
+            
+            $hmac = hash_hmac('sha512', $post_data, '8bf7577fa582C8e4B158659F45b8af05ef623d8B87EB9976d8A297Ef406DbF08');
+        
+            $response = Http::withHeaders([
+                'HMAC' => $hmac,
+            ])->asForm()->post('https://www.coinpayments.net/api.php', $req);
+                
+            $json = json_decode($response, true);
+                
+            $cryptopayment = array(
+                'order_id' => $order_id,
+                'payment_id' => $createdpayment->id,
+                'transaction_id' => $json['result']['txn_id'],
+                'payment_url' => $json['result']['checkout_url'],
+            );
+
+            cryptopayment::create($cryptopayment);
+        
+            return redirect($json['result']['checkout_url']);
+        }
     }
 
     public function payment($order_id, Request $request){

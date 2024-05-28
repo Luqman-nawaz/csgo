@@ -60,7 +60,7 @@
                         <span>
                             <img src="/assets/icons/DiscordLogo.png" alt="">
                         </span>
-                        <p>discord.com/MyBoost</p>
+                        <a href="https://discord.gg/M9PeWGEhcV"><p>Discord.gg/M9PeWGEhcV</p></a>
                     </div>
                     <div class="contactinfo-box">
                         <span>

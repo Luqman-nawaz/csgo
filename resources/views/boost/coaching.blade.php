@@ -129,12 +129,12 @@
                                         <div class="boosting-pricing-optRight-conatiner">
                                             <h6>Our Customers rated us</h6>
                                             <div class="boosting-greenStar-container">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                            </div>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                </div>
                                             <span>4.9 on</span>
                                             <img src="/assets/images/trustpilot_logo.svg.png" alt="">
                                         </div>
@@ -235,12 +235,12 @@
                                         <div class="boosting-pricing-optRight-conatiner">
                                             <h6>Our Customers rated us</h6>
                                             <div class="boosting-greenStar-container">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                            </div>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                </div>
                                             <span>4.9 on</span>
                                             <img src="/assets/images/trustpilot_logo.svg.png" alt="">
                                         </div>
@@ -341,12 +341,12 @@
                                         <div class="boosting-pricing-optRight-conatiner">
                                             <h6>Our Customers rated us</h6>
                                             <div class="boosting-greenStar-container">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                            </div>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                </div>
                                             <span>4.9 on</span>
                                             <img src="/assets/images/trustpilot_logo.svg.png" alt="">
                                         </div>
@@ -447,12 +447,12 @@
                                         <div class="boosting-pricing-optRight-conatiner">
                                             <h6>Our Customers rated us</h6>
                                             <div class="boosting-greenStar-container">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                                <img src="/assets/images/trustpilot_icon.png.png" alt="">
-                                            </div>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                    <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
+                                                </div>
                                             <span>4.9 on</span>
                                             <img src="/assets/images/trustpilot_logo.svg.png" alt="">
                                         </div>

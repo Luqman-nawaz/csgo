@@ -33,7 +33,7 @@
 
         <div class="footer-leftthird-inner-container">
             <a href="https://twitter.com/MyBoostGG"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="" style="width:25px; height:24px;"></a>
-            <a href="#"><img src="/assets/icons/start icon (1).png" alt=""></a>
+            <a href="https://discord.gg/M9PeWGEhcV"><img src="/assets/icons/start icon (1).png" alt=""></a>
             <a href="#"><img src="/assets/icons/start icon (2).png" alt=""></a>
             <a href="#"><img src="/assets/icons/start icon (3).png" alt=""></a>
         </div>
