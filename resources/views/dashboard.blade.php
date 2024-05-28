@@ -123,7 +123,7 @@
 
                                                         <a href="/checkout/cryptosuccess/{{ $orders->id }}"><span class="trans-pill">Already paid?</span></a>
                                                     @else
-                                                        <a href="/csgoboost"><span class="trans-pill">Order Again</span></a>
+                                                        <a href="/csboost#boostingservices"><span class="trans-pill">Order Again</span></a>
                                                     @endif
                                                 </td>
                                             </tr>

@@ -53,10 +53,10 @@
                                         <div class="counter-box">
                                             <label for="counter1">Current Premiere Rank</label>
                                             <div class="counter">
-                                                <button type="button" class="minus" data-counter="counter1"><img
+                                                <button type="button" class="minus" onclick="updatetab2minus();"><img
                                                         src="/assets/icons/MinusCircle.png" alt=""></button>
-                                                <input name="current_level" type="number" class="placementrangecurrent value" id="counter1" value="1" onchange="updateRankBoostPriceRequired()" min="1" max="35000" required>
-                                                <button type="button" class="plus" data-counter="counter1"><img
+                                                <input name="current_level" type="number" class="placementrangecurrent value" id="counter1" value="1" onchange="updateRankBoostPriceRequiredCurrent()" min="1" max="35000" required>
+                                                <button type="button" class="plus" onclick="updatetab2plus();"><img
                                                         src="/assets/icons/PlusCircle.png" alt=""></button>
                                             </div>
                                         </div>
@@ -64,10 +64,10 @@
                                         <div class="counter-box">
                                             <label for="counter1">Required Premiere Rank</label>
                                             <div class="counter">
-                                                <button type="button" class="minus" data-counter="counter1"><img
+                                                <button type="button" class="minus" onclick="updatetab3minus();"><img
                                                         src="/assets/icons/MinusCircle.png" alt=""></button>
                                                 <input name="desired_level" type="number" class="placementrangerequired value" id="counter1" value="1" onchange="updateRankBoostPriceRequired()" min="1" max="35000" required>
-                                                <button type="button" class="plus" data-counter="counter1"><img
+                                                <button type="button" class="plus" onclick="updatetab3plus();"><img
                                                         src="/assets/icons/PlusCircle.png" alt=""></button>
                                             </div>
                                         </div>
@@ -96,7 +96,7 @@
                                             <label>
                                                 <input type="checkbox" name="play_with_booster" id="CS2RankBoostcheckbox3" onclick="updateRankBoostPriceRequired()">
                                                 Play with Booster
-                                                <span>+20%</span>
+                                                <span>+65%</span>
                                             </label>
 
                                         </div>
@@ -213,7 +213,7 @@
                                         <label>
                                             <input type="checkbox" name="play_with_booster" id="placementcheckbox3" onclick="updateplacement()">
                                             Play with Booster
-                                            <span>+20%</span>
+                                            <span>+65%</span>
                                         </label>
 
                                         </div>
@@ -375,7 +375,7 @@
                 }
 
                 if (document.getElementById("placementcheckbox3").checked) {
-                    additionalAmount += 0.20;
+                    additionalAmount += 0.65;
                 }
 
                 var totalAmount = (reviews * 7) * (1 + additionalAmount);
@@ -390,17 +390,54 @@
                 var rankImage = document.getElementById("placementcurrentimage");
                 rankImage.src = `/ranks/premier/${selectedOption}.png`;
         }
+                
+        function updatetab2minus(){
+            var reviews = document.querySelector('.placementrangecurrent').value;
+            let newvalue = +reviews - 100;
+            document.querySelector('.placementrangecurrent').value = newvalue;
+
+            updateRankBoostPriceRequired();
+        }
+
+        function updatetab2plus(){
+            var reviews = document.querySelector('.placementrangecurrent').value;
+            let newvalue = +reviews + 100;
+            document.querySelector('.placementrangecurrent').value = newvalue;
+
+            updateRankBoostPriceRequired();
+        }
+
+        function updatetab3minus(){
+            var reviews = document.querySelector('.placementrangerequired').value;
+            let newvalue = +reviews - 100;
+            document.querySelector('.placementrangerequired').value = newvalue;
+
+            updateRankBoostPriceRequired();
+        }
+
+        function updatetab3plus(){
+            var reviews = document.querySelector('.placementrangerequired').value;
+            let newvalue = +reviews + 100;
+            document.querySelector('.placementrangerequired').value = newvalue;
+
+            updateRankBoostPriceRequired();
+        }
+
+        function updateRankBoostPriceRequiredCurrent(){
+            var currentSelectedOption = document.querySelector(".placementrangecurrent").value;
+            
+            if(currentSelectedOption > 36599){
+                document.querySelector(".placementrangecurrent").value = 36599;
+            }
+        }
 
         function updateRankBoostPriceRequired(){
             var selectedOption = document.querySelector(".placementrangerequired").value;
             var currentSelectedOption = document.querySelector(".placementrangecurrent").value;
 
-            if(selectedOption > 36599){
+            if(selectedOption > 45799){
                 document.querySelector(".placementrangerequired").value = 45799;
-            }
-
-            if(currentSelectedOption > 36599){
-                document.querySelector(".placementrangecurrent").value = 36599;
+                selectedOption = 45799;
             }
 
             var goal = selectedOption - currentSelectedOption;
@@ -443,11 +480,21 @@
                 "34000": 300.00,
                 "35000": 350.00,
                 "36000": 400.00,
+                "37000": 400.00,
+                "38000": 400.00,
+                "39000": 400.00,
+                "40000": 400.00,
+                "41000": 400.00,
+                "42000": 400.00,
+                "43000": 400.00,
+                "44000": 400.00,
+                "45000": 400.00,
+                "46000": 400.00,
             };
 
-            goal = Math.round(goal/1000)*1000;
+            newgoal = Math.round(goal/1000)*1000;
 
-            price = prices[goal];
+            price = prices[newgoal];
             
             var additionalAmount = 0;
 
@@ -460,7 +507,7 @@
             }
 
             if (document.getElementById("CS2RankBoostcheckbox3").checked) {
-                additionalAmount += 0.20;
+                additionalAmount += 0.65;
             }
 
             var totalPrice = price * (1 + additionalAmount);
@@ -494,5 +541,4 @@
         }
     </script>
     <script src="/vendor/js/boostDropdown.js"></script>
-    <script src="/vendor/js/counter.js"></script>
 @endpush

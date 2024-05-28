@@ -147,12 +147,12 @@
                                                 <div class="boosting-additionalInput-conatiner">
 
                                                     <label>
-                                                        <input type="radio" value="card" id="CS2RankBoostcheckbox1" name="payment_method">
+                                                        <input type="radio" value="card" id="CS2RankBoostcheckbox1" name="payment_method" onclick="stripeselect();">
                                                         Stripe
                                                         <span>(PayPal, Giropay, Google Pay)</span>
                                                     </label>
                                                     <label>
-                                                        <input type="radio" value="crypto" id="CS2RankBoostcheckbox2" name="payment_method">
+                                                        <input type="radio" value="crypto" id="CS2RankBoostcheckbox2" name="payment_method" onclick="cryptoselect();">
                                                         Crypto
                                                         <span>(25+ currencies supported)</span>
                                                     </label>
@@ -161,6 +161,42 @@
 
                                             </div>
 
+                                            
+
+                    <div class="boostingTabContent" id="cryptopayment" style="padding:0 0 0 0; display:none;" >
+                        <div class="boosting-option-container" style="justify-content:center;">
+                            <div class="boosting-option-inner-container">
+                                <div class="custom-select">
+                                    <label for="select">Select Crypto</label>
+                                    <select id="select" name="crypto_currency" onchange="updateRankBoostPrice();">
+                                                <option value="BTC">Bitcoin</option>
+                                                <option value="ETH">Ether</option>
+                                                <option value="BCH">Bitcoin Cash</option>
+                                                <option value="LTC">Litecoin</option>
+                                                <option value="VLX">Velas (EVM)</option>
+                                                <option value="VLX.Native">Velas (Native)</option>
+                                                <option value="APL">Apollo</option>
+                                                <option value="BCN">Bytecoin</option>
+                                                <option value="BEAM">Beam</option>
+                                                <option value="BIZZ.TRC20">BizzCoin</option>
+                                                <option value="BNB">BNB Coin (Mainnet)</option>
+                                                <option value="BNB.BSC">BNB Coin (BSC Chain)</option>
+                                                <option value="BTCV">Bitcoin Vault</option>
+                                                <option value="BTG">Bitcoin Gold</option>
+                                                <option value="DASH">Dash</option>
+                                                <option value="DOGE">Doge Coin</option>
+                                                <option value="MATIC.POLY">MATIC</option>
+                                                <option value="TRX">TRON</option>
+                                                <option value="XMR">Monero</option>
+                                                <option value="USDT">Tether USD (Omni Layer)</option>
+                                                <option value="TUSD.TRC20">TrueUSD (Tron/TRC20)</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
                                             <div class="boosting-pricing-conatiner">
 
                                                 <div class="boosting-pricing-txt-conatiner">
@@ -185,4 +221,16 @@
         <x-footer></x-footer>
 
     </div>
+
+    @push('js')
+        <script>
+            function cryptoselect(){
+                document.getElementById('cryptopayment').style.display = "block";
+            }
+            
+            function stripeselect(){
+                document.getElementById('cryptopayment').style.display = "none";
+            }
+        </script>
+    @endpush
 @endsection

@@ -186,7 +186,7 @@
                                 <label>
                                     <input type="checkbox" id="CS2RankBoostcheckbox3" name="play_with_booster" onclick="updateRankBoostPriceRequired()">
                                     Play with Booster
-                                    <span>+20%</span>
+                                    <span>+65%</span>
                                 </label>
 
                             </div>
@@ -349,7 +349,7 @@
                                     <label>
                                         <input type="checkbox" name="play_with_booster" id="winboostcheckbox3" onclick="updatePriceWinBoost()">
                                         Play with Booster
-                                        <span>+20%</span>
+                                        <span>+65%</span>
                                     </label>
 
                                 </div>
@@ -513,7 +513,7 @@
                                     <label>
                                         <input type="checkbox" name="play_with_booster" id="placementcheckbox3" onclick="updateplacement()">
                                         Play with Booster
-                                        <span>+20%</span>
+                                        <span>+65%</span>
                                     </label>
 
                                 </div>
@@ -681,7 +681,7 @@
                                 <label>
                                     <input type="checkbox" name="play_with_booster" id="CS2wingmanBoostcheckbox3" onclick="updateWingmanBoostPriceRequired();">
                                     Play with Booster
-                                    <span>+20%</span>
+                                    <span>+65%</span>
                                 </label>
 
                             </div>
@@ -829,7 +829,7 @@
                                 <label>
                                     <input type="checkbox" name="play_with_booster" id="cs2wingmanwinboostcheckbox3" onclick="updatewingmanwinboostcounter();">
                                     Play with Booster
-                                    <span>+20%</span>
+                                    <span>+65%</span>
                                 </label>
 
                             </div>
@@ -1019,7 +1019,7 @@
                 }
 
                 if (document.getElementById("winboostcheckbox3").checked) {
-                    additionalAmount += 0.20;
+                    additionalAmount += 0.65;
                 }
 
                 var totalAmount = (reviews * 7) * (1 + additionalAmount);
@@ -1076,7 +1076,7 @@
                 }
 
                 if (document.getElementById("CS2wingmanBoostcheckbox3").checked) {
-                    additionalAmount += 0.20;
+                    additionalAmount += 0.65;
                 }
 
                 var totalPrice = prices[selectedOption] * (1 + additionalAmount);
@@ -1130,7 +1130,7 @@
                 }
 
                 if (document.getElementById("placementcheckbox3").checked) {
-                    additionalAmount += 0.20;
+                    additionalAmount += 0.65;
                 }
 
                 var totalAmount = (reviews * 7) * (1 + additionalAmount);
@@ -1180,7 +1180,7 @@
                 }
 
                 if (document.getElementById("cs2wingmanwinboostcheckbox3").checked) {
-                    additionalAmount += 0.20;
+                    additionalAmount += 0.65;
                 }
 
                 var totalAmount = (reviews * 7) * (1 + additionalAmount);
@@ -1233,7 +1233,7 @@
                 }
 
                 if (document.getElementById("CS2RankBoostcheckbox3").checked) {
-                    additionalAmount += 0.20;
+                    additionalAmount += 0.65;
                 }
 
                 var totalPrice = prices[selectedOption] * (1 + additionalAmount);

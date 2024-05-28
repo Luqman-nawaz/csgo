@@ -295,7 +295,7 @@ class BoostController extends Controller
         }
 
         if($order->play_with_booster == 1){
-            $total_amount = $total_amount + $side_amount;
+            $total_amount = $total_amount + ($order_amount * 0.65);
         }
         return view('checkout', ['boostorder' => $order, 'total_amount' => $total_amount, 'order_amount' => $order_amount]);
     }
@@ -398,7 +398,7 @@ class BoostController extends Controller
             }
 
             if($order->play_with_booster == 1){
-                $total_amount = $total_amount + $side_amount;
+                $total_amount = $total_amount + ($order_amount * 0.65);
             }
 
             //stripe payment
@@ -464,7 +464,7 @@ class BoostController extends Controller
                 $req['cmd'] = 'create_transaction';
                 $req['amount'] = $total_amount;
                 $req['currency1'] = 'EUR';
-                $req['currency2'] = 'BTC';
+                $req['currency2'] = $request->crypto_currency;
                 $req['buyer_email'] = Auth::user()->email;
                 $req['item_name'] = 'Boost';
                 $req['item_number'] = $order_id;
@@ -475,7 +475,7 @@ class BoostController extends Controller
                 $req['key'] = '9426644aed1497fbbdea883c0284ee8a87e3424ecdb7d60dabdfb0418f965c8b';
                 $req['format'] = 'json';
                 $post_data = Arr::query($req);
-            
+                
                 $hmac = hash_hmac('sha512', $post_data, '8bf7577fa582C8e4B158659F45b8af05ef623d8B87EB9976d8A297Ef406DbF08');
             
                 $response = Http::withHeaders([

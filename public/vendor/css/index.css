@@ -65,6 +65,7 @@
   border-radius: 10px;
   border: 1px solid #FFA500;
   overflow: hidden;
+  transition: 0.3s;
 }
 .landing-page-container Header .leftmenu-container .dropdown-box .boost-dropdown a {
   color: var(--Text-primary, #FFF);
@@ -2458,6 +2459,7 @@
     flex-direction: column;
     width: 100%;
     background-color: #191919;
+    transition: 0.3s;
   }
   .buttonmob-container {
     padding: 10px 15px;
