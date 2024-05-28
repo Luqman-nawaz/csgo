@@ -55,7 +55,7 @@
                                             <div class="counter">
                                                 <button type="button" class="minus" onclick="updatetab2minus();"><img
                                                         src="/assets/icons/MinusCircle.png" alt=""></button>
-                                                <input name="current_level" type="number" class="placementrangecurrent value" id="counter1" value="1" onchange="updateRankBoostPriceRequiredCurrent()" min="1" max="35000" required>
+                                                <input name="current_level" type="number" class="placementrangecurrent value" id="counter1" value="1" onchange="updateRankBoostPriceRequiredCurrent()" min="1" max="36599" required>
                                                 <button type="button" class="plus" onclick="updatetab2plus();"><img
                                                         src="/assets/icons/PlusCircle.png" alt=""></button>
                                             </div>
@@ -66,7 +66,7 @@
                                             <div class="counter">
                                                 <button type="button" class="minus" onclick="updatetab3minus();"><img
                                                         src="/assets/icons/MinusCircle.png" alt=""></button>
-                                                <input name="desired_level" type="number" class="placementrangerequired value" id="counter1" value="1" onchange="updateRankBoostPriceRequired()" min="1" max="35000" required>
+                                                <input name="desired_level" type="number" class="placementrangerequired value" id="counter1" value="1" onchange="updateRankBoostPriceRequired()" min="1" max="45799" required>
                                                 <button type="button" class="plus" onclick="updatetab3plus();"><img
                                                         src="/assets/icons/PlusCircle.png" alt=""></button>
                                             </div>
@@ -96,7 +96,7 @@
                                             <label>
                                                 <input type="checkbox" name="play_with_booster" id="CS2RankBoostcheckbox3" onclick="updateRankBoostPriceRequired()">
                                                 Play with Booster
-                                                <span>+65%</span>
+                                                <span>+50%</span>
                                             </label>
 
                                         </div>
@@ -213,7 +213,7 @@
                                         <label>
                                             <input type="checkbox" name="play_with_booster" id="placementcheckbox3" onclick="updateplacement()">
                                             Play with Booster
-                                            <span>+65%</span>
+                                            <span>+50%</span>
                                         </label>
 
                                         </div>
@@ -375,7 +375,7 @@
                 }
 
                 if (document.getElementById("placementcheckbox3").checked) {
-                    additionalAmount += 0.65;
+                    additionalAmount += 0.50;
                 }
 
                 var totalAmount = (reviews * 7) * (1 + additionalAmount);
@@ -507,7 +507,7 @@
             }
 
             if (document.getElementById("CS2RankBoostcheckbox3").checked) {
-                additionalAmount += 0.65;
+                additionalAmount += 0.50;
             }
 
             var totalPrice = price * (1 + additionalAmount);

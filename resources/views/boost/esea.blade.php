@@ -131,7 +131,7 @@
                                         <label>
                                             <input type="checkbox" name="play_with_booster" id="CS2RankBoostcheckbox3" onclick="updateRankBoostPriceRequired()">
                                             Play with Booster
-                                            <span>+65%</span>
+                                            <span>+50%</span>
                                         </label>
 
                                     </div>
@@ -253,7 +253,7 @@
                                         <label>
                                             <input type="checkbox" name="play_with_booster" id="placementcheckbox3" onclick="updateplacement()">
                                             Play with Booster
-                                            <span>+65%</span>
+                                            <span>+50%</span>
                                         </label>
 
                                     </div>
@@ -421,7 +421,7 @@
                 }
 
                 if (document.getElementById("placementcheckbox3").checked) {
-                    additionalAmount += 0.65;
+                    additionalAmount += 0.50;
                 }
 
                 var totalAmount = (reviews * 7) * (1 + additionalAmount);
@@ -468,7 +468,7 @@
             }
 
             if (document.getElementById("CS2RankBoostcheckbox3").checked) {
-                additionalAmount += 0.65;
+                additionalAmount += 0.50;
             }
 
             var totalPrice = prices[selectedOption] * (1 + additionalAmount);

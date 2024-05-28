@@ -121,7 +121,7 @@
                                                     @endif
                                                     @if($orders->payment->payment_method == 'crypto')
 
-                                                        <a href="/checkout/cryptosuccess/{{ $orders->id }}"><span class="trans-pill">Already paid?</span></a>
+                                                        <a href="{{ route('cryptohome', ['id' => $orders->id]) }}"><span class="trans-pill">Already paid?</span></a>
                                                     @else
                                                         <a href="/csboost#boostingservices"><span class="trans-pill">Order Again</span></a>
                                                     @endif

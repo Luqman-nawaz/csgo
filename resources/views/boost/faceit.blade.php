@@ -128,7 +128,7 @@
                                             <label>
                                                 <input type="checkbox" name="play_with_booster" id="faceitcheckbox3" onclick="updatefaceitpricerequired()">
                                                 Play with Booster
-                                                <span>+65%</span>
+                                                <span>+50%</span>
                                             </label>
 
                                         </div>
@@ -232,7 +232,7 @@
                                         <label>
                                             <input type="checkbox" id="faceitelocheckbox3" name="play_with_booster" onclick="updatefaceitelopricerequired()">
                                             Play with Booster
-                                            <span>+65%</span>
+                                            <span>+50%</span>
                                         </label>
 
                                     </div>
@@ -359,7 +359,7 @@
                                         <label>
                                             <input type="checkbox" name="play_with_booster" id="placementcheckbox3" onclick="updateplacement()">
                                             Play with Booster
-                                            <span>+65%</span>
+                                            <span>+50%</span>
                                         </label>
 
                                         </div>
@@ -519,7 +519,7 @@
             }
 
             if (document.getElementById("faceitcheckbox3").checked) {
-                additionalAmount += 0.65;
+                additionalAmount += 0.50;
             }
 
             var totalPrice = prices[selectedOption] * (1 + additionalAmount);
@@ -602,7 +602,7 @@
             }
 
             if (document.getElementById("faceitelocheckbox3").checked) {
-                additionalAmount += 0.65;
+                additionalAmount += 0.50;
             }
 
             var totalPrice = amount * (1 + additionalAmount);
@@ -674,7 +674,7 @@
             }
 
             if (document.getElementById("placementcheckbox3").checked) {
-                additionalAmount += 0.65;
+                additionalAmount += 0.50;
             }
 
             var totalAmount = (reviews * 10) * (1 + additionalAmount) * (1 + prices[selectedOption]);

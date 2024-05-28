@@ -295,7 +295,7 @@ class BoostController extends Controller
         }
 
         if($order->play_with_booster == 1){
-            $total_amount = $total_amount + ($order_amount * 0.65);
+            $total_amount = $total_amount + ($order_amount * 0.50);
         }
         return view('checkout', ['boostorder' => $order, 'total_amount' => $total_amount, 'order_amount' => $order_amount]);
     }
@@ -398,7 +398,7 @@ class BoostController extends Controller
             }
 
             if($order->play_with_booster == 1){
-                $total_amount = $total_amount + ($order_amount * 0.65);
+                $total_amount = $total_amount + ($order_amount * 0.50);
             }
 
             //stripe payment
