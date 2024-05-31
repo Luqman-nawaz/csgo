@@ -385,6 +385,7 @@
                 // Rank Dropdown Img Change
             var rankImage = document.getElementById("placementcurrentimage");
             rankImage.src = `/ranks/esea/${selectedOption}.png`;
+            updateplacement();
         }
 
         function updatetab1minus(){
@@ -459,7 +460,7 @@
             // Rank Dropdown Img Change
             var rankImage = document.getElementById("rankboostimage");
             rankImage.src = `/ranks/esea/${selectedOption}.png`;
-            
+            updateRankBoostPriceRequired();
         }
 
     function updateRankBoostPriceRequired(){

@@ -411,6 +411,7 @@
                 // Rank Dropdown Img Change
                 var rankImage = document.getElementById("placementcurrentimage");
                 rankImage.src = `/ranks/premier/${selectedOption}.png`;
+                updateplacement();
         }
                 
         function updatetab2minus(){
@@ -451,6 +452,7 @@
             if(currentSelectedOption > 36599){
                 document.querySelector(".placementrangecurrent").value = 36599;
             }
+            updateRankBoostPriceRequired()
         }
 
         function updateRankBoostPriceRequired(){

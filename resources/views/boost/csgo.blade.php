@@ -1046,6 +1046,7 @@
                 // Rank Dropdown Img Change
                 var rankImage = document.getElementById("winboostcurrentimage");
                 rankImage.src = `/ranks/csgo/${selectedOption}.png`;
+                updatePriceWinBoost();
         }
 
         //wingman boost
@@ -1054,6 +1055,7 @@
                 // Rank Dropdown Img Change
                 var rankImage = document.getElementById("wingmanboostcurrentimage");
                 rankImage.src = `/ranks/wingman/${selectedOption}.webp`;
+                updateWingmanBoostPriceRequired();
         }
 
         function updateWingmanBoostPriceRequired(){
@@ -1105,6 +1107,7 @@
                 // Rank Dropdown Img Change
             var rankImage = document.getElementById("placementcurrent");
             rankImage.src = `/ranks/csgo/${selectedOption}.png`;
+            updateplacement();
         }
 
         function updatetab4minus(){
@@ -1176,6 +1179,7 @@
             // Rank Dropdown Img Change
             var rankImage = document.getElementById("wingmanwinboostimage");
             rankImage.src = `/ranks/wingman/${selectedOption}.webp`;
+            updatewingmanwinboostcounter();
                 
         }
 
@@ -1244,10 +1248,11 @@
         //rank boost
         function updateRankBoostPrice(){
                 var selectedOption = document.getElementById("select").value;
-
                 // Rank Dropdown Img Change
                 var rankImage = document.getElementById("rankboostimage");
                 rankImage.src = `/ranks/csgo/${selectedOption}.png`;
+
+                updateRankBoostPriceRequired();
                 
         }
 

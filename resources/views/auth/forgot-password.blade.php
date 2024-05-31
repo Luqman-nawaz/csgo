@@ -11,7 +11,7 @@
         <!-- csgo-Header End -->
 
         <div class="credentials-main-container" style="padding-top:1%">
-            <div class="credentials-centered-container" style="margin-top:15%">
+            <div class="credentials-centered-container" style="margin-top:12%">
 
                 
 

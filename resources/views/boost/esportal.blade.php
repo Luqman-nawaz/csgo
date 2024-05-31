@@ -382,6 +382,7 @@
                 // Rank Dropdown Img Change
             var rankImage = document.getElementById("placementcurrentimage");
             rankImage.src = `/ranks/esportal/${selectedOption}.png`;
+            updateplacement();
         }
 
         function updatetab1minus(){
@@ -457,7 +458,7 @@
             // Rank Dropdown Img Change
             var rankImage = document.getElementById("rankboostimage");
             rankImage.src = `/ranks/esportal/${selectedOption}.png`;
-            
+            updateRankBoostPriceRequired();
         }
 
         function updateRankBoostPriceRequired(){

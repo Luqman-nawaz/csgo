@@ -483,6 +483,7 @@
                 // Rank Dropdown Img Change
             var rankImage = document.getElementById("faceitcurrentimage");
             rankImage.src = `/ranks/faceit/${selectedOption}.svg`;
+            updatefaceitpricerequired();
     }
 
     function updatefaceitpricerequired(){
@@ -612,6 +613,7 @@
                 // Rank Dropdown Img Change
             var rankImage = document.getElementById("faceitwincurrentimage");
             rankImage.src = `/ranks/faceit/${selectedOption}.svg`;
+            updateplacement();
     }
 
         function updatetab1minus(){
