@@ -135,8 +135,12 @@
                                                     <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
                                                     <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
                                                 </div>
-                                            <span>4.9 on</span>
-                                            <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <span>4.9 on</span>
+                                                </a>
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                                </a>
                                         </div>
                                     </div>
 
@@ -241,8 +245,12 @@
                                                     <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
                                                     <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
                                                 </div>
-                                            <span>4.9 on</span>
-                                            <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <span>4.9 on</span>
+                                                </a>
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                                </a>
                                         </div>
                                     </div>
 
@@ -347,8 +355,12 @@
                                                     <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
                                                     <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
                                                 </div>
-                                            <span>4.9 on</span>
-                                            <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <span>4.9 on</span>
+                                                </a>
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                                </a>
                                         </div>
                                     </div>
 
@@ -453,8 +465,12 @@
                                                     <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
                                                     <a href="https://www.trustpilot.com/review/myboost.gg"><img src="/assets/images/trustpilot_icon.png.png" alt=""></a>
                                                 </div>
-                                            <span>4.9 on</span>
-                                            <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <span>4.9 on</span>
+                                                </a>
+                                                <a href="https://www.trustpilot.com/review/myboost.gg">
+                                                    <img src="/assets/images/trustpilot_logo.svg.png" alt="">
+                                                </a>
                                         </div>
                                     </div>
 
@@ -545,6 +561,9 @@
 
         function updatetab1minus(){
             var reviews = document.querySelector('.updatecounter1').value;
+            if(reviews <= 1){
+                return;
+            }
             let newvalue = +reviews - 1;
             document.querySelector('.updatecounter1').value = newvalue;
 
@@ -553,8 +572,10 @@
 
         function updatetab1plus(){
             var reviews = document.querySelector('.updatecounter1').value;
-            let newvalue = +reviews + 1;
-            document.querySelector('.updatecounter1').value = newvalue;
+            if(reviews <= 9){
+                let newvalue = +reviews + 1;
+                document.querySelector('.updatecounter1').value = newvalue;
+            }
 
             updatePrice();
         }
@@ -576,6 +597,9 @@
 
         function updatetab2minus(){
             var reviews = document.querySelector('.DemoCoachmyRange').value;
+            if(reviews <= 1){
+                return;
+            }
             let newvalue = +reviews - 1;
             document.querySelector('.DemoCoachmyRange').value = newvalue;
 
@@ -584,8 +608,10 @@
 
         function updatetab2plus(){
             var reviews = document.querySelector('.DemoCoachmyRange').value;
-            let newvalue = +reviews + 1;
-            document.querySelector('.DemoCoachmyRange').value = newvalue;
+            if(reviews <= 9){
+                let newvalue = +reviews + 1;
+                document.querySelector('.DemoCoachmyRange').value = newvalue;
+            }
 
             updateCoachDemoPrice();
         }
@@ -606,6 +632,9 @@
 
         function updatetab3minus(){
             var reviews = document.querySelector('.CoachmyRange').value;
+            if(reviews <= 1){
+                return;
+            }
             let newvalue = +reviews - 1;
             document.querySelector('.CoachmyRange').value = newvalue;
 
@@ -614,8 +643,10 @@
 
         function updatetab3plus(){
             var reviews = document.querySelector('.CoachmyRange').value;
-            let newvalue = +reviews + 1;
-            document.querySelector('.CoachmyRange').value = newvalue;
+            if(reviews <= 9){
+                let newvalue = +reviews + 1;
+                document.querySelector('.CoachmyRange').value = newvalue;
+            }
 
             updateCoachPrice();
         }
@@ -637,6 +668,9 @@
 
         function updatetab4minus(){
             var reviews = document.querySelector('.TeamCoachmyRange').value;
+            if(reviews <= 1){
+                return;
+            }
             let newvalue = +reviews - 1;
             document.querySelector('.TeamCoachmyRange').value = newvalue;
 
@@ -645,8 +679,10 @@
 
         function updatetab4plus(){
             var reviews = document.querySelector('.TeamCoachmyRange').value;
-            let newvalue = +reviews + 1;
-            document.querySelector('.TeamCoachmyRange').value = newvalue;
+            if(reviews <= 9){
+                let newvalue = +reviews + 1;
+                document.querySelector('.TeamCoachmyRange').value = newvalue;
+            }
 
             updateTeamCoachPrice();
         }
@@ -690,8 +726,5 @@
         }
     </script>
     <script src="/vendor/js/boostDropdown.js"></script>
-    <script src="/vendor/js/counter.js"></script>
-
-    
-    
+        
 @endpush

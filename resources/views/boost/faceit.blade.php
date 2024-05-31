@@ -285,7 +285,7 @@
                     <div id="tab3" class="boostingTab">
                         <form action="/faceit/checkout" method="post">
                                 @csrf
-                                <input type="text" value="Win Boost" name="boost_type" style="display: none;" />
+                                <input type="text" value="Faceit Win Boost" name="boost_type" style="display: none;" />
                                 
                                 <div class="boostingTabContent">
 
@@ -308,14 +308,6 @@
                                                     <option value="Level 7">Level 7</option>
                                                     <option value="Level 8">Level 8</option>
                                                     <option value="Level 9">Level 9</option>
-                                                    <option value="Level 10 Elo 2001">Level 10 Elo 2001</option>
-                                                    <option value="Level 10 Elo 2150">Level 10 Elo 2150</option>
-                                                    <option value="Level 10 Elo 2300">Level 10 Elo 2300</option>
-                                                    <option value="Level 10 Elo 2450">Level 10 Elo 2450</option>
-                                                    <option value="Level 10 Elo 2600">Level 10 Elo 2600</option>
-                                                    <option value="Level 10 Elo 2750">Level 10 Elo 2750</option>
-                                                    <option value="Level 10 Elo 2900">Level 10 Elo 2900</option>
-                                                    <option value="Level 10 Elo 3050">Level 10 Elo 3050</option>
                                                 </select>
                                             </div>
 
@@ -495,18 +487,22 @@
 
     function updatefaceitpricerequired(){
             var selectedOption = document.querySelector(".faceitrequired").value;
-            var prices = {
-                "Level 1": 10.00,
-                "Level 2": 20.00,
-                "Level 3": 30.00,
-                "Level 4": 40.00,
-                "Level 5": 50.00,
-                "Level 6": 60.00,
-                "Level 7": 70.00,
-                "Level 8": 80.00,
-                "Level 9": 90.00,
-                "Level 10": 100.00,
-            };
+            var currentselectedOption = document.querySelector(".faceitcurrent").value;
+                
+                var prices = @json(App\Models\orderamounts::where('boost_type', 'Level Boost')->get());
+
+                for(var i = 0; i < prices.length; i++)
+                {
+                    if(prices[i].current_level == currentselectedOption && prices[i].desired_level == selectedOption)
+                    {
+                        var final_price = prices[i].amount;
+                    }
+                }
+
+                if(final_price == undefined){
+                    document.getElementById("faceitprice").innerText = "--";
+                    return;
+                }
             
             var additionalAmount = 0;
 
@@ -522,7 +518,7 @@
                 additionalAmount += 0.50;
             }
 
-            var totalPrice = prices[selectedOption] * (1 + additionalAmount);
+            var totalPrice = final_price * (1 + additionalAmount);
 
             document.getElementById("faceitprice").innerText = "€" + totalPrice.toFixed(2);
 
@@ -620,6 +616,9 @@
 
         function updatetab1minus(){
             var reviews = document.querySelector('.placementrange').value;
+            if(reviews <= 1){
+                return;
+            }
             let newvalue = +reviews - 1;
             document.querySelector('.placementrange').value = newvalue;
 
@@ -628,41 +627,39 @@
 
         function updatetab1plus(){
             var reviews = document.querySelector('.placementrange').value;
-            let newvalue = +reviews + 1;
-            document.querySelector('.placementrange').value = newvalue;
+            if(reviews <= 10){
+                let newvalue = +reviews + 1;
+                document.querySelector('.placementrange').value = newvalue;
+            }
 
             updateplacement();
         }
 
     function updateplacement(){
-            var selectedOption = document.querySelector(".faceitwincurrent").value;
             var reviews = document.querySelector('.placementrange').value;
+
+            var rank = document.querySelector('.faceitwincurrent').value;
+                
+                var prices = @json(App\Models\orderamounts::where('boost_type', 'Faceit Win Boost')->get());
+
+                for(var i = 0; i < prices.length; i++)
+                {
+                    if(prices[i].current_level == rank && prices[i].desired_level == reviews)
+                    {
+                        var final_price = prices[i].amount;
+                    }
+                }
+
+                if(final_price == undefined){
+                    document.getElementById("placementprice").innerText = "--";
+                    return;
+                }
 
             if(reviews > 10){
                 document.querySelector(".placementrange").value = 10;
+                var reviews = 10;
             }
 
-            var prices = {
-                "Level 1": 0.20,
-                "Level 2": 0.30,
-                "Level 3": 0.40,
-                "Level 4": 0.50,
-                "Level 5": 0.60,
-                "Level 6": 0.70,
-                "Level 7": 0.80,
-                "Level 8": 0.90,
-                "Level 9": 1.00,
-                "Level 10": 1.10,
-                "Level 10 Elo 2001": 1.20,
-                "Level 10 Elo 2150": 1.40,
-                "Level 10 Elo 2300": 1.60,
-                "Level 10 Elo 2450": 1.80,
-                "Level 10 Elo 2600": 2.00,
-                "Level 10 Elo 2750": 2.25,
-                "Level 10 Elo 2900": 2.50,
-                "Level 10 Elo 3050": 3.00,
-            };
-            
             var additionalAmount = 0;
 
             if (document.getElementById("placementcheckbox1").checked) {
@@ -677,7 +674,7 @@
                 additionalAmount += 0.50;
             }
 
-            var totalAmount = (reviews * 10) * (1 + additionalAmount) * (1 + prices[selectedOption]);
+            var totalAmount = final_price * (1 + additionalAmount);
             document.getElementById("placementprice").innerText = "€" + totalAmount.toFixed(2);
     }
     </script>

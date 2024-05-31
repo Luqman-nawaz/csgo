@@ -17,7 +17,7 @@
     <div class="landing-page-container">
         <x-navbar></x-navbar>
         
-        <div class="heroSectionCS2-container">
+            <div class="heroSectionCS2-container">
                 <div class="heroSectionCS2-inner-container">
                     <div class="heroSectionCS2-innerLeft-container">
                         <h5>UNLEASH YOUR COMPETITIVE EDGE ON CS2 Premier</h5>
@@ -342,6 +342,9 @@
 
         function updatetab1minus(){
             var reviews = document.querySelector('.placementrange').value;
+            if(reviews <= 1){
+                return;
+            }
             let newvalue = +reviews - 1;
             document.querySelector('.placementrange').value = newvalue;
 
@@ -350,14 +353,33 @@
 
         function updatetab1plus(){
             var reviews = document.querySelector('.placementrange').value;
-            let newvalue = +reviews + 1;
-            document.querySelector('.placementrange').value = newvalue;
+            if(reviews <= 9){
+                let newvalue = +reviews + 1;
+                document.querySelector('.placementrange').value = newvalue;
+            }
 
             updateplacement();
         }
 
         function updateplacement(){
                 var reviews = document.querySelector('.placementrange').value;
+
+                var rank = document.querySelector('.placementcurrent').value;
+                
+                var prices = @json(App\Models\orderamounts::where('boost_type', 'Premier Win Boost')->get());
+
+                for(var i = 0; i < prices.length; i++)
+                {
+                    if(prices[i].current_level == rank && prices[i].desired_level == reviews)
+                    {
+                        var final_price = prices[i].amount;
+                    }
+                }
+
+                if(final_price == undefined){
+                    document.getElementById("placementprice").innerText = "--";
+                    return;
+                }
 
                 if(reviews > 10){
                     reviews = 10;
@@ -378,7 +400,7 @@
                     additionalAmount += 0.50;
                 }
 
-                var totalAmount = (reviews * 7) * (1 + additionalAmount);
+                var totalAmount = final_price * (1 + additionalAmount);
                 document.getElementById("placementprice").innerText = "€" + totalAmount.toFixed(2);
         }
 

@@ -389,6 +389,9 @@
 
         function updatetab1minus(){
             var reviews = document.querySelector('.placementrange').value;
+            if(reviews <= 1){
+                return;
+            }
             let newvalue = +reviews - 1;
             document.querySelector('.placementrange').value = newvalue;
             
@@ -397,14 +400,33 @@
 
         function updatetab1plus(){
             var reviews = document.querySelector('.placementrange').value;
-            let newvalue = +reviews + 1;
-            document.querySelector('.placementrange').value = newvalue;
+            if(reviews <= 9){
+                let newvalue = +reviews + 1;
+                document.querySelector('.placementrange').value = newvalue;
+            }
 
             updateplacement();
         }
 
         function updateplacement(){
                 var reviews = document.querySelector('.placementrange').value;
+
+                var rank = document.querySelector('.placementcurrent').value;
+                
+                var prices = @json(App\Models\orderamounts::where('boost_type', 'ESEA Win Boost')->get());
+
+                for(var i = 0; i < prices.length; i++)
+                {
+                    if(prices[i].current_level == rank && prices[i].desired_level == reviews)
+                    {
+                        var final_price = prices[i].amount;
+                    }
+                }
+
+                if(final_price == undefined){
+                    document.getElementById("placementprice").innerText = "--";
+                    return;
+                }
 
                 if(reviews > 10){
                     document.querySelector(".placementrange").value = 10;
@@ -424,7 +446,7 @@
                     additionalAmount += 0.50;
                 }
 
-                var totalAmount = (reviews * 7) * (1 + additionalAmount);
+                var totalAmount = final_price * (1 + additionalAmount);
                 document.getElementById("placementprice").innerText = "€" + totalAmount.toFixed(2);
 
         }
@@ -440,22 +462,25 @@
             
         }
 
-        function updateRankBoostPriceRequired(){
+    function updateRankBoostPriceRequired(){
             var selectedOption = document.querySelector(".rankboostrequired").value;
-            var prices = {
-                "D-": 10.00,
-                "D": 15.00,
-                "D Plus": 20.00,
-                "C-": 25.00,
-                "C": 30.00,
-                "C Plus": 35.00,
-                "B-": 40.00,
-                "B": 45.00,
-                "B Plus": 50.00,
-                "A-": 55.00,
-                "A": 60.00,
-                "A Plus": 65.00,
-            };
+            
+            var currentselectedOption = document.querySelector(".rankboostcurrent").value;
+                
+                var prices = @json(App\Models\orderamounts::where('boost_type', 'ESEA Rank Boost')->get());
+
+                for(var i = 0; i < prices.length; i++)
+                {
+                    if(prices[i].current_level == currentselectedOption && prices[i].desired_level == selectedOption)
+                    {
+                        var final_price = prices[i].amount;
+                    }
+                }
+
+                if(final_price == undefined){
+                    document.getElementById("rankboostprice").innerText = "--";
+                    return;
+                }
 
             var additionalAmount = 0;
 
@@ -471,7 +496,7 @@
                 additionalAmount += 0.50;
             }
 
-            var totalPrice = prices[selectedOption] * (1 + additionalAmount);
+            var totalPrice = final_price * (1 + additionalAmount);
 
             document.getElementById("rankboostprice").innerText = "€" + totalPrice.toFixed(2);
 
@@ -505,5 +530,4 @@
         }
     </script>
     <script src="/vendor/js/boostDropdown.js"></script>
-    <script src="/vendor/js/counter.js"></script>
 @endpush

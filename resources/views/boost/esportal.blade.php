@@ -17,7 +17,7 @@
     <div class="landing-page-container">
         <x-navbar></x-navbar>
         
-        <div class="heroSectionCS2-container">
+            <div class="heroSectionCS2-container">
                 <div class="heroSectionCS2-inner-container">
                     <div class="heroSectionCS2-innerLeft-container">
                         <h5>UNLEASH YOUR COMPETITIVE EDGE ON ESPORTAL</h5>
@@ -182,7 +182,7 @@
                     <div id="tab2" class="boostingTab">
                         <form action="/esportal/checkout" method="post">
                                 @csrf
-                                <input type="text" value="Esportal Rank Boost" name="boost_type" style="display: none;" />
+                                <input type="text" value="Esportal Win Boost" name="boost_type" style="display: none;" />
                             
                                 <div class="boostingTabContent">
 
@@ -386,6 +386,9 @@
 
         function updatetab1minus(){
             var reviews = document.querySelector('.placementrange').value;
+            if(reviews <= 1){
+                return;
+            }
             let newvalue = +reviews - 1;
             document.querySelector('.placementrange').value = newvalue;
 
@@ -394,8 +397,11 @@
 
         function updatetab1plus(){
             var reviews = document.querySelector('.placementrange').value;
-            let newvalue = +reviews + 1;
-            document.querySelector('.placementrange').value = newvalue;
+            
+            if(reviews <= 10){
+                let newvalue = +reviews + 1;
+                document.querySelector('.placementrange').value = newvalue;
+            }
 
             updateplacement();
         }
@@ -403,8 +409,26 @@
         function updateplacement(){
                 var reviews = document.querySelector('.placementrange').value;
 
+                var rank = document.querySelector('.placementcurrent').value;
+                
+                var prices = @json(App\Models\orderamounts::where('boost_type', 'Esportal Win Boost')->get());
+
+                for(var i = 0; i < prices.length; i++)
+                {
+                    if(prices[i].current_level == rank && prices[i].desired_level == reviews)
+                    {
+                        var final_price = prices[i].amount;
+                    }
+                }
+
+                if(final_price == undefined){
+                    document.getElementById("placementprice").innerText = "--";
+                    return;
+                }
+
                 if(reviews > 10){
                     document.querySelector(".placementrange").value = 10;
+                    var reviews = 10;
                 }
                 
                 var additionalAmount = 0;
@@ -421,7 +445,7 @@
                     additionalAmount += 0.50;
                 }
 
-                var totalAmount = (reviews * 7) * (1 + additionalAmount);
+                var totalAmount = final_price * (1 + additionalAmount);
                 document.getElementById("placementprice").innerText = "€" + totalAmount.toFixed(2);
         }
 
@@ -438,19 +462,22 @@
 
         function updateRankBoostPriceRequired(){
             var selectedOption = document.querySelector(".rankboostrequired").value;
-            var prices = {
-                "Silver": 10.00,
-                "Gold 1": 15.00,
-                "Gold 2": 20.00,
-                "Veteran 1": 25.00,
-                "Veteran 2": 30.00,
-                "Master 1": 35.00,
-                "Master 2": 40.00,
-                "Elite 1": 45.00,
-                "Elite 2": 50.00,
-                "Pro 1": 55.00,
-                "Pro 2": 60.00,
-            };
+            var currentselectedOption = document.querySelector(".rankboostcurrent").value;
+                
+                var prices = @json(App\Models\orderamounts::where('boost_type', 'Esportal Rank Boost')->get());
+
+                for(var i = 0; i < prices.length; i++)
+                {
+                    if(prices[i].current_level == currentselectedOption && prices[i].desired_level == selectedOption)
+                    {
+                        var final_price = prices[i].amount;
+                    }
+                }
+
+                if(final_price == undefined){
+                    document.getElementById("rankboostprice").innerText = "--";
+                    return;
+                }
 
             var additionalAmount = 0;
 
@@ -466,7 +493,7 @@
                 additionalAmount += 0.50;
             }
 
-            var totalPrice = prices[selectedOption] * (1 + additionalAmount);
+            var totalPrice = final_price * (1 + additionalAmount);
 
             document.getElementById("rankboostprice").innerText = "€" + totalPrice.toFixed(2);
 
@@ -499,5 +526,4 @@
         }
     </script>
     <script src="/vendor/js/boostDropdown.js"></script>
-    <script src="/vendor/js/counter.js"></script>
 @endpush

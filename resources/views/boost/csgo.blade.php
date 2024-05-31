@@ -62,7 +62,7 @@
                                 </div>
                                 <div class="custom-select">
                                     <label for="select">Current Level</label>
-                                    <select id="select" name="current_level" onchange="updateRankBoostPrice();">
+                                    <select id="select" class="rankboostcurrentcs" name="current_level" onchange="updateRankBoostPrice();">
                                                 <option value="Silver I">Silver I</option>
                                                 <option value="Silver II">Silver II</option>
                                                 <option value="Silver III">Silver III</option>
@@ -76,7 +76,7 @@
                                                 <option value="Master Guardian">Master Guardian</option>
                                                 <option value="Master Guardian II">Master Guardian II</option>
                                                 <option value="Master Guardian Elite">Master Guardian Elite</option>
-                                                <option value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                                <option value="Distinguished Master Guardian">Distinguished Master Guardian</option>
                                                 <option value="Legendary Eagle">Legendary Eagle</option>
                                                 <option value="Legendary Eagle Master">Legendary Eagle Master</option>
                                                 <option value="Supreme Master">Supreme Master First Class</option>
@@ -112,7 +112,7 @@
                                             <option value="Master Guardian">Master Guardian</option>
                                             <option value="Master Guardian II">Master Guardian II</option>
                                             <option value="Master Guardian Elite">Master Guardian Elite</option>
-                                            <option value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                            <option value="Distinguished Master Guardian">Distinguished Master Guardian</option>
                                             <option value="Legendary Eagle">Legendary Eagle</option>
                                             <option value="Legendary Eagle Master">Legendary Eagle Master</option>
                                             <option value="Supreme Master">Supreme Master First Class</option>
@@ -264,7 +264,7 @@
                                                         <option value="Master Guardian">Master Guardian</option>
                                                         <option value="Master Guardian II">Master Guardian II</option>
                                                         <option value="Master Guardian Elite">Master Guardian Elite</option>
-                                                        <option value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                                        <option value="Distinguished Master Guardian">Distinguished Master Guardian</option>
                                                         <option value="Legendary Eagle">Legendary Eagle</option>
                                                         <option value="Legendary Eagle Master">Legendary Eagle Master</option>
                                                         <option value="Supreme Master">Supreme Master First Class</option>
@@ -413,7 +413,7 @@
                                         </div>
                                         <div class="custom-select">
                                             <label for="select">Last known rank</label>
-                                            <select class="placementcurrent" id="select" name="current_level" onchange="updateplacementImage()" >
+                                            <select class="placementcurrentrank current_level_" id="select" name="current_level" onchange="updateplacementImage()" >
                                                         <option value="Unraked">Unranked</option>
                                                         <option value="Silver I">Silver I</option>
                                                         <option value="Silver II">Silver II</option>
@@ -428,7 +428,7 @@
                                                         <option value="Master Guardian">Master Guardian</option>
                                                         <option value="Master Guardian II">Master Guardian II</option>
                                                         <option value="Master Guardian Elite">Master Guardian Elite</option>
-                                                        <option value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                                        <option value="Distinguished Master Guardian">Distinguished Master Guardian</option>
                                                         <option value="Legendary Eagle">Legendary Eagle</option>
                                                         <option value="Legendary Eagle Master">Legendary Eagle Master</option>
                                                         <option value="Supreme Master">Supreme Master First Class</option>
@@ -592,7 +592,7 @@
                                                 <option value="Master Guardian">Master Guardian</option>
                                                 <option value="Master Guardian II">Master Guardian II</option>
                                                 <option value="Master Guardian Elite">Master Guardian Elite</option>
-                                                <option value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                                <option value="Distinguished Master Guardian">Distinguished Master Guardian</option>
                                                 <option value="Legendary Eagle">Legendary Eagle</option>
                                                 <option value="Legendary Eagle Master">Legendary Eagle Master</option>
                                                 <option value="Supreme Master">Supreme Master First Class</option>
@@ -627,7 +627,7 @@
                                                 <option value="Master Guardian">Master Guardian</option>
                                                 <option value="Master Guardian II">Master Guardian II</option>
                                                 <option value="Master Guardian Elite">Master Guardian Elite</option>
-                                                <option value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                                <option value="Distinguished Master Guardian">Distinguished Master Guardian</option>
                                                 <option value="Legendary Eagle">Legendary Eagle</option>
                                                 <option value="Legendary Eagle Master">Legendary Eagle Master</option>
                                                 <option value="Supreme Master">Supreme Master First Class</option>
@@ -761,7 +761,7 @@
                                                 <option value="Master Guardian">Master Guardian</option>
                                                 <option value="Master Guardian II">Master Guardian II</option>
                                                 <option value="Master Guardian Elite">Master Guardian Elite</option>
-                                                <option value="Distunguished Master Guardian">Distunguished Master Guardian</option>
+                                                <option value="Distinguished Master Guardian">Distinguished Master Guardian</option>
                                                 <option value="Legendary Eagle">Legendary Eagle</option>
                                                 <option value="Legendary Eagle Master">Legendary Eagle Master</option>
                                                 <option value="Supreme Master">Supreme Master First Class</option>
@@ -978,13 +978,15 @@
         }
     </script>
     <script src="/vendor/js/boostDropdown.js"></script>
-    <script src="/vendor/js/counter.js"></script>
 
     <script>
         //win boost
 
         function updatetab1minus(){
             var reviews = document.querySelector('.counter1winboost').value;
+            if(reviews <= 1){
+                return;
+            }
             let newvalue = +reviews - 1;
             document.querySelector('.counter1winboost').value = newvalue;
 
@@ -993,15 +995,27 @@
 
         function updatetab1plus(){
             var reviews = document.querySelector('.counter1winboost').value;
-            let newvalue = +reviews + 1;
-            document.querySelector('.counter1winboost').value = newvalue;
-
+            if(reviews <= 10){
+                let newvalue = +reviews + 1;
+                document.querySelector('.counter1winboost').value = newvalue;
+            }
             updatePriceWinBoost();
         }
 
 
         function updatePriceWinBoost(){
                 var reviews = document.querySelector('.counter1winboost').value;
+                var rank = document.querySelector('.updateWinBoostPriceRequired').value;
+
+                var prices = @json(App\Models\orderamounts::where('boost_type', 'Win Boost')->get());
+
+                for(var i = 0; i < prices.length; i++)
+                {
+                    if(prices[i].current_level == rank && prices[i].desired_level == reviews)
+                    {
+                        var final_price = prices[i].amount;
+                    }
+                }
                 
                 if(reviews > 10){
                     reviews = 10;
@@ -1022,7 +1036,7 @@
                     additionalAmount += 0.50;
                 }
 
-                var totalAmount = (reviews * 7) * (1 + additionalAmount);
+                var totalAmount = (final_price) * (1 + additionalAmount);
                 document.getElementById("winboostprice").innerText = "€" + totalAmount.toFixed(2);
         }
         
@@ -1044,27 +1058,24 @@
 
         function updateWingmanBoostPriceRequired(){
                 var selectedOption = document.querySelector(".wingmanboostrequired").value;
-                var prices = {
-                    "Silver I": 10.00,
-                    "Silver II": 15.00,
-                    "Silver III": 20.00,
-                    "Silver IV": 25.00,
-                    "Silver Elite": 30.00,
-                    "Silver Elite Master": 35.00,
-                    "Gold Nova I": 40.00,
-                    "Gold Nova II": 45.00,
-                    "Gold Nova III": 50.00,
-                    "Gold Nova Master": 55.00,
-                    "Master Guardian": 60.00,
-                    "Master Guardian II": 65.00,
-                    "Master Guardian Elite": 70.00,
-                    "Distunguished Master Guardian": 75.00,
-                    "Legendary Eagle": 80.00,
-                    "Legendary Eagle Master": 85.00,
-                    "Supreme Master": 90.00,
-                    "Global Elite": 100.00,
-                };
+                var currentselectedOption = document.querySelector(".wingmanboostcurrent").value;
+                
+                var prices = @json(App\Models\orderamounts::where('boost_type', 'Wingman Boost')->get());
 
+                for(var i = 0; i < prices.length; i++)
+                {
+                    if(prices[i].current_level == currentselectedOption && prices[i].desired_level == selectedOption)
+                    {
+                        var final_price = prices[i].amount;
+                    }
+                }
+
+                console.log(final_price);
+
+                if(final_price == undefined){
+                    document.getElementById("wingmanboostprice").innerText = "--";
+                    return;
+                }
                 var additionalAmount = 0;
 
                 if (document.getElementById("CS2wingmanBoostcheckbox1").checked) {
@@ -1079,7 +1090,7 @@
                     additionalAmount += 0.50;
                 }
 
-                var totalPrice = prices[selectedOption] * (1 + additionalAmount);
+                var totalPrice = final_price * (1 + additionalAmount);
 
                 document.getElementById("wingmanboostprice").innerText = "€" + totalPrice.toFixed(2);
 
@@ -1098,6 +1109,9 @@
 
         function updatetab4minus(){
             var reviews = document.querySelector('.placementrange').value;
+            if(reviews <= 1){
+                return;
+            }
             let newvalue = +reviews - 1;
             document.querySelector('.placementrange').value = newvalue;
 
@@ -1106,16 +1120,35 @@
 
         function updatetab4plus(){
             var reviews = document.querySelector('.placementrange').value;
-            let newvalue = +reviews + 1;
-            document.querySelector('.placementrange').value = newvalue;
+            if(reviews <= 10){
+                let newvalue = +reviews + 1;
+                document.querySelector('.placementrange').value = newvalue;
+            }
 
             updateplacement();
         }
 
         function updateplacement(){
                 var reviews = document.querySelector('.placementrange').value;
+                var rank = document.querySelector('.placementcurrentrank').value;
+                
+                var prices = @json(App\Models\orderamounts::where('boost_type', 'Placement Matches')->get());
+
+                for(var i = 0; i < prices.length; i++)
+                {
+                    if(prices[i].current_level == rank && prices[i].desired_level == reviews)
+                    {
+                        var final_price = prices[i].amount;
+                    }
+                }
+
+                if(final_price == undefined){
+                    document.getElementById("rankboostprice").innerText = "--";
+                    return;
+                }
                 
                 if(reviews > 10){
+                    reviews = 10;
                     document.querySelector('.placementrange').value = 10;
                 }
 
@@ -1133,7 +1166,7 @@
                     additionalAmount += 0.50;
                 }
 
-                var totalAmount = (reviews * 7) * (1 + additionalAmount);
+                var totalAmount = final_price * (1 + additionalAmount);
                 document.getElementById("placementprice").innerText = "€" + totalAmount.toFixed(2);
         }
 
@@ -1148,6 +1181,9 @@
 
         function updatetab5minus(){
             var reviews = document.querySelector('.wingmanwinboostrange').value;
+            if(reviews <= 1){
+                return;
+            }
             let newvalue = +reviews - 1;
             document.querySelector('.wingmanwinboostrange').value = newvalue;
 
@@ -1156,14 +1192,32 @@
 
         function updatetab5plus(){
             var reviews = document.querySelector('.wingmanwinboostrange').value;
-            let newvalue = +reviews + 1;
-            document.querySelector('.wingmanwinboostrange').value = newvalue;
+            if(reviews <= 9){
+                let newvalue = +reviews + 1;
+                document.querySelector('.wingmanwinboostrange').value = newvalue;
+            }
 
             updatewingmanwinboostcounter();
         }
 
         function updatewingmanwinboostcounter(){
             var reviews = document.querySelector('.wingmanwinboostrange').value;
+            var rank = document.querySelector('.wingmanwinboost').value;
+                
+                var prices = @json(App\Models\orderamounts::where('boost_type', 'Wingman Win Boost')->get());
+
+                for(var i = 0; i < prices.length; i++)
+                {
+                    if(prices[i].current_level == rank && prices[i].desired_level == reviews)
+                    {
+                        var final_price = prices[i].amount;
+                    }
+                }
+
+                if(final_price == undefined){
+                    document.getElementById("wingmanwinboostprice").innerText = "--";
+                    return;
+                }
                 
                 if(reviews > 10){
                     document.querySelector('.wingmanwinboostrange').value = 10;
@@ -1183,7 +1237,7 @@
                     additionalAmount += 0.50;
                 }
 
-                var totalAmount = (reviews * 7) * (1 + additionalAmount);
+                var totalAmount = final_price * (1 + additionalAmount);
                 document.getElementById("wingmanwinboostprice").innerText = "€" + totalAmount.toFixed(2);
         }
 
@@ -1200,27 +1254,22 @@
         function updateRankBoostPriceRequired(){
                 
                 var selectedOption = document.querySelector('.updateRankBoostPriceRequired').value;
+                var currentselectedOption = document.querySelector(".rankboostcurrentcs").value;
                 
-                var prices = {
-                    "Silver I": 10.00,
-                    "Silver II": 15.00,
-                    "Silver III": 20.00,
-                    "Silver IV": 25.00,
-                    "Silver Elite": 30.00,
-                    "Silver Elite Master": 35.00,
-                    "Gold Nova I": 40.00,
-                    "Gold Nova II": 45.00,
-                    "Gold Nova III": 50.00,
-                    "Gold Nova Master": 55.00,
-                    "Master Guardian": 60.00,
-                    "Master Guardian II": 65.00,
-                    "Master Guardian Elite": 70.00,
-                    "Distunguished Master Guardian": 75.00,
-                    "Legendary Eagle": 80.00,
-                    "Legendary Eagle Master": 85.00,
-                    "Supreme Master": 90.00,
-                    "Global Elite": 100.00,
-                };
+                var prices = @json(App\Models\orderamounts::where('boost_type', 'Rank Boost')->get());
+
+                for(var i = 0; i < prices.length; i++)
+                {
+                    if(prices[i].current_level == currentselectedOption && prices[i].desired_level == selectedOption)
+                    {
+                        var final_price = prices[i].amount;
+                    }
+                }
+
+                if(final_price == undefined){
+                    document.getElementById("rankboostprice").innerText = "--";
+                    return;
+                }
 
                 var additionalAmount = 0;
 
@@ -1236,7 +1285,7 @@
                     additionalAmount += 0.50;
                 }
 
-                var totalPrice = prices[selectedOption] * (1 + additionalAmount);
+                var totalPrice = final_price * (1 + additionalAmount);
 
                 document.getElementById("rankboostprice").innerText = "€" + totalPrice.toFixed(2);
 
