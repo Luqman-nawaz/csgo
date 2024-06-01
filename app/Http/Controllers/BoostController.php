@@ -239,49 +239,98 @@ class BoostController extends Controller
             
             $difference = $order->desired_level - $order->current_level;
             $difference = round($difference, -3);
-            $order_amount = orderamounts::where('boost_type', $order->boost_type)->where('current_level', $difference)->where('desired_level', $difference)->get()->first();
+
+            $amount = $difference * 0.05;
+
+            $prices = array(
+                "0" => "1.00",
+                "1000" => "1.10",
+                "2000" => "1.20",
+                "3000" => "1.30",
+                "4000" => "1.40",
+                "5000" => "1.50",
+                "6000" => "1.60",
+                "7000" => "1.70",
+                "8000" => "1.80",
+                "9000" => "1.90",
+                "10000" => "2.00",
+                "11000" => "2.10",
+                "12000" => "2.20",
+                "13000" => "2.30",
+                "14000" => "2.40",
+                "15000" => "2.50",
+                "16000" => "2.60",
+                "17000" => "2.70",
+                "18000" => "2.80",
+                "19000" => "2.90",
+                "20000" => "3.00",
+                "21000" => "3.10",
+                "22000" => "3.20",
+                "23000" => "3.30",
+                "24000" => "3.40",
+                "25000" => "3.50",
+                "26000" => "3.60",
+                "27000" => "3.70",
+                "28000" => "3.80",
+                "29000" => "3.90",
+                "30000" => "4.10",
+                "31000" => "4.20",
+                "32000" => "4.30",
+                "33000" => "4.40",
+                "34000" => "4.50",
+                "35000" => "4.60",
+                "36000" => "4.70",
+                "37000" => "4.80",
+                "38000" => "4.90",
+                "39000" => "5.00",
+                "40000" => "5.10",
+                "41000" => "5.20",
+                "42000" => "5.30",
+                "43000" => "5.40",
+                "44000" => "5.50",
+                "45000" => "5.60",
+                "46000" => "5.70",
+            );
+
+            $newgoal = round($order->desired_level, -3);
+
+            $price = $prices[$newgoal];
             
-            if(empty($order_amount)){
-                    return back()->with('error', 'Cannot process order with selected values');
-            }
+            $order_amount = new stdClass();
+            $order_amount->amount = $amount * $price;
+            
 
         }else if($order->boost_type == 'Elo Boost'){
 
             $difference = $order->desired_level - $order->current_level;
             $amount = $difference * 0.05;
+
+            if($order->desired_level < 500){
+                $extra = 1.0;
+            }else if($order->desired_level <= 1000){
+                $extra = 1.3;
+            }else if($order->desired_level <= 1500){
+                $extra = 1.6;
+            }else if($order->desired_level <= 2000){
+                $extra = 1.9;
+            }else if($order->desired_level <= 2500){
+                $extra = 2.2;
+            }else if($order->desired_level <= 3000){
+                $extra = 2.5;
+            }else if($order->desired_level <= 3500){
+                $extra = 2.8;
+            }else if($order->desired_level <= 4000){
+                $extra = 3.0;
+            }else if($order->desired_level <= 4500){
+                $extra = 3.5;
+            }else if($order->desired_level <= 5000){
+                $extra = 4.0;
+            }
             
             $order_amount = new stdClass();
-            $order_amount->amount = $amount;
+            $order_amount->amount = $amount * $extra;
 
 
-        }else if($order->boost_type == 'Win Boost' && $order->boost_id == 2){
-            $prices = array(
-                "Level 1" => "0.20",
-                "Level 2" => "0.30",
-                "Level 3" => "0.40",
-                "Level 4" => "0.50",
-                "Level 5" => "0.60",
-                "Level 6" => "0.70",
-                "Level 7" => "0.80",
-                "Level 8" => "0.90",
-                "Level 9" => "1.00",
-                "Level 10" => "1.10",
-                "Level 10 Elo 2001" => "1.20",
-                "Level 10 Elo 2150" => "1.40",
-                "Level 10 Elo 2300" => "1.60",
-                "Level 10 Elo 2450" => "1.80",
-                "Level 10 Elo 2600" => "2.00",
-                "Level 10 Elo 2750" => "2.25",
-                "Level 10 Elo 2900" => "2.50",
-                "Level 10 Elo 3050" => "3.00",
-            );
-
-            $reviews = $order->desired_level;
-            $amount = ($reviews * 10) * (1 + $prices[$order->current_level]);
-
-            $order_amount = new stdClass();
-            $order_amount->amount = $amount;
-            
         }else{
 
             $order_amount = orderamounts::where('boost_type', $order->boost_type)->where('current_level', $order->current_level)->where('desired_level', $order->desired_level)->get()->first();

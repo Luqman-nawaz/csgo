@@ -448,17 +448,27 @@
 
         function updateRankBoostPriceRequiredCurrent(){
             var currentSelectedOption = document.querySelector(".placementrangecurrent").value;
+            var selectedOption = document.querySelector(".placementrangerequired").value;
             
             if(currentSelectedOption > 36599){
                 document.querySelector(".placementrangecurrent").value = 36599;
             }
-            updateRankBoostPriceRequired()
+
+            if(currentSelectedOption > selectedOption){
+                document.getElementById("rankboostprice").innerText = "--";
+                return;
+            }            
         }
 
         function updateRankBoostPriceRequired(){
             var selectedOption = document.querySelector(".placementrangerequired").value;
             var currentSelectedOption = document.querySelector(".placementrangecurrent").value;
 
+            if(currentSelectedOption > selectedOption){
+                document.getElementById("rankboostprice").innerText = "--";
+                return;
+            }
+            
             if(selectedOption > 45799){
                 document.querySelector(".placementrangerequired").value = 45799;
                 selectedOption = 45799;
@@ -466,57 +476,59 @@
 
             var goal = selectedOption - currentSelectedOption;
 
+            var amount = goal * 0.05;
+
             const prices = {
-                "0": 5.00,
-                "1000": 10.00,
-                "2000": 15.00,
-                "3000": 20.00,
-                "4000": 25.00,
-                "5000": 30.00,
-                "6000": 35.00,
-                "7000": 40.00,
-                "8000": 45.00,
-                "9000": 50.00,
-                "10000": 55.00,
-                "11000": 60.00,
-                "12000": 65.00,
-                "13000": 70.00,
-                "14000": 75.00,
-                "15000": 80.00,
-                "16000": 85.00,
-                "17000": 90.00,
-                "18000": 95.00,
-                "19000": 100.00,
-                "20000": 105.00,
-                "21000": 110.00,
-                "22000": 120.00,
-                "23000": 130.00,
-                "24000": 140.00,
-                "25000": 150.00,
-                "26000": 160.00,
-                "27000": 170.00,
-                "28000": 180.00,
-                "29000": 190.00,
-                "30000": 200.00,
-                "31000": 225.00,
-                "32000": 250.00,
-                "33000": 275.00,
-                "34000": 300.00,
-                "35000": 350.00,
-                "36000": 400.00,
-                "37000": 400.00,
-                "38000": 400.00,
-                "39000": 400.00,
-                "40000": 400.00,
-                "41000": 400.00,
-                "42000": 400.00,
-                "43000": 400.00,
-                "44000": 400.00,
-                "45000": 400.00,
-                "46000": 400.00,
+                "0": 1.00,
+                "1000": 1.10,
+                "2000": 1.20,
+                "3000": 1.30,
+                "4000": 1.40,
+                "5000": 1.50,
+                "6000": 1.60,
+                "7000": 1.70,
+                "8000": 1.80,
+                "9000": 1.90,
+                "10000": 2.00,
+                "11000": 2.10,
+                "12000": 2.20,
+                "13000": 2.30,
+                "14000": 2.40,
+                "15000": 2.50,
+                "16000": 2.60,
+                "17000": 2.70,
+                "18000": 2.80,
+                "19000": 2.90,
+                "20000": 3.00,
+                "21000": 3.10,
+                "22000": 3.20,
+                "23000": 3.30,
+                "24000": 3.40,
+                "25000": 3.50,
+                "26000": 3.60,
+                "27000": 3.70,
+                "28000": 3.80,
+                "29000": 3.90,
+                "30000": 4.10,
+                "31000": 4.20,
+                "32000": 4.30,
+                "33000": 4.40,
+                "34000": 4.50,
+                "35000": 4.60,
+                "36000": 4.70,
+                "37000": 4.80,
+                "38000": 4.90,
+                "39000": 5.00,
+                "40000": 5.10,
+                "41000": 5.20,
+                "42000": 5.30,
+                "43000": 5.40,
+                "44000": 5.50,
+                "45000": 5.60,
+                "46000": 5.70,
             };
 
-            newgoal = Math.round(goal/1000)*1000;
+            newgoal = Math.round(selectedOption/1000)*1000;
 
             price = prices[newgoal];
             
@@ -534,7 +546,7 @@
                 additionalAmount += 0.50;
             }
 
-            var totalPrice = price * (1 + additionalAmount);
+            var totalPrice = amount * price * (1 + additionalAmount);
 
             document.getElementById("rankboostprice").innerText = "€" + totalPrice.toFixed(2);
 

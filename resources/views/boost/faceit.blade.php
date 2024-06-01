@@ -579,8 +579,39 @@
                 requiredelo = newvalue;
             }
 
+            const prices = {
+                "1": 1.00,
+                "1000": 2.00,
+                "2000": 3.00,
+                "3000": 4.00,
+                "4000": 4.50,
+                "5000": 5.00,
+            };
+
             difference = +requiredelo - +currentelo;
 
+            if(requiredelo < 500){
+                boostprice = 1.0;
+            }else if(requiredelo <= 1000){
+                boostprice = 1.3;
+            }else if(requiredelo <= 1500){
+                boostprice = 1.6;
+            }else if(requiredelo <= 2000){
+                boostprice = 1.9;
+            }else if(requiredelo <= 2500){
+                boostprice = 2.2;
+            }else if(requiredelo <= 3000){
+                boostprice = 2.5;
+            }else if(requiredelo <= 3500){
+                boostprice = 2.8;
+            }else if(requiredelo <= 4000){
+                boostprice = 3.0;
+            }else if(requiredelo <= 4500){
+                boostprice = 3.5;
+            }else if(requiredelo <= 5000){
+                boostprice = 4.0;
+            }
+            
             if(difference < 25){
                 document.querySelector('.placementrangerequired').value = (+requiredelo + 25);
                 updatefaceitelopricerequired();
@@ -599,10 +630,10 @@
             }
 
             if (document.getElementById("faceitelocheckbox3").checked) {
-                additionalAmount += 0.50;
+                additionalAmount += 0.60;
             }
 
-            var totalPrice = amount * (1 + additionalAmount);
+            var totalPrice = amount * boostprice *(1 + additionalAmount);
 
             document.getElementById("faceiteloprice").innerText = "€" + totalPrice.toFixed(2);
     }
@@ -681,13 +712,12 @@
     }
     </script>
     <script>
+        
         function toggleSidebar() {
             var sidebar = document.getElementById('sidebar');
             sidebar.style.left = sidebar.style.left === '0px' ? '-280px' : '0px';
         }
 
-    </script>
-    <script>
         function openTab(evt, tabName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("boostingTab");
