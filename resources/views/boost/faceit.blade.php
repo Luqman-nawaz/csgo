@@ -597,7 +597,7 @@
             }else if(requiredelo <= 1500){
                 boostprice = 1.6;
             }else if(requiredelo <= 2000){
-                boostprice = 2.5;
+                boostprice = 3.5;
             }else if(requiredelo <= 2500){
                 boostprice = 6.0;
             }else if(requiredelo <= 3000){

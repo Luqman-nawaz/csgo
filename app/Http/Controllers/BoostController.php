@@ -312,7 +312,7 @@ class BoostController extends Controller
             }else if($order->desired_level <= 1500){
                 $extra = 1.6;
             }else if($order->desired_level <= 2000){
-                $extra = 2.5;
+                $extra = 3.5;
             }else if($order->desired_level <= 2500){
                 $extra = 6.0;
             }else if($order->desired_level <= 3000){
