@@ -1123,7 +1123,7 @@
 
         function updatetab4plus(){
             var reviews = document.querySelector('.placementrange').value;
-            if(reviews <= 10){
+            if(reviews < 10){
                 let newvalue = +reviews + 1;
                 document.querySelector('.placementrange').value = newvalue;
             }
