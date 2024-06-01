@@ -306,25 +306,25 @@ class BoostController extends Controller
             $amount = $difference * 0.05;
 
             if($order->desired_level < 500){
-                $extra = 1.0;
+                $extra = 1.1;
             }else if($order->desired_level <= 1000){
                 $extra = 1.3;
             }else if($order->desired_level <= 1500){
                 $extra = 1.6;
             }else if($order->desired_level <= 2000){
-                $extra = 1.9;
-            }else if($order->desired_level <= 2500){
-                $extra = 2.2;
-            }else if($order->desired_level <= 3000){
                 $extra = 2.5;
+            }else if($order->desired_level <= 2500){
+                $extra = 6.0;
+            }else if($order->desired_level <= 3000){
+                $extra = 9.5;
             }else if($order->desired_level <= 3500){
-                $extra = 2.8;
+                $extra = 14.5;
             }else if($order->desired_level <= 4000){
-                $extra = 3.0;
+                $extra = 15.5;
             }else if($order->desired_level <= 4500){
-                $extra = 3.5;
+                $extra = 15.9;
             }else if($order->desired_level <= 5000){
-                $extra = 4.0;
+                $extra = 16.0;
             }
             
             $order_amount = new stdClass();

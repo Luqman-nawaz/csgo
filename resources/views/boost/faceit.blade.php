@@ -591,25 +591,25 @@
             difference = +requiredelo - +currentelo;
 
             if(requiredelo < 500){
-                boostprice = 1.0;
+                boostprice = 1.1;
             }else if(requiredelo <= 1000){
                 boostprice = 1.3;
             }else if(requiredelo <= 1500){
                 boostprice = 1.6;
             }else if(requiredelo <= 2000){
-                boostprice = 1.9;
-            }else if(requiredelo <= 2500){
-                boostprice = 2.2;
-            }else if(requiredelo <= 3000){
                 boostprice = 2.5;
+            }else if(requiredelo <= 2500){
+                boostprice = 6.0;
+            }else if(requiredelo <= 3000){
+                boostprice = 9.5;
             }else if(requiredelo <= 3500){
-                boostprice = 2.8;
+                boostprice = 14.5;
             }else if(requiredelo <= 4000){
-                boostprice = 3.0;
+                boostprice = 15.5;
             }else if(requiredelo <= 4500){
-                boostprice = 3.5;
+                boostprice = 15.9;
             }else if(requiredelo <= 5000){
-                boostprice = 4.0;
+                boostprice = 16.0;
             }
             
             if(difference < 25){
@@ -617,7 +617,7 @@
                 updatefaceitelopricerequired();
             }
             
-            var amount = difference * 0.05;
+            var amount = difference * 0.07;
 
             var additionalAmount = 0;
 
