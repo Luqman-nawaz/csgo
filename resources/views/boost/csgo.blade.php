@@ -63,6 +63,7 @@
                                 <div class="custom-select">
                                     <label for="select">Current Level</label>
                                     <select id="select" class="rankboostcurrentcs" name="current_level" onchange="updateRankBoostPrice();">
+                                                <option value="Unranked" selected disabled>Select Rank</option>
                                                 <option value="Silver I">Silver I</option>
                                                 <option value="Silver II">Silver II</option>
                                                 <option value="Silver III">Silver III</option>
@@ -99,6 +100,7 @@
                                 <div class="custom-select">
                                     <label for="select">Desired Level</label>
                                     <select id="select" name="desired_level" class="updateRankBoostPriceRequired" onchange="updateRankBoostPriceRequired()">
+                                            <option value="Unranked" selected disabled>Select Rank</option>
                                             <option value="Silver I">Silver I</option>
                                             <option value="Silver II">Silver II</option>
                                             <option value="Silver III">Silver III</option>
@@ -251,6 +253,7 @@
                                         <div class="custom-select">
                                             <label for="select">Current Level</label>
                                             <select class="updateWinBoostPriceRequired" id="select" name="current_level" onchange="updateWinBoostImage()" >
+                                                        <option value="Unranked" selected disabled>Select Rank</option>
                                                         <option value="Silver I">Silver I</option>
                                                         <option value="Silver II">Silver II</option>
                                                         <option value="Silver III">Silver III</option>
@@ -414,6 +417,7 @@
                                         <div class="custom-select">
                                             <label for="select">Last known rank</label>
                                             <select class="placementcurrentrank current_level_" id="select" name="current_level" onchange="updateplacementImage()" >
+                                                        <option value="Unranked" selected disabled>Select Rank</option>
                                                         <option value="Unraked">Unranked</option>
                                                         <option value="Silver I">Silver I</option>
                                                         <option value="Silver II">Silver II</option>
@@ -579,6 +583,7 @@
 
                                         <div class="custom-select">
                                             <select id="select" class="wingmanboostcurrent" name="current_level" onchange="updateWingmanBoostImage();">
+                                                <option value="Unranked" selected disabled>Select Rank</option>
                                                 <option value="Silver I">Silver I</option>
                                                 <option value="Silver II">Silver II</option>
                                                 <option value="Silver III">Silver III</option>
@@ -614,6 +619,7 @@
 
                                         <div class="custom-select">
                                             <select id="select" class="wingmanboostrequired" name="desired_level" onchange="updateWingmanBoostPriceRequired();">
+                                                <option value="Unranked" selected disabled>Select Rank</option>
                                                 <option value="Silver I">Silver I</option>
                                                 <option value="Silver II">Silver II</option>
                                                 <option value="Silver III">Silver III</option>
@@ -747,6 +753,7 @@
 
                                         <div class="custom-select">
                                             <select id="select" class="wingmanwinboost" name="current_level" onchange="updatewingmanwinboostimage();">
+                                                <option value="Unranked" selected disabled>Select Rank</option>
                                                 <option value="Unranked">Unranked</option>
                                                 <option value="Silver I">Silver I</option>
                                                 <option value="Silver II">Silver II</option>
@@ -771,9 +778,6 @@
 
                             </div>
 
-                            <div class="boosting-rankConverttoImg-box">
-                                <img src="/assets/icons/CaretCircleDoubleRight.png" alt="">
-                            </div>
 
                             <div class="counter-box">
                                         <label for="counter1">Number of Wins</label>

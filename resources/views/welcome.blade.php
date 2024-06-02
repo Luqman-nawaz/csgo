@@ -26,7 +26,7 @@
         <x-navbar></x-navbar>
 
         <div class="heroSection-container">
-            <h1 style="letter-spacing:1px;">Raise your rank up to Global Elite with our help.</h1>
+            <h1 style="letter-spacing:1px;font-family:sans-serif; font-size:60px;">Raise your rank up to Global Elite with our help.</h1>
             <p>If you are bored of playing with trolls and unskilled players - purchase boost now and our professional
                 players will help you with winning matches.</p>
             <div class="heroPills-container flex justify-center items-center gap-5" style="margin-bottom:10%;">

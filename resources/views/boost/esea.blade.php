@@ -57,6 +57,7 @@
                                         <div class="custom-select">
                                             <label for="select">Label</label>
                                             <select name="current_level" id="select" class="rankboostcurrent" onchange="updateRankBoostimage()">
+                                                <option value="Unranked" selected disabled>Select Rank</option>
                                                 <option value="D-"><span>D-</span></option>
                                                 <option value="D">D</option>
                                                 <option value="D Plus">D+</option>
@@ -88,6 +89,7 @@
                                         <div class="custom-select">
                                             <label for="select">Label</label>
                                             <select name="desired_level" id="select" class="rankboostrequired" onchange="updateRankBoostPriceRequired()">
+                                                <option value="Unranked" selected disabled>Select Rank</option>
                                                 <option value="D-"><span>D-</span></option>
                                                 <option value="D">D</option>
                                                 <option value="D Plus">D+</option>
@@ -198,6 +200,7 @@
                                         <div class="custom-select">
                                             <label for="select">Label</label>
                                             <select name="current_level" id="select" class="placementcurrent" onchange="updateplacementImage()">
+                                                        <option value="Unranked" selected disabled>Select Rank</option>
                                                         <option value="D-"><span>D-</span></option>
                                                         <option value="D">D</option>
                                                         <option value="D Plus">D+</option>

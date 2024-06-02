@@ -61,6 +61,7 @@
                                             <div class="custom-select">
                                                 <label for="select">Label</label>
                                                 <select id="select" class="faceitcurrent" onchange="updatefaceitcurrentimage()" name="current_level">
+                                                    <option value="Unranked" selected disabled>Select Rank</option>
                                                     <option value="Level 1"><span>Level 1</span></option>
                                                     <option value="Level 2">Level 2</option>
                                                     <option value="Level 3">Level 3</option>
@@ -87,6 +88,7 @@
                                             <div class="custom-select">
                                                 <label for="select">Label</label>
                                                 <select id="select" class="faceitrequired" onchange="updatefaceitpricerequired()" name="desired_level">
+                                                    <option value="Unranked" selected disabled>Select Rank</option>
                                                     <option value="Level 1"><span>Level 1</span></option>
                                                     <option value="Level 2">Level 2</option>
                                                     <option value="Level 3">Level 3</option>
@@ -299,6 +301,7 @@
                                             <div class="custom-select">
                                                 <label for="select">Label</label>
                                                 <select id="select" name="current_level" class="faceitwincurrent" onchange="updatefaceitwincurrentimage()">
+                                                    <option value="Unranked" selected disabled>Select Rank</option>
                                                     <option value="Level 1"><span>Level 1</span></option>
                                                     <option value="Level 2">Level 2</option>
                                                     <option value="Level 3">Level 3</option>

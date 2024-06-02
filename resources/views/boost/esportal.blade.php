@@ -58,6 +58,7 @@
                                             <div class="custom-select">
                                                 <label for="select">Label</label>
                                                 <select id="select" class="rankboostcurrent" onchange="updateRankBoostimage()" name="current_level">
+                                                    <option value="Unranked" selected disabled>Select Rank</option>
                                                     <option value="Silver"><span>Silver</span></option>
                                                     <option value="Gold 1">Gold 1</option>
                                                     <option value="Gold 2">Gold 2</option>
@@ -88,6 +89,7 @@
                                             <div class="custom-select">
                                                 <label for="select">Label</label>
                                                 <select id="select" name="desired_level" class="rankboostrequired" onchange="updateRankBoostPriceRequired()">
+                                                    <option value="Unranked" selected disabled>Select Rank</option>
                                                     <option value="Silver"><span>Silver</span></option>
                                                     <option value="Gold 1">Gold 1</option>
                                                     <option value="Gold 2">Gold 2</option>
@@ -196,6 +198,7 @@
                                             <div class="custom-select">
                                                 <label for="select">Label</label>
                                                 <select id="select" class="placementcurrent" onchange="updateplacementImage()" name="current_level">
+                                                    <option value="Unranked" selected disabled>Select Rank</option>
                                                     <option value="Silver"><span>Silver</span></option>
                                                     <option value="Gold 1">Gold 1</option>
                                                     <option value="Gold 2">Gold 2</option>
