@@ -371,7 +371,7 @@ class BoostController extends Controller
             $side_order = 0;
         }
 
-        $total_amount = $amount + $side_order;
+        $total_amount = number_format($amount + $side_order, 2);
 
         $payment = array(
             'coaching_id' => $order_id,
@@ -501,7 +501,7 @@ class BoostController extends Controller
 
             $side_amount = ($order_amount * 0.20); 
 
-            $total_amount = $order_amount;
+            $total_amount = number_format($order_amount, 2);
 
             if($order->solo_play == 1){
                 $total_amount = $total_amount + $side_amount;

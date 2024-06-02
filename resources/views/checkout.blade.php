@@ -200,7 +200,7 @@
                                             <div class="boosting-pricing-conatiner">
 
                                                 <div class="boosting-pricing-txt-conatiner">
-                                                    <span>Price to pay <h3 id="rankboostprice">€{{ $total_amount }}</h3></span>
+                                                    <span>Price to pay <h3 id="rankboostprice">€{{ number_format($total_amount, 2); }}</h3></span>
                                                     <button type="submit" class="themebtn-bg gap-3">Pay Now <img src="/assets/icons/circleArrow.png"
                                                             alt=""></button>
                                                 </div>
