@@ -55,7 +55,7 @@
                                             <img src="/assets/images/rankImgs/RankIMG1.png" id="rankboostimage" alt="">
                                         </div>
                                         <div class="custom-select">
-                                            <label for="select">Label</label>
+                                            <label for="select">Current Rank</label>
                                             <select name="current_level" id="select" class="rankboostcurrent" onchange="updateRankBoostimage()">
                                                 <option value="Unranked" selected disabled>Select Rank</option>
                                                 <option value="D-"><span>D-</span></option>
@@ -87,7 +87,7 @@
                                             <img src="/assets/images/rankImgs/RankIMG1.png" id="rankboostimagerequired" alt="">
                                         </div>
                                         <div class="custom-select">
-                                            <label for="select">Label</label>
+                                            <label for="select">Desired Rank</label>
                                             <select name="desired_level" id="select" class="rankboostrequired" onchange="updateRankBoostPriceRequired()">
                                                 <option value="Unranked" selected disabled>Select Rank</option>
                                                 <option value="D-"><span>D-</span></option>
@@ -198,7 +198,7 @@
                                             <img src="/assets/images/rankImgs/RankIMG1.png" id="placementcurrentimage" alt="">
                                         </div>
                                         <div class="custom-select">
-                                            <label for="select">Label</label>
+                                            <label for="select">Current Level</label>
                                             <select name="current_level" id="select" class="placementcurrent" onchange="updateplacementImage()">
                                                         <option value="Unranked" selected disabled>Select Rank</option>
                                                         <option value="D-"><span>D-</span></option>

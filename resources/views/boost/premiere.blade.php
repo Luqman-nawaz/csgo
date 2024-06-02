@@ -160,7 +160,7 @@
                                                 <img src="/ranks/premier/Unrated.png" id="placementcurrentimage" alt="">
                                             </div>
                                             <div class="custom-select">
-                                                <label for="select">Label</label>
+                                                <label for="select">Current Rank</label>
                                                 <select id="select" class="placementcurrent" onchange="updateplacementImage()" name="current_level">
                                                     <option value="Unrated"><span>Unrated</span></option>
                                                     <option value="Grey"><span>Grey</span></option>

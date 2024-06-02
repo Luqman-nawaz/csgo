@@ -582,6 +582,7 @@
                                 </div>
 
                                         <div class="custom-select">
+                                            <label for="select">Current Level</label>
                                             <select id="select" class="wingmanboostcurrent" name="current_level" onchange="updateWingmanBoostImage();">
                                                 <option value="Unranked" selected disabled>Select Rank</option>
                                                 <option value="Silver I">Silver I</option>
@@ -618,6 +619,7 @@
                                 </div>
 
                                         <div class="custom-select">
+                                            <label for="select">Desired Level</label>
                                             <select id="select" class="wingmanboostrequired" name="desired_level" onchange="updateWingmanBoostPriceRequired();">
                                                 <option value="Unranked" selected disabled>Select Rank</option>
                                                 <option value="Silver I">Silver I</option>
@@ -752,6 +754,7 @@
                                 </div>
 
                                         <div class="custom-select">
+                                        <label for="select">Current Level</label>
                                             <select id="select" class="wingmanwinboost" name="current_level" onchange="updatewingmanwinboostimage();">
                                                 <option value="Unranked" selected disabled>Select Rank</option>
                                                 <option value="Unranked">Unranked</option>
