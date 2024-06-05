@@ -1002,7 +1002,7 @@
 
         function updatetab1plus(){
             var reviews = document.querySelector('.counter1winboost').value;
-            if(reviews <= 10){
+            if(reviews < 10){
                 let newvalue = +reviews + 1;
                 document.querySelector('.counter1winboost').value = newvalue;
             }
@@ -1013,6 +1013,11 @@
         function updatePriceWinBoost(){
                 var reviews = document.querySelector('.counter1winboost').value;
                 var rank = document.querySelector('.updateWinBoostPriceRequired').value;
+
+                if(rank == "Unranked"){
+                    document.getElementById("winboostprice").innerText = "--";
+                    return;
+                }
 
                 var prices = @json(App\Models\orderamounts::where('boost_type', 'Win Boost')->get());
 
@@ -1079,8 +1084,6 @@
                     }
                 }
 
-                console.log(final_price);
-
                 if(final_price == undefined){
                     document.getElementById("wingmanboostprice").innerText = "--";
                     return;
@@ -1110,7 +1113,7 @@
 
         //placement matches
         function updateplacementImage(){
-            var selectedOption = document.querySelector(".placementcurrent").value;
+            var selectedOption = document.querySelector(".placementcurrentrank").value;
                 // Rank Dropdown Img Change
             var rankImage = document.getElementById("placementcurrent");
             rankImage.src = `/ranks/csgo/${selectedOption}.png`;
