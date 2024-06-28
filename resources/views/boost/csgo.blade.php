@@ -418,7 +418,7 @@
                                             <label for="select">Last known rank</label>
                                             <select class="placementcurrentrank current_level_" id="select" name="current_level" onchange="updateplacementImage()" >
                                                         <option value="Unranked" selected disabled>Select Rank</option>
-                                                        <option value="Unraked">Unranked</option>
+                                                        <option value="Unranked">Unranked</option>
                                                         <option value="Silver I">Silver I</option>
                                                         <option value="Silver II">Silver II</option>
                                                         <option value="Silver III">Silver III</option>

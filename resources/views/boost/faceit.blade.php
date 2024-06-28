@@ -566,6 +566,8 @@
     function updatefaceitelopricerequired(){
             var currentelo = document.querySelector(".placementrangecurrent").value;
             var requiredelo = document.querySelector('.placementrangerequired').value;
+            
+            
 
             if(currentelo >= 5000){
                 document.querySelector(".placementrangecurrent").value = 4900;
@@ -592,13 +594,13 @@
             };
 
             difference = +requiredelo - +currentelo;
-
+            
             if(requiredelo < 500){
                 boostprice = 1.1;
             }else if(requiredelo <= 1000){
                 boostprice = 1.3;
             }else if(requiredelo <= 1500){
-                boostprice = 1.6;
+                boostprice = 2.5;
             }else if(requiredelo <= 2000){
                 boostprice = 3.5;
             }else if(requiredelo <= 2500){
@@ -612,7 +614,7 @@
             }else if(requiredelo <= 4500){
                 boostprice = 15.9;
             }else if(requiredelo <= 5000){
-                boostprice = 16.0;
+                boostprice = 17.0;
             }
             
             if(difference < 25){
@@ -636,7 +638,7 @@
                 additionalAmount += 0.60;
             }
 
-            var totalPrice = amount * boostprice *(1 + additionalAmount);
+            var totalPrice = amount * boostprice * (1 + additionalAmount);
 
             document.getElementById("faceiteloprice").innerText = "€" + totalPrice.toFixed(2);
     }
