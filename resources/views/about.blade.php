@@ -68,17 +68,17 @@
         <h2>Because numbers Speak</h2>
         <div class="ourstatSection-inner-container">
             <div class="ourstatSection-box">
-                <h2>8 Years</h2>
-                <p>OF SERVICE</p>
-            </div>
-            <div class="ourstatSection-box">
-                <h2>20K</h2>
-                <p>HAPPY CLIENTS</p>
-            </div>
-            <div class="ourstatSection-box">
-                <h2>99%</h2>
-                <p>ORDERS COMPLETION</p>
-            </div>
+                    <h2>2+ Years</h2>
+                    <p>OF SERVICE</p>
+                </div>
+                <div class="ourstatSection-box">
+                    <h2>5000+</h2>
+                    <p>HAPPY CLIENTS</p>
+                </div>
+                <div class="ourstatSection-box">
+                    <h2>99%</h2>
+                    <p>ORDERS COMPLETION</p>
+                </div>
         </div>
     </div>
 
