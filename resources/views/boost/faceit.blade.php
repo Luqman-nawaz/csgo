@@ -71,13 +71,6 @@
                                                     <option value="Level 7">Level 7</option>
                                                     <option value="Level 8">Level 8</option>
                                                     <option value="Level 9">Level 9</option>
-                                                    {{-- <option value="Level 10 Elo 2001">Level 10 Elo 2001</option>
-                                                    <option value="Level 10 Elo 2150">Level 10 Elo 2150</option>
-                                                    <option value="Level 10 Elo 2300">Level 10 Elo 2300</option>
-                                                    <option value="Level 10 Elo 2450">Level 10 Elo 2450</option>
-                                                    <option value="Level 10 Elo 2600">Level 10 Elo 2600</option>
-                                                    <option value="Level 10 Elo 2750">Level 10 Elo 2750</option>
-                                                    <option value="Level 10 Elo 2900">Level 10 Elo 2900</option> --}}
                                                 </select>
                                             </div>
 
@@ -106,14 +99,6 @@
                                                     <option value="Level 8">Level 8</option>
                                                     <option value="Level 9">Level 9</option>
                                                     <option value="Level 10">Level 10</option>
-                                                    {{-- <option value="Level 10 Elo 2001">Level 10 Elo 2001</option>
-                                                    <option value="Level 10 Elo 2150">Level 10 Elo 2150</option>
-                                                    <option value="Level 10 Elo 2300">Level 10 Elo 2300</option>
-                                                    <option value="Level 10 Elo 2450">Level 10 Elo 2450</option>
-                                                    <option value="Level 10 Elo 2600">Level 10 Elo 2600</option>
-                                                    <option value="Level 10 Elo 2750">Level 10 Elo 2750</option>
-                                                    <option value="Level 10 Elo 2900">Level 10 Elo 2900</option>
-                                                    <option value="Level 10 Elo 3050">Level 10 Elo 3050</option> --}}
                                                 </select>
                                             </div>
 
@@ -326,6 +311,14 @@
                                                     <option value="Level 7">Level 7</option>
                                                     <option value="Level 8">Level 8</option>
                                                     <option value="Level 9">Level 9</option>
+                                                    <option value="Level 10 Elo 2001">Level 10 Elo 2001</option>
+                                                    <option value="Level 10 Elo 2150">Level 10 Elo 2150</option>
+                                                    <option value="Level 10 Elo 2300">Level 10 Elo 2300</option>
+                                                    <option value="Level 10 Elo 2450">Level 10 Elo 2450</option>
+                                                    <option value="Level 10 Elo 2600">Level 10 Elo 2600</option>
+                                                    <option value="Level 10 Elo 2750">Level 10 Elo 2750</option>
+                                                    <option value="Level 10 Elo 2900">Level 10 Elo 2900</option>
+                                                    <option value="Level 10 Elo 3050">Level 10 Elo 3050</option>
                                                 </select>
                                             </div>
 
@@ -680,7 +673,7 @@
 
         function updatetab1plus(){
             var reviews = document.querySelector('.placementrange').value;
-            if(reviews <= 10){
+            if(reviews < 10){
                 let newvalue = +reviews + 1;
                 document.querySelector('.placementrange').value = newvalue;
             }
