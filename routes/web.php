@@ -5,6 +5,7 @@ use App\Http\Controllers\CsgoboostController;
 use App\Http\Controllers\EseaController;
 use App\Http\Controllers\EsportalController;
 use App\Http\Controllers\FaceitController;
+use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\PaymentController;
 use App\Mail\registered;
 use App\Models\payment;
@@ -79,6 +80,8 @@ Route::middleware([
     Route::get('/checkout/failure', function (Request $request) {
         dd("Faield");
     })->name('checkout-cancel');
-    
-     
+        
 });
+
+Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);
+Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
