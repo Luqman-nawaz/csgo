@@ -45,8 +45,10 @@
                         </div>
     
                             <button type="submit" class="themebtn-bg w-full mt-5">Login to account</button>
-                            <a href="/register" class="Forgot-txt mt-5 w-full text-center">Create New Account</a>
+                            {{-- <a href="/register" class="Forgot-txt mt-5 w-full text-center">Create New Account</a> --}}
                         </form>
+                        <a href="{{ url('auth/google') }}" class="Forgot-txt mt-5 w-full text-center">Login With Google</a>
+                        
                     </div>
     
                 </div>
