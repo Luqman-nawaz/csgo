@@ -3,27 +3,22 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Str;
-use Throwable;
+use Exception;
 
 class TwitterController extends Controller
 {
-    public function redirectToTwitter(): RedirectResponse
-    {
+    public function redirectToTwitter(){
         return Socialite::driver('twitter')->redirect();
     }
 
-    public function handleTwitterCallback(): RedirectResponse
-    {
-        try
-        {
+    public function handleTwitterCallback(){
+        try{
             $user = Socialite::driver('twitter')->user();
-        }
-        catch (Throwable $e) {
+        }catch (Exception $e) {
             return redirect(route('login'))->with('status', 'Twitter authentication failed.');
         }
 
