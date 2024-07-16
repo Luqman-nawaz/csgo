@@ -87,12 +87,12 @@
                 <h5>TESTIMONIALS</h5>
                 <h2>Let’s hear from happy clients</h2>
                 <div class="center">
-                    <div class="Testimonials-card-box">
+                     <div class="Testimonials-card-box">
                         <h5>The service was fast and very convenient. The boosters were great in person & very professional.</h5>
                         <br>
                         <span class="flex items-center gap-3">
                             <img src="/assets/icons/Avatar.png" alt="">
-                            <h6>Ryan</h6>
+                            <h6>Wn***ak</h6>
                         </span>
                     </div>
                     <div class="Testimonials-card-box">
@@ -100,7 +100,7 @@
                         <br>
                         <span class="flex items-center gap-3">
                             <img src="/assets/icons/avatar2.svg" alt="">
-                            <h6>Judy Smith</h6>
+                            <h6>Si***er</h6>
                         </span>
                     </div>
                     <div class="Testimonials-card-box">
@@ -108,7 +108,7 @@
                         <br>
                         <span class="flex items-center gap-3">
                             <img src="/assets/icons/avatar1.png" alt="">
-                            <h6>Jake</h6>
+                            <h6>G*r03</h6>
                         </span>
                     </div>
                 </div>

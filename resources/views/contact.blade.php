@@ -44,7 +44,7 @@
                         <span>
                             <img src="/assets/icons/EnvelopeSimple.png" alt="">
                         </span>
-                        <p>info@myboost.gg</p>
+                        <p>support@myboost.gg</p>
                     </div>
                     <div class="contactinfo-box">
                         <span>
