@@ -44,8 +44,7 @@ class GoogleController extends Controller
             }
       
         } catch (Exception $e) {
-            $e->getMessage();
-            return redirect('https://myboost.gg/login');
+            return redirect('https://myboost.gg/login')->with('status', $e->getMessage());
         }
     }
 }

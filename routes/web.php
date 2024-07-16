@@ -7,6 +7,7 @@ use App\Http\Controllers\EsportalController;
 use App\Http\Controllers\FaceitController;
 use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\TwitterController;
 use App\Mail\registered;
 use App\Models\payment;
 use Illuminate\Http\Request;
@@ -35,21 +36,21 @@ Route::get('/privacy', function () {
     return view('privacy');
 });
 
-Route::get('/faqs', [BoostController::class, 'faqs']);
-
-Route::get('/csboost', [BoostController::class, 'csgoboost']);
-Route::get('/faceit', [BoostController::class, 'faceit']);
-Route::get('/esea', [BoostController::class, 'esea']);
-Route::get('/esportal', [BoostController::class, 'esportal']);
-Route::get('/premier', [BoostController::class, 'premier']);
-Route::get('/coaching', [BoostController::class, 'coaching']);
-Route::get('/about', [BoostController::class, 'about']);
-Route::get('/contact', [BoostController::class, 'contact']);
-Route::post('/contact', [BoostController::class, 'savecontact']);
-
-Route::get('/jobs', [BoostController::class, 'jobs']);
-Route::get('/apply-jobs', [BoostController::class, 'applyjobs']);
-Route::get('/terms', [BoostController::class, 'terms']);
+Route::controller(BoostController::class)->group(function(){
+    Route::get('/faqs', 'faqs');
+    Route::get('/csboost', 'csgoboost');
+    Route::get('/faceit', 'faceit');
+    Route::get('/esea', 'esea');
+    Route::get('/esportal', 'esportal');
+    Route::get('/premier', 'premier');
+    Route::get('/coaching', 'coaching');
+    Route::get('/about', 'about');
+    Route::get('/contact', 'contact');
+    Route::post('/contact', 'savecontact');
+    Route::get('/jobs', 'jobs');
+    Route::get('/apply-jobs', 'applyjobs');
+    Route::get('/terms', 'terms');
+});
 
 Route::middleware([
     'auth:sanctum',
@@ -83,5 +84,13 @@ Route::middleware([
         
 });
 
-Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);
-Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
+
+Route::controller(GoogleController::class)->group(function(){
+    Route::get('/auth/google', 'redirectToGoogle');
+    Route::get('/auth/google/callback', 'handleGoogleCallback');
+});
+
+Route::controller(TwitterController::class)->group(function(){
+    Route::get('auth/twitter', 'redirectToTwitter')->name('auth.twitter');
+    Route::get('auth/twitter/callback', 'handleTwitterCallback');
+});
