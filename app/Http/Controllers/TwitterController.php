@@ -32,7 +32,8 @@ class TwitterController extends Controller
             ], [
                 'name' => $user->name,
                 'twitter_id'=> $user->id,
-                'password' => bcrypt(request(Str::random())) // Set a random password
+                'password' => bcrypt(request(Str::random())), // Set a random password
+                'email_verified_at' => now(),
             ]);
             Auth::login($newUser);
         }
