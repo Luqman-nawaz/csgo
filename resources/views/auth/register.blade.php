@@ -3,9 +3,15 @@
 
     @push('css')
         <style>
+            .lessermargin{
+                margin-top:10% !important;
+            }
             @media (max-width: 650px) {
                 .SocialBtn{
                     font-size: 0;
+                }
+                .margin-top {
+                    margin-top: 25% !important;
                 }
             }
         </style>
@@ -19,7 +25,7 @@
             <x-navbar></x-navbar>
 
             <div class="credentials-main-container credentials-signup-container" style="padding-top:2%;">
-                <div class="credentials-centered-container" style="margin-top:10%">
+                <div class="credentials-centered-container lessermargin margin-top">
 
                     <div class="credentials-left-container">
                         <img src="/assets/logo.svg" alt="">

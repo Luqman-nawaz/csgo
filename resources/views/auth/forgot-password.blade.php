@@ -1,5 +1,19 @@
 @extends('layouts.csgo')
 @section('title') <title>MyBoost.GG - Login</title> @endsection
+
+    @push('css')
+        <style>
+            .lessermargin{
+                margin-top:10% !important;
+            }
+            @media (max-width: 650px) {
+                .margin-top {
+                    margin-top: 25% !important;
+                }
+            }
+        </style>
+    @endpush
+
     @section('content')
     
     <div class="landing-page-container">
@@ -11,7 +25,7 @@
         <!-- csgo-Header End -->
 
         <div class="credentials-main-container" style="padding-top:1%">
-            <div class="credentials-centered-container" style="margin-top:12%">
+            <div class="credentials-centered-container lessermargin margin-top">
 
                 
 
