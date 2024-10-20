@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BoostController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CsgoboostController;
 use App\Http\Controllers\EseaController;
 use App\Http\Controllers\EsportalController;
@@ -31,6 +32,8 @@ use Laravel\Cashier\Cashier;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/discord', [ContactController::class, 'discord']);
 
 Route::get('/privacy', function () {
     return view('privacy');
