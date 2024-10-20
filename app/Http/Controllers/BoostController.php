@@ -440,11 +440,11 @@ class BoostController extends Controller
             $req['success_url'] = '/checkout/cryptosuccess/'.$order_id;
             $req['cancel_url'] = '/checkout/cryptofail/'.$order_id;
         
-            $req['key'] = '4414bbf7d7180b5c0f3340d6e768aa22c69e8f63ffa05547252b72b2c7919450';
+            $req['key'] = 'e5fae889aee86296f61b89f7337db1c13c5172dca163f46c9f3727a2d63e1603';
             $req['format'] = 'json';
             $post_data = Arr::query($req);
             
-            $hmac = hash_hmac('sha512', $post_data, '376bB676679081ca72B78F1c49599e20136Bfb765eE4acE249A5f9168be102Be');
+            $hmac = hash_hmac('sha512', $post_data, '9e1Adde5b792f6e4f2dddB9ffD7b3884B3212FF254Af870cB2C2aeb8b224B8A6');
         
             $response = Http::withHeaders([
                 'HMAC' => $hmac,
@@ -587,11 +587,11 @@ class BoostController extends Controller
                 $req['ipn_url'] = 'Boost';
                 $req['success_url'] = '/checkout/cryptosuccess/'.$order_id;
                 $req['cancel_url'] = '/checkout/cryptofail/'.$order_id;
-                $req['key'] = '4414bbf7d7180b5c0f3340d6e768aa22c69e8f63ffa05547252b72b2c7919450';
+                $req['key'] = 'e5fae889aee86296f61b89f7337db1c13c5172dca163f46c9f3727a2d63e1603';
                 $req['format'] = 'json';
                 $post_data = Arr::query($req);
                 
-                $hmac = hash_hmac('sha512', $post_data, '376bB676679081ca72B78F1c49599e20136Bfb765eE4acE249A5f9168be102Be');
+                $hmac = hash_hmac('sha512', $post_data, '9e1Adde5b792f6e4f2dddB9ffD7b3884B3212FF254Af870cB2C2aeb8b224B8A6');
                 
                 $response = Http::withHeaders([
                 'HMAC' => $hmac,    
