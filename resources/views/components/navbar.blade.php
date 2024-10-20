@@ -63,7 +63,7 @@
                         <span>&times;</span>
                     </button>
                     <div class="mob-logo">
-                        <img src="./assets/Logo.svg" class="m-auto" alt="">
+                        <img src="/assets/logo.svg" class="m-auto" alt="">
                     </div>
                     <div class="menu-container-mob">
 
