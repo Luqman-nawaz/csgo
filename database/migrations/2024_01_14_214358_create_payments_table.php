@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('boost_order_price');
             $table->string('total_amount');
             $table->string('order_status');
-            $table->foreign('order_id')->references('id')->on('boosts');
+            $table->foreign('order_id')->references('id')->on('boosts')->onDelete('cascade');
             $table->timestamps();
         });
     }

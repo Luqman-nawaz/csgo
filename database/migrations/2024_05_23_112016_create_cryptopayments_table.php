@@ -17,8 +17,8 @@ return new class extends Migration
             $table->unsignedBigInteger('payment_id');
             $table->string('transaction_id');
             $table->string('payment_url');
-            $table->foreign('payment_id')->references('id')->on('payments');
-            $table->foreign('order_id')->references('id')->on('boosts');
+            $table->foreign('payment_id')->references('id')->on('payments')->onDelete('cascade');
+            $table->foreign('order_id')->references('id')->on('boosts')->onDelete('cascade');
             $table->timestamps();
         });
     }
