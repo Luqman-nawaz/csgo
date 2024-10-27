@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\registered;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Str;
 use Exception;
+use Illuminate\Support\Facades\Mail;
 
 class TwitterController extends Controller
 {
@@ -39,6 +41,8 @@ class TwitterController extends Controller
 
                 Auth::login($newUser);
                 
+                Mail::to($user->email)->send(new registered());
+
                 return redirect()->intended('dashboard');
             }
 

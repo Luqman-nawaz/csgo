@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\registered;
 use App\Models\User;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use Laravel\Socialite\Facades\Socialite;
 
 class GoogleController extends Controller
@@ -36,6 +38,8 @@ class GoogleController extends Controller
                     'password' => encrypt('123456dummy'),
                     'email_verified_at' => now(),
                 ]);
+
+                Mail::to($user->email)->send(new registered());
       
                 Auth::login($newUser);
       
