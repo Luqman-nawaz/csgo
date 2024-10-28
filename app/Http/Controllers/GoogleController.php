@@ -38,11 +38,11 @@ class GoogleController extends Controller
                     'password' => encrypt('123456dummy'),
                     'email_verified_at' => now(),
                 ]);
-
+                
                 Mail::to($user->email)->send(new registered());
       
                 Auth::login($newUser);
-      
+
                 return redirect()->intended('dashboard');
             }
       

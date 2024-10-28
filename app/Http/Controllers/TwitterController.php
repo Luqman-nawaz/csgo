@@ -40,7 +40,7 @@ class TwitterController extends Controller
                 ]);
 
                 Auth::login($newUser);
-                
+
                 Mail::to($user->email)->send(new registered());
 
                 return redirect()->intended('dashboard');
