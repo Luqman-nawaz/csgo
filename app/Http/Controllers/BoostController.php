@@ -360,6 +360,14 @@ class BoostController extends Controller
         return view('checkout', ['boostorder' => $order, 'total_amount' => $total_amount, 'order_amount' => $order_amount]);
     }
 
+    public function checkoutpaymentnew($order_id){
+        $order = boost::where('id', $order_id)->get()->first();
+        
+        $total_amount = 45.00;
+
+        return view('checkout', ['boostorder' => $order, 'total_amount' => $total_amount]);
+    }
+
     public function Coachingpayment($order_id, Request $request){
 
         $order = coaching::where('id', $order_id)->where('user_id', Auth::id())->get()->first();

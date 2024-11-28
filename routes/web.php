@@ -68,6 +68,7 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/checkout/orderpayment/{order_id}', [BoostController::class, 'checkoutpaymentnew']);
     Route::get('/checkout/{order_id}', [BoostController::class, 'checkoutpayment']);
     Route::post('/cs2/checkout', [BoostController::class, 'cs2checkout']);
     Route::post('/faceit/checkout', [BoostController::class, 'faceitcheckout']);
