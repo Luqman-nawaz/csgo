@@ -77,6 +77,7 @@ Route::middleware([
     Route::post('/premier/checkout', [BoostController::class, 'premiercheckout']);
     
     Route::post('/payment/{order_id}', [BoostController::class, 'payment']);
+    Route::post('/payment/orderpayment/{order_id}', [BoostController::class, 'fakepayment']);
 
     Route::post('/coaching/checkout', [BoostController::class, 'coachingcheckout']);
     Route::get('/coaching-checkout/{order_id}', [BoostController::class, 'CoachingCheckoutPayment']);

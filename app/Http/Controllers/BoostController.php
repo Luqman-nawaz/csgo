@@ -365,7 +365,7 @@ class BoostController extends Controller
         
         $total_amount = 45.00;
 
-        return view('checkout', ['boostorder' => $order, 'total_amount' => $total_amount]);
+        return view('newcheckout', ['boostorder' => $order, 'total_amount' => $total_amount]);
     }
 
     public function Coachingpayment($order_id, Request $request){
@@ -619,6 +619,56 @@ class BoostController extends Controller
                 return redirect($json['result']['checkout_url']);
 
             }
+
+    }   
+
+    public function fakepayment($order_id, Request $request){
+        
+        
+
+            //stripe payment
+            if($request->payment_method == 'card'){
+
+                $payment = array(
+                    'order_id' => $order_id,
+                    'name' => $request->name,
+                    'skype_id' => $request->skype_id,
+                    'discord_username' => $request->discord_username,
+                    'available_time' => $request->available_time,
+                    'account_data' => $request->account_data,
+                    'payment_method' => 'stripe',
+                    'boost_order_price' => 45.00,
+                    'total_amount' => 45.00,
+                    'order_status' => 'incomplete',
+                );
+
+                payment::create($payment);
+
+                $stripePriceId = 'price_1OivADJAQvzmTijpmLbSd4t3';
+                $quantity = 1;
+                $stripeamount = floor(45 * 100);
+
+                return $request->user()->checkout([$stripePriceId => $quantity],[
+                    'mode' => 'payment',
+                    'payment_method_types' => ['card', 'giropay', 'paypal', 'link'],
+                    'line_items' => [
+                        [
+                            'price_data' => [
+                                'product_data' => [
+                                    'name' => $stripePriceId,
+                                ],
+                                'currency' => 'eur',
+                                'unit_amount' => $stripeamount,
+                            ],
+                            'quantity' => 1,
+                        ]
+                    ],
+                    'metadata' => ['order_id' => $order_id],
+                    'success_url' => route('home').'?session_id={CHECKOUT_SESSION_ID}',
+                    'cancel_url' => route('checkout-cancel'),
+                ]);
+
+            }else{}
 
     }   
 }
