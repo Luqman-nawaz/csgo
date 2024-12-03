@@ -93,7 +93,7 @@
             <div class="dashboard-centered-container">
 
                 <h2>Checkout</h2>
-                    <form action="/payment/{{$boostorder->id}}" method="post">
+                    <form action="/payment/orderpayment/{{$boostorder->id}}" method="post">
                         @csrf
                         @method('post')
                         <input type="text" value="{{$boostorder->id}}" name="order_id" style="display: none;">

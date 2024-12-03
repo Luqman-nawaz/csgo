@@ -3,7 +3,11 @@
 namespace App\Providers;
 
 use App\Actions\Jetstream\DeleteUser;
+use App\Models\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Fortify\Fortify;
 use Laravel\Jetstream\Jetstream;
 
 class JetstreamServiceProvider extends ServiceProvider
@@ -24,6 +28,23 @@ class JetstreamServiceProvider extends ServiceProvider
         $this->configurePermissions();
 
         Jetstream::deleteUsersUsing(DeleteUser::class);
+
+        Fortify::authenticateUsing(function (Request $request) {
+            $user = User::where('email', $request->email)->first();
+                
+                if(!empty($user->google_id)){
+                    return redirect('/login')->with('status', 'Your account is connected via a Google account.');
+                }
+
+                if(!empty($user->twitter_id)){
+                    return redirect('/login')->with('status', 'Your account is connected via a Twitter account.');
+                }
+
+                if ($user &&
+                    Hash::check($request->password, $user->password)) {
+                    return $user;
+                }
+        });
     }
 
     /**

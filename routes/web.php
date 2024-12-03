@@ -68,6 +68,7 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/checkout/orderpayment/{order_id}', [BoostController::class, 'checkoutpaymentnew']);
     Route::get('/checkout/{order_id}', [BoostController::class, 'checkoutpayment']);
     Route::post('/cs2/checkout', [BoostController::class, 'cs2checkout']);
     Route::post('/faceit/checkout', [BoostController::class, 'faceitcheckout']);
@@ -76,6 +77,7 @@ Route::middleware([
     Route::post('/premier/checkout', [BoostController::class, 'premiercheckout']);
     
     Route::post('/payment/{order_id}', [BoostController::class, 'payment']);
+    Route::post('/payment/orderpayment/{order_id}', [BoostController::class, 'fakepayment']);
 
     Route::post('/coaching/checkout', [BoostController::class, 'coachingcheckout']);
     Route::get('/coaching-checkout/{order_id}', [BoostController::class, 'CoachingCheckoutPayment']);
@@ -97,3 +99,6 @@ Route::controller(TwitterController::class)->group(function(){
     Route::get('auth/twitter', 'redirectToTwitter')->name('auth.twitter');
     Route::get('auth/twitter/callback', 'handleTwitterCallback');
 });
+
+Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);
+Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
