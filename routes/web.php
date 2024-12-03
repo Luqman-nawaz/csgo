@@ -84,7 +84,7 @@ Route::middleware([
     Route::post('/coaching-payment/{order_id}', [BoostController::class, 'Coachingpayment']);
 
     Route::get('/checkout/failure', function (Request $request) {
-        dd("Faield");
+        dd("Failed");
     })->name('checkout-cancel');
         
 });

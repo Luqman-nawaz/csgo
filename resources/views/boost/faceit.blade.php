@@ -622,7 +622,7 @@
             }else if(requiredelo <= 4500){
                 boostprice = 15.9;
             }else if(requiredelo <= 5000){
-                boostprice = 17.0;
+                boostprice = 16.0;
             }
             
             if(difference < 25){
@@ -630,7 +630,7 @@
                 updatefaceitelopricerequired();
             }
             
-            var amount = difference * 0.07;
+            var amount = difference * 0.05;
 
             var additionalAmount = 0;
 
@@ -643,7 +643,7 @@
             }
 
             if (document.getElementById("faceitelocheckbox3").checked) {
-                additionalAmount += 0.60;
+                additionalAmount += 0.50;
             }
 
             var totalPrice = amount * boostprice * (1 + additionalAmount);

@@ -355,7 +355,7 @@ class BoostController extends Controller
         }
 
         if($order->play_with_booster == 1){
-            $total_amount = $total_amount + ($order_amount * 0.50);
+            $total_amount = $total_amount + ($order_amount/2);
         }
         return view('checkout', ['boostorder' => $order, 'total_amount' => $total_amount, 'order_amount' => $order_amount]);
     }
@@ -491,10 +491,31 @@ class BoostController extends Controller
 
                 $difference = $order->desired_level - $order->current_level;
                 $amount = $difference * 0.05;
+
+                if($order->desired_level < 500){
+                    $extra = 1.1;
+                }else if($order->desired_level <= 1000){
+                    $extra = 1.3;
+                }else if($order->desired_level <= 1500){
+                    $extra = 1.6;
+                }else if($order->desired_level <= 2000){
+                    $extra = 3.5;
+                }else if($order->desired_level <= 2500){
+                    $extra = 6.0;
+                }else if($order->desired_level <= 3000){
+                    $extra = 9.5;
+                }else if($order->desired_level <= 3500){
+                    $extra = 14.5;
+                }else if($order->desired_level <= 4000){
+                    $extra = 15.5;
+                }else if($order->desired_level <= 4500){
+                    $extra = 15.9;
+                }else if($order->desired_level <= 5000){
+                    $extra = 16.0;
+                }
                 
                 $order_amount = new stdClass();
-                $order_amount->amount = $amount;
-
+                $order_amount->amount = $amount * $extra;
 
             }else{
 
